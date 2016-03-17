@@ -1,0 +1,8 @@
+condors_tn_mall_homepage:
+    path:     /
+    defaults: { _controller: CondorsTnMallBundle:Default:index }
+
+
+condors_tn_mall_account:
+    path:     /account
+    defaults: { _controller: CondorsTnMallBundle:SimpleVisitor:myAccount}
