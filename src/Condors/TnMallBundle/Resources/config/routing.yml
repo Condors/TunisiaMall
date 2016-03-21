@@ -1,8 +1,19 @@
 condors_tn_mall_homepage:
     path:     /
-    defaults: { _controller: CondorsTnMallBundle:Default:index }
+    defaults: { _controller: CondorsTnMallBundle:SimpleVisitor:index }
 
 
 condors_tn_mall_account:
-    path:     /account
+    path:     /user/account
     defaults: { _controller: CondorsTnMallBundle:SimpleVisitor:myAccount}
+    
+
+condors_tn_mall_pro_regsitration:
+    path:     /responsable/register
+    defaults: { _controller: CondorsTnMallBundle:Registration:registerBrand}
+    
+ 
+ 
+condors_tn_mall_regsitration:
+    path:     /register
+    defaults: { _controller: CondorsTnMallBundle:Registration:registerUser}

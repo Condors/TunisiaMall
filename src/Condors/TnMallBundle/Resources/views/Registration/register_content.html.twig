@@ -1,0 +1,23 @@
+{% extends "CondorsTnMallBundle::MyAccountTemplate.html.twig" %}
+
+
+
+{% block titleTop %}<h2 class="title-heading">Register</h2>{% endblock %}
+
+{% block registerUser %}
+{% trans_default_domain 'FOSUserBundle' %}
+
+
+
+{{ form_start(form, {'method': 'post', 'attr': {'class': 'fos_user_registration_register'}}) }}
+    {{ form_widget(form) }}
+    <div>
+        <input type="submit" class="button" value="{{ 'registration.submit'|trans }}" />
+    </div>
+        
+{{ form_end(form) }}
+    
+      <br><br><br><br>  <br><br><br><br>
+      
+  {% endblock %}
+

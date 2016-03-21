@@ -1,4 +1,8 @@
 services:
-#    condors_tn_mall.example:
-#        class: Condors\TnMallBundle\Example
-#        arguments: ["@service_id", "plain_value", %parameter%]
+  redirect.after.login:
+    class: Condors\TnMallBundle\Redirection\AfterLoginRedirection
+    arguments: [@router]
+
+   
+
+        

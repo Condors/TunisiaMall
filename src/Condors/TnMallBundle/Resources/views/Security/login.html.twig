@@ -1,6 +1,7 @@
 {% extends "CondorsTnMallBundle::MyAccountTemplate.html.twig" %}
 
 {% trans_default_domain 'FOSUserBundle' %}
+{% block titleTop %}<h2 class="title-heading">Login</h2>{% endblock %}
 
 {% block fos_user_content %}
 {% if error %}
@@ -20,9 +21,12 @@
 
     <input class="button"  type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
     
+    <br><br><br>
+    <a href="{{ path('fos_user_resetting_request') }}">Forgot password ?</a>
+    
             
 </form>
-    
+
       <br><br><br><br>  <br><br><br><br>
     
     

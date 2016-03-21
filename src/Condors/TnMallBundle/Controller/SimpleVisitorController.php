@@ -6,8 +6,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class SimpleVisitorController extends Controller
 {
-    public function myAccountAction()
+    public function indexAction()
     {
-        return $this->render('CondorsTnMallBundle:SimpleVisitor:my-account.html.twig');
+        return $this->render('CondorsTnMallBundle:SimpleVisitor:index.html.twig');
     }
 }

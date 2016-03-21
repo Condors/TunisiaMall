@@ -111,12 +111,25 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return $this->redirect($pathinfo.'/', 'condors_tn_mall_homepage');
             }
 
-            return array (  '_controller' => 'CondorsTnMallBundle:Default:index',  '_route' => 'condors_tn_mall_homepage',);
+            return array (  '_controller' => 'Condors\\TnMallBundle\\Controller\\SimpleVisitorController::indexAction',  '_route' => 'condors_tn_mall_homepage',);
         }
 
         // condors_tn_mall_account
-        if ($pathinfo === '/account') {
+        if ($pathinfo === '/user/account') {
             return array (  '_controller' => 'Condors\\TnMallBundle\\Controller\\SimpleVisitorController::myAccountAction',  '_route' => 'condors_tn_mall_account',);
+        }
+
+        if (0 === strpos($pathinfo, '/re')) {
+            // condors_tn_mall_pro_regsitration
+            if ($pathinfo === '/responsable/register') {
+                return array (  '_controller' => 'Condors\\TnMallBundle\\Controller\\RegistrationController::registerBrandAction',  '_route' => 'condors_tn_mall_pro_regsitration',);
+            }
+
+            // condors_tn_mall_regsitration
+            if ($pathinfo === '/register') {
+                return array (  '_controller' => 'Condors\\TnMallBundle\\Controller\\RegistrationController::registerUserAction',  '_route' => 'condors_tn_mall_regsitration',);
+            }
+
         }
 
         // homepage
@@ -197,58 +210,40 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         }
 
         if (0 === strpos($pathinfo, '/re')) {
-            if (0 === strpos($pathinfo, '/register')) {
-                // fos_user_registration_register
-                if (rtrim($pathinfo, '/') === '/register') {
-                    if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
-                        $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
-                        goto not_fos_user_registration_register;
+            if (0 === strpos($pathinfo, '/register/c')) {
+                // fos_user_registration_check_email
+                if ($pathinfo === '/register/check-email') {
+                    if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'HEAD'));
+                        goto not_fos_user_registration_check_email;
                     }
 
-                    if (substr($pathinfo, -1) !== '/') {
-                        return $this->redirect($pathinfo.'/', 'fos_user_registration_register');
-                    }
-
-                    return array (  '_controller' => 'FOS\\UserBundle\\Controller\\RegistrationController::registerAction',  '_route' => 'fos_user_registration_register',);
+                    return array (  '_controller' => 'Condors\\TnMallBundle\\Controller\\RegistrationController::checkEmailAction',  '_route' => 'fos_user_registration_check_email',);
                 }
-                not_fos_user_registration_register:
+                not_fos_user_registration_check_email:
 
-                if (0 === strpos($pathinfo, '/register/c')) {
-                    // fos_user_registration_check_email
-                    if ($pathinfo === '/register/check-email') {
+                if (0 === strpos($pathinfo, '/register/confirm')) {
+                    // fos_user_registration_confirm
+                    if (preg_match('#^/register/confirm/(?P<token>[^/]++)$#s', $pathinfo, $matches)) {
                         if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
                             $allow = array_merge($allow, array('GET', 'HEAD'));
-                            goto not_fos_user_registration_check_email;
+                            goto not_fos_user_registration_confirm;
                         }
 
-                        return array (  '_controller' => 'FOS\\UserBundle\\Controller\\RegistrationController::checkEmailAction',  '_route' => 'fos_user_registration_check_email',);
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'fos_user_registration_confirm')), array (  '_controller' => 'Condors\\TnMallBundle\\Controller\\RegistrationController::confirmAction',));
                     }
-                    not_fos_user_registration_check_email:
+                    not_fos_user_registration_confirm:
 
-                    if (0 === strpos($pathinfo, '/register/confirm')) {
-                        // fos_user_registration_confirm
-                        if (preg_match('#^/register/confirm/(?P<token>[^/]++)$#s', $pathinfo, $matches)) {
-                            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
-                                $allow = array_merge($allow, array('GET', 'HEAD'));
-                                goto not_fos_user_registration_confirm;
-                            }
-
-                            return $this->mergeDefaults(array_replace($matches, array('_route' => 'fos_user_registration_confirm')), array (  '_controller' => 'FOS\\UserBundle\\Controller\\RegistrationController::confirmAction',));
+                    // fos_user_registration_confirmed
+                    if ($pathinfo === '/register/confirmed') {
+                        if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                            $allow = array_merge($allow, array('GET', 'HEAD'));
+                            goto not_fos_user_registration_confirmed;
                         }
-                        not_fos_user_registration_confirm:
 
-                        // fos_user_registration_confirmed
-                        if ($pathinfo === '/register/confirmed') {
-                            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
-                                $allow = array_merge($allow, array('GET', 'HEAD'));
-                                goto not_fos_user_registration_confirmed;
-                            }
-
-                            return array (  '_controller' => 'FOS\\UserBundle\\Controller\\RegistrationController::confirmedAction',  '_route' => 'fos_user_registration_confirmed',);
-                        }
-                        not_fos_user_registration_confirmed:
-
+                        return array (  '_controller' => 'Condors\\TnMallBundle\\Controller\\RegistrationController::confirmedAction',  '_route' => 'fos_user_registration_confirmed',);
                     }
+                    not_fos_user_registration_confirmed:
 
                 }
 
