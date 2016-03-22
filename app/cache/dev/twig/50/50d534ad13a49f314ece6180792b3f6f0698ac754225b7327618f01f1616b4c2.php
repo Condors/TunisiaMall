@@ -15,8 +15,8 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_e3e715ab945c345b8ea9c56fcfc277690e042c20af458aeebd05960d90799eb0 = $this->env->getExtension("native_profiler");
-        $__internal_e3e715ab945c345b8ea9c56fcfc277690e042c20af458aeebd05960d90799eb0->enter($__internal_e3e715ab945c345b8ea9c56fcfc277690e042c20af458aeebd05960d90799eb0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "CondorsTnMallBundle:SimpleVisitor:index.html.twig"));
+        $__internal_1045504b0e66a4ce1f02022b9b8fc3b897109745357f2d51da72fd89e4f43dd4 = $this->env->getExtension("native_profiler");
+        $__internal_1045504b0e66a4ce1f02022b9b8fc3b897109745357f2d51da72fd89e4f43dd4->enter($__internal_1045504b0e66a4ce1f02022b9b8fc3b897109745357f2d51da72fd89e4f43dd4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "CondorsTnMallBundle:SimpleVisitor:index.html.twig"));
 
         // line 1
         echo "<!doctype html>
@@ -86,194 +86,12 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
 
 <body>
     <div class=\"site animsition\">
-        <header class=\"yolo-header header_transparent header-2\">
-            <div class=\"navbar-wrapper\">
-                <div class=\"navbar navbar-default\">
-                    <div class=\"yolo-topbar\">
-                        <div class=\"topbar-inner container-boxed\">
-                            <div class=\"container\">
-                                <div class=\"topbar-left pull-left\">
-                                    <!--                                    Free Shipping on All Orders Over <span>\$49</span>-->
-
-                                    <ul class=\"yolo-top-menu hidden-phone\">
-                                        <li class=\"menu-item\"><a href=\"about-us.html\">About <span>Us</span></a></li>
-                                        <li class=\"menu-item\"><a href=\"contact-us.html\">Contact <span>Us</span></a></li>
-                                        <li class=\"menu-item\"><a href=\"faq.html\"><i class=\"fa fa-comments-o\"></i>&nbsp;FAQ</a></li>
-
-                                    </ul>
-
-
-                                </div>
-                                <div class=\"topbar-right pull-right\">
-                                    <ul class=\"yolo-top-menu hidden-phone\">
-                                        <li class=\"menu-item\"><a href=\"#\"><i class=\"fa fa-language\"></i>&nbsp;Language</a></li>
-                                       
-                                        <li class=\"menu-item\"><a href=\"wishlist.html\"><i class=\"fa fa-heart-o\"></i>&nbsp;Wishlist</a></li>
-                                        <li class=\"menu-item\">
-                                            <a class=\"login-url\" href=\"";
-        // line 59
-        echo $this->env->getExtension('routing')->getPath("fos_user_security_login");
-        echo "\">
-                                                <i class=\"fa fa-sign-in\"></i>&nbsp;Login
-                                            </a>
-                                        </li>
-                                        <li class=\"menu-item\">
-                                            <a class=\"register-url\" href=\"my-account.html\">
-                                                <i class=\"fa fa-key\"></i>&nbsp;Register
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.topbar-inner -->
-                    </div>
-                    <!-- /.topbar -->
-                    <div class=\"site-header\">
-                        <div class=\"container\">
-                            <div class=\"yolo-nav-wrap\">
-                                <button data-target=\".nav-collapse\" class=\"btn-navbar yolo_icon_menu\" type=\"button\">
-                                    <i class=\"fa fa-bars\"></i>
-                                </button>
-                                <a href=\"index.html\" class=\"navbar-brand\">
-                                    <img class=\"yolo-logo-img yolo-logo-normal\" width=\"150\" height=\"150\" src=\"";
-        // line 82
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/logoo.png"), "html", null, true);
-        echo "\" alt=\"Logo\">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\"yolo-wrap-menu fixed_top\">
-                        <div class=\"container\">
-                            <div class=\"navbar-header pull-left\">
-                                <a href=\"index.html\" class=\"navbar-brand\">
-                                    <img class=\"yolo-logo-img yolo-logo-fixed\" width=\"60\" height=\"60\" src=\"";
-        // line 91
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/logo-fixed.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                </a>
-                            </div>
-                            <!-- / .nav-header -->
-                            <nav class=\"yolo-main-menu\">
-                                <ul class=\"nav-collapse navbar-nav\">
-                                    <li class=\"menu-item current-menu-item menu-item-has-children\">
-                                        <a href=\"index.html\">Home</a>
-
-                                    </li>
-
-                                    <style>
-                                        #subWomen {
-                                            position: absolute;
-                                            top: auto;
-                                            left: auto;
-                                        }
-                                        
-                                        #subsub {
-                                            position: absolute;
-                                            top: auto;
-                                            left: auto;
-                                        }
-                                        
-                                        #womenOn {
-                                            z-index: auto;
-                                            position: absolute;
-                                            top: auto;
-                                            left: -65px;
-                                            min-width: 900%;
-                                        }
-                                        
-                                        #manOn {
-                                            z-index: auto;
-                                            position: absolute;
-                                            top: auto;
-                                            left: -312px;
-                                            min-width: 1200%;
-                                        }
-                                        
-                                        #AllCategories {
-                                            height: 50px;
-                                        }
-                                        
-                                        #AllCategoriesInWommen {
-                                            margin: -22px;
-                                        }
-                                        
-                                        #AllCategoriesInMan {
-                                            margin: -22px;
-                                        }
-                                    </style>
-                                    <!--                                    Begin Categorie-->
-                                    <li class=\"yolo_megamenu mega-col-columns-5 menu-item\">
-                                        <a href=\"shop-by-category.html\">Categories</a>
-                                        
-
-
-                                    </li>
-
-
-                                    <!--                                    End Categorie-->
-                                    <li class=\"menu-item menu-item-has-children\">
-                                        <a href=\"category.html\">Brands</a>
-
-                                    </li>
-                                    <li class=\"yolo_megamenu mega-col-columns-4 menu-item menu-item-has-children\">
-                                        <a href=\"shop.html\">Promotions</a>
-
-                                    </li>
-                                    <li class=\"menu-item menu-item-has-children\">
-                                        <a href=\"blog.html\">Events</a>
-                                        <ul class=\"sub-menu\">
-                                            <li class=\"menu-item\"><a href=\"blog-list.html\">Shop Events / Specials</a></li>
-                                            <li class=\"menu-item\"><a href=\"blog-grid.html\">Mall Events</a></li>
-
-                                            <li class=\"menu-item\"><a href=\"blog-timeline.html\">Kids Events</a></li>
-
-                                        </ul>
-                                    </li>
-                                    <li class=\"menu-item menu-item-has-children\">
-                                        <a href=\"#\">Blog</a>
-
-                                    </li>
-                                    <li class=\"menu-item yolo-menu-item-cart minicart\">
-                                        <a class=\"cart-button\" href=\"cart.html\">
-                                            <span class=\"cart-item\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-shopping-cart\"></i>
-\t\t\t\t\t\t\t\t\t\t\t\t</span>
-                                        </a>
-                                        <div class=\"yolo-minicart\">
-                                            <div class=\"minicart-header\">Your shopping bag is empty.</div>
-                                            <div class=\"minicart-footer\">
-                                                <div class=\"minicart-actions clearfix\">
-                                                    <a class=\"button pull-left\" href=\"shop.html\">
-                                                        <span class=\"text\">Go to the shop</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class=\"menu-item yolo-menu-item-search\">
-                                        <a class=\"search-button\" href=\"javascript:void(0)\"><i class=\"fa fa-search\"></i></a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <div class=\"yolo-search searchbar\">
-                        <form id=\"form-header\">
-                            <div class=\"search-input\">
-                                <input type=\"text\" value=\"\" name=\"s\" placeholder=\"Enter keyword to search...\">
-                                <input type=\"submit\" value=\"Search\" />
-                                <img class=\"search-remove\" src=\"";
-        // line 204
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/remove_white.png"), "html", null, true);
-        echo "\" alt=\"remove\">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </header>
+        <!-- header -->
+         ";
+        // line 36
+        echo twig_include($this->env, $context, "CondorsTnMallBundle::header.html.twig");
+        echo "
+        <!-- End Header -->
         <div class=\"content-area\">
             <!-- Begin The loop -->
             <section>
@@ -285,12 +103,12 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                     <ul>
                                         <!-- SLIDE  -->
                                         <li data-transition=\"notransition\" data-slotamount=\"default\" data-easein=\"default\" data-easeout=\"default\" data-masterspeed=\"default\" data-thumb=\"";
-        // line 221
+        // line 48
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/banner/thumb-1.jpg"), "html", null, true);
         echo "\" data-rotate=\"0\" data-saveperformance=\"off\" data-title=\"Slide\">
                                             <!-- MAIN IMAGE -->
                                             <img src=\"";
-        // line 223
+        // line 50
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/banner/dummy.png"), "html", null, true);
         echo "\" alt=\"\" width=\"1920\" height=\"925\" data-lazyload=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/banner/banner-1.jpg"), "html", null, true);
@@ -319,12 +137,12 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                         </li>
                                         <!-- SLIDE  -->
                                         <li data-transition=\"fade,boxslide,slotslide-horizontal,slotslide-vertical,boxfade,fadefromright\" data-slotamount=\"default,default,default,default,default,default\" data-easein=\"default,default,default,default,default,default\" data-easeout=\"default,default,default,default,default,default\" data-masterspeed=\"default,default,default,default,default,default\" data-thumb=\"";
-        // line 247
+        // line 74
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/banner/thumb-2.jpg"), "html", null, true);
         echo "\" data-rotate=\"0,0,0,0,0,0\" data-saveperformance=\"off\" data-title=\"Slide\">
                                             <!-- MAIN IMAGE -->
                                             <img src=\"";
-        // line 249
+        // line 76
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/banner/dummy.png"), "html", null, true);
         echo "\" alt=\"\" width=\"1920\" height=\"925\" data-lazyload=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/banner/banner-2.jpg"), "html", null, true);
@@ -348,12 +166,12 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
 
                                         <!-- SLIDE  -->
                                         <li data-transition=\"fade,scaledownfromright,scaledownfromleft,slideup,slideremoveup,slideremoveleft,slideremoveright,slideremovedown,parallaxtoright,parallaxtoleft\" data-slotamount=\"default,default,default,default,default,default,default,default,default,default\" data-easein=\"default,default,default,default,default,default,default,default,default,default\" data-easeout=\"default,default,default,default,default,default,default,default,default,default\" data-masterspeed=\"default,default,default,default,default,default,default,default,default,default\" data-thumb=\"";
-        // line 268
+        // line 95
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/banner/thumb-3.jpg"), "html", null, true);
         echo "\" data-rotate=\"0,0,0,0,0,0,0,0,0,0\" data-saveperformance=\"off\" data-title=\"Slide\">
                                             <!-- MAIN IMAGE -->
                                             <img src=\"";
-        // line 270
+        // line 97
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/banner/dummy.png"), "html", null, true);
         echo "\" alt=\"\" width=\"1920\" height=\"925\" data-lazyload=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/banner/banner-3.jpg"), "html", null, true);
@@ -509,25 +327,39 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                 <div class=\"tab-pane fade in active\" id=\"tab-1\">
                                     <div class=\"row-slider commerce carousel-3-items\">
                                         <ul class=\"yolo-woo-slider carousel-items products\">
+                                            
+                                            ";
+        // line 250
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["newProduit"]) ? $context["newProduit"] : $this->getContext($context, "newProduit")));
+        foreach ($context['_seq'] as $context["_key"] => $context["prodNew"]) {
+            // line 251
+            echo "                                                
                                             <li class=\"col-md-4 col-sm-6 col-xs-12 yolo-product-item\">
                                                 <div class=\"yolo-product-inner\">
                                                     <div class=\"product-thumbnail\">
                                                         <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
+                                                            
                                                             <img width=\"500\" height=\"700\" src=\"";
-        // line 426
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-1.jpg"), "html", null, true);
-        echo "\" alt=\"\" />
+            // line 257
+            echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("uploads/pictures/"), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute($context["prodNew"], "imageprodfront", array()), "html", null, true);
+            echo "\" alt=\"\" />
                                                         </div>
                                                         <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                             <img width=\"500\" height=\"700\" src=\"";
-        // line 429
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-1-alt.jpg"), "html", null, true);
-        echo "\" alt=\"\" />
+            // line 260
+            echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("uploads/pictures/"), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute($context["prodNew"], "imageprodback", array()), "html", null, true);
+            echo "\" alt=\"\" />
                                                         </div>
                                                         <div class=\"yolo-product-meta\">
                                                             <div class=\"entry-cart-meta\">
                                                                 <a href=\"#\" class=\"button add_to_cart_button product_type_simple\">Add to cart</a>
-                                                                <a class=\"shop-loop-quickview\" href=\"shop-detail.html\">Quick shop</a>
+                                                                <a class=\"shop-loop-quickview\" href=\"";
+            // line 265
+            echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("condors_tn_mall_shopDetail", array("id" => $this->getAttribute($context["prodNew"], "idProduit", array()))), "html", null, true);
+            echo "#focus\">Quick shop</a>
                                                                 <div class=\"yith-wcwl-add-to-wishlist\">
                                                                     <div class=\"yith-wcwl-add-button\">
                                                                         <a href=\"#\" class=\"add_to_wishlist\">
@@ -540,127 +372,29 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                                         </div>
                                                     </div>
                                                     <div class=\"yolo-product-footer clearfix\">
-                                                        <h3><a href=\"shop-detail.html\">Converse Short</a></h3>
+                                                        <h3><a href=\"";
+            // line 278
+            echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("condors_tn_mall_shopDetail", array("id" => $this->getAttribute($context["prodNew"], "idProduit", array()))), "html", null, true);
+            echo "#focus\">";
+            echo twig_escape_filter($this->env, $this->getAttribute($context["prodNew"], "libelleProduit", array()), "html", null, true);
+            echo "</a></h3>
                                                         <span class=\"price\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"amount\">&#36;150</span>
+\t\t\t\t\t\t\t<span class=\"amount\">&#36;";
+            // line 280
+            echo twig_escape_filter($this->env, $this->getAttribute($context["prodNew"], "prixProduit", array()), "html", null, true);
+            echo "</span>
                                                         </span>
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class=\"col-md-4 col-sm-6 col-xs-12 yolo-product-item\">
-                                                <div class=\"yolo-product-inner\">
-                                                    <div class=\"product-thumbnail\">
-                                                        <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
-                                                            <img width=\"500\" height=\"700\" src=\"";
-        // line 458
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-2.jpg"), "html", null, true);
-        echo "\" alt=\"\" />
-                                                        </div>
-                                                        <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
-                                                            <img width=\"500\" height=\"700\" src=\"";
-        // line 461
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-2-alt.jpg"), "html", null, true);
-        echo "\" alt=\"\" />
-                                                        </div>
-                                                        <div class=\"yolo-product-meta\">
-                                                            <div class=\"entry-cart-meta\">
-                                                                <a href=\"#\" class=\"button add_to_cart_button product_type_simple\">Add to cart</a>
-                                                                <a class=\"shop-loop-quickview\" href=\"shop-detail.html\">Quick shop</a>
-                                                                <div class=\"yith-wcwl-add-to-wishlist\">
-                                                                    <div class=\"yith-wcwl-add-button\">
-                                                                        <a href=\"#\" class=\"add_to_wishlist\">
-\t                                                                                Add to Wishlist
-\t                                                                            </a>
-                                                                    </div>
-                                                                </div>
-                                                                <div class=\"clear\"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class=\"yolo-product-footer clearfix\">
-                                                        <h3><a href=\"shop-detail.html\">Wool-Blend Peacoat</a></h3>
-                                                        <span class=\"price\">
-\t    \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"amount\">&#36;100</span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class=\"col-md-4 col-sm-6 col-xs-12 yolo-product-item\">
-                                                <div class=\"yolo-product-inner\">
-                                                    <div class=\"product-thumbnail\">
-                                                        <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
-                                                            <img width=\"500\" height=\"700\" src=\"";
-        // line 490
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-3.jpg"), "html", null, true);
-        echo "\" alt=\"\" />
-                                                        </div>
-                                                        <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
-                                                            <img width=\"500\" height=\"700\" src=\"";
-        // line 493
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-3-alt.jpg"), "html", null, true);
-        echo "\" alt=\"\" />
-                                                        </div>
-                                                        <div class=\"yolo-product-meta\">
-                                                            <div class=\"entry-cart-meta\">
-                                                                <a href=\"#\" class=\"button add_to_cart_button product_type_simple\">Add to cart</a>
-                                                                <a class=\"shop-loop-quickview\" href=\"shop-detail.html\">Quick shop</a>
-                                                                <div class=\"yith-wcwl-add-to-wishlist\">
-                                                                    <div class=\"yith-wcwl-add-button\">
-                                                                        <a href=\"#\" class=\"add_to_wishlist\">
-\t                                                                                Add to Wishlist
-\t                                                                            </a>
-                                                                    </div>
-                                                                </div>
-                                                                <div class=\"clear\"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class=\"yolo-product-footer clearfix\">
-                                                        <h3><a href=\"shop-detail.html\">Superdry Rookie Pet</a></h3>
-                                                        <span class=\"price\">
-\t    \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"amount\">&#36;130</span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class=\"col-md-4 col-sm-6 col-xs-12 yolo-product-item\">
-                                                <div class=\"yolo-product-inner\">
-                                                    <div class=\"product-thumbnail\">
-                                                        <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
-                                                            <img width=\"500\" height=\"700\" src=\"";
-        // line 522
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-4.jpg"), "html", null, true);
-        echo "\" alt=\"\" />
-                                                        </div>
-                                                        <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
-                                                            <img width=\"500\" height=\"700\" src=\"";
-        // line 525
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-4-alt.jpg"), "html", null, true);
-        echo "\" alt=\"\" />
-                                                        </div>
-                                                        <div class=\"yolo-product-meta\">
-                                                            <div class=\"entry-cart-meta\">
-                                                                <a href=\"#\" class=\"button add_to_cart_button product_type_simple\">Add to cart</a>
-                                                                <a class=\"shop-loop-quickview\" href=\"shop-detail.html\">Quick shop</a>
-                                                                <div class=\"yith-wcwl-add-to-wishlist\">
-                                                                    <div class=\"yith-wcwl-add-button\">
-                                                                        <a href=\"#\" class=\"add_to_wishlist\">
-\t                                                                                Add to Wishlist
-\t                                                                            </a>
-                                                                    </div>
-                                                                </div>
-                                                                <div class=\"clear\"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class=\"yolo-product-footer clearfix\">
-                                                        <h3><a href=\"shop-detail.html\">Lightweight Overcoat</a></h3>
-                                                        <span class=\"price\">
-\t    \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"amount\">&#36;190</span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </li>
+                                            
+                                            ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['prodNew'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 287
+        echo "                                            
                                         </ul>
                                         <div class=\"nav_prev\"><i class=\"fa fa-chevron-left\"></i></div>
                                         <div class=\"nav_next\"><i class=\"fa fa-chevron-right\"></i></div>
@@ -674,13 +408,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                                     <div class=\"product-thumbnail\">
                                                         <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                             <img width=\"500\" height=\"700\" src=\"";
-        // line 562
+        // line 300
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-5.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                         </div>
                                                         <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                             <img width=\"500\" height=\"700\" src=\"";
-        // line 565
+        // line 303
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-5-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                         </div>
@@ -713,13 +447,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                                         <span class=\"onsale\">Sale!</span>
                                                         <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                             <img width=\"500\" height=\"700\" src=\"";
-        // line 595
+        // line 333
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-6.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                         </div>
                                                         <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                             <img width=\"500\" height=\"700\" src=\"";
-        // line 598
+        // line 336
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-6-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                         </div>
@@ -757,13 +491,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                                         <span class=\"onsale\">Sale!</span>
                                                         <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                             <img width=\"500\" height=\"700\" src=\"";
-        // line 633
+        // line 371
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-7.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                         </div>
                                                         <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                             <img width=\"500\" height=\"700\" src=\"";
-        // line 636
+        // line 374
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-7-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                         </div>
@@ -801,13 +535,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                                         <span class=\"onsale\">Sale!</span>
                                                         <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                             <img width=\"500\" height=\"700\" src=\"";
-        // line 671
+        // line 409
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-8.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                         </div>
                                                         <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                             <img width=\"500\" height=\"700\" src=\"";
-        // line 674
+        // line 412
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-8-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                         </div>
@@ -844,13 +578,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                                     <div class=\"product-thumbnail\">
                                                         <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                             <img width=\"500\" height=\"700\" src=\"";
-        // line 708
+        // line 446
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-9.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                         </div>
                                                         <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                             <img width=\"500\" height=\"700\" src=\"";
-        // line 711
+        // line 449
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-9-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                         </div>
@@ -890,13 +624,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                                     <div class=\"product-thumbnail\">
                                                         <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                             <img width=\"500\" height=\"700\" src=\"";
-        // line 748
+        // line 486
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-1.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                         </div>
                                                         <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                             <img width=\"500\" height=\"700\" src=\"";
-        // line 751
+        // line 489
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-1-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                         </div>
@@ -928,13 +662,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                                     <div class=\"product-thumbnail\">
                                                         <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                             <img width=\"500\" height=\"700\" src=\"";
-        // line 780
+        // line 518
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-2.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                         </div>
                                                         <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                             <img width=\"500\" height=\"700\" src=\"";
-        // line 783
+        // line 521
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-2-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                         </div>
@@ -966,13 +700,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                                     <div class=\"product-thumbnail\">
                                                         <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                             <img width=\"500\" height=\"700\" src=\"";
-        // line 812
+        // line 550
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-3.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                         </div>
                                                         <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                             <img width=\"500\" height=\"700\" src=\"";
-        // line 815
+        // line 553
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-3-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                         </div>
@@ -1004,13 +738,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                                     <div class=\"product-thumbnail\">
                                                         <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                             <img width=\"500\" height=\"700\" src=\"";
-        // line 844
+        // line 582
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-4.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                         </div>
                                                         <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                             <img width=\"500\" height=\"700\" src=\"";
-        // line 847
+        // line 585
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-4-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                         </div>
@@ -1051,13 +785,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                                         <span class=\"onsale\">Sale!</span>
                                                         <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                             <img width=\"500\" height=\"700\" src=\"";
-        // line 885
+        // line 623
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-11.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                         </div>
                                                         <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                             <img width=\"500\" height=\"700\" src=\"";
-        // line 888
+        // line 626
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-11-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                         </div>
@@ -1091,13 +825,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                                         <span class=\"onsale\">Sale!</span>
                                                         <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                             <img width=\"500\" height=\"700\" src=\"";
-        // line 919
+        // line 657
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-12.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                         </div>
                                                         <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                             <img width=\"500\" height=\"700\" src=\"";
-        // line 922
+        // line 660
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-12-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                         </div>
@@ -1131,13 +865,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                                         <span class=\"onsale\">Sale!</span>
                                                         <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                             <img width=\"500\" height=\"700\" src=\"";
-        // line 953
+        // line 691
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-13.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                         </div>
                                                         <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                             <img width=\"500\" height=\"700\" src=\"";
-        // line 956
+        // line 694
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-13-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                         </div>
@@ -1171,13 +905,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                                         <span class=\"onsale\">Sale!</span>
                                                         <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                             <img width=\"500\" height=\"700\" src=\"";
-        // line 987
+        // line 725
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-8.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                         </div>
                                                         <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                             <img width=\"500\" height=\"700\" src=\"";
-        // line 990
+        // line 728
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-8-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                         </div>
@@ -1232,7 +966,7 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                         <div class=\"col-md-4 col-sm-4\">
                             <div class=\"action-center\">
                                 <a href=\"#\"><img src=\"";
-        // line 1042
+        // line 780
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/logo-saleup.png"), "html", null, true);
         echo "\" alt=\"\" /></a>
                             </div>
@@ -1265,13 +999,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                             <span class=\"onsale\">Sale!</span>
                                             <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                 <img width=\"500\" height=\"700\" src=\"";
-        // line 1072
+        // line 810
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-15.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                             </div>
                                             <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                 <img width=\"500\" height=\"700\" src=\"";
-        // line 1075
+        // line 813
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-15-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                             </div>
@@ -1305,13 +1039,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                             <span class=\"onsale\">Sale!</span>
                                             <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                 <img width=\"500\" height=\"700\" src=\"";
-        // line 1106
+        // line 844
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-12.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                             </div>
                                             <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                 <img width=\"500\" height=\"700\" src=\"";
-        // line 1109
+        // line 847
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-12-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                             </div>
@@ -1344,13 +1078,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                         <div class=\"product-thumbnail\">
                                             <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                 <img width=\"500\" height=\"700\" src=\"";
-        // line 1139
+        // line 877
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-16.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                             </div>
                                             <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                 <img width=\"500\" height=\"700\" src=\"";
-        // line 1142
+        // line 880
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-16-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                             </div>
@@ -1383,13 +1117,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                             <span class=\"onsale\">Sale!</span>
                                             <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                 <img width=\"500\" height=\"700\" src=\"";
-        // line 1172
+        // line 910
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-11.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                             </div>
                                             <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                 <img width=\"500\" height=\"700\" src=\"";
-        // line 1175
+        // line 913
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-11-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                             </div>
@@ -1422,13 +1156,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                         <div class=\"product-thumbnail\">
                                             <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                 <img width=\"500\" height=\"700\" src=\"";
-        // line 1205
+        // line 943
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-1.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                             </div>
                                             <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                 <img width=\"500\" height=\"700\" src=\"";
-        // line 1208
+        // line 946
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-1-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                             </div>
@@ -1525,13 +1259,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                         <div class=\"product-thumbnail\">
                                             <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                 <img width=\"500\" height=\"700\" src=\"";
-        // line 1302
+        // line 1040
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-17.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                             </div>
                                             <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                 <img width=\"500\" height=\"700\" src=\"";
-        // line 1305
+        // line 1043
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-17-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                             </div>
@@ -1564,13 +1298,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                             <span class=\"onsale\">Sale!</span>
                                             <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                 <img width=\"500\" height=\"700\" src=\"";
-        // line 1335
+        // line 1073
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-15.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                             </div>
                                             <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                 <img width=\"500\" height=\"700\" src=\"";
-        // line 1338
+        // line 1076
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-15-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                             </div>
@@ -1604,13 +1338,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                             <span class=\"onsale\">Sale!</span>
                                             <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                 <img width=\"500\" height=\"700\" src=\"";
-        // line 1369
+        // line 1107
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-18.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                             </div>
                                             <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                 <img width=\"500\" height=\"700\" src=\"";
-        // line 1372
+        // line 1110
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-18-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                             </div>
@@ -1644,13 +1378,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                             <span class=\"onsale\">Sale!</span>
                                             <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                 <img width=\"500\" height=\"700\" src=\"";
-        // line 1403
+        // line 1141
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-11.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                             </div>
                                             <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                 <img width=\"500\" height=\"700\" src=\"";
-        // line 1406
+        // line 1144
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-11-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                             </div>
@@ -1683,13 +1417,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                         <div class=\"product-thumbnail\">
                                             <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                 <img width=\"500\" height=\"700\" src=\"";
-        // line 1436
+        // line 1174
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-1.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                             </div>
                                             <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                 <img width=\"500\" height=\"700\" src=\"";
-        // line 1439
+        // line 1177
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-1-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                             </div>
@@ -1739,7 +1473,7 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                     <div class=\"loop-item-featured\">
                                         <a href=\"blog-detail.html\">
                                             <img width=\"600\" height=\"450\" src=\"";
-        // line 1486
+        // line 1224
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/blog/blog-1.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                         </a>
@@ -1770,7 +1504,7 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                     <div class=\"loop-item-featured\">
                                         <a href=\"blog-detail.html\">
                                             <img width=\"600\" height=\"450\" src=\"";
-        // line 1514
+        // line 1252
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/blog/blog-2.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                         </a>
@@ -1820,7 +1554,7 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                         </div>
                                         <div class=\"yl-img-name\">
                                             <img class=\"yl-img\" src=\"";
-        // line 1561
+        // line 1299
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/avatar/author-3.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                             <p class=\"yl-name-under-image\">John Smith</p>
@@ -1840,7 +1574,7 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                         </div>
                                         <div class=\"yl-img-name\">
                                             <img class=\"yl-img\" src=\"";
-        // line 1578
+        // line 1316
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/avatar/author-2.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                             <p class=\"yl-name-under-image\">Robert Wiliam</p>
@@ -1860,7 +1594,7 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                         </div>
                                         <div class=\"yl-img-name\">
                                             <img class=\"yl-img\" src=\"";
-        // line 1595
+        // line 1333
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/avatar/author-1.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                             <p class=\"yl-name-under-image\">Jonathan Doe</p>
@@ -1891,13 +1625,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                                 <span class=\"onsale\">Sale!</span>
                                                 <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                     <img width=\"500\" height=\"700\" src=\"";
-        // line 1623
+        // line 1361
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-15.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                 </div>
                                                 <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                     <img width=\"500\" height=\"700\" src=\"";
-        // line 1626
+        // line 1364
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-15-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                 </div>
@@ -1933,13 +1667,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                             <div class=\"product-thumbnail\">
                                                 <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                     <img width=\"500\" height=\"700\" src=\"";
-        // line 1659
+        // line 1397
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-5.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                 </div>
                                                 <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                     <img width=\"500\" height=\"700\" src=\"";
-        // line 1662
+        // line 1400
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-5-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                 </div>
@@ -1984,13 +1718,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                                 <span class=\"onsale\">Sale!</span>
                                                 <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                     <img width=\"500\" height=\"700\" src=\"";
-        // line 1704
+        // line 1442
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-15.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                 </div>
                                                 <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                     <img width=\"500\" height=\"700\" src=\"";
-        // line 1707
+        // line 1445
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-15-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                 </div>
@@ -2027,13 +1761,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                                 <span class=\"onsale\">Sale!</span>
                                                 <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                     <img width=\"500\" height=\"700\" src=\"";
-        // line 1741
+        // line 1479
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-12.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                 </div>
                                                 <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                     <img width=\"500\" height=\"700\" src=\"";
-        // line 1744
+        // line 1482
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-12-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                 </div>
@@ -2079,13 +1813,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                                 <span class=\"onsale\">Sale!</span>
                                                 <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                     <img width=\"500\" height=\"700\" src=\"";
-        // line 1787
+        // line 1525
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-11.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                 </div>
                                                 <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                     <img width=\"500\" height=\"700\" src=\"";
-        // line 1790
+        // line 1528
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-11-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                 </div>
@@ -2122,13 +1856,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                                 <span class=\"onsale\">Sale!</span>
                                                 <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                     <img width=\"500\" height=\"700\" src=\"";
-        // line 1824
+        // line 1562
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-12.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                 </div>
                                                 <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                     <img width=\"500\" height=\"700\" src=\"";
-        // line 1827
+        // line 1565
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-12-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                 </div>
@@ -2173,13 +1907,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                             <div class=\"product-thumbnail\">
                                                 <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                     <img width=\"500\" height=\"700\" src=\"";
-        // line 1869
+        // line 1607
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-10.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                 </div>
                                                 <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                     <img width=\"500\" height=\"700\" src=\"";
-        // line 1872
+        // line 1610
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-10-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                 </div>
@@ -2215,13 +1949,13 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                                 <span class=\"onsale\">Sale!</span>
                                                 <div class=\"yolo-product-thumbnail yolo-product-front-thumbnail\">
                                                     <img width=\"500\" height=\"700\" src=\"";
-        // line 1905
+        // line 1643
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-11.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                 </div>
                                                 <div class=\"yolo-product-thumbnail yolo-product-back-thumbnail\">
                                                     <img width=\"500\" height=\"700\" src=\"";
-        // line 1908
+        // line 1646
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/product/product-11-alt.jpg"), "html", null, true);
         echo "\" alt=\"\" />
                                                 </div>
@@ -2270,43 +2004,43 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
                                 <ul class=\"yolo_clients carousel-items\">
                                     <li class=\"yolo_client_item\">
                                         <img width=\"150\" height=\"150\" src=\"";
-        // line 1954
+        // line 1692
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/client/client-1.png"), "html", null, true);
         echo "\" alt=\"\" />
                                     </li>
                                     <li class=\"yolo_client_item\">
                                         <img width=\"150\" height=\"150\" src=\"";
-        // line 1957
+        // line 1695
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/client/client-2.png"), "html", null, true);
         echo "\" alt=\"\" />
                                     </li>
                                     <li class=\"yolo_client_item\">
                                         <img width=\"150\" height=\"150\" src=\"";
-        // line 1960
+        // line 1698
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/client/client-3.png"), "html", null, true);
         echo "\" alt=\"\" />
                                     </li>
                                     <li class=\"yolo_client_item\">
                                         <img width=\"150\" height=\"150\" src=\"";
-        // line 1963
+        // line 1701
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/client/client-4.png"), "html", null, true);
         echo "\" alt=\"\" />
                                     </li>
                                     <li class=\"yolo_client_item\">
                                         <img width=\"150\" height=\"150\" src=\"";
-        // line 1966
+        // line 1704
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/client/client-5.png"), "html", null, true);
         echo "\" alt=\"\" />
                                     </li>
                                     <li class=\"yolo_client_item\">
                                         <img width=\"150\" height=\"150\" src=\"";
-        // line 1969
+        // line 1707
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/client/client-6.png"), "html", null, true);
         echo "\" alt=\"\" />
                                     </li>
                                     <li class=\"yolo_client_item\">
                                         <img width=\"150\" height=\"150\" src=\"";
-        // line 1972
+        // line 1710
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/client/client-7.png"), "html", null, true);
         echo "\" alt=\"\" />
                                     </li>
@@ -2443,101 +2177,101 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
 
 
     <script type='text/javascript' src='";
-        // line 2106
+        // line 1844
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/jquery.min.js"), "html", null, true);
         echo "'></script>
     <script type='text/javascript' src='";
-        // line 2107
+        // line 1845
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/jquery-migrate.min.js"), "html", null, true);
         echo "'></script>
     <script type='text/javascript' src='";
-        // line 2108
+        // line 1846
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/modernizr-2.7.1.min.js"), "html", null, true);
         echo "'></script>
     <script type='text/javascript' src='";
-        // line 2109
+        // line 1847
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/jquery.prettyPhoto.js"), "html", null, true);
         echo "'></script>
     <script type='text/javascript' src='";
-        // line 2110
+        // line 1848
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/jquery.prettyPhoto.init.min.js"), "html", null, true);
         echo "'></script>
     <script type='text/javascript' src='";
-        // line 2111
+        // line 1849
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/jquery.selectBox.min.js"), "html", null, true);
         echo "'></script>
     <script type='text/javascript' src='";
-        // line 2112
+        // line 1850
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/smooth-scroll.js"), "html", null, true);
         echo "'></script>
     <script type='text/javascript' src='";
-        // line 2113
+        // line 1851
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/off-cavnas.js"), "html", null, true);
         echo "'></script>
     <script type='text/javascript' src='";
-        // line 2114
+        // line 1852
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/animsition.js"), "html", null, true);
         echo "'></script>
     <script type='text/javascript' src='";
-        // line 2115
+        // line 1853
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/script.js"), "html", null, true);
         echo "'></script>
     <script type='text/javascript' src='";
-        // line 2116
+        // line 1854
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/bootstrap.min.js"), "html", null, true);
         echo "'></script>
     <script type='text/javascript' src='";
-        // line 2117
+        // line 1855
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/imagesloaded.pkgd.min.js"), "html", null, true);
         echo "'></script>
     <script type='text/javascript' src='";
-        // line 2118
+        // line 1856
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/owl.carousel.min.js"), "html", null, true);
         echo "'></script>
     <script type='text/javascript' src='";
-        // line 2119
+        // line 1857
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/jquery.fitvids.js"), "html", null, true);
         echo "'></script>
 
     <script type='text/javascript' src='";
-        // line 2121
+        // line 1859
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/jquery.themepunch.tools.min.js"), "html", null, true);
         echo "'></script>
     <script type='text/javascript' src='";
-        // line 2122
+        // line 1860
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/jquery.themepunch.revolution.min.js"), "html", null, true);
         echo "'></script>
 
     <script type='text/javascript' src='";
-        // line 2124
+        // line 1862
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/extensions/revolution.extension.video.min.js"), "html", null, true);
         echo "'></script>
     <script type='text/javascript' src='";
-        // line 2125
+        // line 1863
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/extensions/revolution.extension.slideanims.min.js"), "html", null, true);
         echo "'></script>
     <script type='text/javascript' src='";
-        // line 2126
+        // line 1864
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/extensions/revolution.extension.actions.min.js"), "html", null, true);
         echo "'></script>
     <script type='text/javascript' src='";
-        // line 2127
+        // line 1865
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/extensions/revolution.extension.layeranimation.min.js"), "html", null, true);
         echo "'></script>
     <script type='text/javascript' src='";
-        // line 2128
+        // line 1866
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/extensions/revolution.extension.kenburn.min.js"), "html", null, true);
         echo "'></script>
     <script type='text/javascript' src='";
-        // line 2129
+        // line 1867
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/extensions/revolution.extension.navigation.min.js"), "html", null, true);
         echo "'></script>
     <script type='text/javascript' src='";
-        // line 2130
+        // line 1868
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/extensions/revolution.extension.migration.min.js"), "html", null, true);
         echo "'></script>
     <script type='text/javascript' src='";
-        // line 2131
+        // line 1869
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/extensions/revolution.extension.parallax.min.js"), "html", null, true);
         echo "'></script>
 </body>
@@ -2546,7 +2280,7 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
 
 </html>";
         
-        $__internal_e3e715ab945c345b8ea9c56fcfc277690e042c20af458aeebd05960d90799eb0->leave($__internal_e3e715ab945c345b8ea9c56fcfc277690e042c20af458aeebd05960d90799eb0_prof);
+        $__internal_1045504b0e66a4ce1f02022b9b8fc3b897109745357f2d51da72fd89e4f43dd4->leave($__internal_1045504b0e66a4ce1f02022b9b8fc3b897109745357f2d51da72fd89e4f43dd4_prof);
 
     }
 
@@ -2562,7 +2296,7 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
 
     public function getDebugInfo()
     {
-        return array (  2541 => 2131,  2537 => 2130,  2533 => 2129,  2529 => 2128,  2525 => 2127,  2521 => 2126,  2517 => 2125,  2513 => 2124,  2508 => 2122,  2504 => 2121,  2499 => 2119,  2495 => 2118,  2491 => 2117,  2487 => 2116,  2483 => 2115,  2479 => 2114,  2475 => 2113,  2471 => 2112,  2467 => 2111,  2463 => 2110,  2459 => 2109,  2455 => 2108,  2451 => 2107,  2447 => 2106,  2310 => 1972,  2304 => 1969,  2298 => 1966,  2292 => 1963,  2286 => 1960,  2280 => 1957,  2274 => 1954,  2225 => 1908,  2219 => 1905,  2183 => 1872,  2177 => 1869,  2132 => 1827,  2126 => 1824,  2089 => 1790,  2083 => 1787,  2037 => 1744,  2031 => 1741,  1994 => 1707,  1988 => 1704,  1943 => 1662,  1937 => 1659,  1901 => 1626,  1895 => 1623,  1864 => 1595,  1844 => 1578,  1824 => 1561,  1774 => 1514,  1743 => 1486,  1693 => 1439,  1687 => 1436,  1654 => 1406,  1648 => 1403,  1614 => 1372,  1608 => 1369,  1574 => 1338,  1568 => 1335,  1535 => 1305,  1529 => 1302,  1432 => 1208,  1426 => 1205,  1393 => 1175,  1387 => 1172,  1354 => 1142,  1348 => 1139,  1315 => 1109,  1309 => 1106,  1275 => 1075,  1269 => 1072,  1236 => 1042,  1181 => 990,  1175 => 987,  1141 => 956,  1135 => 953,  1101 => 922,  1095 => 919,  1061 => 888,  1055 => 885,  1014 => 847,  1008 => 844,  976 => 815,  970 => 812,  938 => 783,  932 => 780,  900 => 751,  894 => 748,  854 => 711,  848 => 708,  811 => 674,  805 => 671,  767 => 636,  761 => 633,  723 => 598,  717 => 595,  684 => 565,  678 => 562,  638 => 525,  632 => 522,  600 => 493,  594 => 490,  562 => 461,  556 => 458,  524 => 429,  518 => 426,  357 => 270,  352 => 268,  328 => 249,  323 => 247,  294 => 223,  289 => 221,  269 => 204,  153 => 91,  141 => 82,  115 => 59,  76 => 23,  72 => 22,  68 => 21,  62 => 18,  58 => 17,  54 => 16,  50 => 15,  46 => 14,  42 => 13,  38 => 12,  32 => 9,  22 => 1,);
+        return array (  2275 => 1869,  2271 => 1868,  2267 => 1867,  2263 => 1866,  2259 => 1865,  2255 => 1864,  2251 => 1863,  2247 => 1862,  2242 => 1860,  2238 => 1859,  2233 => 1857,  2229 => 1856,  2225 => 1855,  2221 => 1854,  2217 => 1853,  2213 => 1852,  2209 => 1851,  2205 => 1850,  2201 => 1849,  2197 => 1848,  2193 => 1847,  2189 => 1846,  2185 => 1845,  2181 => 1844,  2044 => 1710,  2038 => 1707,  2032 => 1704,  2026 => 1701,  2020 => 1698,  2014 => 1695,  2008 => 1692,  1959 => 1646,  1953 => 1643,  1917 => 1610,  1911 => 1607,  1866 => 1565,  1860 => 1562,  1823 => 1528,  1817 => 1525,  1771 => 1482,  1765 => 1479,  1728 => 1445,  1722 => 1442,  1677 => 1400,  1671 => 1397,  1635 => 1364,  1629 => 1361,  1598 => 1333,  1578 => 1316,  1558 => 1299,  1508 => 1252,  1477 => 1224,  1427 => 1177,  1421 => 1174,  1388 => 1144,  1382 => 1141,  1348 => 1110,  1342 => 1107,  1308 => 1076,  1302 => 1073,  1269 => 1043,  1263 => 1040,  1166 => 946,  1160 => 943,  1127 => 913,  1121 => 910,  1088 => 880,  1082 => 877,  1049 => 847,  1043 => 844,  1009 => 813,  1003 => 810,  970 => 780,  915 => 728,  909 => 725,  875 => 694,  869 => 691,  835 => 660,  829 => 657,  795 => 626,  789 => 623,  748 => 585,  742 => 582,  710 => 553,  704 => 550,  672 => 521,  666 => 518,  634 => 489,  628 => 486,  588 => 449,  582 => 446,  545 => 412,  539 => 409,  501 => 374,  495 => 371,  457 => 336,  451 => 333,  418 => 303,  412 => 300,  397 => 287,  384 => 280,  377 => 278,  361 => 265,  352 => 260,  345 => 257,  337 => 251,  333 => 250,  175 => 97,  170 => 95,  146 => 76,  141 => 74,  112 => 50,  107 => 48,  92 => 36,  76 => 23,  72 => 22,  68 => 21,  62 => 18,  58 => 17,  54 => 16,  50 => 15,  46 => 14,  42 => 13,  38 => 12,  32 => 9,  22 => 1,);
     }
 }
 /* <!doctype html>*/
@@ -2599,182 +2333,9 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
 /* */
 /* <body>*/
 /*     <div class="site animsition">*/
-/*         <header class="yolo-header header_transparent header-2">*/
-/*             <div class="navbar-wrapper">*/
-/*                 <div class="navbar navbar-default">*/
-/*                     <div class="yolo-topbar">*/
-/*                         <div class="topbar-inner container-boxed">*/
-/*                             <div class="container">*/
-/*                                 <div class="topbar-left pull-left">*/
-/*                                     <!--                                    Free Shipping on All Orders Over <span>$49</span>-->*/
-/* */
-/*                                     <ul class="yolo-top-menu hidden-phone">*/
-/*                                         <li class="menu-item"><a href="about-us.html">About <span>Us</span></a></li>*/
-/*                                         <li class="menu-item"><a href="contact-us.html">Contact <span>Us</span></a></li>*/
-/*                                         <li class="menu-item"><a href="faq.html"><i class="fa fa-comments-o"></i>&nbsp;FAQ</a></li>*/
-/* */
-/*                                     </ul>*/
-/* */
-/* */
-/*                                 </div>*/
-/*                                 <div class="topbar-right pull-right">*/
-/*                                     <ul class="yolo-top-menu hidden-phone">*/
-/*                                         <li class="menu-item"><a href="#"><i class="fa fa-language"></i>&nbsp;Language</a></li>*/
-/*                                        */
-/*                                         <li class="menu-item"><a href="wishlist.html"><i class="fa fa-heart-o"></i>&nbsp;Wishlist</a></li>*/
-/*                                         <li class="menu-item">*/
-/*                                             <a class="login-url" href="{{path('fos_user_security_login')}}">*/
-/*                                                 <i class="fa fa-sign-in"></i>&nbsp;Login*/
-/*                                             </a>*/
-/*                                         </li>*/
-/*                                         <li class="menu-item">*/
-/*                                             <a class="register-url" href="my-account.html">*/
-/*                                                 <i class="fa fa-key"></i>&nbsp;Register*/
-/*                                             </a>*/
-/*                                         </li>*/
-/*                                     </ul>*/
-/*                                 </div>*/
-/*                             </div>*/
-/*                         </div>*/
-/*                         <!-- /.topbar-inner -->*/
-/*                     </div>*/
-/*                     <!-- /.topbar -->*/
-/*                     <div class="site-header">*/
-/*                         <div class="container">*/
-/*                             <div class="yolo-nav-wrap">*/
-/*                                 <button data-target=".nav-collapse" class="btn-navbar yolo_icon_menu" type="button">*/
-/*                                     <i class="fa fa-bars"></i>*/
-/*                                 </button>*/
-/*                                 <a href="index.html" class="navbar-brand">*/
-/*                                     <img class="yolo-logo-img yolo-logo-normal" width="150" height="150" src="{{ asset('images/logoo.png')}}" alt="Logo">*/
-/*                                 </a>*/
-/*                             </div>*/
-/*                         </div>*/
-/*                     </div>*/
-/*                     <div class="yolo-wrap-menu fixed_top">*/
-/*                         <div class="container">*/
-/*                             <div class="navbar-header pull-left">*/
-/*                                 <a href="index.html" class="navbar-brand">*/
-/*                                     <img class="yolo-logo-img yolo-logo-fixed" width="60" height="60" src="{{ asset('images/logo-fixed.png')}}" alt="">*/
-/*                                 </a>*/
-/*                             </div>*/
-/*                             <!-- / .nav-header -->*/
-/*                             <nav class="yolo-main-menu">*/
-/*                                 <ul class="nav-collapse navbar-nav">*/
-/*                                     <li class="menu-item current-menu-item menu-item-has-children">*/
-/*                                         <a href="index.html">Home</a>*/
-/* */
-/*                                     </li>*/
-/* */
-/*                                     <style>*/
-/*                                         #subWomen {*/
-/*                                             position: absolute;*/
-/*                                             top: auto;*/
-/*                                             left: auto;*/
-/*                                         }*/
-/*                                         */
-/*                                         #subsub {*/
-/*                                             position: absolute;*/
-/*                                             top: auto;*/
-/*                                             left: auto;*/
-/*                                         }*/
-/*                                         */
-/*                                         #womenOn {*/
-/*                                             z-index: auto;*/
-/*                                             position: absolute;*/
-/*                                             top: auto;*/
-/*                                             left: -65px;*/
-/*                                             min-width: 900%;*/
-/*                                         }*/
-/*                                         */
-/*                                         #manOn {*/
-/*                                             z-index: auto;*/
-/*                                             position: absolute;*/
-/*                                             top: auto;*/
-/*                                             left: -312px;*/
-/*                                             min-width: 1200%;*/
-/*                                         }*/
-/*                                         */
-/*                                         #AllCategories {*/
-/*                                             height: 50px;*/
-/*                                         }*/
-/*                                         */
-/*                                         #AllCategoriesInWommen {*/
-/*                                             margin: -22px;*/
-/*                                         }*/
-/*                                         */
-/*                                         #AllCategoriesInMan {*/
-/*                                             margin: -22px;*/
-/*                                         }*/
-/*                                     </style>*/
-/*                                     <!--                                    Begin Categorie-->*/
-/*                                     <li class="yolo_megamenu mega-col-columns-5 menu-item">*/
-/*                                         <a href="shop-by-category.html">Categories</a>*/
-/*                                         */
-/* */
-/* */
-/*                                     </li>*/
-/* */
-/* */
-/*                                     <!--                                    End Categorie-->*/
-/*                                     <li class="menu-item menu-item-has-children">*/
-/*                                         <a href="category.html">Brands</a>*/
-/* */
-/*                                     </li>*/
-/*                                     <li class="yolo_megamenu mega-col-columns-4 menu-item menu-item-has-children">*/
-/*                                         <a href="shop.html">Promotions</a>*/
-/* */
-/*                                     </li>*/
-/*                                     <li class="menu-item menu-item-has-children">*/
-/*                                         <a href="blog.html">Events</a>*/
-/*                                         <ul class="sub-menu">*/
-/*                                             <li class="menu-item"><a href="blog-list.html">Shop Events / Specials</a></li>*/
-/*                                             <li class="menu-item"><a href="blog-grid.html">Mall Events</a></li>*/
-/* */
-/*                                             <li class="menu-item"><a href="blog-timeline.html">Kids Events</a></li>*/
-/* */
-/*                                         </ul>*/
-/*                                     </li>*/
-/*                                     <li class="menu-item menu-item-has-children">*/
-/*                                         <a href="#">Blog</a>*/
-/* */
-/*                                     </li>*/
-/*                                     <li class="menu-item yolo-menu-item-cart minicart">*/
-/*                                         <a class="cart-button" href="cart.html">*/
-/*                                             <span class="cart-item">*/
-/* 													<i class="fa fa-shopping-cart"></i>*/
-/* 												</span>*/
-/*                                         </a>*/
-/*                                         <div class="yolo-minicart">*/
-/*                                             <div class="minicart-header">Your shopping bag is empty.</div>*/
-/*                                             <div class="minicart-footer">*/
-/*                                                 <div class="minicart-actions clearfix">*/
-/*                                                     <a class="button pull-left" href="shop.html">*/
-/*                                                         <span class="text">Go to the shop</span>*/
-/*                                                     </a>*/
-/*                                                 </div>*/
-/*                                             </div>*/
-/*                                         </div>*/
-/*                                     </li>*/
-/*                                     <li class="menu-item yolo-menu-item-search">*/
-/*                                         <a class="search-button" href="javascript:void(0)"><i class="fa fa-search"></i></a>*/
-/*                                     </li>*/
-/*                                 </ul>*/
-/*                             </nav>*/
-/*                         </div>*/
-/*                     </div>*/
-/*                     <div class="yolo-search searchbar">*/
-/*                         <form id="form-header">*/
-/*                             <div class="search-input">*/
-/*                                 <input type="text" value="" name="s" placeholder="Enter keyword to search...">*/
-/*                                 <input type="submit" value="Search" />*/
-/*                                 <img class="search-remove" src="{{ asset('images/remove_white.png')}}" alt="remove">*/
-/*                             </div>*/
-/*                         </form>*/
-/*                     </div>*/
-/*                 </div>*/
-/*             </div>*/
-/*         </header>*/
+/*         <!-- header -->*/
+/*          {{ include('CondorsTnMallBundle::header.html.twig') }}*/
+/*         <!-- End Header -->*/
 /*         <div class="content-area">*/
 /*             <!-- Begin The loop -->*/
 /*             <section>*/
@@ -2986,19 +2547,23 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
 /*                                 <div class="tab-pane fade in active" id="tab-1">*/
 /*                                     <div class="row-slider commerce carousel-3-items">*/
 /*                                         <ul class="yolo-woo-slider carousel-items products">*/
+/*                                             */
+/*                                             {% for prodNew in newProduit %}*/
+/*                                                 */
 /*                                             <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">*/
 /*                                                 <div class="yolo-product-inner">*/
 /*                                                     <div class="product-thumbnail">*/
 /*                                                         <div class="yolo-product-thumbnail yolo-product-front-thumbnail">*/
-/*                                                             <img width="500" height="700" src="{{ asset('images/product/product-1.jpg')}}" alt="" />*/
+/*                                                             */
+/*                                                             <img width="500" height="700" src="{{ asset('uploads/pictures/')}}{{ prodNew.imageprodfront}}" alt="" />*/
 /*                                                         </div>*/
 /*                                                         <div class="yolo-product-thumbnail yolo-product-back-thumbnail">*/
-/*                                                             <img width="500" height="700" src="{{ asset('images/product/product-1-alt.jpg')}}" alt="" />*/
+/*                                                             <img width="500" height="700" src="{{ asset('uploads/pictures/')}}{{ prodNew.imageprodback}}" alt="" />*/
 /*                                                         </div>*/
 /*                                                         <div class="yolo-product-meta">*/
 /*                                                             <div class="entry-cart-meta">*/
 /*                                                                 <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>*/
-/*                                                                 <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>*/
+/*                                                                 <a class="shop-loop-quickview" href="{{ path("condors_tn_mall_shopDetail" , { id: prodNew.idProduit } )  }}#focus">Quick shop</a>*/
 /*                                                                 <div class="yith-wcwl-add-to-wishlist">*/
 /*                                                                     <div class="yith-wcwl-add-button">*/
 /*                                                                         <a href="#" class="add_to_wishlist">*/
@@ -3011,109 +2576,16 @@ class __TwigTemplate_ac00127f9b46ae4ee7c9baad80503e9f8799183bbb054b4a152c3d93e74
 /*                                                         </div>*/
 /*                                                     </div>*/
 /*                                                     <div class="yolo-product-footer clearfix">*/
-/*                                                         <h3><a href="shop-detail.html">Converse Short</a></h3>*/
+/*                                                         <h3><a href="{{ path("condors_tn_mall_shopDetail" , { id: prodNew.idProduit } )  }}#focus">{{ prodNew.libelleProduit}}</a></h3>*/
 /*                                                         <span class="price">*/
-/* 																	<span class="amount">&#36;150</span>*/
+/* 							<span class="amount">&#36;{{ prodNew.prixProduit}}</span>*/
 /*                                                         </span>*/
 /*                                                     </div>*/
 /*                                                 </div>*/
 /*                                             </li>*/
-/*                                             <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">*/
-/*                                                 <div class="yolo-product-inner">*/
-/*                                                     <div class="product-thumbnail">*/
-/*                                                         <div class="yolo-product-thumbnail yolo-product-front-thumbnail">*/
-/*                                                             <img width="500" height="700" src="{{ asset('images/product/product-2.jpg')}}" alt="" />*/
-/*                                                         </div>*/
-/*                                                         <div class="yolo-product-thumbnail yolo-product-back-thumbnail">*/
-/*                                                             <img width="500" height="700" src="{{ asset('images/product/product-2-alt.jpg')}}" alt="" />*/
-/*                                                         </div>*/
-/*                                                         <div class="yolo-product-meta">*/
-/*                                                             <div class="entry-cart-meta">*/
-/*                                                                 <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>*/
-/*                                                                 <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>*/
-/*                                                                 <div class="yith-wcwl-add-to-wishlist">*/
-/*                                                                     <div class="yith-wcwl-add-button">*/
-/*                                                                         <a href="#" class="add_to_wishlist">*/
-/* 	                                                                                Add to Wishlist*/
-/* 	                                                                            </a>*/
-/*                                                                     </div>*/
-/*                                                                 </div>*/
-/*                                                                 <div class="clear"></div>*/
-/*                                                             </div>*/
-/*                                                         </div>*/
-/*                                                     </div>*/
-/*                                                     <div class="yolo-product-footer clearfix">*/
-/*                                                         <h3><a href="shop-detail.html">Wool-Blend Peacoat</a></h3>*/
-/*                                                         <span class="price">*/
-/* 	    															<span class="amount">&#36;100</span>*/
-/*                                                         </span>*/
-/*                                                     </div>*/
-/*                                                 </div>*/
-/*                                             </li>*/
-/*                                             <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">*/
-/*                                                 <div class="yolo-product-inner">*/
-/*                                                     <div class="product-thumbnail">*/
-/*                                                         <div class="yolo-product-thumbnail yolo-product-front-thumbnail">*/
-/*                                                             <img width="500" height="700" src="{{ asset('images/product/product-3.jpg')}}" alt="" />*/
-/*                                                         </div>*/
-/*                                                         <div class="yolo-product-thumbnail yolo-product-back-thumbnail">*/
-/*                                                             <img width="500" height="700" src="{{ asset('images/product/product-3-alt.jpg')}}" alt="" />*/
-/*                                                         </div>*/
-/*                                                         <div class="yolo-product-meta">*/
-/*                                                             <div class="entry-cart-meta">*/
-/*                                                                 <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>*/
-/*                                                                 <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>*/
-/*                                                                 <div class="yith-wcwl-add-to-wishlist">*/
-/*                                                                     <div class="yith-wcwl-add-button">*/
-/*                                                                         <a href="#" class="add_to_wishlist">*/
-/* 	                                                                                Add to Wishlist*/
-/* 	                                                                            </a>*/
-/*                                                                     </div>*/
-/*                                                                 </div>*/
-/*                                                                 <div class="clear"></div>*/
-/*                                                             </div>*/
-/*                                                         </div>*/
-/*                                                     </div>*/
-/*                                                     <div class="yolo-product-footer clearfix">*/
-/*                                                         <h3><a href="shop-detail.html">Superdry Rookie Pet</a></h3>*/
-/*                                                         <span class="price">*/
-/* 	    															<span class="amount">&#36;130</span>*/
-/*                                                         </span>*/
-/*                                                     </div>*/
-/*                                                 </div>*/
-/*                                             </li>*/
-/*                                             <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">*/
-/*                                                 <div class="yolo-product-inner">*/
-/*                                                     <div class="product-thumbnail">*/
-/*                                                         <div class="yolo-product-thumbnail yolo-product-front-thumbnail">*/
-/*                                                             <img width="500" height="700" src="{{ asset('images/product/product-4.jpg')}}" alt="" />*/
-/*                                                         </div>*/
-/*                                                         <div class="yolo-product-thumbnail yolo-product-back-thumbnail">*/
-/*                                                             <img width="500" height="700" src="{{ asset('images/product/product-4-alt.jpg')}}" alt="" />*/
-/*                                                         </div>*/
-/*                                                         <div class="yolo-product-meta">*/
-/*                                                             <div class="entry-cart-meta">*/
-/*                                                                 <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>*/
-/*                                                                 <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>*/
-/*                                                                 <div class="yith-wcwl-add-to-wishlist">*/
-/*                                                                     <div class="yith-wcwl-add-button">*/
-/*                                                                         <a href="#" class="add_to_wishlist">*/
-/* 	                                                                                Add to Wishlist*/
-/* 	                                                                            </a>*/
-/*                                                                     </div>*/
-/*                                                                 </div>*/
-/*                                                                 <div class="clear"></div>*/
-/*                                                             </div>*/
-/*                                                         </div>*/
-/*                                                     </div>*/
-/*                                                     <div class="yolo-product-footer clearfix">*/
-/*                                                         <h3><a href="shop-detail.html">Lightweight Overcoat</a></h3>*/
-/*                                                         <span class="price">*/
-/* 	    															<span class="amount">&#36;190</span>*/
-/*                                                         </span>*/
-/*                                                     </div>*/
-/*                                                 </div>*/
-/*                                             </li>*/
+/*                                             */
+/*                                             {% endfor %}*/
+/*                                             */
 /*                                         </ul>*/
 /*                                         <div class="nav_prev"><i class="fa fa-chevron-left"></i></div>*/
 /*                                         <div class="nav_next"><i class="fa fa-chevron-right"></i></div>*/

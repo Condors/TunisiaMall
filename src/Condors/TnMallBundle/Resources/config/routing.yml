@@ -1,6 +1,14 @@
-condors_tn_mall_homepage:
+
+
+condors_tn_mall_homepageNewProd:
     path:     /
-    defaults: { _controller: CondorsTnMallBundle:SimpleVisitor:index }
+    defaults: { _controller: CondorsTnMallBundle:SimpleVisitor:showNewProduct }
+  
+condors_tn_mall_shopDetail:
+    path:     /shop-Detail/{id}
+    defaults: { _controller: CondorsTnMallBundle:SimpleVisitor:shopDetail }
+    requirements:
+        id: \d+
 
 
 condors_tn_mall_account:
@@ -17,3 +25,12 @@ condors_tn_mall_pro_regsitration:
 condors_tn_mall_regsitration:
     path:     /register
     defaults: { _controller: CondorsTnMallBundle:Registration:registerUser}
+    
+    
+condors_tn_mall_responsable_index:
+    path:     /user-responsable/Dashboard
+    defaults: { _controller: CondorsTnMallBundle:Responsable:index}
+
+condors_tn_mall_responsable_produit:
+    path:     /user-responsable/products
+    defaults: { _controller: CondorsTnMallBundle:Responsable:products}

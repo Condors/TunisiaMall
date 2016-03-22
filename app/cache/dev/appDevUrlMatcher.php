@@ -105,13 +105,18 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        // condors_tn_mall_homepage
+        // condors_tn_mall_homepageNewProd
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'condors_tn_mall_homepage');
+                return $this->redirect($pathinfo.'/', 'condors_tn_mall_homepageNewProd');
             }
 
-            return array (  '_controller' => 'Condors\\TnMallBundle\\Controller\\SimpleVisitorController::indexAction',  '_route' => 'condors_tn_mall_homepage',);
+            return array (  '_controller' => 'Condors\\TnMallBundle\\Controller\\SimpleVisitorController::showNewProductAction',  '_route' => 'condors_tn_mall_homepageNewProd',);
+        }
+
+        // condors_tn_mall_shopDetail
+        if (0 === strpos($pathinfo, '/shop-Detail') && preg_match('#^/shop\\-Detail/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'condors_tn_mall_shopDetail')), array (  '_controller' => 'Condors\\TnMallBundle\\Controller\\SimpleVisitorController::shopDetailAction',));
         }
 
         // condors_tn_mall_account
@@ -128,6 +133,19 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             // condors_tn_mall_regsitration
             if ($pathinfo === '/register') {
                 return array (  '_controller' => 'Condors\\TnMallBundle\\Controller\\RegistrationController::registerUserAction',  '_route' => 'condors_tn_mall_regsitration',);
+            }
+
+        }
+
+        if (0 === strpos($pathinfo, '/user-responsable')) {
+            // condors_tn_mall_responsable_index
+            if ($pathinfo === '/user-responsable/Dashboard') {
+                return array (  '_controller' => 'Condors\\TnMallBundle\\Controller\\ResponsableController::indexAction',  '_route' => 'condors_tn_mall_responsable_index',);
+            }
+
+            // condors_tn_mall_responsable_produit
+            if ($pathinfo === '/user-responsable/products') {
+                return array (  '_controller' => 'Condors\\TnMallBundle\\Controller\\ResponsableController::productsAction',  '_route' => 'condors_tn_mall_responsable_produit',);
             }
 
         }

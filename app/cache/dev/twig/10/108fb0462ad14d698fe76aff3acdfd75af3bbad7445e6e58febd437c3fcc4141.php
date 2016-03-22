@@ -20,12 +20,12 @@ class __TwigTemplate_3c0a618aca29dba7cd40419d9dbee20f4dcef2d10df4d665d3a4f08e49f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_dc0c1fa3a2be46a5c6f87d2d4996dec9c51eb8c82c037ca2c9594eddeeb44fe5 = $this->env->getExtension("native_profiler");
-        $__internal_dc0c1fa3a2be46a5c6f87d2d4996dec9c51eb8c82c037ca2c9594eddeeb44fe5->enter($__internal_dc0c1fa3a2be46a5c6f87d2d4996dec9c51eb8c82c037ca2c9594eddeeb44fe5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "CondorsTnMallBundle:SimpleVisitor:my-account.html.twig"));
+        $__internal_8534f7bd932402299fb7d7d4839756b0296a270af4b9b244c8a3e6d3b777d72e = $this->env->getExtension("native_profiler");
+        $__internal_8534f7bd932402299fb7d7d4839756b0296a270af4b9b244c8a3e6d3b777d72e->enter($__internal_8534f7bd932402299fb7d7d4839756b0296a270af4b9b244c8a3e6d3b777d72e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "CondorsTnMallBundle:SimpleVisitor:my-account.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_dc0c1fa3a2be46a5c6f87d2d4996dec9c51eb8c82c037ca2c9594eddeeb44fe5->leave($__internal_dc0c1fa3a2be46a5c6f87d2d4996dec9c51eb8c82c037ca2c9594eddeeb44fe5_prof);
+        $__internal_8534f7bd932402299fb7d7d4839756b0296a270af4b9b244c8a3e6d3b777d72e->leave($__internal_8534f7bd932402299fb7d7d4839756b0296a270af4b9b244c8a3e6d3b777d72e_prof);
 
     }
 

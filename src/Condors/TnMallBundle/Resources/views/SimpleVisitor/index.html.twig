@@ -32,182 +32,9 @@
 
 <body>
     <div class="site animsition">
-        <header class="yolo-header header_transparent header-2">
-            <div class="navbar-wrapper">
-                <div class="navbar navbar-default">
-                    <div class="yolo-topbar">
-                        <div class="topbar-inner container-boxed">
-                            <div class="container">
-                                <div class="topbar-left pull-left">
-                                    <!--                                    Free Shipping on All Orders Over <span>$49</span>-->
-
-                                    <ul class="yolo-top-menu hidden-phone">
-                                        <li class="menu-item"><a href="about-us.html">About <span>Us</span></a></li>
-                                        <li class="menu-item"><a href="contact-us.html">Contact <span>Us</span></a></li>
-                                        <li class="menu-item"><a href="faq.html"><i class="fa fa-comments-o"></i>&nbsp;FAQ</a></li>
-
-                                    </ul>
-
-
-                                </div>
-                                <div class="topbar-right pull-right">
-                                    <ul class="yolo-top-menu hidden-phone">
-                                        <li class="menu-item"><a href="#"><i class="fa fa-language"></i>&nbsp;Language</a></li>
-                                       
-                                        <li class="menu-item"><a href="wishlist.html"><i class="fa fa-heart-o"></i>&nbsp;Wishlist</a></li>
-                                        <li class="menu-item">
-                                            <a class="login-url" href="{{path('fos_user_security_login')}}">
-                                                <i class="fa fa-sign-in"></i>&nbsp;Login
-                                            </a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a class="register-url" href="my-account.html">
-                                                <i class="fa fa-key"></i>&nbsp;Register
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.topbar-inner -->
-                    </div>
-                    <!-- /.topbar -->
-                    <div class="site-header">
-                        <div class="container">
-                            <div class="yolo-nav-wrap">
-                                <button data-target=".nav-collapse" class="btn-navbar yolo_icon_menu" type="button">
-                                    <i class="fa fa-bars"></i>
-                                </button>
-                                <a href="index.html" class="navbar-brand">
-                                    <img class="yolo-logo-img yolo-logo-normal" width="150" height="150" src="{{ asset('images/logoo.png')}}" alt="Logo">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="yolo-wrap-menu fixed_top">
-                        <div class="container">
-                            <div class="navbar-header pull-left">
-                                <a href="index.html" class="navbar-brand">
-                                    <img class="yolo-logo-img yolo-logo-fixed" width="60" height="60" src="{{ asset('images/logo-fixed.png')}}" alt="">
-                                </a>
-                            </div>
-                            <!-- / .nav-header -->
-                            <nav class="yolo-main-menu">
-                                <ul class="nav-collapse navbar-nav">
-                                    <li class="menu-item current-menu-item menu-item-has-children">
-                                        <a href="index.html">Home</a>
-
-                                    </li>
-
-                                    <style>
-                                        #subWomen {
-                                            position: absolute;
-                                            top: auto;
-                                            left: auto;
-                                        }
-                                        
-                                        #subsub {
-                                            position: absolute;
-                                            top: auto;
-                                            left: auto;
-                                        }
-                                        
-                                        #womenOn {
-                                            z-index: auto;
-                                            position: absolute;
-                                            top: auto;
-                                            left: -65px;
-                                            min-width: 900%;
-                                        }
-                                        
-                                        #manOn {
-                                            z-index: auto;
-                                            position: absolute;
-                                            top: auto;
-                                            left: -312px;
-                                            min-width: 1200%;
-                                        }
-                                        
-                                        #AllCategories {
-                                            height: 50px;
-                                        }
-                                        
-                                        #AllCategoriesInWommen {
-                                            margin: -22px;
-                                        }
-                                        
-                                        #AllCategoriesInMan {
-                                            margin: -22px;
-                                        }
-                                    </style>
-                                    <!--                                    Begin Categorie-->
-                                    <li class="yolo_megamenu mega-col-columns-5 menu-item">
-                                        <a href="shop-by-category.html">Categories</a>
-                                        
-
-
-                                    </li>
-
-
-                                    <!--                                    End Categorie-->
-                                    <li class="menu-item menu-item-has-children">
-                                        <a href="category.html">Brands</a>
-
-                                    </li>
-                                    <li class="yolo_megamenu mega-col-columns-4 menu-item menu-item-has-children">
-                                        <a href="shop.html">Promotions</a>
-
-                                    </li>
-                                    <li class="menu-item menu-item-has-children">
-                                        <a href="blog.html">Events</a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item"><a href="blog-list.html">Shop Events / Specials</a></li>
-                                            <li class="menu-item"><a href="blog-grid.html">Mall Events</a></li>
-
-                                            <li class="menu-item"><a href="blog-timeline.html">Kids Events</a></li>
-
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item menu-item-has-children">
-                                        <a href="#">Blog</a>
-
-                                    </li>
-                                    <li class="menu-item yolo-menu-item-cart minicart">
-                                        <a class="cart-button" href="cart.html">
-                                            <span class="cart-item">
-													<i class="fa fa-shopping-cart"></i>
-												</span>
-                                        </a>
-                                        <div class="yolo-minicart">
-                                            <div class="minicart-header">Your shopping bag is empty.</div>
-                                            <div class="minicart-footer">
-                                                <div class="minicart-actions clearfix">
-                                                    <a class="button pull-left" href="shop.html">
-                                                        <span class="text">Go to the shop</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="menu-item yolo-menu-item-search">
-                                        <a class="search-button" href="javascript:void(0)"><i class="fa fa-search"></i></a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <div class="yolo-search searchbar">
-                        <form id="form-header">
-                            <div class="search-input">
-                                <input type="text" value="" name="s" placeholder="Enter keyword to search...">
-                                <input type="submit" value="Search" />
-                                <img class="search-remove" src="{{ asset('images/remove_white.png')}}" alt="remove">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </header>
+        <!-- header -->
+         {{ include('CondorsTnMallBundle::header.html.twig') }}
+        <!-- End Header -->
         <div class="content-area">
             <!-- Begin The loop -->
             <section>
@@ -419,19 +246,23 @@
                                 <div class="tab-pane fade in active" id="tab-1">
                                     <div class="row-slider commerce carousel-3-items">
                                         <ul class="yolo-woo-slider carousel-items products">
+                                            
+                                            {% for prodNew in newProduit %}
+                                                
                                             <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
                                                 <div class="yolo-product-inner">
                                                     <div class="product-thumbnail">
                                                         <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
-                                                            <img width="500" height="700" src="{{ asset('images/product/product-1.jpg')}}" alt="" />
+                                                            
+                                                            <img width="500" height="700" src="{{ asset('uploads/pictures/')}}{{ prodNew.imageprodfront}}" alt="" />
                                                         </div>
                                                         <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
-                                                            <img width="500" height="700" src="{{ asset('images/product/product-1-alt.jpg')}}" alt="" />
+                                                            <img width="500" height="700" src="{{ asset('uploads/pictures/')}}{{ prodNew.imageprodback}}" alt="" />
                                                         </div>
                                                         <div class="yolo-product-meta">
                                                             <div class="entry-cart-meta">
                                                                 <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>
-                                                                <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>
+                                                                <a class="shop-loop-quickview" href="{{ path("condors_tn_mall_shopDetail" , { id: prodNew.idProduit } )  }}#focus">Quick shop</a>
                                                                 <div class="yith-wcwl-add-to-wishlist">
                                                                     <div class="yith-wcwl-add-button">
                                                                         <a href="#" class="add_to_wishlist">
@@ -444,109 +275,16 @@
                                                         </div>
                                                     </div>
                                                     <div class="yolo-product-footer clearfix">
-                                                        <h3><a href="shop-detail.html">Converse Short</a></h3>
+                                                        <h3><a href="{{ path("condors_tn_mall_shopDetail" , { id: prodNew.idProduit } )  }}#focus">{{ prodNew.libelleProduit}}</a></h3>
                                                         <span class="price">
-																	<span class="amount">&#36;150</span>
+							<span class="amount">&#36;{{ prodNew.prixProduit}}</span>
                                                         </span>
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
-                                                <div class="yolo-product-inner">
-                                                    <div class="product-thumbnail">
-                                                        <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
-                                                            <img width="500" height="700" src="{{ asset('images/product/product-2.jpg')}}" alt="" />
-                                                        </div>
-                                                        <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
-                                                            <img width="500" height="700" src="{{ asset('images/product/product-2-alt.jpg')}}" alt="" />
-                                                        </div>
-                                                        <div class="yolo-product-meta">
-                                                            <div class="entry-cart-meta">
-                                                                <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>
-                                                                <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>
-                                                                <div class="yith-wcwl-add-to-wishlist">
-                                                                    <div class="yith-wcwl-add-button">
-                                                                        <a href="#" class="add_to_wishlist">
-	                                                                                Add to Wishlist
-	                                                                            </a>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="clear"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="yolo-product-footer clearfix">
-                                                        <h3><a href="shop-detail.html">Wool-Blend Peacoat</a></h3>
-                                                        <span class="price">
-	    															<span class="amount">&#36;100</span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
-                                                <div class="yolo-product-inner">
-                                                    <div class="product-thumbnail">
-                                                        <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
-                                                            <img width="500" height="700" src="{{ asset('images/product/product-3.jpg')}}" alt="" />
-                                                        </div>
-                                                        <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
-                                                            <img width="500" height="700" src="{{ asset('images/product/product-3-alt.jpg')}}" alt="" />
-                                                        </div>
-                                                        <div class="yolo-product-meta">
-                                                            <div class="entry-cart-meta">
-                                                                <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>
-                                                                <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>
-                                                                <div class="yith-wcwl-add-to-wishlist">
-                                                                    <div class="yith-wcwl-add-button">
-                                                                        <a href="#" class="add_to_wishlist">
-	                                                                                Add to Wishlist
-	                                                                            </a>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="clear"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="yolo-product-footer clearfix">
-                                                        <h3><a href="shop-detail.html">Superdry Rookie Pet</a></h3>
-                                                        <span class="price">
-	    															<span class="amount">&#36;130</span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
-                                                <div class="yolo-product-inner">
-                                                    <div class="product-thumbnail">
-                                                        <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
-                                                            <img width="500" height="700" src="{{ asset('images/product/product-4.jpg')}}" alt="" />
-                                                        </div>
-                                                        <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
-                                                            <img width="500" height="700" src="{{ asset('images/product/product-4-alt.jpg')}}" alt="" />
-                                                        </div>
-                                                        <div class="yolo-product-meta">
-                                                            <div class="entry-cart-meta">
-                                                                <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>
-                                                                <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>
-                                                                <div class="yith-wcwl-add-to-wishlist">
-                                                                    <div class="yith-wcwl-add-button">
-                                                                        <a href="#" class="add_to_wishlist">
-	                                                                                Add to Wishlist
-	                                                                            </a>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="clear"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="yolo-product-footer clearfix">
-                                                        <h3><a href="shop-detail.html">Lightweight Overcoat</a></h3>
-                                                        <span class="price">
-	    															<span class="amount">&#36;190</span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </li>
+                                            
+                                            {% endfor %}
+                                            
                                         </ul>
                                         <div class="nav_prev"><i class="fa fa-chevron-left"></i></div>
                                         <div class="nav_next"><i class="fa fa-chevron-right"></i></div>
