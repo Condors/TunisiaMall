@@ -19,8 +19,8 @@ class __TwigTemplate_903ca7b9536b21bcb2f2cc262f6c2ebf084bc26c22161ef33f46289c664
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f882b6f61b38ecd0a915b8595ba8d4792004c3d679d06502a0062bd8f4b471d9 = $this->env->getExtension("native_profiler");
-        $__internal_f882b6f61b38ecd0a915b8595ba8d4792004c3d679d06502a0062bd8f4b471d9->enter($__internal_f882b6f61b38ecd0a915b8595ba8d4792004c3d679d06502a0062bd8f4b471d9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "CondorsTnMallBundle::ResponsableLayouts/Layout.html.twig"));
+        $__internal_9c72ba16e2e0b8e86a98f5396d2fa3118081e300892d02c4196b61671316bfae = $this->env->getExtension("native_profiler");
+        $__internal_9c72ba16e2e0b8e86a98f5396d2fa3118081e300892d02c4196b61671316bfae->enter($__internal_9c72ba16e2e0b8e86a98f5396d2fa3118081e300892d02c4196b61671316bfae_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "CondorsTnMallBundle::ResponsableLayouts/Layout.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -105,7 +105,12 @@ class __TwigTemplate_903ca7b9536b21bcb2f2cc262f6c2ebf084bc26c22161ef33f46289c664
         <div class=\"left_col scroll-view\">
 
           <div class=\"navbar nav_title\" style=\"border: 0;\">
-            <a href=\"index.html\" class=\"site_title\"><i class=\"fa fa-paw\"></i> <span>Tunisia Mall</span></a>
+              <a href=\"";
+        // line 53
+        echo $this->env->getExtension('routing')->getPath("condors_tn_mall_responsable_index");
+        echo "\" class=\"site_title\"> <img width=\"40\"  height=\"40\" src=\"";
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/logo.png"), "html", null, true);
+        echo "\" /> <span>Tunisia Mall</span></a>
           </div>
           <div class=\"clearfix\"></div>
 
@@ -124,7 +129,10 @@ class __TwigTemplate_903ca7b9536b21bcb2f2cc262f6c2ebf084bc26c22161ef33f46289c664
             <div class=\"menu_section\">
               <h3>&nbsp;</h3>
               <ul class=\"nav side-menu\">
-                <li><a><i class=\"fa fa-home\"></i> Dashboard </a>
+                <li><a href=\"";
+        // line 71
+        echo $this->env->getExtension('routing')->getPath("condors_tn_mall_responsable_index");
+        echo "\"><i class=\"fa fa-home\"></i> Dashboard </a>
                   
                 </li>
                 <li><a><i class=\"fa fa-book\"></i> Catalog <span class=\"fa fa-chevron-down\"></span></a>
@@ -556,62 +564,62 @@ class __TwigTemplate_903ca7b9536b21bcb2f2cc262f6c2ebf084bc26c22161ef33f46289c664
 </html>
 ";
         
-        $__internal_f882b6f61b38ecd0a915b8595ba8d4792004c3d679d06502a0062bd8f4b471d9->leave($__internal_f882b6f61b38ecd0a915b8595ba8d4792004c3d679d06502a0062bd8f4b471d9_prof);
+        $__internal_9c72ba16e2e0b8e86a98f5396d2fa3118081e300892d02c4196b61671316bfae->leave($__internal_9c72ba16e2e0b8e86a98f5396d2fa3118081e300892d02c4196b61671316bfae_prof);
 
     }
 
     // line 58
     public function block_quickProfile($context, array $blocks = array())
     {
-        $__internal_b60215c691b126a015e44a16750d98b803a8553c157e49e1d0fa59d5aab37274 = $this->env->getExtension("native_profiler");
-        $__internal_b60215c691b126a015e44a16750d98b803a8553c157e49e1d0fa59d5aab37274->enter($__internal_b60215c691b126a015e44a16750d98b803a8553c157e49e1d0fa59d5aab37274_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "quickProfile"));
+        $__internal_3b619dc17d39b3f9b53a96111226a7309cca410324dcb7e02d8e888b9baca078 = $this->env->getExtension("native_profiler");
+        $__internal_3b619dc17d39b3f9b53a96111226a7309cca410324dcb7e02d8e888b9baca078->enter($__internal_3b619dc17d39b3f9b53a96111226a7309cca410324dcb7e02d8e888b9baca078_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "quickProfile"));
 
         // line 59
         echo "          
           ";
         
-        $__internal_b60215c691b126a015e44a16750d98b803a8553c157e49e1d0fa59d5aab37274->leave($__internal_b60215c691b126a015e44a16750d98b803a8553c157e49e1d0fa59d5aab37274_prof);
+        $__internal_3b619dc17d39b3f9b53a96111226a7309cca410324dcb7e02d8e888b9baca078->leave($__internal_3b619dc17d39b3f9b53a96111226a7309cca410324dcb7e02d8e888b9baca078_prof);
 
     }
 
     // line 113
     public function block_nav_menu($context, array $blocks = array())
     {
-        $__internal_a239e9d389e077295f7111513afe7e7d608508083ed7d373835d2ff4f5af7e0f = $this->env->getExtension("native_profiler");
-        $__internal_a239e9d389e077295f7111513afe7e7d608508083ed7d373835d2ff4f5af7e0f->enter($__internal_a239e9d389e077295f7111513afe7e7d608508083ed7d373835d2ff4f5af7e0f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "nav_menu"));
+        $__internal_84331399d617abbaec00d8ff5c48c21ce07aeb82ac6d2e7148beddd530926678 = $this->env->getExtension("native_profiler");
+        $__internal_84331399d617abbaec00d8ff5c48c21ce07aeb82ac6d2e7148beddd530926678->enter($__internal_84331399d617abbaec00d8ff5c48c21ce07aeb82ac6d2e7148beddd530926678_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "nav_menu"));
 
         // line 114
         echo "          
                 ";
         
-        $__internal_a239e9d389e077295f7111513afe7e7d608508083ed7d373835d2ff4f5af7e0f->leave($__internal_a239e9d389e077295f7111513afe7e7d608508083ed7d373835d2ff4f5af7e0f_prof);
+        $__internal_84331399d617abbaec00d8ff5c48c21ce07aeb82ac6d2e7148beddd530926678->leave($__internal_84331399d617abbaec00d8ff5c48c21ce07aeb82ac6d2e7148beddd530926678_prof);
 
     }
 
     // line 130
     public function block_Content($context, array $blocks = array())
     {
-        $__internal_cbba1a34e997a339052809a91ad7b2a4c496dccc8d20d7ef93fc328ef61222c5 = $this->env->getExtension("native_profiler");
-        $__internal_cbba1a34e997a339052809a91ad7b2a4c496dccc8d20d7ef93fc328ef61222c5->enter($__internal_cbba1a34e997a339052809a91ad7b2a4c496dccc8d20d7ef93fc328ef61222c5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "Content"));
+        $__internal_1fb4a5d3f5255a321ab340d15133ea054e001e46d825c148346498107b3fdc2e = $this->env->getExtension("native_profiler");
+        $__internal_1fb4a5d3f5255a321ab340d15133ea054e001e46d825c148346498107b3fdc2e->enter($__internal_1fb4a5d3f5255a321ab340d15133ea054e001e46d825c148346498107b3fdc2e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "Content"));
 
         // line 131
         echo "                  
               ";
         
-        $__internal_cbba1a34e997a339052809a91ad7b2a4c496dccc8d20d7ef93fc328ef61222c5->leave($__internal_cbba1a34e997a339052809a91ad7b2a4c496dccc8d20d7ef93fc328ef61222c5_prof);
+        $__internal_1fb4a5d3f5255a321ab340d15133ea054e001e46d825c148346498107b3fdc2e->leave($__internal_1fb4a5d3f5255a321ab340d15133ea054e001e46d825c148346498107b3fdc2e_prof);
 
     }
 
     // line 412
     public function block_otherScript($context, array $blocks = array())
     {
-        $__internal_aa93804fddb9041357ecafeef96925e53ab4739cb31a90a7cb998a54e24871a5 = $this->env->getExtension("native_profiler");
-        $__internal_aa93804fddb9041357ecafeef96925e53ab4739cb31a90a7cb998a54e24871a5->enter($__internal_aa93804fddb9041357ecafeef96925e53ab4739cb31a90a7cb998a54e24871a5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "otherScript"));
+        $__internal_c92d861115594051b0383725bda8af4501132382cd4863f16731361ef772af42 = $this->env->getExtension("native_profiler");
+        $__internal_c92d861115594051b0383725bda8af4501132382cd4863f16731361ef772af42->enter($__internal_c92d861115594051b0383725bda8af4501132382cd4863f16731361ef772af42_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "otherScript"));
 
         // line 413
         echo "  ";
         
-        $__internal_aa93804fddb9041357ecafeef96925e53ab4739cb31a90a7cb998a54e24871a5->leave($__internal_aa93804fddb9041357ecafeef96925e53ab4739cb31a90a7cb998a54e24871a5_prof);
+        $__internal_c92d861115594051b0383725bda8af4501132382cd4863f16731361ef772af42->leave($__internal_c92d861115594051b0383725bda8af4501132382cd4863f16731361ef772af42_prof);
 
     }
 
@@ -627,7 +635,7 @@ class __TwigTemplate_903ca7b9536b21bcb2f2cc262f6c2ebf084bc26c22161ef33f46289c664
 
     public function getDebugInfo()
     {
-        return array (  612 => 413,  606 => 412,  598 => 131,  592 => 130,  584 => 114,  578 => 113,  570 => 59,  564 => 58,  552 => 414,  550 => 412,  431 => 296,  407 => 275,  402 => 273,  398 => 272,  394 => 271,  390 => 270,  308 => 191,  304 => 190,  300 => 189,  296 => 188,  292 => 187,  288 => 186,  284 => 185,  280 => 184,  276 => 183,  269 => 179,  264 => 177,  260 => 176,  255 => 174,  250 => 172,  246 => 171,  241 => 169,  236 => 167,  232 => 166,  226 => 163,  194 => 133,  192 => 130,  176 => 116,  174 => 113,  134 => 76,  117 => 61,  115 => 58,  81 => 27,  77 => 26,  72 => 24,  68 => 23,  64 => 22,  60 => 21,  54 => 18,  50 => 17,  46 => 16,  42 => 15,  26 => 1,);
+        return array (  620 => 413,  614 => 412,  606 => 131,  600 => 130,  592 => 114,  586 => 113,  578 => 59,  572 => 58,  560 => 414,  558 => 412,  439 => 296,  415 => 275,  410 => 273,  406 => 272,  402 => 271,  398 => 270,  316 => 191,  312 => 190,  308 => 189,  304 => 188,  300 => 187,  296 => 186,  292 => 185,  288 => 184,  284 => 183,  277 => 179,  272 => 177,  268 => 176,  263 => 174,  258 => 172,  254 => 171,  249 => 169,  244 => 167,  240 => 166,  234 => 163,  202 => 133,  200 => 130,  184 => 116,  182 => 113,  142 => 76,  134 => 71,  122 => 61,  120 => 58,  110 => 53,  81 => 27,  77 => 26,  72 => 24,  68 => 23,  64 => 22,  60 => 21,  54 => 18,  50 => 17,  46 => 16,  42 => 15,  26 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -682,7 +690,7 @@ class __TwigTemplate_903ca7b9536b21bcb2f2cc262f6c2ebf084bc26c22161ef33f46289c664
 /*         <div class="left_col scroll-view">*/
 /* */
 /*           <div class="navbar nav_title" style="border: 0;">*/
-/*             <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Tunisia Mall</span></a>*/
+/*               <a href="{{ path('condors_tn_mall_responsable_index') }}" class="site_title"> <img width="40"  height="40" src="{{ asset('images/logo.png')}}" /> <span>Tunisia Mall</span></a>*/
 /*           </div>*/
 /*           <div class="clearfix"></div>*/
 /* */
@@ -700,7 +708,7 @@ class __TwigTemplate_903ca7b9536b21bcb2f2cc262f6c2ebf084bc26c22161ef33f46289c664
 /*             <div class="menu_section">*/
 /*               <h3>&nbsp;</h3>*/
 /*               <ul class="nav side-menu">*/
-/*                 <li><a><i class="fa fa-home"></i> Dashboard </a>*/
+/*                 <li><a href="{{ path('condors_tn_mall_responsable_index') }}"><i class="fa fa-home"></i> Dashboard </a>*/
 /*                   */
 /*                 </li>*/
 /*                 <li><a><i class="fa fa-book"></i> Catalog <span class="fa fa-chevron-down"></span></a>*/

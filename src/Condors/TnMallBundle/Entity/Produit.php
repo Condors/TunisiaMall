@@ -3,7 +3,6 @@
 namespace Condors\TnMallBundle\Entity;
 
 use Symfony\Component\Validator\Constraints as Assert;
-
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -12,8 +11,8 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="produit", indexes={@ORM\Index(name="id_produit", columns={"id_produit"}), @ORM\Index(name="id_catalogue", columns={"id_catalogue"}), @ORM\Index(name="id_produit_2", columns={"id_produit", "id_catalogue"}), @ORM\Index(name="id_promotion", columns={"id_promotion"})})
  * @ORM\Entity(repositoryClass="Condors\TnMallBundle\Entity\ProduitRepository")
  */
-class Produit
-{
+class Produit {
+
     /**
      * @var integer
      *
@@ -106,52 +105,89 @@ class Produit
      * @ORM\Column(name="dateCreation", type="datetime", nullable=true)
      */
     private $datecreation;
-    
-    
-     /**
+
+    /**
      * @Assert\File(maxSize="500k")
      */
-    public $file;
+    public $fileFront;
+    /**
+     * @Assert\File(maxSize="500k")
+     */
+    public $fileBack;
+    /**
+     * @Assert\File(maxSize="500k")
+     */
+    public $fileReel;
+
+    public function getWebPath() {
+        return null === $this->imageprodfront ? null : $this->getUploadDir() . '/' . $this->imageprodfront;
+    }
+
     
-    public function getWebPath()
-    {
-        return null === $this->imageprodfront? null : $this->getUploadDir().'/'.$this->imageprodfront;
-    }
 
-    protected function getUploadRootDir()
-    {
+    protected function getUploadRootDir() {
         // le chemin absolu du répertoire dans lequel sauvegarder les photos de profil
-        return __DIR__.'/../../../../web/'.$this->getUploadDir();
-  
+        return __DIR__ . '/../../../../web/' . $this->getUploadDir();
     }
 
-    protected function getUploadDir()
-    {
+    protected function getUploadDir() {
         // get rid of the __DIR__ so it doesn't screw when displaying uploaded doc/image in the view.
         return 'uploads/pictures';
     }
-    
-    public function uploadProfilePicture()
-    {
+
+    public function uploadProfilePicture() {
         // Nous utilisons le nom de fichier original, donc il est dans la pratique 
         // nécessaire de le nettoyer pour éviter les problèmes de sécurité
-        
-        $nowTime = new \DateTime();
-         
-         $randTime=$nowTime->format('Y-m-d-H-i-s');
 
+        $nowTime = new \DateTime();
+
+        $randTime = $nowTime->format('Y-m-d-H-i-s');
+
+        /* Front */
         // move copie le fichier présent chez le client dans le répertoire indiqué.
-        $this->file->move($this->getUploadRootDir(), md5($this->file->getClientOriginalName().''.$randTime).'.jpg');
+        $this->fileFront->move($this->getUploadRootDir(), md5($this->fileFront->getClientOriginalName() . 'F' . $randTime) . '.jpg');
 
         // On sauvegarde le nom de fichier
-        $this->imageprodfront =  md5($this->file->getClientOriginalName().''.$randTime).'.jpg';
-        
-        
+        $this->imageprodfront = md5($this->fileFront->getClientOriginalName() . 'F' . $randTime) . '.jpg';
+
+
         // La propriété file ne servira plus
-        $this->file = null;
+        $this->fileFront = null;
+
+        /* End Front */
+        
+         /* Back */
+        // move copie le fichier présent chez le client dans le répertoire indiqué.
+        $this->fileBack->move($this->getUploadRootDir(), md5($this->fileBack->getClientOriginalName() . 'B' . $randTime) . '.jpg');
+
+        // On sauvegarde le nom de fichier
+        $this->imageprodback = md5($this->fileBack->getClientOriginalName() . 'B' . $randTime) . '.jpg';
+
+
+        // La propriété file ne servira plus
+        $this->fileBack = null;
+
+        /* End back */
+        
+        
+           /* Reel */
+        // move copie le fichier présent chez le client dans le répertoire indiqué.
+        $this->fileReel->move($this->getUploadRootDir(), md5($this->fileReel->getClientOriginalName() . 'R' . $randTime) . '.jpg');
+
+        // On sauvegarde le nom de fichier
+        $this->imageprodreel = md5($this->fileReel->getClientOriginalName() . 'R' . $randTime) . '.jpg';
+
+
+        // La propriété file ne servira plus
+        $this->fileReel = null;
+
+        /* End back */
     }
 
-    
+    function getImageprodfront() {
+        return $this->imageprodfront;
+    }
+
     function getIdProduit() {
         return $this->idProduit;
     }
@@ -188,9 +224,9 @@ class Produit
         return $this->prixProduit;
     }
 
-    function getImageprodfront() {
-        return $this->imageprodfront;
-    }
+    /* function getImageprodfront() {
+      return $this->imageprodfront;
+      } */
 
     function getImageprodback() {
         return $this->imageprodback;
@@ -255,8 +291,5 @@ class Produit
     function setDatecreation(\DateTime $datecreation) {
         $this->datecreation = $datecreation;
     }
-
-
-
 
 }

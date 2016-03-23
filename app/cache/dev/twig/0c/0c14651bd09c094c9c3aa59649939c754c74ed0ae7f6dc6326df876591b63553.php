@@ -24,20 +24,20 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_c9271701ebdbf71ca9863d6a4ed240b6ce10c20b9c42d59948841b0d4238f8a7 = $this->env->getExtension("native_profiler");
-        $__internal_c9271701ebdbf71ca9863d6a4ed240b6ce10c20b9c42d59948841b0d4238f8a7->enter($__internal_c9271701ebdbf71ca9863d6a4ed240b6ce10c20b9c42d59948841b0d4238f8a7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@CondorsTnMall/Responsable/GestionProduit.html.twig"));
+        $__internal_a1af20b8964491e020fc9a6b09646c737aaa5a5134211085397877888eb4f651 = $this->env->getExtension("native_profiler");
+        $__internal_a1af20b8964491e020fc9a6b09646c737aaa5a5134211085397877888eb4f651->enter($__internal_a1af20b8964491e020fc9a6b09646c737aaa5a5134211085397877888eb4f651_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@CondorsTnMall/Responsable/GestionProduit.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_c9271701ebdbf71ca9863d6a4ed240b6ce10c20b9c42d59948841b0d4238f8a7->leave($__internal_c9271701ebdbf71ca9863d6a4ed240b6ce10c20b9c42d59948841b0d4238f8a7_prof);
+        $__internal_a1af20b8964491e020fc9a6b09646c737aaa5a5134211085397877888eb4f651->leave($__internal_a1af20b8964491e020fc9a6b09646c737aaa5a5134211085397877888eb4f651_prof);
 
     }
 
     // line 7
     public function block_quickProfile($context, array $blocks = array())
     {
-        $__internal_8de291953a9ba9d9991dde67796a738ef324d2a3f651eb6ea18c072e544aff7f = $this->env->getExtension("native_profiler");
-        $__internal_8de291953a9ba9d9991dde67796a738ef324d2a3f651eb6ea18c072e544aff7f->enter($__internal_8de291953a9ba9d9991dde67796a738ef324d2a3f651eb6ea18c072e544aff7f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "quickProfile"));
+        $__internal_f2249c66e5fa65751a468d104431780df1ae1b15203ce38cfa2db3e08372ea83 = $this->env->getExtension("native_profiler");
+        $__internal_f2249c66e5fa65751a468d104431780df1ae1b15203ce38cfa2db3e08372ea83->enter($__internal_f2249c66e5fa65751a468d104431780df1ae1b15203ce38cfa2db3e08372ea83_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "quickProfile"));
 
         // line 8
         echo "    ";
@@ -45,15 +45,15 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
         echo " 
 ";
         
-        $__internal_8de291953a9ba9d9991dde67796a738ef324d2a3f651eb6ea18c072e544aff7f->leave($__internal_8de291953a9ba9d9991dde67796a738ef324d2a3f651eb6ea18c072e544aff7f_prof);
+        $__internal_f2249c66e5fa65751a468d104431780df1ae1b15203ce38cfa2db3e08372ea83->leave($__internal_f2249c66e5fa65751a468d104431780df1ae1b15203ce38cfa2db3e08372ea83_prof);
 
     }
 
     // line 13
     public function block_nav_menu($context, array $blocks = array())
     {
-        $__internal_3dbbd02814a072fb7e5428acbe3fbe52f82715ef3a3832d9bfd42cf9d629a833 = $this->env->getExtension("native_profiler");
-        $__internal_3dbbd02814a072fb7e5428acbe3fbe52f82715ef3a3832d9bfd42cf9d629a833->enter($__internal_3dbbd02814a072fb7e5428acbe3fbe52f82715ef3a3832d9bfd42cf9d629a833_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "nav_menu"));
+        $__internal_1dc9b6d9677c1790b48d0b46f410077b98a9e9218545329b5fc67928c5a1b9ee = $this->env->getExtension("native_profiler");
+        $__internal_1dc9b6d9677c1790b48d0b46f410077b98a9e9218545329b5fc67928c5a1b9ee->enter($__internal_1dc9b6d9677c1790b48d0b46f410077b98a9e9218545329b5fc67928c5a1b9ee_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "nav_menu"));
 
         // line 14
         echo "
@@ -64,15 +64,15 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
 
 ";
         
-        $__internal_3dbbd02814a072fb7e5428acbe3fbe52f82715ef3a3832d9bfd42cf9d629a833->leave($__internal_3dbbd02814a072fb7e5428acbe3fbe52f82715ef3a3832d9bfd42cf9d629a833_prof);
+        $__internal_1dc9b6d9677c1790b48d0b46f410077b98a9e9218545329b5fc67928c5a1b9ee->leave($__internal_1dc9b6d9677c1790b48d0b46f410077b98a9e9218545329b5fc67928c5a1b9ee_prof);
 
     }
 
     // line 22
     public function block_Content($context, array $blocks = array())
     {
-        $__internal_c1434e804a2369aff1b16e833c50b2155ef97b82b5b39f0221e0238944d328e3 = $this->env->getExtension("native_profiler");
-        $__internal_c1434e804a2369aff1b16e833c50b2155ef97b82b5b39f0221e0238944d328e3->enter($__internal_c1434e804a2369aff1b16e833c50b2155ef97b82b5b39f0221e0238944d328e3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "Content"));
+        $__internal_71dcc2c1de1c53036f8e1777fbd853ba32074d3a89ec7ac3e522c33f68ad1139 = $this->env->getExtension("native_profiler");
+        $__internal_71dcc2c1de1c53036f8e1777fbd853ba32074d3a89ec7ac3e522c33f68ad1139->enter($__internal_71dcc2c1de1c53036f8e1777fbd853ba32074d3a89ec7ac3e522c33f68ad1139_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "Content"));
 
         // line 23
         echo "
@@ -158,123 +158,218 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
                                     </a>
                                 </li>
                             </ul>
-                            <form class=\"form-horizontal form-label-left\">
-                                <div id=\"step-1\">
-
-
-                                    <div class=\"form-group\">
-                                        <label class=\"control-label col-md-3 col-sm-3 col-xs-12\" for=\"first-name\">Product Name <span class=\"required\">*</span>
-                                        </label>
-                                        <div class=\"col-md-6 col-sm-6 col-xs-12\">
-                                            ";
-        // line 114
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "libelleProduit", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
+                            ";
+        // line 106
+        echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_start', array("attr" => array("class" => "form-horizontal form-label-left")));
         echo "
-                                        </div>
-                                    </div>
-                                    <div class=\"form-group\">
-                                        <label class=\"control-label col-md-3 col-sm-3 col-xs-12\" for=\"last-name\">Product Category <span class=\"required\">*</span>
-                                        </label>
-                                        <div class=\"col-md-6 col-sm-6 col-xs-12\">
-                                            ";
-        // line 121
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "categorieProduit", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
-        echo "
-                                        </div>
-                                    </div>
-                                    <div class=\"form-group\">
-                                        <label for=\"middle-name\" class=\"control-label col-md-3 col-sm-3 col-xs-12\">Product Reference</label>
-                                        <div class=\"col-md-6 col-sm-6 col-xs-12\">
-                                            ";
-        // line 127
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "refProduit", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
-        echo "
-                                        </div>
-                                    </div>
+                            <div id=\"step-1\">
 
 
-
-
-
-                                </div>
-                                <div id=\"step-2\">
-                                    <h2 class=\"StepTitle\">Product Discription</h2>
-                                    <div id=\"txtEditor\">
-
+                                <div class=\"form-group\">
+                                    <label class=\"control-label col-md-3 col-sm-3 col-xs-12\" for=\"first-name\">Product Name <span class=\"required\">*</span>
+                                    </label>
+                                    <div class=\"col-md-6 col-sm-6 col-xs-12\">
 
                                         ";
-        // line 141
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "descriptionProduit", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
-        echo "
+        // line 115
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "libelleProduit", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
+        echo " 
                                     </div>
                                 </div>
-                            </form>
+                                <div class=\"form-group\">
+                                    <label class=\"control-label col-md-3 col-sm-3 col-xs-12\" for=\"last-name\">Product Category <span class=\"required\">*</span>
+                                    </label>
+                                    <div class=\"col-md-6 col-sm-6 col-xs-12\">
+                                        ";
+        // line 122
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "categorieProduit", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
+        echo " 
+                                    </div>
+                                </div>
+                                <div class=\"form-group\">
+                                    <label for=\"middle-name\" class=\"control-label col-md-3 col-sm-3 col-xs-12\">Product REF<span class=\"required\">*</span></label>
+                                    <div class=\"col-md-6 col-sm-6 col-xs-12\">
+                                        ";
+        // line 128
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "refProduit", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
+        echo " 
+                                    </div>
+                                </div>
+                                <div class=\"form-group\">
+                                    <label class=\"control-label col-md-3 col-sm-3 col-xs-12\">Product V.A.T<span class=\"required\">*</span></label>
+                                    <div class=\"col-md-6 col-sm-6 col-xs-12\">
+                                        ";
+        // line 134
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "tvaProduit", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
+        echo " 
+                                    </div>
+                                </div>
+                                <div class=\"form-group\">
+                                    <label class=\"control-label col-md-3 col-sm-3 col-xs-12\">Product Price <span class=\"required\">*</span>
+                                    </label>
+                                    <div class=\"col-md-6 col-sm-6 col-xs-12\">
+                                        ";
+        // line 141
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "prixProduit", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
+        echo " 
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div id=\"step-2\">
+                                <h2 class=\"StepTitle\">Desciption</h2>
+                                <p id=\"txtEditor\">
+                                    ";
+        // line 150
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "descriptionProduit", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
+        echo " 
+                                </p>
+
+                            </div>
                             <div id=\"step-3\">
                                 <h2 class=\"StepTitle\">Step 3 Content</h2>
-                                <div class=\"row\">
-                                    <div class=\"col-md-12 col-sm-12 col-xs-12\">
-                                        <div class=\"x_panel\">
-                                            <div class=\"x_title\">
-                                                <h2>Dropzone multiple file uploader</h2>
-                                                <ul class=\"nav navbar-right panel_toolbox\">
-                                                    <li><a class=\"collapse-link\"><i class=\"fa fa-chevron-up\"></i></a>
-                                                    </li>
-                                                    <li class=\"dropdown\">
-                                                        <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-expanded=\"false\"><i class=\"fa fa-wrench\"></i></a>
-                                                        <ul class=\"dropdown-menu\" role=\"menu\">
-                                                            <li><a href=\"#\">Settings 1</a>
-                                                            </li>
-                                                            <li><a href=\"#\">Settings 2</a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a class=\"close-link\"><i class=\"fa fa-close\"></i></a>
-                                                    </li>
-                                                </ul>
-                                                <div class=\"clearfix\"></div>
-                                            </div>
-                                            <div class=\"x_content\">
+                                <p>
+                                    ";
+        // line 157
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "fileFront", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
+        echo " 
+                                    ";
+        // line 158
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "fileBack", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
+        echo " 
+                                    ";
+        // line 159
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "fileReel", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
+        echo " 
+                                </p>
 
-                                                <p>Drag multiple files to the box below for multi upload or click to select files. This is for demonstration purposes only, the files are not uploaded to any server.</p>
-                                                <form action=\"choices/form_upload.html\" class=\"dropzone\" style=\"border: 1px solid #e5e5e5; height: 300px; \"></form>
-
-                                             
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                             <div id=\"step-4\">
                                 <h2 class=\"StepTitle\">Step 4 Content</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et 
                                 </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
+
                             </div>
 
                         </div>
-                        <!-- End SmartWizard Content -->
+
+                        ";
+        // line 172
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "submit", array()), 'widget');
+        echo "
+                        ";
+        // line 173
+        echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_end');
+        echo "
+
+
+
+
+
+                        <!-- table View -->
+
+                        <div class=\"col-md-12 col-sm-12 col-xs-12\">
+                            <div class=\"x_panel\">
+                                <div class=\"x_title\">
+                                    <h2>View Products <small>Sessions</small></h2>
+                                    <ul class=\"nav navbar-right panel_toolbox\">
+                                        <li><a href=\"#\"><i class=\"fa fa-chevron-up\"></i></a>
+                                        </li>
+                                        <li class=\"dropdown\">
+                                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-expanded=\"false\"><i class=\"fa fa-wrench\"></i></a>
+                                            <ul class=\"dropdown-menu\" role=\"menu\">
+                                                <li><a href=\"#\">Settings 1</a>
+                                                </li>
+                                                <li><a href=\"#\">Settings 2</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href=\"#\"><i class=\"fa fa-close\"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class=\"clearfix\"></div>
+                                </div>
+                                <div class=\"x_content\">
+                                    <table id=\"example\" class=\"table table-striped responsive-utilities jambo_table\">
+                                        <thead>
+                                            <tr class=\"headings\">
+                                                <th>
+                                                    <input type=\"checkbox\" class=\"tableflat\">
+                                                </th>
+                                                <th> Reference </th>
+                                                <th>Picture </th>
+                                                <th>Order </th>
+                                                <th>Bill to Name </th>
+                                                <th>Status </th>
+                                                <th>Amount </th>
+                                                <th class=\" no-link last\"><span class=\"nobr\">Action</span>
+                                                </th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            
+                                            ";
+        // line 222
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["allprods"]) ? $context["allprods"] : $this->getContext($context, "allprods")));
+        foreach ($context['_seq'] as $context["_key"] => $context["prods"]) {
+            // line 223
+            echo "                                            <tr class=\"even pointer\">
+                                                <td class=\"a-center \">
+                                                    <input type=\"checkbox\" class=\"tableflat\">
+                                                </td>
+                                                <td class=\" \">";
+            // line 227
+            echo twig_escape_filter($this->env, $this->getAttribute($context["prods"], "refProduit", array()), "html", null, true);
+            echo "</td>
+                                                <td class=\" \"><img width=\"30\" heigth=\"30\" src=\"";
+            // line 228
+            echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("uploads/pictures/"), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute($context["prods"], "imageprodreel", array()), "html", null, true);
+            echo "\" </td>
+                                                <td class=\" \">121000210 <i class=\"success fa fa-long-arrow-up\"></i>
+                                                </td>
+                                                <td class=\" \">John Blank L</td>
+                                                <td class=\" \">Paid</td>
+                                                <td class=\"a-right a-right \">\$7.45</td>
+                                                <td class=\" last\"><a href=\"#\">View</a>
+                                                </td>
+                                            </tr>
+                                            ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['prods'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 238
+        echo "                                            
+
+                                        </tbody>
+
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- End Table View -->
+
+
 
                     ";
         
-        $__internal_c1434e804a2369aff1b16e833c50b2155ef97b82b5b39f0221e0238944d328e3->leave($__internal_c1434e804a2369aff1b16e833c50b2155ef97b82b5b39f0221e0238944d328e3_prof);
+        $__internal_71dcc2c1de1c53036f8e1777fbd853ba32074d3a89ec7ac3e522c33f68ad1139->leave($__internal_71dcc2c1de1c53036f8e1777fbd853ba32074d3a89ec7ac3e522c33f68ad1139_prof);
 
     }
 
-    // line 207
+    // line 261
     public function block_otherScript($context, array $blocks = array())
     {
-        $__internal_99dd0567243d5ab62070111806b7c5a1f0c4e0a692e3b6a7a031411ba8c3ae97 = $this->env->getExtension("native_profiler");
-        $__internal_99dd0567243d5ab62070111806b7c5a1f0c4e0a692e3b6a7a031411ba8c3ae97->enter($__internal_99dd0567243d5ab62070111806b7c5a1f0c4e0a692e3b6a7a031411ba8c3ae97_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "otherScript"));
+        $__internal_23c3ff43a702847ec54cedf9dcd5862a3b599f07ba41b638f3faf2c49ff26f07 = $this->env->getExtension("native_profiler");
+        $__internal_23c3ff43a702847ec54cedf9dcd5862a3b599f07ba41b638f3faf2c49ff26f07->enter($__internal_23c3ff43a702847ec54cedf9dcd5862a3b599f07ba41b638f3faf2c49ff26f07_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "otherScript"));
 
-        // line 208
+        // line 262
         echo "
                         <div id=\"custom_notifications\" class=\"custom-notifications dsp_none\">
                             <ul class=\"list-unstyled notifications clearfix\" data-tabbed_notifications=\"notif-group\">
@@ -287,49 +382,61 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
 
                         <!-- bootstrap progress js -->
                         <script src=\"";
-        // line 219
+        // line 273
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/progressbar/bootstrap-progressbar.min.js"), "html", null, true);
         echo "\"></script>
                         <script src=\"";
-        // line 220
+        // line 274
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/nicescroll/jquery.nicescroll.min.js"), "html", null, true);
         echo "\"></script>
                         <!-- icheck -->
                         <script src=\"";
-        // line 222
+        // line 276
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/icheck/icheck.min.js"), "html", null, true);
         echo "\"></script>
 
                         <script src=\"";
-        // line 224
+        // line 278
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/custom.js"), "html", null, true);
         echo "\"></script>
 
                         <!-- form wizard -->
                         <script type=\"text/javascript\" src=\"";
-        // line 227
+        // line 281
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/wizard/jquery.smartWizard.js"), "html", null, true);
         echo "\"></script>
                         <!-- pace -->
                         <script src=\"";
-        // line 229
+        // line 283
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/pace/pace.min.js"), "html", null, true);
         echo "\"></script>
                         <script type=\"text/javascript\">
                             \$(document).ready(function () {
-                                // Smart Wizard
-                                \$('#wizard').smartWizard();
 
-                                function onFinishCallback() {
-                                    \$('#wizard').smartWizard('showMessage', 'Finish Clicked');
-                                    //alert('Finish Clicked');
-                                }
+
+                                \$(\"#produit_submit\").hide();
+
+                                // Smart Wizard
+                                \$('#wizard').smartWizard({
+                                    transitionEffect: 'fade'
+                                });
+
+
+
+                                \$(\"#sender\").click(function () {
+                                    \$(\"#produit_submit\").click();
+
+                                    \$(\"textarea\").val(\$(\"#placeHolder\").Editor(\"getText\"));
+                                    return false;
+                                });
+
+
                             });
 
                             \$(document).ready(function () {
                                 // Smart Wizard
                                 \$('#wizard_verticle').smartWizard({
-                                    transitionEffect: 'slide'
+                                    transitionEffect: 'slideleft'
                                 });
                             });
 
@@ -338,24 +445,76 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
 
                         <!-- Editor Zone -->
                         <script src=\"";
-        // line 252
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/editor.js"), "html", null, true);
+        // line 318
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/ckeditor/ckeditor.js"), "html", null, true);
         echo "\"></script>
 
                         <script type=\"text/javascript\">
-                            \$(document).ready(function () {
-                                \$(\"#txtEditor\").Editor();
-                            });
+
+                            // Replace the <textarea id=\"editor1\"> with a CKEditor
+                            // instance, using default configuration.
+                            CKEDITOR.replace('produit_descriptionProduit');
+
                         </script>
 
                         <!-- dropzone -->
                         <script src=\"";
-        // line 261
+        // line 329
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/dropzone/dropzone.js"), "html", null, true);
         echo "\"></script> 
+
+
+
+                        <script>
+                            \$(document).ready(function () {
+                                \$('input.tableflat').iCheck({
+                                    checkboxClass: 'icheckbox_flat-green',
+                                    radioClass: 'iradio_flat-green'
+                                });
+                            });
+
+                            var asInitVals = new Array();
+                            \$(document).ready(function () {
+                                var oTable = \$('#example').dataTable({
+                                    \"oLanguage\": {
+                                        \"sSearch\": \"Search all columns:\"
+                                    },
+                                    \"aoColumnDefs\": [{
+                                            'bSortable': false,
+                                            'aTargets': [0]
+                                        } //disables sorting for column one
+                                    ],
+                                    'iDisplayLength': 12,
+                                    \"sPaginationType\": \"full_numbers\",
+                                    \"dom\": 'T<\"clear\">lfrtip',
+                                    \"tableTools\": {
+                                        \"sSwfPath\": \"js/datatables/tools/swf/copy_csv_xls_pdf.swf\"
+                                    }
+                                });
+                                \$(\"tfoot input\").keyup(function () {
+                                    /* Filter on the column based on the index of this element's parent <th> */
+                                    oTable.fnFilter(this.value, \$(\"tfoot th\").index(\$(this).parent()));
+                                });
+                                \$(\"tfoot input\").each(function (i) {
+                                    asInitVals[i] = this.value;
+                                });
+                                \$(\"tfoot input\").focus(function () {
+                                    if (this.className == \"search_init\") {
+                                        this.className = \"\";
+                                        this.value = \"\";
+                                    }
+                                });
+                                \$(\"tfoot input\").blur(function (i) {
+                                    if (this.value == \"\") {
+                                        this.className = \"search_init\";
+                                        this.value = asInitVals[\$(\"tfoot input\").index(this)];
+                                    }
+                                });
+                            });
+                        </script>
                     ";
         
-        $__internal_99dd0567243d5ab62070111806b7c5a1f0c4e0a692e3b6a7a031411ba8c3ae97->leave($__internal_99dd0567243d5ab62070111806b7c5a1f0c4e0a692e3b6a7a031411ba8c3ae97_prof);
+        $__internal_23c3ff43a702847ec54cedf9dcd5862a3b599f07ba41b638f3faf2c49ff26f07->leave($__internal_23c3ff43a702847ec54cedf9dcd5862a3b599f07ba41b638f3faf2c49ff26f07_prof);
 
     }
 
@@ -371,7 +530,7 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
 
     public function getDebugInfo()
     {
-        return array (  354 => 261,  342 => 252,  316 => 229,  311 => 227,  305 => 224,  300 => 222,  295 => 220,  291 => 219,  278 => 208,  272 => 207,  207 => 141,  190 => 127,  181 => 121,  171 => 114,  78 => 23,  72 => 22,  62 => 15,  59 => 14,  53 => 13,  43 => 8,  37 => 7,  11 => 1,);
+        return array (  463 => 329,  449 => 318,  411 => 283,  406 => 281,  400 => 278,  395 => 276,  390 => 274,  386 => 273,  373 => 262,  367 => 261,  346 => 238,  329 => 228,  325 => 227,  319 => 223,  315 => 222,  263 => 173,  259 => 172,  243 => 159,  239 => 158,  235 => 157,  225 => 150,  213 => 141,  203 => 134,  194 => 128,  185 => 122,  175 => 115,  163 => 106,  78 => 23,  72 => 22,  62 => 15,  59 => 14,  53 => 13,  43 => 8,  37 => 7,  11 => 1,);
     }
 }
 /* {% extends "CondorsTnMallBundle::ResponsableLayouts/Layout.html.twig" %}*/
@@ -479,97 +638,151 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
 /*                                     </a>*/
 /*                                 </li>*/
 /*                             </ul>*/
-/*                             <form class="form-horizontal form-label-left">*/
-/*                                 <div id="step-1">*/
+/*                             {{ form_start(form, {'attr': {'class': 'form-horizontal form-label-left'}}) }}*/
+/*                             <div id="step-1">*/
 /* */
 /* */
-/*                                     <div class="form-group">*/
-/*                                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Product Name <span class="required">*</span>*/
-/*                                         </label>*/
-/*                                         <div class="col-md-6 col-sm-6 col-xs-12">*/
-/*                                             {{ form_widget(form.libelleProduit , { 'attr': {'class': 'form-control col-md-7 col-xs-12'} } ) }}*/
-/*                                         </div>*/
-/*                                     </div>*/
-/*                                     <div class="form-group">*/
-/*                                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Product Category <span class="required">*</span>*/
-/*                                         </label>*/
-/*                                         <div class="col-md-6 col-sm-6 col-xs-12">*/
-/*                                             {{ form_widget(form.categorieProduit , { 'attr': {'class': 'form-control col-md-7 col-xs-12'} } ) }}*/
-/*                                         </div>*/
-/*                                     </div>*/
-/*                                     <div class="form-group">*/
-/*                                         <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Product Reference</label>*/
-/*                                         <div class="col-md-6 col-sm-6 col-xs-12">*/
-/*                                             {{ form_widget(form.refProduit , { 'attr': {'class': 'form-control col-md-7 col-xs-12'} } ) }}*/
-/*                                         </div>*/
-/*                                     </div>*/
+/*                                 <div class="form-group">*/
+/*                                     <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Product Name <span class="required">*</span>*/
+/*                                     </label>*/
+/*                                     <div class="col-md-6 col-sm-6 col-xs-12">*/
 /* */
-/* */
-/* */
-/* */
-/* */
-/*                                 </div>*/
-/*                                 <div id="step-2">*/
-/*                                     <h2 class="StepTitle">Product Discription</h2>*/
-/*                                     <div id="txtEditor">*/
-/* */
-/* */
-/*                                         {{ form_widget(form.descriptionProduit , { 'attr': {'class': 'form-control col-md-7 col-xs-12'} } ) }}*/
+/*                                         {{ form_widget(form.libelleProduit , { 'attr': {'class': 'form-control col-md-7 col-xs-12'} } ) }} */
 /*                                     </div>*/
 /*                                 </div>*/
-/*                             </form>*/
+/*                                 <div class="form-group">*/
+/*                                     <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Product Category <span class="required">*</span>*/
+/*                                     </label>*/
+/*                                     <div class="col-md-6 col-sm-6 col-xs-12">*/
+/*                                         {{ form_widget(form.categorieProduit , { 'attr': {'class': 'form-control col-md-7 col-xs-12'} } ) }} */
+/*                                     </div>*/
+/*                                 </div>*/
+/*                                 <div class="form-group">*/
+/*                                     <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Product REF<span class="required">*</span></label>*/
+/*                                     <div class="col-md-6 col-sm-6 col-xs-12">*/
+/*                                         {{ form_widget(form.refProduit , { 'attr': {'class': 'form-control col-md-7 col-xs-12'} } ) }} */
+/*                                     </div>*/
+/*                                 </div>*/
+/*                                 <div class="form-group">*/
+/*                                     <label class="control-label col-md-3 col-sm-3 col-xs-12">Product V.A.T<span class="required">*</span></label>*/
+/*                                     <div class="col-md-6 col-sm-6 col-xs-12">*/
+/*                                         {{ form_widget(form.tvaProduit , { 'attr': {'class': 'form-control col-md-7 col-xs-12'} } ) }} */
+/*                                     </div>*/
+/*                                 </div>*/
+/*                                 <div class="form-group">*/
+/*                                     <label class="control-label col-md-3 col-sm-3 col-xs-12">Product Price <span class="required">*</span>*/
+/*                                     </label>*/
+/*                                     <div class="col-md-6 col-sm-6 col-xs-12">*/
+/*                                         {{ form_widget(form.prixProduit , { 'attr': {'class': 'form-control col-md-7 col-xs-12'} } ) }} */
+/*                                     </div>*/
+/*                                 </div>*/
+/* */
+/* */
+/*                             </div>*/
+/*                             <div id="step-2">*/
+/*                                 <h2 class="StepTitle">Desciption</h2>*/
+/*                                 <p id="txtEditor">*/
+/*                                     {{ form_widget(form.descriptionProduit , { 'attr': {'class': 'form-control col-md-7 col-xs-12'} } ) }} */
+/*                                 </p>*/
+/* */
+/*                             </div>*/
 /*                             <div id="step-3">*/
 /*                                 <h2 class="StepTitle">Step 3 Content</h2>*/
-/*                                 <div class="row">*/
-/*                                     <div class="col-md-12 col-sm-12 col-xs-12">*/
-/*                                         <div class="x_panel">*/
-/*                                             <div class="x_title">*/
-/*                                                 <h2>Dropzone multiple file uploader</h2>*/
-/*                                                 <ul class="nav navbar-right panel_toolbox">*/
-/*                                                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>*/
-/*                                                     </li>*/
-/*                                                     <li class="dropdown">*/
-/*                                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>*/
-/*                                                         <ul class="dropdown-menu" role="menu">*/
-/*                                                             <li><a href="#">Settings 1</a>*/
-/*                                                             </li>*/
-/*                                                             <li><a href="#">Settings 2</a>*/
-/*                                                             </li>*/
-/*                                                         </ul>*/
-/*                                                     </li>*/
-/*                                                     <li><a class="close-link"><i class="fa fa-close"></i></a>*/
-/*                                                     </li>*/
-/*                                                 </ul>*/
-/*                                                 <div class="clearfix"></div>*/
-/*                                             </div>*/
-/*                                             <div class="x_content">*/
+/*                                 <p>*/
+/*                                     {{ form_widget(form.fileFront , { 'attr': {'class': 'form-control col-md-7 col-xs-12'} } ) }} */
+/*                                     {{ form_widget(form.fileBack , { 'attr': {'class': 'form-control col-md-7 col-xs-12'} } ) }} */
+/*                                     {{ form_widget(form.fileReel , { 'attr': {'class': 'form-control col-md-7 col-xs-12'} } ) }} */
+/*                                 </p>*/
 /* */
-/*                                                 <p>Drag multiple files to the box below for multi upload or click to select files. This is for demonstration purposes only, the files are not uploaded to any server.</p>*/
-/*                                                 <form action="choices/form_upload.html" class="dropzone" style="border: 1px solid #e5e5e5; height: 300px; "></form>*/
-/* */
-/*                                              */
-/*                                             </div>*/
-/*                                         </div>*/
-/*                                     </div>*/
-/*                                 </div>*/
 /*                             </div>*/
 /*                             <div id="step-4">*/
 /*                                 <h2 class="StepTitle">Step 4 Content</h2>*/
-/*                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.*/
-/*                                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.*/
+/*                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et */
 /*                                 </p>*/
-/*                                 <p>*/
-/*                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor*/
-/*                                     in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.*/
-/*                                 </p>*/
-/*                                 <p>*/
-/*                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor*/
-/*                                     in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.*/
-/*                                 </p>*/
+/* */
 /*                             </div>*/
 /* */
 /*                         </div>*/
-/*                         <!-- End SmartWizard Content -->*/
+/* */
+/*                         {{ form_widget(form.submit) }}*/
+/*                         {{ form_end(form)}}*/
+/* */
+/* */
+/* */
+/* */
+/* */
+/*                         <!-- table View -->*/
+/* */
+/*                         <div class="col-md-12 col-sm-12 col-xs-12">*/
+/*                             <div class="x_panel">*/
+/*                                 <div class="x_title">*/
+/*                                     <h2>View Products <small>Sessions</small></h2>*/
+/*                                     <ul class="nav navbar-right panel_toolbox">*/
+/*                                         <li><a href="#"><i class="fa fa-chevron-up"></i></a>*/
+/*                                         </li>*/
+/*                                         <li class="dropdown">*/
+/*                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>*/
+/*                                             <ul class="dropdown-menu" role="menu">*/
+/*                                                 <li><a href="#">Settings 1</a>*/
+/*                                                 </li>*/
+/*                                                 <li><a href="#">Settings 2</a>*/
+/*                                                 </li>*/
+/*                                             </ul>*/
+/*                                         </li>*/
+/*                                         <li><a href="#"><i class="fa fa-close"></i></a>*/
+/*                                         </li>*/
+/*                                     </ul>*/
+/*                                     <div class="clearfix"></div>*/
+/*                                 </div>*/
+/*                                 <div class="x_content">*/
+/*                                     <table id="example" class="table table-striped responsive-utilities jambo_table">*/
+/*                                         <thead>*/
+/*                                             <tr class="headings">*/
+/*                                                 <th>*/
+/*                                                     <input type="checkbox" class="tableflat">*/
+/*                                                 </th>*/
+/*                                                 <th> Reference </th>*/
+/*                                                 <th>Picture </th>*/
+/*                                                 <th>Order </th>*/
+/*                                                 <th>Bill to Name </th>*/
+/*                                                 <th>Status </th>*/
+/*                                                 <th>Amount </th>*/
+/*                                                 <th class=" no-link last"><span class="nobr">Action</span>*/
+/*                                                 </th>*/
+/*                                             </tr>*/
+/*                                         </thead>*/
+/* */
+/*                                         <tbody>*/
+/*                                             */
+/*                                             {% for prods in allprods %}*/
+/*                                             <tr class="even pointer">*/
+/*                                                 <td class="a-center ">*/
+/*                                                     <input type="checkbox" class="tableflat">*/
+/*                                                 </td>*/
+/*                                                 <td class=" ">{{ prods.refProduit }}</td>*/
+/*                                                 <td class=" "><img width="30" heigth="30" src="{{ asset('uploads/pictures/')}}{{ prods.imageprodreel }}" </td>*/
+/*                                                 <td class=" ">121000210 <i class="success fa fa-long-arrow-up"></i>*/
+/*                                                 </td>*/
+/*                                                 <td class=" ">John Blank L</td>*/
+/*                                                 <td class=" ">Paid</td>*/
+/*                                                 <td class="a-right a-right ">$7.45</td>*/
+/*                                                 <td class=" last"><a href="#">View</a>*/
+/*                                                 </td>*/
+/*                                             </tr>*/
+/*                                             {% endfor %}*/
+/*                                             */
+/* */
+/*                                         </tbody>*/
+/* */
+/*                                     </table>*/
+/*                                 </div>*/
+/*                             </div>*/
+/*                         </div>*/
+/* */
+/* */
+/*                         <!-- End Table View -->*/
+/* */
+/* */
 /* */
 /*                     {% endblock Content%}*/
 /* */
@@ -605,19 +818,31 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
 /*                         <script src="{{ asset('responsable/js/pace/pace.min.js')}}"></script>*/
 /*                         <script type="text/javascript">*/
 /*                             $(document).ready(function () {*/
-/*                                 // Smart Wizard*/
-/*                                 $('#wizard').smartWizard();*/
 /* */
-/*                                 function onFinishCallback() {*/
-/*                                     $('#wizard').smartWizard('showMessage', 'Finish Clicked');*/
-/*                                     //alert('Finish Clicked');*/
-/*                                 }*/
+/* */
+/*                                 $("#produit_submit").hide();*/
+/* */
+/*                                 // Smart Wizard*/
+/*                                 $('#wizard').smartWizard({*/
+/*                                     transitionEffect: 'fade'*/
+/*                                 });*/
+/* */
+/* */
+/* */
+/*                                 $("#sender").click(function () {*/
+/*                                     $("#produit_submit").click();*/
+/* */
+/*                                     $("textarea").val($("#placeHolder").Editor("getText"));*/
+/*                                     return false;*/
+/*                                 });*/
+/* */
+/* */
 /*                             });*/
 /* */
 /*                             $(document).ready(function () {*/
 /*                                 // Smart Wizard*/
 /*                                 $('#wizard_verticle').smartWizard({*/
-/*                                     transitionEffect: 'slide'*/
+/*                                     transitionEffect: 'slideleft'*/
 /*                                 });*/
 /*                             });*/
 /* */
@@ -625,16 +850,68 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
 /* */
 /* */
 /*                         <!-- Editor Zone -->*/
-/*                         <script src="{{ asset('responsable/editor.js')}}"></script>*/
+/*                         <script src="{{ asset('responsable/js/ckeditor/ckeditor.js')}}"></script>*/
 /* */
 /*                         <script type="text/javascript">*/
-/*                             $(document).ready(function () {*/
-/*                                 $("#txtEditor").Editor();*/
-/*                             });*/
+/* */
+/*                             // Replace the <textarea id="editor1"> with a CKEditor*/
+/*                             // instance, using default configuration.*/
+/*                             CKEDITOR.replace('produit_descriptionProduit');*/
+/* */
 /*                         </script>*/
 /* */
 /*                         <!-- dropzone -->*/
 /*                         <script src="{{ asset('responsable/js/dropzone/dropzone.js')}}"></script> */
+/* */
+/* */
+/* */
+/*                         <script>*/
+/*                             $(document).ready(function () {*/
+/*                                 $('input.tableflat').iCheck({*/
+/*                                     checkboxClass: 'icheckbox_flat-green',*/
+/*                                     radioClass: 'iradio_flat-green'*/
+/*                                 });*/
+/*                             });*/
+/* */
+/*                             var asInitVals = new Array();*/
+/*                             $(document).ready(function () {*/
+/*                                 var oTable = $('#example').dataTable({*/
+/*                                     "oLanguage": {*/
+/*                                         "sSearch": "Search all columns:"*/
+/*                                     },*/
+/*                                     "aoColumnDefs": [{*/
+/*                                             'bSortable': false,*/
+/*                                             'aTargets': [0]*/
+/*                                         } //disables sorting for column one*/
+/*                                     ],*/
+/*                                     'iDisplayLength': 12,*/
+/*                                     "sPaginationType": "full_numbers",*/
+/*                                     "dom": 'T<"clear">lfrtip',*/
+/*                                     "tableTools": {*/
+/*                                         "sSwfPath": "js/datatables/tools/swf/copy_csv_xls_pdf.swf"*/
+/*                                     }*/
+/*                                 });*/
+/*                                 $("tfoot input").keyup(function () {*/
+/*                                     /* Filter on the column based on the index of this element's parent <th> *//* */
+/*                                     oTable.fnFilter(this.value, $("tfoot th").index($(this).parent()));*/
+/*                                 });*/
+/*                                 $("tfoot input").each(function (i) {*/
+/*                                     asInitVals[i] = this.value;*/
+/*                                 });*/
+/*                                 $("tfoot input").focus(function () {*/
+/*                                     if (this.className == "search_init") {*/
+/*                                         this.className = "";*/
+/*                                         this.value = "";*/
+/*                                     }*/
+/*                                 });*/
+/*                                 $("tfoot input").blur(function (i) {*/
+/*                                     if (this.value == "") {*/
+/*                                         this.className = "search_init";*/
+/*                                         this.value = asInitVals[$("tfoot input").index(this)];*/
+/*                                     }*/
+/*                                 });*/
+/*                             });*/
+/*                         </script>*/
 /*                     {% endblock otherScript%}*/
 /* */
 /* */
