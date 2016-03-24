@@ -20,10 +20,9 @@ class ProduitType extends AbstractType {
                 ->add('descriptionProduit')
                 ->add('tvaProduit')
                 ->add('prixProduit')
-                ->add('fileFront', 'file')
-                ->add('fileBack', 'file')
-                ->add('fileReel', 'file')
-                
+                ->add('fileFront', 'file', array('required' => false))
+                ->add('fileBack', 'file', array('required' => false))
+                ->add('fileReel', 'file', array('required' => false))
                 ->add('submit', 'submit')
         ;
     }

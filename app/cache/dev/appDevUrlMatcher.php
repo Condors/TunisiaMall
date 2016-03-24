@@ -143,9 +143,22 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return array (  '_controller' => 'Condors\\TnMallBundle\\Controller\\ResponsableController::indexAction',  '_route' => 'condors_tn_mall_responsable_index',);
             }
 
-            // condors_tn_mall_responsable_produit
-            if ($pathinfo === '/user-responsable/products') {
-                return array (  '_controller' => 'Condors\\TnMallBundle\\Controller\\ResponsableController::productsAction',  '_route' => 'condors_tn_mall_responsable_produit',);
+            if (0 === strpos($pathinfo, '/user-responsable/products')) {
+                // condors_tn_mall_responsable_produit
+                if ($pathinfo === '/user-responsable/products') {
+                    return array (  '_controller' => 'Condors\\TnMallBundle\\Controller\\ResponsableController::productsAction',  '_route' => 'condors_tn_mall_responsable_produit',);
+                }
+
+                // condors_tn_mall_responsable_produit_midifier
+                if (0 === strpos($pathinfo, '/user-responsable/products/modify') && preg_match('#^/user\\-responsable/products/modify/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'condors_tn_mall_responsable_produit_midifier')), array (  '_controller' => 'Condors\\TnMallBundle\\Controller\\ResponsableController::modifyAction',));
+                }
+
+                // condors_tn_mall_responsable_produit_delete
+                if (0 === strpos($pathinfo, '/user-responsable/products/delete') && preg_match('#^/user\\-responsable/products/delete/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'condors_tn_mall_responsable_produit_delete')), array (  '_controller' => 'Condors\\TnMallBundle\\Controller\\ResponsableController::deleteAction',));
+                }
+
             }
 
         }

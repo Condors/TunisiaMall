@@ -13,18 +13,21 @@ class __TwigTemplate_903ca7b9536b21bcb2f2cc262f6c2ebf084bc26c22161ef33f46289c664
             'quickProfile' => array($this, 'block_quickProfile'),
             'nav_menu' => array($this, 'block_nav_menu'),
             'Content' => array($this, 'block_Content'),
+            'footer' => array($this, 'block_footer'),
             'otherScript' => array($this, 'block_otherScript'),
         );
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_9c72ba16e2e0b8e86a98f5396d2fa3118081e300892d02c4196b61671316bfae = $this->env->getExtension("native_profiler");
-        $__internal_9c72ba16e2e0b8e86a98f5396d2fa3118081e300892d02c4196b61671316bfae->enter($__internal_9c72ba16e2e0b8e86a98f5396d2fa3118081e300892d02c4196b61671316bfae_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "CondorsTnMallBundle::ResponsableLayouts/Layout.html.twig"));
+        $__internal_08119d5a5f2fab591a334d787aa5593c6ceea939f7be4356f8f728c55c0dd342 = $this->env->getExtension("native_profiler");
+        $__internal_08119d5a5f2fab591a334d787aa5593c6ceea939f7be4356f8f728c55c0dd342->enter($__internal_08119d5a5f2fab591a334d787aa5593c6ceea939f7be4356f8f728c55c0dd342_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "CondorsTnMallBundle::ResponsableLayouts/Layout.html.twig"));
 
         // line 1
-        echo "<!DOCTYPE html>
+        echo "
+<!DOCTYPE html>
 <html lang=\"en\">
+
 
 <head>
   <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">
@@ -38,46 +41,46 @@ class __TwigTemplate_903ca7b9536b21bcb2f2cc262f6c2ebf084bc26c22161ef33f46289c664
   <!-- Bootstrap core CSS -->
 
   <link href=\"";
-        // line 15
+        // line 17
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/css/bootstrap.min.css"), "html", null, true);
         echo "\" rel=\"stylesheet\">
  <link href=\"";
-        // line 16
+        // line 18
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/editor.css"), "html", null, true);
         echo "\" type=\"text/css\" rel=\"stylesheet\"/>
   <link href=\"";
-        // line 17
+        // line 19
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/fonts/css/font-awesome.min.css"), "html", null, true);
         echo "\" rel=\"stylesheet\">
   <link href=\"";
-        // line 18
+        // line 20
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/css/animate.min.css"), "html", null, true);
         echo "\" rel=\"stylesheet\">
 
   <!-- Custom styling plus plugins -->
   <link href=\"";
-        // line 21
+        // line 23
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/css/custom.css"), "html", null, true);
         echo "\" rel=\"stylesheet\">
   <link rel=\"stylesheet\" type=\"text/css\" href=\"";
-        // line 22
+        // line 24
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/css/maps/jquery-jvectormap-2.0.3.css"), "html", null, true);
         echo "\" />
   <link href=\"";
-        // line 23
+        // line 25
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/css/icheck/flat/green.css"), "html", null, true);
         echo "\" rel=\"stylesheet\" />
   <link href=\"";
-        // line 24
+        // line 26
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/css/floatexamples.css\" rel=\"stylesheet\" type=\"text/css"), "html", null, true);
         echo "\" />
 
   <script src=\"";
-        // line 26
+        // line 28
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/jquery.min.js"), "html", null, true);
         echo "\"></script>
   <script src=\"";
-        // line 27
+        // line 29
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/nprogress.js"), "html", null, true);
         echo "\"></script>
 
@@ -106,7 +109,7 @@ class __TwigTemplate_903ca7b9536b21bcb2f2cc262f6c2ebf084bc26c22161ef33f46289c664
 
           <div class=\"navbar nav_title\" style=\"border: 0;\">
               <a href=\"";
-        // line 53
+        // line 55
         echo $this->env->getExtension('routing')->getPath("condors_tn_mall_responsable_index");
         echo "\" class=\"site_title\"> <img width=\"40\"  height=\"40\" src=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/logo.png"), "html", null, true);
@@ -116,9 +119,9 @@ class __TwigTemplate_903ca7b9536b21bcb2f2cc262f6c2ebf084bc26c22161ef33f46289c664
 
           <!-- menu prile quick info -->
           ";
-        // line 58
+        // line 60
         $this->displayBlock('quickProfile', $context, $blocks);
-        // line 61
+        // line 63
         echo "          <!-- /menu prile quick info -->
 
           <br />
@@ -130,7 +133,7 @@ class __TwigTemplate_903ca7b9536b21bcb2f2cc262f6c2ebf084bc26c22161ef33f46289c664
               <h3>&nbsp;</h3>
               <ul class=\"nav side-menu\">
                 <li><a href=\"";
-        // line 71
+        // line 73
         echo $this->env->getExtension('routing')->getPath("condors_tn_mall_responsable_index");
         echo "\"><i class=\"fa fa-home\"></i> Dashboard </a>
                   
@@ -138,7 +141,7 @@ class __TwigTemplate_903ca7b9536b21bcb2f2cc262f6c2ebf084bc26c22161ef33f46289c664
                 <li><a><i class=\"fa fa-book\"></i> Catalog <span class=\"fa fa-chevron-down\"></span></a>
                   <ul class=\"nav child_menu\" style=\"display: none\">
                     <li></i><a href=\"";
-        // line 76
+        // line 78
         echo $this->env->getExtension('routing')->getPath("condors_tn_mall_responsable_produit");
         echo "\">Products</a>
                     </li>
@@ -178,9 +181,9 @@ class __TwigTemplate_903ca7b9536b21bcb2f2cc262f6c2ebf084bc26c22161ef33f46289c664
 
         <div class=\"nav_menu\">
               ";
-        // line 113
+        // line 115
         $this->displayBlock('nav_menu', $context, $blocks);
-        // line 116
+        // line 118
         echo "         
         </div>
 
@@ -196,9 +199,9 @@ class __TwigTemplate_903ca7b9536b21bcb2f2cc262f6c2ebf084bc26c22161ef33f46289c664
           <div class=\"col-md-12 col-sm-12 col-xs-12\">
               
               ";
-        // line 130
+        // line 132
         $this->displayBlock('Content', $context, $blocks);
-        // line 133
+        // line 135
         echo "            
           </div>
 
@@ -207,14 +210,11 @@ class __TwigTemplate_903ca7b9536b21bcb2f2cc262f6c2ebf084bc26c22161ef33f46289c664
 
         <!-- footer content -->
 
-        <footer>
-          <div class=\"copyright-info\">
-            <p class=\"pull-right\">Tunisia Mall - <a href=\"#\">Condors | Esprit</a>    
-            </p>
-          </div>
-          <div class=\"clearfix\"></div>
-        </footer>
-        <!-- /footer content -->
+        ";
+        // line 143
+        $this->displayBlock('footer', $context, $blocks);
+        // line 146
+        echo "        <!-- /footer content -->
       </div>
       <!-- /page content -->
 
@@ -230,89 +230,89 @@ class __TwigTemplate_903ca7b9536b21bcb2f2cc262f6c2ebf084bc26c22161ef33f46289c664
   </div>
 
   <script src=\"";
-        // line 163
+        // line 161
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/bootstrap.min.js"), "html", null, true);
         echo "\"></script>
 
   <!-- gauge js -->
   <script type=\"text/javascript\" src=\"";
-        // line 166
+        // line 164
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/gauge/gauge.min.js"), "html", null, true);
         echo "\"></script>
   <script type=\"text/javascript\" src=\"";
-        // line 167
+        // line 165
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/gauge/gauge_demo.js"), "html", null, true);
         echo "\"></script>
   <!-- chart js -->
   <script src=\"";
-        // line 169
+        // line 167
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/chartjs/chart.min.js"), "html", null, true);
         echo "\"></script>
   <!-- bootstrap progress js -->
   <script src=\"";
-        // line 171
+        // line 169
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/progressbar/bootstrap-progressbar.min.js"), "html", null, true);
         echo "\"></script>
   <script src=\"";
-        // line 172
+        // line 170
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/nicescroll/jquery.nicescroll.min.js"), "html", null, true);
         echo "\"></script>
   <!-- icheck -->
   <script src=\"";
-        // line 174
+        // line 172
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/icheck/icheck.min.js"), "html", null, true);
         echo "\"></script>
   <!-- daterangepicker -->
   <script type=\"text/javascript\" src=\"";
-        // line 176
+        // line 174
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/moment/moment.min.js"), "html", null, true);
         echo "\"></script>
   <script type=\"text/javascript\" src=\"";
-        // line 177
+        // line 175
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/datepicker/daterangepicker.js"), "html", null, true);
         echo "\"></script>
 
   <script src=\"";
-        // line 179
+        // line 177
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/custom.js"), "html", null, true);
         echo "\"></script>
 
   <!-- flot js -->
   <!--[if lte IE 8]><script type=\"text/javascript\" src=\"js/excanvas.min.js\"></script><![endif]-->
   <script type=\"text/javascript\" src=\"";
-        // line 183
+        // line 181
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/flot/jquery.flot.js"), "html", null, true);
         echo "\"></script>
   <script type=\"text/javascript\" src=\"";
-        // line 184
+        // line 182
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/flot/jquery.flot.pie.js"), "html", null, true);
         echo "\"></script>
   <script type=\"text/javascript\" src=\"";
-        // line 185
+        // line 183
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/flot/jquery.flot.orderBars.js"), "html", null, true);
         echo "\"></script>
   <script type=\"text/javascript\" src=\"";
-        // line 186
+        // line 184
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/flot/jquery.flot.time.min.js"), "html", null, true);
         echo "\"></script>
   <script type=\"text/javascript\" src=\"";
-        // line 187
+        // line 185
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/flot/date.js"), "html", null, true);
         echo "\"></script>
   <script type=\"text/javascript\" src=\"";
-        // line 188
+        // line 186
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/flot/jquery.flot.spline.js"), "html", null, true);
         echo "\"></script>
   <script type=\"text/javascript\" src=\"";
-        // line 189
+        // line 187
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/flot/jquery.flot.stack.js"), "html", null, true);
         echo "\"></script>
   <script type=\"text/javascript\" src=\"";
-        // line 190
+        // line 188
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/flot/curvedLines.js"), "html", null, true);
         echo "\"></script>
   <script type=\"text/javascript\" src=\"";
-        // line 191
+        // line 189
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/flot/jquery.flot.resize.js"), "html", null, true);
         echo "\"></script>
   <script>
@@ -394,24 +394,24 @@ class __TwigTemplate_903ca7b9536b21bcb2f2cc262f6c2ebf084bc26c22161ef33f46289c664
 
   <!-- worldmap -->
   <script type=\"text/javascript\" src=\"";
-        // line 270
+        // line 268
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/maps/jquery-jvectormap-2.0.3.min.js"), "html", null, true);
         echo "\"></script>
   <script type=\"text/javascript\" src=\"";
-        // line 271
+        // line 269
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/maps/gdp-data.js"), "html", null, true);
         echo "\"></script>
   <script type=\"text/javascript\" src=\"";
-        // line 272
+        // line 270
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/maps/jquery-jvectormap-world-mill-en.js"), "html", null, true);
         echo "\"></script>
   <script type=\"text/javascript\" src=\"";
-        // line 273
+        // line 271
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/maps/jquery-jvectormap-us-aea-en.js"), "html", null, true);
         echo "\"></script>
   <!-- pace -->
   <script src=\"";
-        // line 275
+        // line 273
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/pace/pace.min.js"), "html", null, true);
         echo "\"></script>
   <script>
@@ -435,7 +435,7 @@ class __TwigTemplate_903ca7b9536b21bcb2f2cc262f6c2ebf084bc26c22161ef33f46289c664
   </script>
   <!-- skycons -->
   <script src=\"";
-        // line 296
+        // line 294
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/skycons/skycons.min.js"), "html", null, true);
         echo "\"></script>
   <script>
@@ -554,9 +554,9 @@ class __TwigTemplate_903ca7b9536b21bcb2f2cc262f6c2ebf084bc26c22161ef33f46289c664
   </script>
   
   ";
-        // line 412
+        // line 410
         $this->displayBlock('otherScript', $context, $blocks);
-        // line 414
+        // line 412
         echo "  <!-- /datepicker -->
   <!-- /footer content -->
 </body>
@@ -564,62 +564,76 @@ class __TwigTemplate_903ca7b9536b21bcb2f2cc262f6c2ebf084bc26c22161ef33f46289c664
 </html>
 ";
         
-        $__internal_9c72ba16e2e0b8e86a98f5396d2fa3118081e300892d02c4196b61671316bfae->leave($__internal_9c72ba16e2e0b8e86a98f5396d2fa3118081e300892d02c4196b61671316bfae_prof);
+        $__internal_08119d5a5f2fab591a334d787aa5593c6ceea939f7be4356f8f728c55c0dd342->leave($__internal_08119d5a5f2fab591a334d787aa5593c6ceea939f7be4356f8f728c55c0dd342_prof);
 
     }
 
-    // line 58
+    // line 60
     public function block_quickProfile($context, array $blocks = array())
     {
-        $__internal_3b619dc17d39b3f9b53a96111226a7309cca410324dcb7e02d8e888b9baca078 = $this->env->getExtension("native_profiler");
-        $__internal_3b619dc17d39b3f9b53a96111226a7309cca410324dcb7e02d8e888b9baca078->enter($__internal_3b619dc17d39b3f9b53a96111226a7309cca410324dcb7e02d8e888b9baca078_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "quickProfile"));
+        $__internal_74d372bcf638c84002379c8c313360ad35fe9b74c6f5c9f3af6b0ab1e9d14d04 = $this->env->getExtension("native_profiler");
+        $__internal_74d372bcf638c84002379c8c313360ad35fe9b74c6f5c9f3af6b0ab1e9d14d04->enter($__internal_74d372bcf638c84002379c8c313360ad35fe9b74c6f5c9f3af6b0ab1e9d14d04_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "quickProfile"));
 
-        // line 59
+        // line 61
         echo "          
           ";
         
-        $__internal_3b619dc17d39b3f9b53a96111226a7309cca410324dcb7e02d8e888b9baca078->leave($__internal_3b619dc17d39b3f9b53a96111226a7309cca410324dcb7e02d8e888b9baca078_prof);
+        $__internal_74d372bcf638c84002379c8c313360ad35fe9b74c6f5c9f3af6b0ab1e9d14d04->leave($__internal_74d372bcf638c84002379c8c313360ad35fe9b74c6f5c9f3af6b0ab1e9d14d04_prof);
 
     }
 
-    // line 113
+    // line 115
     public function block_nav_menu($context, array $blocks = array())
     {
-        $__internal_84331399d617abbaec00d8ff5c48c21ce07aeb82ac6d2e7148beddd530926678 = $this->env->getExtension("native_profiler");
-        $__internal_84331399d617abbaec00d8ff5c48c21ce07aeb82ac6d2e7148beddd530926678->enter($__internal_84331399d617abbaec00d8ff5c48c21ce07aeb82ac6d2e7148beddd530926678_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "nav_menu"));
+        $__internal_b0f203516baf61dd85f10812085918dd9d551f46710d56b7062668d766c164ac = $this->env->getExtension("native_profiler");
+        $__internal_b0f203516baf61dd85f10812085918dd9d551f46710d56b7062668d766c164ac->enter($__internal_b0f203516baf61dd85f10812085918dd9d551f46710d56b7062668d766c164ac_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "nav_menu"));
 
-        // line 114
+        // line 116
         echo "          
                 ";
         
-        $__internal_84331399d617abbaec00d8ff5c48c21ce07aeb82ac6d2e7148beddd530926678->leave($__internal_84331399d617abbaec00d8ff5c48c21ce07aeb82ac6d2e7148beddd530926678_prof);
+        $__internal_b0f203516baf61dd85f10812085918dd9d551f46710d56b7062668d766c164ac->leave($__internal_b0f203516baf61dd85f10812085918dd9d551f46710d56b7062668d766c164ac_prof);
 
     }
 
-    // line 130
+    // line 132
     public function block_Content($context, array $blocks = array())
     {
-        $__internal_1fb4a5d3f5255a321ab340d15133ea054e001e46d825c148346498107b3fdc2e = $this->env->getExtension("native_profiler");
-        $__internal_1fb4a5d3f5255a321ab340d15133ea054e001e46d825c148346498107b3fdc2e->enter($__internal_1fb4a5d3f5255a321ab340d15133ea054e001e46d825c148346498107b3fdc2e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "Content"));
+        $__internal_8a9815038c0274216bf87d40d76287d8e0deef0f458381009a597e8ee22936c5 = $this->env->getExtension("native_profiler");
+        $__internal_8a9815038c0274216bf87d40d76287d8e0deef0f458381009a597e8ee22936c5->enter($__internal_8a9815038c0274216bf87d40d76287d8e0deef0f458381009a597e8ee22936c5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "Content"));
 
-        // line 131
+        // line 133
         echo "                  
               ";
         
-        $__internal_1fb4a5d3f5255a321ab340d15133ea054e001e46d825c148346498107b3fdc2e->leave($__internal_1fb4a5d3f5255a321ab340d15133ea054e001e46d825c148346498107b3fdc2e_prof);
+        $__internal_8a9815038c0274216bf87d40d76287d8e0deef0f458381009a597e8ee22936c5->leave($__internal_8a9815038c0274216bf87d40d76287d8e0deef0f458381009a597e8ee22936c5_prof);
 
     }
 
-    // line 412
+    // line 143
+    public function block_footer($context, array $blocks = array())
+    {
+        $__internal_69baee69f04d4fae6951a14bc42b62395bac81fcf98d2daa1fb040f3087f2df6 = $this->env->getExtension("native_profiler");
+        $__internal_69baee69f04d4fae6951a14bc42b62395bac81fcf98d2daa1fb040f3087f2df6->enter($__internal_69baee69f04d4fae6951a14bc42b62395bac81fcf98d2daa1fb040f3087f2df6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "footer"));
+
+        // line 144
+        echo "            
+         ";
+        
+        $__internal_69baee69f04d4fae6951a14bc42b62395bac81fcf98d2daa1fb040f3087f2df6->leave($__internal_69baee69f04d4fae6951a14bc42b62395bac81fcf98d2daa1fb040f3087f2df6_prof);
+
+    }
+
+    // line 410
     public function block_otherScript($context, array $blocks = array())
     {
-        $__internal_c92d861115594051b0383725bda8af4501132382cd4863f16731361ef772af42 = $this->env->getExtension("native_profiler");
-        $__internal_c92d861115594051b0383725bda8af4501132382cd4863f16731361ef772af42->enter($__internal_c92d861115594051b0383725bda8af4501132382cd4863f16731361ef772af42_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "otherScript"));
+        $__internal_d2f0357e2c7166f0b076a9bbc420e4579cfdc2ba5d1fb89b77de96c193d83f4c = $this->env->getExtension("native_profiler");
+        $__internal_d2f0357e2c7166f0b076a9bbc420e4579cfdc2ba5d1fb89b77de96c193d83f4c->enter($__internal_d2f0357e2c7166f0b076a9bbc420e4579cfdc2ba5d1fb89b77de96c193d83f4c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "otherScript"));
 
-        // line 413
+        // line 411
         echo "  ";
         
-        $__internal_c92d861115594051b0383725bda8af4501132382cd4863f16731361ef772af42->leave($__internal_c92d861115594051b0383725bda8af4501132382cd4863f16731361ef772af42_prof);
+        $__internal_d2f0357e2c7166f0b076a9bbc420e4579cfdc2ba5d1fb89b77de96c193d83f4c->leave($__internal_d2f0357e2c7166f0b076a9bbc420e4579cfdc2ba5d1fb89b77de96c193d83f4c_prof);
 
     }
 
@@ -635,11 +649,13 @@ class __TwigTemplate_903ca7b9536b21bcb2f2cc262f6c2ebf084bc26c22161ef33f46289c664
 
     public function getDebugInfo()
     {
-        return array (  620 => 413,  614 => 412,  606 => 131,  600 => 130,  592 => 114,  586 => 113,  578 => 59,  572 => 58,  560 => 414,  558 => 412,  439 => 296,  415 => 275,  410 => 273,  406 => 272,  402 => 271,  398 => 270,  316 => 191,  312 => 190,  308 => 189,  304 => 188,  300 => 187,  296 => 186,  292 => 185,  288 => 184,  284 => 183,  277 => 179,  272 => 177,  268 => 176,  263 => 174,  258 => 172,  254 => 171,  249 => 169,  244 => 167,  240 => 166,  234 => 163,  202 => 133,  200 => 130,  184 => 116,  182 => 113,  142 => 76,  134 => 71,  122 => 61,  120 => 58,  110 => 53,  81 => 27,  77 => 26,  72 => 24,  68 => 23,  64 => 22,  60 => 21,  54 => 18,  50 => 17,  46 => 16,  42 => 15,  26 => 1,);
+        return array (  634 => 411,  628 => 410,  620 => 144,  614 => 143,  606 => 133,  600 => 132,  592 => 116,  586 => 115,  578 => 61,  572 => 60,  560 => 412,  558 => 410,  439 => 294,  415 => 273,  410 => 271,  406 => 270,  402 => 269,  398 => 268,  316 => 189,  312 => 188,  308 => 187,  304 => 186,  300 => 185,  296 => 184,  292 => 183,  288 => 182,  284 => 181,  277 => 177,  272 => 175,  268 => 174,  263 => 172,  258 => 170,  254 => 169,  249 => 167,  244 => 165,  240 => 164,  234 => 161,  217 => 146,  215 => 143,  205 => 135,  203 => 132,  187 => 118,  185 => 115,  145 => 78,  137 => 73,  125 => 63,  123 => 60,  113 => 55,  84 => 29,  80 => 28,  75 => 26,  71 => 25,  67 => 24,  63 => 23,  57 => 20,  53 => 19,  49 => 18,  45 => 17,  27 => 1,);
     }
 }
+/* */
 /* <!DOCTYPE html>*/
 /* <html lang="en">*/
+/* */
 /* */
 /* <head>*/
 /*   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">*/
@@ -778,13 +794,9 @@ class __TwigTemplate_903ca7b9536b21bcb2f2cc262f6c2ebf084bc26c22161ef33f46289c664
 /* */
 /*         <!-- footer content -->*/
 /* */
-/*         <footer>*/
-/*           <div class="copyright-info">*/
-/*             <p class="pull-right">Tunisia Mall - <a href="#">Condors | Esprit</a>    */
-/*             </p>*/
-/*           </div>*/
-/*           <div class="clearfix"></div>*/
-/*         </footer>*/
+/*         {% block footer %}*/
+/*             */
+/*          {% endblock footer %}*/
 /*         <!-- /footer content -->*/
 /*       </div>*/
 /*       <!-- /page content -->*/

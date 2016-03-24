@@ -34,3 +34,16 @@ condors_tn_mall_responsable_index:
 condors_tn_mall_responsable_produit:
     path:     /user-responsable/products
     defaults: { _controller: CondorsTnMallBundle:Responsable:products}
+    
+
+condors_tn_mall_responsable_produit_midifier:
+    path:     /user-responsable/products/modify/{id}
+    defaults: { _controller: CondorsTnMallBundle:Responsable:modify}
+    requirements:
+        id: \d+
+        
+condors_tn_mall_responsable_produit_delete:
+    path:     /user-responsable/products/delete/{id}
+    defaults: { _controller: CondorsTnMallBundle:Responsable:delete}
+    requirements:
+        id: \d+
