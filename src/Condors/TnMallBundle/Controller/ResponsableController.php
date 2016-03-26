@@ -5,6 +5,7 @@ namespace Condors\TnMallBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Condors\TnMallBundle\Entity\Produit;
 use Condors\TnMallBundle\Form\ProduitType;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 /**
  * Description of ResponsableController
@@ -111,6 +112,16 @@ class ResponsableController extends Controller {
 
 
         return $this->redirect($this->generateUrl("condors_tn_mall_responsable_produit"));
+    }
+
+    public function searchProdAction($txtSearch) {
+        $em = $this->getDoctrine()->getManager();
+
+        $prods = $em->getRepository("CondorsTnMallBundle:Produit")->findProdSearch($txtSearch);
+        $rep =new JsonResponse(($prods));
+        
+        return $rep;
+        
     }
 
 }

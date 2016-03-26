@@ -56,4 +56,17 @@ class ProduitRepository extends EntityRepository {
         
     }
     
+     public function findProdSearch($txtSearch)
+    {
+        $query=$this->getEntityManager()
+                    ->createQuery("select m from CondorsTnMallBundle:Produit m where m.libelleProduit LIKE :txtSearched ")
+                    ->setParameter('txtSearched', '%'.$txtSearch.'%');
+                   
+                     
+                   
+        
+            return $query->getArrayResult();
+        
+    }
+    
 }

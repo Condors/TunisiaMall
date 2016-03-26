@@ -26,9 +26,10 @@
             <h3>Product Management</h3>
         </div>
 
+
         <div class="title_right">
             <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-
+                <input id="prodsearch" type="text" class="form-control" placeholder="Search for...">
             </div>
         </div>
     </div>
@@ -163,9 +164,7 @@
                             <table id="example" class="table table-striped responsive-utilities jambo_table">
                                 <thead>
                                     <tr class="headings">
-                                        <th>
-                                            <input type="checkbox" class="tableflat">
-                                        </th>
+
                                         <th> Reference </th>
                                         <th>Picture </th>
                                         <th>Name </th>
@@ -178,16 +177,14 @@
                                     </tr>
                                 </thead>
 
-                                <tbody>
+                                <tbody id="records_table">
 
                                     {% for prods in allprods %}
                                         <tr class="even pointer">
-                                            <td class="a-center ">
-                                                <input type="checkbox" class="tableflat">
-                                            </td>
+
                                             <td class=" ">{{ prods.refProduit }}</td>
                                             <td class=" "><img width="30" heigth="30" src="{{ asset('uploads/pictures/')}}{{ prods.imageprodreel }}" </td>
-                                            <td class=" "> {{ prods.libelleProduit }}
+                                            <td class="nameProd"> {{ prods.libelleProduit }}
                                             </td>
                                             <td class=" ">{{ prods.categorieProduit }}</td>
                                             <td class=" ">{{ prods.prixProduit }} D.T  </td>
@@ -197,7 +194,7 @@
 
                                                 {{ fprice }} D.T</td>
                                             <td class=" last"><a data-toggle="modal" data-target=".bs-example{{ prods.idProduit }}-modal-lg" href="#"><i style="font-size:22px;" class="fa fa-cog"></i></a>
-                                              &nbsp;&nbsp;  <a href="{{ path('condors_tn_mall_responsable_produit_delete', {'id': prods.idProduit}) }}" ><i style="font-size:22px;" class="fa fa-trash"></i></a>
+                                                &nbsp;&nbsp;  <a href="{{ path('condors_tn_mall_responsable_produit_delete', {'id': prods.idProduit}) }}" ><i style="font-size:22px;" class="fa fa-trash"></i></a>
 
                                             </td>
                                         </tr>
@@ -233,6 +230,7 @@
                                 </tbody>
 
                             </table>
+
                         </div>
                     </div>
                 </div>
@@ -299,35 +297,67 @@
             <script type="text/javascript" src="{{ asset('responsable/js/wizard/jquery.smartWizard.js')}}"></script>
             <!-- pace -->
             <script src="{{ asset('responsable/js/pace/pace.min.js')}}"></script>
+
             <script type="text/javascript">
-                                                            $(document).ready(function () {
+                $("document").ready(function () {
+                    $("#prodsearch").keydown(function () {
+
+                        $.ajax({
+                            type: 'get',
+                            url: 'http://localhost/TunisiaMall/web/app_dev.php/user-responsable/products/searchProd/' + $("#prodsearch").val(),
+                            beforeSend: function () {
+                                console.log('searching ...');
+                            },
+                            success: function (data) {
 
 
-                                                                $("#produit_submit").hide();
+                                var trHTML = '';
+                                $.each(data, function (i, item) {
+                                    var pr = ((item.tvaProduit * item.prixProduit) / 100) + item.prixProduit;
 
-                                                                // Smart Wizard
-                                                                $('#wizard').smartWizard({
-                                                                    transitionEffect: 'fade'
-                                                                });
+                                    trHTML += "<tr class='even pointer'><td>" + item.refProduit + "</td><td><img width='30' heigth='30' src='{{ asset('uploads/pictures/')}}" + item.imageprodreel + " ' </td><td>" + item.libelleProduit + "</td><td>" + item.categorieProduit + "</td><td>" + item.prixProduit + " D.T </td><td>" + item.tvaProduit + "%</td><td>" + pr + " D.T</td>\n\
+                            <td class='last'><a data-toggle='modal' data-target='.bs-example" + item.idProduit +"-modal-lg' 'href='#'><i style='font-size:22px;' class='fa fa-cog'></i></a> &nbsp;&nbsp; <a href=\n\
+                                'http://localhost/TunisiaMall/web/app_dev.php/user-responsable/products/delete/" + item.idProduit + "'><i style='font-size:22px;' class='fa fa-trash'></i></a></tr>";
+                                });
+                                $('#records_table').html(trHTML);
+                                console.log('Ok ...');
+
+                            }
+                        });
+
+                    });
+                });
+            </script>
+
+            <script type="text/javascript" >
+                $(document).ready(function () {
+
+
+                    $("#produit_submit").hide();
+
+                    // Smart Wizard
+                    $('#wizard').smartWizard({
+                        transitionEffect: 'fade'
+                    });
 
 
 
-                                                                $("#sender").click(function () {
-                                                                    $("#produit_submit").click();
+                    $("#sender").click(function () {
+                        $("#produit_submit").click();
 
-                                                                    $("textarea").val($("#placeHolder").Editor("getText"));
-                                                                    return false;
-                                                                });
+                        $("textarea").val($("#placeHolder").Editor("getText"));
+                        return false;
+                    });
 
 
-                                                            });
+                });
 
-                                                            $(document).ready(function () {
-                                                                // Smart Wizard
-                                                                $('#wizard_verticle').smartWizard({
-                                                                    transitionEffect: 'slideleft'
-                                                                });
-                                                            });
+                $(document).ready(function () {
+                    // Smart Wizard
+                    $('#wizard_verticle').smartWizard({
+                        transitionEffect: 'slideleft'
+                    });
+                });
 
             </script>
 
@@ -337,9 +367,9 @@
 
             <script type="text/javascript">
 
-                                                            // Replace the <textarea id="editor1"> with a CKEditor
-                                                            // instance, using default configuration.
-                                                            CKEDITOR.replace('produit_descriptionProduit');
+                // Replace the <textarea id="editor1"> with a CKEditor
+                // instance, using default configuration.
+                CKEDITOR.replace('produit_descriptionProduit');
 
             </script>
 
@@ -349,51 +379,54 @@
 
 
             <script>
-                                                            $(document).ready(function () {
-                                                                $('input.tableflat').iCheck({
-                                                                    checkboxClass: 'icheckbox_flat-green',
-                                                                    radioClass: 'iradio_flat-green'
-                                                                });
-                                                            });
+                $(document).ready(function () {
+                    $('input.tableflat').iCheck({
+                        checkboxClass: 'icheckbox_flat-green',
+                        radioClass: 'iradio_flat-green'
+                    });
+                });
 
-                                                            var asInitVals = new Array();
-                                                            $(document).ready(function () {
-                                                                var oTable = $('#example').dataTable({
-                                                                    "oLanguage": {
-                                                                        "sSearch": "Search all columns:"
-                                                                    },
-                                                                    "aoColumnDefs": [{
-                                                                            'bSortable': false,
-                                                                            'aTargets': [0]
-                                                                        } //disables sorting for column one
-                                                                    ],
-                                                                    'iDisplayLength': 12,
-                                                                    "sPaginationType": "full_numbers",
-                                                                    "dom": 'T<"clear">lfrtip',
-                                                                    "tableTools": {
-                                                                        "sSwfPath": "js/datatables/tools/swf/copy_csv_xls_pdf.swf"
-                                                                    }
-                                                                });
-                                                                $("tfoot input").keyup(function () {
-                                                                    /* Filter on the column based on the index of this element's parent <th> */
-                                                                    oTable.fnFilter(this.value, $("tfoot th").index($(this).parent()));
-                                                                });
-                                                                $("tfoot input").each(function (i) {
-                                                                    asInitVals[i] = this.value;
-                                                                });
-                                                                $("tfoot input").focus(function () {
-                                                                    if (this.className == "search_init") {
-                                                                        this.className = "";
-                                                                        this.value = "";
-                                                                    }
-                                                                });
-                                                                $("tfoot input").blur(function (i) {
-                                                                    if (this.value == "") {
-                                                                        this.className = "search_init";
-                                                                        this.value = asInitVals[$("tfoot input").index(this)];
-                                                                    }
-                                                                });
-                                                            });
+                var asInitVals = new Array();
+                $(document).ready(function () {
+                    var oTable = $('#example').dataTable({
+                        "oLanguage": {
+                            "sSearch": "Search all columns:"
+                        },
+                        "aoColumnDefs": [{
+                                'bSortable': false,
+                                'aTargets': [0]
+                            } //disables sorting for column one
+                        ],
+                        'iDisplayLength': 12,
+                        "sPaginationType": "full_numbers",
+                        "dom": 'T<"clear">lfrtip',
+                        "tableTools": {
+                            "sSwfPath": "js/datatables/tools/swf/copy_csv_xls_pdf.swf"
+                        }
+                    });
+                    $("tfoot input").keyup(function () {
+                        /* Filter on the column based on the index of this element's parent <th> */
+                        oTable.fnFilter(this.value, $("tfoot th").index($(this).parent()));
+                    });
+                    $("tfoot input").each(function (i) {
+                        asInitVals[i] = this.value;
+                    });
+                    $("tfoot input").focus(function () {
+                        if (this.className == "search_init") {
+                            this.className = "";
+                            this.value = "";
+                        }
+                    });
+                    $("tfoot input").blur(function (i) {
+                        if (this.value == "") {
+                            this.className = "search_init";
+                            this.value = asInitVals[$("tfoot input").index(this)];
+                        }
+                    });
+                });
             </script>
+
+
+
         {% endblock otherScript%}
 

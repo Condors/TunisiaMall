@@ -21,25 +21,25 @@ class __TwigTemplate_1f750277d6e8089be44a0938c3aead5a02ba01d3004d1ff95cdb6a703b1
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_19c213e94722c07fa19e65bcc1ddce6e5e7b0caad36025e22a9ea2e68c59f059 = $this->env->getExtension("native_profiler");
-        $__internal_19c213e94722c07fa19e65bcc1ddce6e5e7b0caad36025e22a9ea2e68c59f059->enter($__internal_19c213e94722c07fa19e65bcc1ddce6e5e7b0caad36025e22a9ea2e68c59f059_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@CondorsTnMall/Registration/register.html.twig"));
+        $__internal_a5306b4a3b30fd7889ae98f2a8ca09dffc2149b53e773ae625879dc4bea78088 = $this->env->getExtension("native_profiler");
+        $__internal_a5306b4a3b30fd7889ae98f2a8ca09dffc2149b53e773ae625879dc4bea78088->enter($__internal_a5306b4a3b30fd7889ae98f2a8ca09dffc2149b53e773ae625879dc4bea78088_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@CondorsTnMall/Registration/register.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_19c213e94722c07fa19e65bcc1ddce6e5e7b0caad36025e22a9ea2e68c59f059->leave($__internal_19c213e94722c07fa19e65bcc1ddce6e5e7b0caad36025e22a9ea2e68c59f059_prof);
+        $__internal_a5306b4a3b30fd7889ae98f2a8ca09dffc2149b53e773ae625879dc4bea78088->leave($__internal_a5306b4a3b30fd7889ae98f2a8ca09dffc2149b53e773ae625879dc4bea78088_prof);
 
     }
 
     // line 3
     public function block_fos_user_content($context, array $blocks = array())
     {
-        $__internal_07030508b575ed6b0fb2d92aa6bb093abd66afacb7766fbd03f17397ddf78edc = $this->env->getExtension("native_profiler");
-        $__internal_07030508b575ed6b0fb2d92aa6bb093abd66afacb7766fbd03f17397ddf78edc->enter($__internal_07030508b575ed6b0fb2d92aa6bb093abd66afacb7766fbd03f17397ddf78edc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "fos_user_content"));
+        $__internal_ea1efb904f80966c7a5569c252a18244b2fe41d16c449165cd788a2f5341e726 = $this->env->getExtension("native_profiler");
+        $__internal_ea1efb904f80966c7a5569c252a18244b2fe41d16c449165cd788a2f5341e726->enter($__internal_ea1efb904f80966c7a5569c252a18244b2fe41d16c449165cd788a2f5341e726_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "fos_user_content"));
 
         // line 4
         $this->loadTemplate("FOSUserBundle:Registration:register_content.html.twig", "@CondorsTnMall/Registration/register.html.twig", 4)->display($context);
         
-        $__internal_07030508b575ed6b0fb2d92aa6bb093abd66afacb7766fbd03f17397ddf78edc->leave($__internal_07030508b575ed6b0fb2d92aa6bb093abd66afacb7766fbd03f17397ddf78edc_prof);
+        $__internal_ea1efb904f80966c7a5569c252a18244b2fe41d16c449165cd788a2f5341e726->leave($__internal_ea1efb904f80966c7a5569c252a18244b2fe41d16c449165cd788a2f5341e726_prof);
 
     }
 

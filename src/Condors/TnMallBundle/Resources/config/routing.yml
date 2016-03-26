@@ -47,3 +47,10 @@ condors_tn_mall_responsable_produit_delete:
     defaults: { _controller: CondorsTnMallBundle:Responsable:delete}
     requirements:
         id: \d+
+   
+condors_tn_mall_responsable_produit_searchProd:
+    path:     /user-responsable/products/searchProd/{txtSearch}
+    defaults: { _controller: CondorsTnMallBundle:Responsable:searchProd}
+    
+        
+        

@@ -159,6 +159,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                     return $this->mergeDefaults(array_replace($matches, array('_route' => 'condors_tn_mall_responsable_produit_delete')), array (  '_controller' => 'Condors\\TnMallBundle\\Controller\\ResponsableController::deleteAction',));
                 }
 
+                // condors_tn_mall_responsable_produit_searchProd
+                if (0 === strpos($pathinfo, '/user-responsable/products/searchProd') && preg_match('#^/user\\-responsable/products/searchProd/(?P<txtSearch>[^/]++)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'condors_tn_mall_responsable_produit_searchProd')), array (  '_controller' => 'Condors\\TnMallBundle\\Controller\\ResponsableController::searchProdAction',));
+                }
+
             }
 
         }

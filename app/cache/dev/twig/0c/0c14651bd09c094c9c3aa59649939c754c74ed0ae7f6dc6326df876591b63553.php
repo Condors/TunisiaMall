@@ -25,20 +25,20 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_0556dea059a7cce34535d84ed4a99ae775e3ab00276f503de86850fe7507fd95 = $this->env->getExtension("native_profiler");
-        $__internal_0556dea059a7cce34535d84ed4a99ae775e3ab00276f503de86850fe7507fd95->enter($__internal_0556dea059a7cce34535d84ed4a99ae775e3ab00276f503de86850fe7507fd95_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@CondorsTnMall/Responsable/GestionProduit.html.twig"));
+        $__internal_5cfba374680d7adbf88b986ccb60376a9aef04b3d18b70c5c96afa45890308e0 = $this->env->getExtension("native_profiler");
+        $__internal_5cfba374680d7adbf88b986ccb60376a9aef04b3d18b70c5c96afa45890308e0->enter($__internal_5cfba374680d7adbf88b986ccb60376a9aef04b3d18b70c5c96afa45890308e0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@CondorsTnMall/Responsable/GestionProduit.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_0556dea059a7cce34535d84ed4a99ae775e3ab00276f503de86850fe7507fd95->leave($__internal_0556dea059a7cce34535d84ed4a99ae775e3ab00276f503de86850fe7507fd95_prof);
+        $__internal_5cfba374680d7adbf88b986ccb60376a9aef04b3d18b70c5c96afa45890308e0->leave($__internal_5cfba374680d7adbf88b986ccb60376a9aef04b3d18b70c5c96afa45890308e0_prof);
 
     }
 
     // line 7
     public function block_quickProfile($context, array $blocks = array())
     {
-        $__internal_234842e668ff65e4d5caafdc68b4fe834eb815b15aa4bdedd2792e89768c9e37 = $this->env->getExtension("native_profiler");
-        $__internal_234842e668ff65e4d5caafdc68b4fe834eb815b15aa4bdedd2792e89768c9e37->enter($__internal_234842e668ff65e4d5caafdc68b4fe834eb815b15aa4bdedd2792e89768c9e37_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "quickProfile"));
+        $__internal_38c8165c85d412190b21cd8aec49511c91ae92b5f470b3088b6885de91b6a725 = $this->env->getExtension("native_profiler");
+        $__internal_38c8165c85d412190b21cd8aec49511c91ae92b5f470b3088b6885de91b6a725->enter($__internal_38c8165c85d412190b21cd8aec49511c91ae92b5f470b3088b6885de91b6a725_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "quickProfile"));
 
         // line 8
         echo "    ";
@@ -46,15 +46,15 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
         echo " 
 ";
         
-        $__internal_234842e668ff65e4d5caafdc68b4fe834eb815b15aa4bdedd2792e89768c9e37->leave($__internal_234842e668ff65e4d5caafdc68b4fe834eb815b15aa4bdedd2792e89768c9e37_prof);
+        $__internal_38c8165c85d412190b21cd8aec49511c91ae92b5f470b3088b6885de91b6a725->leave($__internal_38c8165c85d412190b21cd8aec49511c91ae92b5f470b3088b6885de91b6a725_prof);
 
     }
 
     // line 13
     public function block_nav_menu($context, array $blocks = array())
     {
-        $__internal_219bfda8e5762bf75df3c3c9ef7632150e67d770d8e5aa7ea36c04a5255ceb5e = $this->env->getExtension("native_profiler");
-        $__internal_219bfda8e5762bf75df3c3c9ef7632150e67d770d8e5aa7ea36c04a5255ceb5e->enter($__internal_219bfda8e5762bf75df3c3c9ef7632150e67d770d8e5aa7ea36c04a5255ceb5e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "nav_menu"));
+        $__internal_d733070b357decfee18a05d5b24557a2f7a258ebb4db36f30061be71b5c1f348 = $this->env->getExtension("native_profiler");
+        $__internal_d733070b357decfee18a05d5b24557a2f7a258ebb4db36f30061be71b5c1f348->enter($__internal_d733070b357decfee18a05d5b24557a2f7a258ebb4db36f30061be71b5c1f348_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "nav_menu"));
 
         // line 14
         echo "
@@ -65,15 +65,15 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
 
 ";
         
-        $__internal_219bfda8e5762bf75df3c3c9ef7632150e67d770d8e5aa7ea36c04a5255ceb5e->leave($__internal_219bfda8e5762bf75df3c3c9ef7632150e67d770d8e5aa7ea36c04a5255ceb5e_prof);
+        $__internal_d733070b357decfee18a05d5b24557a2f7a258ebb4db36f30061be71b5c1f348->leave($__internal_d733070b357decfee18a05d5b24557a2f7a258ebb4db36f30061be71b5c1f348_prof);
 
     }
 
     // line 22
     public function block_Content($context, array $blocks = array())
     {
-        $__internal_b120ea51e824a6750d5b58309c58eabb1ebf4901f0468cba937ac0028f0512a9 = $this->env->getExtension("native_profiler");
-        $__internal_b120ea51e824a6750d5b58309c58eabb1ebf4901f0468cba937ac0028f0512a9->enter($__internal_b120ea51e824a6750d5b58309c58eabb1ebf4901f0468cba937ac0028f0512a9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "Content"));
+        $__internal_423742251462d262bb8efe11368a23785b5e1d7aa1a473e75fb47c9e553e0f32 = $this->env->getExtension("native_profiler");
+        $__internal_423742251462d262bb8efe11368a23785b5e1d7aa1a473e75fb47c9e553e0f32->enter($__internal_423742251462d262bb8efe11368a23785b5e1d7aa1a473e75fb47c9e553e0f32_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "Content"));
 
         // line 23
         echo "
@@ -82,9 +82,10 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
             <h3>Product Management</h3>
         </div>
 
+
         <div class=\"title_right\">
             <div class=\"col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search\">
-
+                <input id=\"prodsearch\" type=\"text\" class=\"form-control\" placeholder=\"Search for...\">
             </div>
         </div>
     </div>
@@ -141,7 +142,7 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
                         </li>
                     </ul>
                     ";
-        // line 87
+        // line 88
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_start', array("attr" => array("class" => "form-horizontal form-label-left")));
         echo "
                     <div id=\"step-1\">
@@ -153,7 +154,7 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
                             <div class=\"col-md-6 col-sm-6 col-xs-12\">
 
                                 ";
-        // line 96
+        // line 97
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "libelleProduit", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
         echo " 
                             </div>
@@ -163,7 +164,7 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
                             </label>
                             <div class=\"col-md-6 col-sm-6 col-xs-12\">
                                 ";
-        // line 103
+        // line 104
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "categorieProduit", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
         echo " 
                             </div>
@@ -172,7 +173,7 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
                             <label for=\"middle-name\" class=\"control-label col-md-3 col-sm-3 col-xs-12\">Product REF<span class=\"required\">*</span></label>
                             <div class=\"col-md-6 col-sm-6 col-xs-12\">
                                 ";
-        // line 109
+        // line 110
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "refProduit", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
         echo " 
                             </div>
@@ -181,7 +182,7 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
                             <label class=\"control-label col-md-3 col-sm-3 col-xs-12\">Product V.A.T<span class=\"required\">*</span></label>
                             <div class=\"col-md-6 col-sm-6 col-xs-12\">
                                 ";
-        // line 115
+        // line 116
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "tvaProduit", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
         echo " 
                             </div>
@@ -191,7 +192,7 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
                             </label>
                             <div class=\"col-md-6 col-sm-6 col-xs-12\">
                                 ";
-        // line 122
+        // line 123
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "prixProduit", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
         echo " 
                             </div>
@@ -203,7 +204,7 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
                         <h2 class=\"StepTitle\">Desciption</h2>
                         <p id=\"txtEditor\">
                             ";
-        // line 131
+        // line 132
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "descriptionProduit", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
         echo " 
                         </p>
@@ -213,15 +214,15 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
                         <h2 class=\"StepTitle\">Step 3 Content</h2>
                         <p>
                             ";
-        // line 138
+        // line 139
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "fileFront", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
         echo " 
                             ";
-        // line 139
+        // line 140
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "fileBack", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
         echo " 
                             ";
-        // line 140
+        // line 141
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "fileReel", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
         echo " 
                         </p>
@@ -237,11 +238,11 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
                 </div>
 
                 ";
-        // line 153
+        // line 154
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "submit", array()), 'widget');
         echo "
                 ";
-        // line 154
+        // line 155
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_end');
         echo "
             </div>
@@ -255,9 +256,7 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
                             <table id=\"example\" class=\"table table-striped responsive-utilities jambo_table\">
                                 <thead>
                                     <tr class=\"headings\">
-                                        <th>
-                                            <input type=\"checkbox\" class=\"tableflat\">
-                                        </th>
+
                                         <th> Reference </th>
                                         <th>Picture </th>
                                         <th>Name </th>
@@ -270,60 +269,58 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
                                     </tr>
                                 </thead>
 
-                                <tbody>
+                                <tbody id=\"records_table\">
 
                                     ";
-        // line 183
+        // line 182
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["allprods"]) ? $context["allprods"] : $this->getContext($context, "allprods")));
         foreach ($context['_seq'] as $context["_key"] => $context["prods"]) {
-            // line 184
+            // line 183
             echo "                                        <tr class=\"even pointer\">
-                                            <td class=\"a-center \">
-                                                <input type=\"checkbox\" class=\"tableflat\">
-                                            </td>
+
                                             <td class=\" \">";
-            // line 188
+            // line 185
             echo twig_escape_filter($this->env, $this->getAttribute($context["prods"], "refProduit", array()), "html", null, true);
             echo "</td>
                                             <td class=\" \"><img width=\"30\" heigth=\"30\" src=\"";
-            // line 189
+            // line 186
             echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("uploads/pictures/"), "html", null, true);
             echo twig_escape_filter($this->env, $this->getAttribute($context["prods"], "imageprodreel", array()), "html", null, true);
             echo "\" </td>
-                                            <td class=\" \"> ";
-            // line 190
+                                            <td class=\"nameProd\"> ";
+            // line 187
             echo twig_escape_filter($this->env, $this->getAttribute($context["prods"], "libelleProduit", array()), "html", null, true);
             echo "
                                             </td>
                                             <td class=\" \">";
-            // line 192
+            // line 189
             echo twig_escape_filter($this->env, $this->getAttribute($context["prods"], "categorieProduit", array()), "html", null, true);
             echo "</td>
                                             <td class=\" \">";
-            // line 193
+            // line 190
             echo twig_escape_filter($this->env, $this->getAttribute($context["prods"], "prixProduit", array()), "html", null, true);
             echo " D.T  </td>
                                             <td class=\"a-right a-right \">";
-            // line 194
+            // line 191
             echo twig_escape_filter($this->env, $this->getAttribute($context["prods"], "tvaProduit", array()), "html", null, true);
             echo "%</td>
                                             <td class=\"a-right a-right \">
                                                 ";
-            // line 196
+            // line 193
             $context["fprice"] = ((($this->getAttribute($context["prods"], "tvaProduit", array()) * $this->getAttribute($context["prods"], "prixProduit", array())) / 100) + $this->getAttribute($context["prods"], "prixProduit", array()));
             echo " 
 
                                                 ";
-            // line 198
+            // line 195
             echo twig_escape_filter($this->env, (isset($context["fprice"]) ? $context["fprice"] : $this->getContext($context, "fprice")), "html", null, true);
             echo " D.T</td>
                                             <td class=\" last\"><a data-toggle=\"modal\" data-target=\".bs-example";
-            // line 199
+            // line 196
             echo twig_escape_filter($this->env, $this->getAttribute($context["prods"], "idProduit", array()), "html", null, true);
             echo "-modal-lg\" href=\"#\"><i style=\"font-size:22px;\" class=\"fa fa-cog\"></i></a>
-                                              &nbsp;&nbsp;  <a href=\"";
-            // line 200
+                                                &nbsp;&nbsp;  <a href=\"";
+            // line 197
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("condors_tn_mall_responsable_produit_delete", array("id" => $this->getAttribute($context["prods"], "idProduit", array()))), "html", null, true);
             echo "\" ><i style=\"font-size:22px;\" class=\"fa fa-trash\"></i></a>
 
@@ -331,7 +328,7 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
                                         </tr>
 
                                     <div class=\"modal fade bs-example";
-            // line 205
+            // line 202
             echo twig_escape_filter($this->env, $this->getAttribute($context["prods"], "idProduit", array()), "html", null, true);
             echo "-modal-lg\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">
                                         <div class=\"modal-dialog modal-lg\">
@@ -341,13 +338,13 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
                                                     <button type=\"button\" class=\"close\" data-dismiss=\"modal\"><span aria-hidden=\"true\">×</span>
                                                     </button>
                                                     <h4 class=\"modal-title\" id=\"myModalLabel\"> <i class=\"fa fa-cog\"></i> &nbsp; Product : ";
-            // line 212
+            // line 209
             echo twig_escape_filter($this->env, $this->getAttribute($context["prods"], "libelleProduit", array()), "html", null, true);
             echo " </h4>
                                                 </div>
                                                 <div class=\"modal-body\">
                                                     <iframe  id=\"form-iframe\" frameborder=\"0\" scrolling=\"auto\"  style=\"height: 750px; width: 100%\" src=\"";
-            // line 215
+            // line 212
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("condors_tn_mall_responsable_produit_midifier", array("id" => $this->getAttribute($context["prods"], "idProduit", array()))), "html", null, true);
             echo "\"></iframe>
                                                 </div>
@@ -364,7 +361,7 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['prods'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 226
+        // line 223
         echo "
 
 
@@ -375,6 +372,7 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
                                 </tbody>
 
                             </table>
+
                         </div>
                     </div>
                 </div>
@@ -405,33 +403,33 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
 
         ";
         
-        $__internal_b120ea51e824a6750d5b58309c58eabb1ebf4901f0468cba937ac0028f0512a9->leave($__internal_b120ea51e824a6750d5b58309c58eabb1ebf4901f0468cba937ac0028f0512a9_prof);
+        $__internal_423742251462d262bb8efe11368a23785b5e1d7aa1a473e75fb47c9e553e0f32->leave($__internal_423742251462d262bb8efe11368a23785b5e1d7aa1a473e75fb47c9e553e0f32_prof);
 
     }
 
-    // line 267
+    // line 265
     public function block_footer($context, array $blocks = array())
     {
-        $__internal_2d23138061cdfd6831f5edf87eadca302ab0e056cba098322b94069a2fd1cf8c = $this->env->getExtension("native_profiler");
-        $__internal_2d23138061cdfd6831f5edf87eadca302ab0e056cba098322b94069a2fd1cf8c->enter($__internal_2d23138061cdfd6831f5edf87eadca302ab0e056cba098322b94069a2fd1cf8c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "footer"));
+        $__internal_c5d8c87d7b3a3025bcb68a339ef07de8f8025f737aabfe30e88e69477a2bafed = $this->env->getExtension("native_profiler");
+        $__internal_c5d8c87d7b3a3025bcb68a339ef07de8f8025f737aabfe30e88e69477a2bafed->enter($__internal_c5d8c87d7b3a3025bcb68a339ef07de8f8025f737aabfe30e88e69477a2bafed_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 268
+        // line 266
         echo "            ";
         echo twig_include($this->env, $context, "CondorsTnMallBundle::Responsable/footer.html.twig");
         echo " 
         ";
         
-        $__internal_2d23138061cdfd6831f5edf87eadca302ab0e056cba098322b94069a2fd1cf8c->leave($__internal_2d23138061cdfd6831f5edf87eadca302ab0e056cba098322b94069a2fd1cf8c_prof);
+        $__internal_c5d8c87d7b3a3025bcb68a339ef07de8f8025f737aabfe30e88e69477a2bafed->leave($__internal_c5d8c87d7b3a3025bcb68a339ef07de8f8025f737aabfe30e88e69477a2bafed_prof);
 
     }
 
-    // line 279
+    // line 277
     public function block_otherScript($context, array $blocks = array())
     {
-        $__internal_d72aea28e4efb528649fe3fb8b3c00c32ea4da46f6dbc6b05549435c3a3daad8 = $this->env->getExtension("native_profiler");
-        $__internal_d72aea28e4efb528649fe3fb8b3c00c32ea4da46f6dbc6b05549435c3a3daad8->enter($__internal_d72aea28e4efb528649fe3fb8b3c00c32ea4da46f6dbc6b05549435c3a3daad8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "otherScript"));
+        $__internal_59f900a821280985b78354d9da6b41d943f2325507489047d455ab17236c8662 = $this->env->getExtension("native_profiler");
+        $__internal_59f900a821280985b78354d9da6b41d943f2325507489047d455ab17236c8662->enter($__internal_59f900a821280985b78354d9da6b41d943f2325507489047d455ab17236c8662_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "otherScript"));
 
-        // line 280
+        // line 278
         echo "
             <div id=\"custom_notifications\" class=\"custom-notifications dsp_none\">
                 <ul class=\"list-unstyled notifications clearfix\" data-tabbed_notifications=\"notif-group\">
@@ -444,139 +442,177 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
 
             <!-- bootstrap progress js -->
             <script src=\"";
-        // line 291
+        // line 289
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/progressbar/bootstrap-progressbar.min.js"), "html", null, true);
         echo "\"></script>
             <script src=\"";
-        // line 292
+        // line 290
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/nicescroll/jquery.nicescroll.min.js"), "html", null, true);
         echo "\"></script>
             <!-- icheck -->
             <script src=\"";
-        // line 294
+        // line 292
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/icheck/icheck.min.js"), "html", null, true);
         echo "\"></script>
 
             <script src=\"";
-        // line 296
+        // line 294
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/custom.js"), "html", null, true);
         echo "\"></script>
 
             <!-- form wizard -->
             <script type=\"text/javascript\" src=\"";
-        // line 299
+        // line 297
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/wizard/jquery.smartWizard.js"), "html", null, true);
         echo "\"></script>
             <!-- pace -->
             <script src=\"";
-        // line 301
+        // line 299
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/pace/pace.min.js"), "html", null, true);
         echo "\"></script>
+
             <script type=\"text/javascript\">
-                                                            \$(document).ready(function () {
+                \$(\"document\").ready(function () {
+                    \$(\"#prodsearch\").keydown(function () {
+
+                        \$.ajax({
+                            type: 'get',
+                            url: 'http://localhost/TunisiaMall/web/app_dev.php/user-responsable/products/searchProd/' + \$(\"#prodsearch\").val(),
+                            beforeSend: function () {
+                                console.log('searching ...');
+                            },
+                            success: function (data) {
 
 
-                                                                \$(\"#produit_submit\").hide();
+                                var trHTML = '';
+                                \$.each(data, function (i, item) {
+                                    var pr = ((item.tvaProduit * item.prixProduit) / 100) + item.prixProduit;
 
-                                                                // Smart Wizard
-                                                                \$('#wizard').smartWizard({
-                                                                    transitionEffect: 'fade'
-                                                                });
+                                    trHTML += \"<tr class='even pointer'><td>\" + item.refProduit + \"</td><td><img width='30' heigth='30' src='";
+        // line 318
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("uploads/pictures/"), "html", null, true);
+        echo "\" + item.imageprodreel + \" ' </td><td>\" + item.libelleProduit + \"</td><td>\" + item.categorieProduit + \"</td><td>\" + item.prixProduit + \" D.T </td><td>\" + item.tvaProduit + \"%</td><td>\" + pr + \" D.T</td>\\n\\
+                            <td class='last'><a data-toggle='modal' data-target='.bs-example\" + item.idProduit +\"-modal-lg' 'href='#'><i style='font-size:22px;' class='fa fa-cog'></i></a> &nbsp;&nbsp; <a href=\\n\\
+                                'http://localhost/TunisiaMall/web/app_dev.php/user-responsable/products/delete/\" + item.idProduit + \"'><i style='font-size:22px;' class='fa fa-trash'></i></a></tr>\";
+                                });
+                                \$('#records_table').html(trHTML);
+                                console.log('Ok ...');
+
+                            }
+                        });
+
+                    });
+                });
+            </script>
+
+            <script type=\"text/javascript\" >
+                \$(document).ready(function () {
+
+
+                    \$(\"#produit_submit\").hide();
+
+                    // Smart Wizard
+                    \$('#wizard').smartWizard({
+                        transitionEffect: 'fade'
+                    });
 
 
 
-                                                                \$(\"#sender\").click(function () {
-                                                                    \$(\"#produit_submit\").click();
+                    \$(\"#sender\").click(function () {
+                        \$(\"#produit_submit\").click();
 
-                                                                    \$(\"textarea\").val(\$(\"#placeHolder\").Editor(\"getText\"));
-                                                                    return false;
-                                                                });
+                        \$(\"textarea\").val(\$(\"#placeHolder\").Editor(\"getText\"));
+                        return false;
+                    });
 
 
-                                                            });
+                });
 
-                                                            \$(document).ready(function () {
-                                                                // Smart Wizard
-                                                                \$('#wizard_verticle').smartWizard({
-                                                                    transitionEffect: 'slideleft'
-                                                                });
-                                                            });
+                \$(document).ready(function () {
+                    // Smart Wizard
+                    \$('#wizard_verticle').smartWizard({
+                        transitionEffect: 'slideleft'
+                    });
+                });
 
             </script>
 
 
             <!-- Editor Zone -->
             <script src=\"";
-        // line 336
+        // line 366
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/ckeditor/ckeditor.js"), "html", null, true);
         echo "\"></script>
 
             <script type=\"text/javascript\">
 
-                                                            // Replace the <textarea id=\"editor1\"> with a CKEditor
-                                                            // instance, using default configuration.
-                                                            CKEDITOR.replace('produit_descriptionProduit');
+                // Replace the <textarea id=\"editor1\"> with a CKEditor
+                // instance, using default configuration.
+                CKEDITOR.replace('produit_descriptionProduit');
 
             </script>
 
             <!-- dropzone -->
             <script src=\"";
-        // line 347
+        // line 377
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/dropzone/dropzone.js"), "html", null, true);
         echo "\"></script> 
 
 
 
             <script>
-                                                            \$(document).ready(function () {
-                                                                \$('input.tableflat').iCheck({
-                                                                    checkboxClass: 'icheckbox_flat-green',
-                                                                    radioClass: 'iradio_flat-green'
-                                                                });
-                                                            });
+                \$(document).ready(function () {
+                    \$('input.tableflat').iCheck({
+                        checkboxClass: 'icheckbox_flat-green',
+                        radioClass: 'iradio_flat-green'
+                    });
+                });
 
-                                                            var asInitVals = new Array();
-                                                            \$(document).ready(function () {
-                                                                var oTable = \$('#example').dataTable({
-                                                                    \"oLanguage\": {
-                                                                        \"sSearch\": \"Search all columns:\"
-                                                                    },
-                                                                    \"aoColumnDefs\": [{
-                                                                            'bSortable': false,
-                                                                            'aTargets': [0]
-                                                                        } //disables sorting for column one
-                                                                    ],
-                                                                    'iDisplayLength': 12,
-                                                                    \"sPaginationType\": \"full_numbers\",
-                                                                    \"dom\": 'T<\"clear\">lfrtip',
-                                                                    \"tableTools\": {
-                                                                        \"sSwfPath\": \"js/datatables/tools/swf/copy_csv_xls_pdf.swf\"
-                                                                    }
-                                                                });
-                                                                \$(\"tfoot input\").keyup(function () {
-                                                                    /* Filter on the column based on the index of this element's parent <th> */
-                                                                    oTable.fnFilter(this.value, \$(\"tfoot th\").index(\$(this).parent()));
-                                                                });
-                                                                \$(\"tfoot input\").each(function (i) {
-                                                                    asInitVals[i] = this.value;
-                                                                });
-                                                                \$(\"tfoot input\").focus(function () {
-                                                                    if (this.className == \"search_init\") {
-                                                                        this.className = \"\";
-                                                                        this.value = \"\";
-                                                                    }
-                                                                });
-                                                                \$(\"tfoot input\").blur(function (i) {
-                                                                    if (this.value == \"\") {
-                                                                        this.className = \"search_init\";
-                                                                        this.value = asInitVals[\$(\"tfoot input\").index(this)];
-                                                                    }
-                                                                });
-                                                            });
+                var asInitVals = new Array();
+                \$(document).ready(function () {
+                    var oTable = \$('#example').dataTable({
+                        \"oLanguage\": {
+                            \"sSearch\": \"Search all columns:\"
+                        },
+                        \"aoColumnDefs\": [{
+                                'bSortable': false,
+                                'aTargets': [0]
+                            } //disables sorting for column one
+                        ],
+                        'iDisplayLength': 12,
+                        \"sPaginationType\": \"full_numbers\",
+                        \"dom\": 'T<\"clear\">lfrtip',
+                        \"tableTools\": {
+                            \"sSwfPath\": \"js/datatables/tools/swf/copy_csv_xls_pdf.swf\"
+                        }
+                    });
+                    \$(\"tfoot input\").keyup(function () {
+                        /* Filter on the column based on the index of this element's parent <th> */
+                        oTable.fnFilter(this.value, \$(\"tfoot th\").index(\$(this).parent()));
+                    });
+                    \$(\"tfoot input\").each(function (i) {
+                        asInitVals[i] = this.value;
+                    });
+                    \$(\"tfoot input\").focus(function () {
+                        if (this.className == \"search_init\") {
+                            this.className = \"\";
+                            this.value = \"\";
+                        }
+                    });
+                    \$(\"tfoot input\").blur(function (i) {
+                        if (this.value == \"\") {
+                            this.className = \"search_init\";
+                            this.value = asInitVals[\$(\"tfoot input\").index(this)];
+                        }
+                    });
+                });
             </script>
+
+
+
         ";
         
-        $__internal_d72aea28e4efb528649fe3fb8b3c00c32ea4da46f6dbc6b05549435c3a3daad8->leave($__internal_d72aea28e4efb528649fe3fb8b3c00c32ea4da46f6dbc6b05549435c3a3daad8_prof);
+        $__internal_59f900a821280985b78354d9da6b41d943f2325507489047d455ab17236c8662->leave($__internal_59f900a821280985b78354d9da6b41d943f2325507489047d455ab17236c8662_prof);
 
     }
 
@@ -592,7 +628,7 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
 
     public function getDebugInfo()
     {
-        return array (  525 => 347,  511 => 336,  473 => 301,  468 => 299,  462 => 296,  457 => 294,  452 => 292,  448 => 291,  435 => 280,  429 => 279,  419 => 268,  413 => 267,  368 => 226,  351 => 215,  345 => 212,  335 => 205,  327 => 200,  323 => 199,  319 => 198,  314 => 196,  309 => 194,  305 => 193,  301 => 192,  296 => 190,  291 => 189,  287 => 188,  281 => 184,  277 => 183,  245 => 154,  241 => 153,  225 => 140,  221 => 139,  217 => 138,  207 => 131,  195 => 122,  185 => 115,  176 => 109,  167 => 103,  157 => 96,  145 => 87,  79 => 23,  73 => 22,  63 => 15,  60 => 14,  54 => 13,  44 => 8,  38 => 7,  11 => 1,);
+        return array (  558 => 377,  544 => 366,  493 => 318,  471 => 299,  466 => 297,  460 => 294,  455 => 292,  450 => 290,  446 => 289,  433 => 278,  427 => 277,  417 => 266,  411 => 265,  365 => 223,  348 => 212,  342 => 209,  332 => 202,  324 => 197,  320 => 196,  316 => 195,  311 => 193,  306 => 191,  302 => 190,  298 => 189,  293 => 187,  288 => 186,  284 => 185,  280 => 183,  276 => 182,  246 => 155,  242 => 154,  226 => 141,  222 => 140,  218 => 139,  208 => 132,  196 => 123,  186 => 116,  177 => 110,  168 => 104,  158 => 97,  146 => 88,  79 => 23,  73 => 22,  63 => 15,  60 => 14,  54 => 13,  44 => 8,  38 => 7,  11 => 1,);
     }
 }
 /* {% extends "CondorsTnMallBundle::ResponsableLayouts/Layout.html.twig" %}*/
@@ -623,9 +659,10 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
 /*             <h3>Product Management</h3>*/
 /*         </div>*/
 /* */
+/* */
 /*         <div class="title_right">*/
 /*             <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">*/
-/* */
+/*                 <input id="prodsearch" type="text" class="form-control" placeholder="Search for...">*/
 /*             </div>*/
 /*         </div>*/
 /*     </div>*/
@@ -760,9 +797,7 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
 /*                             <table id="example" class="table table-striped responsive-utilities jambo_table">*/
 /*                                 <thead>*/
 /*                                     <tr class="headings">*/
-/*                                         <th>*/
-/*                                             <input type="checkbox" class="tableflat">*/
-/*                                         </th>*/
+/* */
 /*                                         <th> Reference </th>*/
 /*                                         <th>Picture </th>*/
 /*                                         <th>Name </th>*/
@@ -775,16 +810,14 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
 /*                                     </tr>*/
 /*                                 </thead>*/
 /* */
-/*                                 <tbody>*/
+/*                                 <tbody id="records_table">*/
 /* */
 /*                                     {% for prods in allprods %}*/
 /*                                         <tr class="even pointer">*/
-/*                                             <td class="a-center ">*/
-/*                                                 <input type="checkbox" class="tableflat">*/
-/*                                             </td>*/
+/* */
 /*                                             <td class=" ">{{ prods.refProduit }}</td>*/
 /*                                             <td class=" "><img width="30" heigth="30" src="{{ asset('uploads/pictures/')}}{{ prods.imageprodreel }}" </td>*/
-/*                                             <td class=" "> {{ prods.libelleProduit }}*/
+/*                                             <td class="nameProd"> {{ prods.libelleProduit }}*/
 /*                                             </td>*/
 /*                                             <td class=" ">{{ prods.categorieProduit }}</td>*/
 /*                                             <td class=" ">{{ prods.prixProduit }} D.T  </td>*/
@@ -794,7 +827,7 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
 /* */
 /*                                                 {{ fprice }} D.T</td>*/
 /*                                             <td class=" last"><a data-toggle="modal" data-target=".bs-example{{ prods.idProduit }}-modal-lg" href="#"><i style="font-size:22px;" class="fa fa-cog"></i></a>*/
-/*                                               &nbsp;&nbsp;  <a href="{{ path('condors_tn_mall_responsable_produit_delete', {'id': prods.idProduit}) }}" ><i style="font-size:22px;" class="fa fa-trash"></i></a>*/
+/*                                                 &nbsp;&nbsp;  <a href="{{ path('condors_tn_mall_responsable_produit_delete', {'id': prods.idProduit}) }}" ><i style="font-size:22px;" class="fa fa-trash"></i></a>*/
 /* */
 /*                                             </td>*/
 /*                                         </tr>*/
@@ -830,6 +863,7 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
 /*                                 </tbody>*/
 /* */
 /*                             </table>*/
+/* */
 /*                         </div>*/
 /*                     </div>*/
 /*                 </div>*/
@@ -896,35 +930,67 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
 /*             <script type="text/javascript" src="{{ asset('responsable/js/wizard/jquery.smartWizard.js')}}"></script>*/
 /*             <!-- pace -->*/
 /*             <script src="{{ asset('responsable/js/pace/pace.min.js')}}"></script>*/
+/* */
 /*             <script type="text/javascript">*/
-/*                                                             $(document).ready(function () {*/
+/*                 $("document").ready(function () {*/
+/*                     $("#prodsearch").keydown(function () {*/
+/* */
+/*                         $.ajax({*/
+/*                             type: 'get',*/
+/*                             url: 'http://localhost/TunisiaMall/web/app_dev.php/user-responsable/products/searchProd/' + $("#prodsearch").val(),*/
+/*                             beforeSend: function () {*/
+/*                                 console.log('searching ...');*/
+/*                             },*/
+/*                             success: function (data) {*/
 /* */
 /* */
-/*                                                                 $("#produit_submit").hide();*/
+/*                                 var trHTML = '';*/
+/*                                 $.each(data, function (i, item) {*/
+/*                                     var pr = ((item.tvaProduit * item.prixProduit) / 100) + item.prixProduit;*/
 /* */
-/*                                                                 // Smart Wizard*/
-/*                                                                 $('#wizard').smartWizard({*/
-/*                                                                     transitionEffect: 'fade'*/
-/*                                                                 });*/
+/*                                     trHTML += "<tr class='even pointer'><td>" + item.refProduit + "</td><td><img width='30' heigth='30' src='{{ asset('uploads/pictures/')}}" + item.imageprodreel + " ' </td><td>" + item.libelleProduit + "</td><td>" + item.categorieProduit + "</td><td>" + item.prixProduit + " D.T </td><td>" + item.tvaProduit + "%</td><td>" + pr + " D.T</td>\n\*/
+/*                             <td class='last'><a data-toggle='modal' data-target='.bs-example" + item.idProduit +"-modal-lg' 'href='#'><i style='font-size:22px;' class='fa fa-cog'></i></a> &nbsp;&nbsp; <a href=\n\*/
+/*                                 'http://localhost/TunisiaMall/web/app_dev.php/user-responsable/products/delete/" + item.idProduit + "'><i style='font-size:22px;' class='fa fa-trash'></i></a></tr>";*/
+/*                                 });*/
+/*                                 $('#records_table').html(trHTML);*/
+/*                                 console.log('Ok ...');*/
+/* */
+/*                             }*/
+/*                         });*/
+/* */
+/*                     });*/
+/*                 });*/
+/*             </script>*/
+/* */
+/*             <script type="text/javascript" >*/
+/*                 $(document).ready(function () {*/
+/* */
+/* */
+/*                     $("#produit_submit").hide();*/
+/* */
+/*                     // Smart Wizard*/
+/*                     $('#wizard').smartWizard({*/
+/*                         transitionEffect: 'fade'*/
+/*                     });*/
 /* */
 /* */
 /* */
-/*                                                                 $("#sender").click(function () {*/
-/*                                                                     $("#produit_submit").click();*/
+/*                     $("#sender").click(function () {*/
+/*                         $("#produit_submit").click();*/
 /* */
-/*                                                                     $("textarea").val($("#placeHolder").Editor("getText"));*/
-/*                                                                     return false;*/
-/*                                                                 });*/
+/*                         $("textarea").val($("#placeHolder").Editor("getText"));*/
+/*                         return false;*/
+/*                     });*/
 /* */
 /* */
-/*                                                             });*/
+/*                 });*/
 /* */
-/*                                                             $(document).ready(function () {*/
-/*                                                                 // Smart Wizard*/
-/*                                                                 $('#wizard_verticle').smartWizard({*/
-/*                                                                     transitionEffect: 'slideleft'*/
-/*                                                                 });*/
-/*                                                             });*/
+/*                 $(document).ready(function () {*/
+/*                     // Smart Wizard*/
+/*                     $('#wizard_verticle').smartWizard({*/
+/*                         transitionEffect: 'slideleft'*/
+/*                     });*/
+/*                 });*/
 /* */
 /*             </script>*/
 /* */
@@ -934,9 +1000,9 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
 /* */
 /*             <script type="text/javascript">*/
 /* */
-/*                                                             // Replace the <textarea id="editor1"> with a CKEditor*/
-/*                                                             // instance, using default configuration.*/
-/*                                                             CKEDITOR.replace('produit_descriptionProduit');*/
+/*                 // Replace the <textarea id="editor1"> with a CKEditor*/
+/*                 // instance, using default configuration.*/
+/*                 CKEDITOR.replace('produit_descriptionProduit');*/
 /* */
 /*             </script>*/
 /* */
@@ -946,52 +1012,55 @@ class __TwigTemplate_b3361dd32a138d0cdadb1be739bd2cf8d855e4cdb8fdd9f9bf1a0235c33
 /* */
 /* */
 /*             <script>*/
-/*                                                             $(document).ready(function () {*/
-/*                                                                 $('input.tableflat').iCheck({*/
-/*                                                                     checkboxClass: 'icheckbox_flat-green',*/
-/*                                                                     radioClass: 'iradio_flat-green'*/
-/*                                                                 });*/
-/*                                                             });*/
+/*                 $(document).ready(function () {*/
+/*                     $('input.tableflat').iCheck({*/
+/*                         checkboxClass: 'icheckbox_flat-green',*/
+/*                         radioClass: 'iradio_flat-green'*/
+/*                     });*/
+/*                 });*/
 /* */
-/*                                                             var asInitVals = new Array();*/
-/*                                                             $(document).ready(function () {*/
-/*                                                                 var oTable = $('#example').dataTable({*/
-/*                                                                     "oLanguage": {*/
-/*                                                                         "sSearch": "Search all columns:"*/
-/*                                                                     },*/
-/*                                                                     "aoColumnDefs": [{*/
-/*                                                                             'bSortable': false,*/
-/*                                                                             'aTargets': [0]*/
-/*                                                                         } //disables sorting for column one*/
-/*                                                                     ],*/
-/*                                                                     'iDisplayLength': 12,*/
-/*                                                                     "sPaginationType": "full_numbers",*/
-/*                                                                     "dom": 'T<"clear">lfrtip',*/
-/*                                                                     "tableTools": {*/
-/*                                                                         "sSwfPath": "js/datatables/tools/swf/copy_csv_xls_pdf.swf"*/
-/*                                                                     }*/
-/*                                                                 });*/
-/*                                                                 $("tfoot input").keyup(function () {*/
-/*                                                                     /* Filter on the column based on the index of this element's parent <th> *//* */
-/*                                                                     oTable.fnFilter(this.value, $("tfoot th").index($(this).parent()));*/
-/*                                                                 });*/
-/*                                                                 $("tfoot input").each(function (i) {*/
-/*                                                                     asInitVals[i] = this.value;*/
-/*                                                                 });*/
-/*                                                                 $("tfoot input").focus(function () {*/
-/*                                                                     if (this.className == "search_init") {*/
-/*                                                                         this.className = "";*/
-/*                                                                         this.value = "";*/
-/*                                                                     }*/
-/*                                                                 });*/
-/*                                                                 $("tfoot input").blur(function (i) {*/
-/*                                                                     if (this.value == "") {*/
-/*                                                                         this.className = "search_init";*/
-/*                                                                         this.value = asInitVals[$("tfoot input").index(this)];*/
-/*                                                                     }*/
-/*                                                                 });*/
-/*                                                             });*/
+/*                 var asInitVals = new Array();*/
+/*                 $(document).ready(function () {*/
+/*                     var oTable = $('#example').dataTable({*/
+/*                         "oLanguage": {*/
+/*                             "sSearch": "Search all columns:"*/
+/*                         },*/
+/*                         "aoColumnDefs": [{*/
+/*                                 'bSortable': false,*/
+/*                                 'aTargets': [0]*/
+/*                             } //disables sorting for column one*/
+/*                         ],*/
+/*                         'iDisplayLength': 12,*/
+/*                         "sPaginationType": "full_numbers",*/
+/*                         "dom": 'T<"clear">lfrtip',*/
+/*                         "tableTools": {*/
+/*                             "sSwfPath": "js/datatables/tools/swf/copy_csv_xls_pdf.swf"*/
+/*                         }*/
+/*                     });*/
+/*                     $("tfoot input").keyup(function () {*/
+/*                         /* Filter on the column based on the index of this element's parent <th> *//* */
+/*                         oTable.fnFilter(this.value, $("tfoot th").index($(this).parent()));*/
+/*                     });*/
+/*                     $("tfoot input").each(function (i) {*/
+/*                         asInitVals[i] = this.value;*/
+/*                     });*/
+/*                     $("tfoot input").focus(function () {*/
+/*                         if (this.className == "search_init") {*/
+/*                             this.className = "";*/
+/*                             this.value = "";*/
+/*                         }*/
+/*                     });*/
+/*                     $("tfoot input").blur(function (i) {*/
+/*                         if (this.value == "") {*/
+/*                             this.className = "search_init";*/
+/*                             this.value = asInitVals[$("tfoot input").index(this)];*/
+/*                         }*/
+/*                     });*/
+/*                 });*/
 /*             </script>*/
+/* */
+/* */
+/* */
 /*         {% endblock otherScript%}*/
 /* */
 /* */
