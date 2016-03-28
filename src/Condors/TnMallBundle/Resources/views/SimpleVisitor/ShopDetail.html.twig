@@ -31,7 +31,7 @@
     <body>
         <div class="site animsition">
             <!-- header -->
-            {{ include('CondorsTnMallBundle::header.html.twig') }}
+            {{ include('CondorsTnMallBundle::SimpleVisitor/parts/header.html.twig') }}
             <!-- End Header -->
             <section class="yolo-page-heading heading-contact header_transparent header-2">
                 <section class="parallax-bg-4 section-parallax">
@@ -158,7 +158,7 @@
                                                     </p>
                                                     <div class="short-description">
                                                         <p>
-                                                            {{ produitDetail.descriptionProduit }}
+                                                            {{ produitDetail.descriptionProduit |raw }}
                                                         </p>
                                                     </div>
                                                     <br />

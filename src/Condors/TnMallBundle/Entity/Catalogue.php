@@ -24,7 +24,10 @@ class Catalogue
     /**
      * @var integer
      *
-     * @ORM\Column(name="id_responsable_enseigne", type="integer", nullable=false)
+     * @ORM\ManyToOne(targetEntity="User")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="id_responsable_enseigne", referencedColumnName="id")
+     * })
      */
     private $idResponsableEnseigne;
 

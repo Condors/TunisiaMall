@@ -52,5 +52,23 @@ condors_tn_mall_responsable_produit_searchProd:
     path:     /user-responsable/products/searchProd/{txtSearch}
     defaults: { _controller: CondorsTnMallBundle:Responsable:searchProd}
     
+    
+    
+#Brands
+
+condors_tn_mall_responsable_brands:
+    path:     /user-responsable/brands
+    defaults: { _controller: CondorsTnMallBundle:Responsable:brands}
+    
+    
+condors_tn_mall_simple_brands:
+    path:     /brands
+    defaults: { _controller: CondorsTnMallBundle:SimpleVisitor:brands}
+    
+condors_tn_mall_simple_brands_special:
+    path:     /brands/mini-website/{id}
+    defaults: { _controller: CondorsTnMallBundle:SimpleVisitor:brandsSpec}
+    requirements:
+        id: \d+
         
         

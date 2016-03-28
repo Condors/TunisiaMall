@@ -15,8 +15,8 @@ class __TwigTemplate_b726777500fde30554213c0240d7207f9002aa3dfd8ed03d5ff7c6589c4
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_63da1ba4b2a8f5937774d0993e00e9a797fa185d03489288ae3f3cad9fa1608a = $this->env->getExtension("native_profiler");
-        $__internal_63da1ba4b2a8f5937774d0993e00e9a797fa185d03489288ae3f3cad9fa1608a->enter($__internal_63da1ba4b2a8f5937774d0993e00e9a797fa185d03489288ae3f3cad9fa1608a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@CondorsTnMall/SimpleVisitor/index.html.twig"));
+        $__internal_fad1e401c5d3ee9d8b87300a8c802c73dbb97362b4adc549963cfcad31a3396f = $this->env->getExtension("native_profiler");
+        $__internal_fad1e401c5d3ee9d8b87300a8c802c73dbb97362b4adc549963cfcad31a3396f->enter($__internal_fad1e401c5d3ee9d8b87300a8c802c73dbb97362b4adc549963cfcad31a3396f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@CondorsTnMall/SimpleVisitor/index.html.twig"));
 
         // line 1
         echo "<!doctype html>
@@ -89,7 +89,7 @@ class __TwigTemplate_b726777500fde30554213c0240d7207f9002aa3dfd8ed03d5ff7c6589c4
         <!-- header -->
          ";
         // line 36
-        echo twig_include($this->env, $context, "CondorsTnMallBundle::header.html.twig");
+        echo twig_include($this->env, $context, "CondorsTnMallBundle::SimpleVisitor/parts/header.html.twig");
         echo "
         <!-- End Header -->
         <div class=\"content-area\">
@@ -2280,7 +2280,7 @@ class __TwigTemplate_b726777500fde30554213c0240d7207f9002aa3dfd8ed03d5ff7c6589c4
 
 </html>";
         
-        $__internal_63da1ba4b2a8f5937774d0993e00e9a797fa185d03489288ae3f3cad9fa1608a->leave($__internal_63da1ba4b2a8f5937774d0993e00e9a797fa185d03489288ae3f3cad9fa1608a_prof);
+        $__internal_fad1e401c5d3ee9d8b87300a8c802c73dbb97362b4adc549963cfcad31a3396f->leave($__internal_fad1e401c5d3ee9d8b87300a8c802c73dbb97362b4adc549963cfcad31a3396f_prof);
 
     }
 
@@ -2334,7 +2334,7 @@ class __TwigTemplate_b726777500fde30554213c0240d7207f9002aa3dfd8ed03d5ff7c6589c4
 /* <body>*/
 /*     <div class="site animsition">*/
 /*         <!-- header -->*/
-/*          {{ include('CondorsTnMallBundle::header.html.twig') }}*/
+/*          {{ include('CondorsTnMallBundle::SimpleVisitor/parts/header.html.twig') }}*/
 /*         <!-- End Header -->*/
 /*         <div class="content-area">*/
 /*             <!-- Begin The loop -->*/

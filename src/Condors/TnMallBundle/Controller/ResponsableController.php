@@ -4,7 +4,9 @@ namespace Condors\TnMallBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Condors\TnMallBundle\Entity\Produit;
+use Condors\TnMallBundle\Entity\Enseigne;
 use Condors\TnMallBundle\Form\ProduitType;
+use Condors\TnMallBundle\Form\EnseigneType;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 /**
@@ -118,10 +120,52 @@ class ResponsableController extends Controller {
         $em = $this->getDoctrine()->getManager();
 
         $prods = $em->getRepository("CondorsTnMallBundle:Produit")->findProdSearch($txtSearch);
-        $rep =new JsonResponse(($prods));
-        
+        $rep = new JsonResponse(($prods));
+
         return $rep;
-        
+    }
+
+    /* Brands */
+
+    public function brandsAction() {
+
+        $em = $this->getDoctrine()->getManager();
+
+        $brands = $em->getRepository("CondorsTnMallBundle:Produit")->findAll();
+
+        $form = $this->createForm(new EnseigneType());
+        $user = $this->getUser();
+        $allbrands= $em->getRepository("CondorsTnMallBundle:Enseigne")->findBrandbyId($user->getId());
+
+
+        $brand = new Enseigne();
+        $request = $this->getRequest();
+        if ($request->getMethod() == 'POST') {
+            //Note: bindRequest is now deprecated
+            $form->bind($request);
+            if ($form->isValid()) {
+                //retrieve your model hydrated with your form values
+                //has upload file ?
+                $brand = $form->getData();
+                $brand->setIdresponsableenseigne($user);
+
+                $brand->uploadProfilePicture();
+
+
+                $em->persist($brand);
+                $em->flush();
+            }
+        }
+
+
+
+
+
+        return $this->render('CondorsTnMallBundle:Responsable:GestionBrands.html.twig', array(
+                    'user' => $user,
+                    'form' => $form->createView(),
+                    'allbrands' => $allbrands,
+        ));
     }
 
 }

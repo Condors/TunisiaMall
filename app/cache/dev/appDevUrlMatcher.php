@@ -166,6 +166,24 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
             }
 
+            // condors_tn_mall_responsable_brands
+            if ($pathinfo === '/user-responsable/brands') {
+                return array (  '_controller' => 'Condors\\TnMallBundle\\Controller\\ResponsableController::brandsAction',  '_route' => 'condors_tn_mall_responsable_brands',);
+            }
+
+        }
+
+        if (0 === strpos($pathinfo, '/brands')) {
+            // condors_tn_mall_simple_brands
+            if ($pathinfo === '/brands') {
+                return array (  '_controller' => 'Condors\\TnMallBundle\\Controller\\SimpleVisitorController::brandsAction',  '_route' => 'condors_tn_mall_simple_brands',);
+            }
+
+            // condors_tn_mall_simple_brands_special
+            if (0 === strpos($pathinfo, '/brands/mini-website') && preg_match('#^/brands/mini\\-website/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'condors_tn_mall_simple_brands_special')), array (  '_controller' => 'Condors\\TnMallBundle\\Controller\\SimpleVisitorController::brandsSpecAction',));
+            }
+
         }
 
         // homepage

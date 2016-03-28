@@ -23,9 +23,12 @@ class Produit {
     private $idProduit;
 
     /**
-     * @var integer
+     * @var atalogue
      *
-     * @ORM\Column(name="id_catalogue", type="integer", nullable=true)
+     * @ORM\ManyToOne(targetEntity="Catalogue")
+     * @ORM\JoinColumns({
+     * @ORM\JoinColumn(name="id_catalogue", referencedColumnName="id_catalogue")
+     * })
      */
     private $idCatalogue;
 

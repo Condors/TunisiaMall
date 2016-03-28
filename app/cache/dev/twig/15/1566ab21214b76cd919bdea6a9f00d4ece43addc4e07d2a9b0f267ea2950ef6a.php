@@ -15,8 +15,8 @@ class __TwigTemplate_76b17f6d4d0d87e99c06a4b243c8a79b1270913a8d3a53602c5725b34a5
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_8efa1203a4686074b42c35efbc05ec30a4c5bf46d88f71eddced705cf672e65a = $this->env->getExtension("native_profiler");
-        $__internal_8efa1203a4686074b42c35efbc05ec30a4c5bf46d88f71eddced705cf672e65a->enter($__internal_8efa1203a4686074b42c35efbc05ec30a4c5bf46d88f71eddced705cf672e65a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/choice_widget.html.php"));
+        $__internal_231b3a1e090bdba30f4e2ef1e74841c92efa641efaab1bdc315165c771717249 = $this->env->getExtension("native_profiler");
+        $__internal_231b3a1e090bdba30f4e2ef1e74841c92efa641efaab1bdc315165c771717249->enter($__internal_231b3a1e090bdba30f4e2ef1e74841c92efa641efaab1bdc315165c771717249_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/choice_widget.html.php"));
 
         // line 1
         echo "<?php if (\$expanded): ?>
@@ -26,7 +26,7 @@ class __TwigTemplate_76b17f6d4d0d87e99c06a4b243c8a79b1270913a8d3a53602c5725b34a5
 <?php endif ?>
 ";
         
-        $__internal_8efa1203a4686074b42c35efbc05ec30a4c5bf46d88f71eddced705cf672e65a->leave($__internal_8efa1203a4686074b42c35efbc05ec30a4c5bf46d88f71eddced705cf672e65a_prof);
+        $__internal_231b3a1e090bdba30f4e2ef1e74841c92efa641efaab1bdc315165c771717249->leave($__internal_231b3a1e090bdba30f4e2ef1e74841c92efa641efaab1bdc315165c771717249_prof);
 
     }
 

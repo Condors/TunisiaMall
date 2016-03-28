@@ -15,8 +15,8 @@ class __TwigTemplate_55b64656bc2cf811c7508a26576b92efbf43cb864e41649bd49a4d0426f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_bd6198b35606179a786b067764c8d459c8049affa198bb3dfd282031a1778f1c = $this->env->getExtension("native_profiler");
-        $__internal_bd6198b35606179a786b067764c8d459c8049affa198bb3dfd282031a1778f1c->enter($__internal_bd6198b35606179a786b067764c8d459c8049affa198bb3dfd282031a1778f1c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "CondorsTnMallBundle:SimpleVisitor:ShopDetail.html.twig"));
+        $__internal_be38dea7ce1fb88893e02328b3bc0c0aa3a848cf6d9d16fdd18205b26aa39b6e = $this->env->getExtension("native_profiler");
+        $__internal_be38dea7ce1fb88893e02328b3bc0c0aa3a848cf6d9d16fdd18205b26aa39b6e->enter($__internal_be38dea7ce1fb88893e02328b3bc0c0aa3a848cf6d9d16fdd18205b26aa39b6e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "CondorsTnMallBundle:SimpleVisitor:ShopDetail.html.twig"));
 
         // line 1
         echo "<!doctype html>
@@ -81,7 +81,7 @@ class __TwigTemplate_55b64656bc2cf811c7508a26576b92efbf43cb864e41649bd49a4d0426f
             <!-- header -->
             ";
         // line 34
-        echo twig_include($this->env, $context, "CondorsTnMallBundle::header.html.twig");
+        echo twig_include($this->env, $context, "CondorsTnMallBundle::SimpleVisitor/parts/header.html.twig");
         echo "
             <!-- End Header -->
             <section class=\"yolo-page-heading heading-contact header_transparent header-2\">
@@ -241,7 +241,7 @@ class __TwigTemplate_55b64656bc2cf811c7508a26576b92efbf43cb864e41649bd49a4d0426f
                                                         <p>
                                                             ";
         // line 161
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["produitDetail"]) ? $context["produitDetail"] : $this->getContext($context, "produitDetail")), "descriptionProduit", array()), "html", null, true);
+        echo $this->getAttribute((isset($context["produitDetail"]) ? $context["produitDetail"] : $this->getContext($context, "produitDetail")), "descriptionProduit", array());
         echo "
                                                         </p>
                                                     </div>
@@ -670,7 +670,7 @@ class __TwigTemplate_55b64656bc2cf811c7508a26576b92efbf43cb864e41649bd49a4d0426f
     <!-- Mirrored from tk-themes.net/html-canifa/shop-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 16:22:31 GMT -->
 </html>";
         
-        $__internal_bd6198b35606179a786b067764c8d459c8049affa198bb3dfd282031a1778f1c->leave($__internal_bd6198b35606179a786b067764c8d459c8049affa198bb3dfd282031a1778f1c_prof);
+        $__internal_be38dea7ce1fb88893e02328b3bc0c0aa3a848cf6d9d16fdd18205b26aa39b6e->leave($__internal_be38dea7ce1fb88893e02328b3bc0c0aa3a848cf6d9d16fdd18205b26aa39b6e_prof);
 
     }
 
@@ -722,7 +722,7 @@ class __TwigTemplate_55b64656bc2cf811c7508a26576b92efbf43cb864e41649bd49a4d0426f
 /*     <body>*/
 /*         <div class="site animsition">*/
 /*             <!-- header -->*/
-/*             {{ include('CondorsTnMallBundle::header.html.twig') }}*/
+/*             {{ include('CondorsTnMallBundle::SimpleVisitor/parts/header.html.twig') }}*/
 /*             <!-- End Header -->*/
 /*             <section class="yolo-page-heading heading-contact header_transparent header-2">*/
 /*                 <section class="parallax-bg-4 section-parallax">*/
@@ -849,7 +849,7 @@ class __TwigTemplate_55b64656bc2cf811c7508a26576b92efbf43cb864e41649bd49a4d0426f
 /*                                                     </p>*/
 /*                                                     <div class="short-description">*/
 /*                                                         <p>*/
-/*                                                             {{ produitDetail.descriptionProduit }}*/
+/*                                                             {{ produitDetail.descriptionProduit |raw }}*/
 /*                                                         </p>*/
 /*                                                     </div>*/
 /*                                                     <br />*/

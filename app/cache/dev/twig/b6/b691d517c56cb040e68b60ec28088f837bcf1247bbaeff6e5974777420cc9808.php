@@ -10,6 +10,7 @@ class __TwigTemplate_e01fbb1bbe06992e02eb7c45d802d3efe5eb68c3160fd950e134563b57b
         // line 1
         $this->parent = $this->loadTemplate("CondorsTnMallBundle::MyAccountTemplate.html.twig", "@CondorsTnMall/Security/login.html.twig", 1);
         $this->blocks = array(
+            'pageTitle' => array($this, 'block_pageTitle'),
             'titleTop' => array($this, 'block_titleTop'),
             'fos_user_content' => array($this, 'block_fos_user_content'),
         );
@@ -22,77 +23,91 @@ class __TwigTemplate_e01fbb1bbe06992e02eb7c45d802d3efe5eb68c3160fd950e134563b57b
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_00d06fb53293932c78b46c32f42e9363a8da5163fbd2db474019fbed7fecc849 = $this->env->getExtension("native_profiler");
-        $__internal_00d06fb53293932c78b46c32f42e9363a8da5163fbd2db474019fbed7fecc849->enter($__internal_00d06fb53293932c78b46c32f42e9363a8da5163fbd2db474019fbed7fecc849_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@CondorsTnMall/Security/login.html.twig"));
+        $__internal_ab078869e5086cfb9587049a2bb726d47770ce9fdb526280c7f07d23eba5ab00 = $this->env->getExtension("native_profiler");
+        $__internal_ab078869e5086cfb9587049a2bb726d47770ce9fdb526280c7f07d23eba5ab00->enter($__internal_ab078869e5086cfb9587049a2bb726d47770ce9fdb526280c7f07d23eba5ab00_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@CondorsTnMall/Security/login.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_00d06fb53293932c78b46c32f42e9363a8da5163fbd2db474019fbed7fecc849->leave($__internal_00d06fb53293932c78b46c32f42e9363a8da5163fbd2db474019fbed7fecc849_prof);
+        $__internal_ab078869e5086cfb9587049a2bb726d47770ce9fdb526280c7f07d23eba5ab00->leave($__internal_ab078869e5086cfb9587049a2bb726d47770ce9fdb526280c7f07d23eba5ab00_prof);
 
     }
 
-    // line 4
+    // line 3
+    public function block_pageTitle($context, array $blocks = array())
+    {
+        $__internal_979016b799773ae3c2a424ec917f80ad1bdb3ec3271e7ae0c162e255ce3b4a69 = $this->env->getExtension("native_profiler");
+        $__internal_979016b799773ae3c2a424ec917f80ad1bdb3ec3271e7ae0c162e255ce3b4a69->enter($__internal_979016b799773ae3c2a424ec917f80ad1bdb3ec3271e7ae0c162e255ce3b4a69_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageTitle"));
+
+        // line 4
+        echo "    <h1 class=\"page-title\">My Account</h1>
+";
+        
+        $__internal_979016b799773ae3c2a424ec917f80ad1bdb3ec3271e7ae0c162e255ce3b4a69->leave($__internal_979016b799773ae3c2a424ec917f80ad1bdb3ec3271e7ae0c162e255ce3b4a69_prof);
+
+    }
+
+    // line 8
     public function block_titleTop($context, array $blocks = array())
     {
-        $__internal_d81d0a6d9d20434f729a659b6d0a5678bceffb91da26cc896b6825e951ea968f = $this->env->getExtension("native_profiler");
-        $__internal_d81d0a6d9d20434f729a659b6d0a5678bceffb91da26cc896b6825e951ea968f->enter($__internal_d81d0a6d9d20434f729a659b6d0a5678bceffb91da26cc896b6825e951ea968f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "titleTop"));
+        $__internal_17a2c45a3fbe77086ca2347a22f19fbc0479cc3abf839f83f9def844abcf789e = $this->env->getExtension("native_profiler");
+        $__internal_17a2c45a3fbe77086ca2347a22f19fbc0479cc3abf839f83f9def844abcf789e->enter($__internal_17a2c45a3fbe77086ca2347a22f19fbc0479cc3abf839f83f9def844abcf789e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "titleTop"));
 
         echo "<h2 class=\"title-heading\">Login</h2>";
         
-        $__internal_d81d0a6d9d20434f729a659b6d0a5678bceffb91da26cc896b6825e951ea968f->leave($__internal_d81d0a6d9d20434f729a659b6d0a5678bceffb91da26cc896b6825e951ea968f_prof);
+        $__internal_17a2c45a3fbe77086ca2347a22f19fbc0479cc3abf839f83f9def844abcf789e->leave($__internal_17a2c45a3fbe77086ca2347a22f19fbc0479cc3abf839f83f9def844abcf789e_prof);
 
     }
 
-    // line 6
+    // line 10
     public function block_fos_user_content($context, array $blocks = array())
     {
-        $__internal_21d0372933759b679523dda0f0334b55c8ecd36c1b16788e3b011be7ee3bd90f = $this->env->getExtension("native_profiler");
-        $__internal_21d0372933759b679523dda0f0334b55c8ecd36c1b16788e3b011be7ee3bd90f->enter($__internal_21d0372933759b679523dda0f0334b55c8ecd36c1b16788e3b011be7ee3bd90f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "fos_user_content"));
+        $__internal_ea4e79417e93d7f04c5b84edc2a3f0ff873f1583b0588496786753eed741742d = $this->env->getExtension("native_profiler");
+        $__internal_ea4e79417e93d7f04c5b84edc2a3f0ff873f1583b0588496786753eed741742d->enter($__internal_ea4e79417e93d7f04c5b84edc2a3f0ff873f1583b0588496786753eed741742d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "fos_user_content"));
 
-        // line 7
+        // line 11
         if ((isset($context["error"]) ? $context["error"] : $this->getContext($context, "error"))) {
-            // line 8
+            // line 12
             echo "    <div class=\"alert alert-danger\">";
             echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans($this->getAttribute((isset($context["error"]) ? $context["error"] : $this->getContext($context, "error")), "messageKey", array()), $this->getAttribute((isset($context["error"]) ? $context["error"] : $this->getContext($context, "error")), "messageData", array()), "security"), "html", null, true);
             echo "</div>
 ";
         }
-        // line 10
+        // line 14
         echo "
 <form action=\"";
-        // line 11
+        // line 15
         echo $this->env->getExtension('routing')->getPath("fos_user_security_check");
         echo "\" method=\"post\">
     <input type=\"hidden\" name=\"_csrf_token\" value=\"";
-        // line 12
+        // line 16
         echo twig_escape_filter($this->env, (isset($context["csrf_token"]) ? $context["csrf_token"] : $this->getContext($context, "csrf_token")), "html", null, true);
         echo "\" />
     
     
     <label for=\"username\">";
-        // line 15
+        // line 19
         echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("security.login.username", array(), "FOSUserBundle"), "html", null, true);
         echo "</label>
     <input type=\"text\" id=\"username\" name=\"_username\" value=\"";
-        // line 16
+        // line 20
         echo twig_escape_filter($this->env, (isset($context["last_username"]) ? $context["last_username"] : $this->getContext($context, "last_username")), "html", null, true);
         echo "\" required=\"required\" />
            
     <label for=\"password\">";
-        // line 18
+        // line 22
         echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("security.login.password", array(), "FOSUserBundle"), "html", null, true);
         echo "</label>
     <input type=\"password\" id=\"password\" name=\"_password\" required=\"required\" />
             
 
     <input class=\"button\"  type=\"submit\" id=\"_submit\" name=\"_submit\" value=\"";
-        // line 22
+        // line 26
         echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("security.login.submit", array(), "FOSUserBundle"), "html", null, true);
         echo "\" />
     
     <br><br><br>
     <a href=\"";
-        // line 25
+        // line 29
         echo $this->env->getExtension('routing')->getPath("fos_user_resetting_request");
         echo "\">Forgot password ?</a>
     
@@ -104,7 +119,7 @@ class __TwigTemplate_e01fbb1bbe06992e02eb7c45d802d3efe5eb68c3160fd950e134563b57b
     
 ";
         
-        $__internal_21d0372933759b679523dda0f0334b55c8ecd36c1b16788e3b011be7ee3bd90f->leave($__internal_21d0372933759b679523dda0f0334b55c8ecd36c1b16788e3b011be7ee3bd90f_prof);
+        $__internal_ea4e79417e93d7f04c5b84edc2a3f0ff873f1583b0588496786753eed741742d->leave($__internal_ea4e79417e93d7f04c5b84edc2a3f0ff873f1583b0588496786753eed741742d_prof);
 
     }
 
@@ -120,10 +135,14 @@ class __TwigTemplate_e01fbb1bbe06992e02eb7c45d802d3efe5eb68c3160fd950e134563b57b
 
     public function getDebugInfo()
     {
-        return array (  96 => 25,  90 => 22,  83 => 18,  78 => 16,  74 => 15,  68 => 12,  64 => 11,  61 => 10,  55 => 8,  53 => 7,  47 => 6,  35 => 4,  11 => 1,);
+        return array (  111 => 29,  105 => 26,  98 => 22,  93 => 20,  89 => 19,  83 => 16,  79 => 15,  76 => 14,  70 => 12,  68 => 11,  62 => 10,  50 => 8,  42 => 4,  36 => 3,  11 => 1,);
     }
 }
 /* {% extends "CondorsTnMallBundle::MyAccountTemplate.html.twig" %}*/
+/* */
+/* {% block pageTitle %}*/
+/*     <h1 class="page-title">My Account</h1>*/
+/* {% endblock pageTitle %}*/
 /* */
 /* {% trans_default_domain 'FOSUserBundle' %}*/
 /* {% block titleTop %}<h2 class="title-heading">Login</h2>{% endblock %}*/
