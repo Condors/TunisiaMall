@@ -25,20 +25,20 @@ class __TwigTemplate_2aea06569697d9f6dd81d29575868edabd6e0fd4a4d37210105804cce99
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_e661a7f60eee0aac12ed2a970138a38293f01dc38f377dbc61888e6998471313 = $this->env->getExtension("native_profiler");
-        $__internal_e661a7f60eee0aac12ed2a970138a38293f01dc38f377dbc61888e6998471313->enter($__internal_e661a7f60eee0aac12ed2a970138a38293f01dc38f377dbc61888e6998471313_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "CondorsTnMallBundle:Responsable:GestionProduit.html.twig"));
+        $__internal_c7f714d8f4987dd8fcdd452ef5a80fcede1e79f2e6f6a7fe0a26eaf5b69efe4b = $this->env->getExtension("native_profiler");
+        $__internal_c7f714d8f4987dd8fcdd452ef5a80fcede1e79f2e6f6a7fe0a26eaf5b69efe4b->enter($__internal_c7f714d8f4987dd8fcdd452ef5a80fcede1e79f2e6f6a7fe0a26eaf5b69efe4b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "CondorsTnMallBundle:Responsable:GestionProduit.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_e661a7f60eee0aac12ed2a970138a38293f01dc38f377dbc61888e6998471313->leave($__internal_e661a7f60eee0aac12ed2a970138a38293f01dc38f377dbc61888e6998471313_prof);
+        $__internal_c7f714d8f4987dd8fcdd452ef5a80fcede1e79f2e6f6a7fe0a26eaf5b69efe4b->leave($__internal_c7f714d8f4987dd8fcdd452ef5a80fcede1e79f2e6f6a7fe0a26eaf5b69efe4b_prof);
 
     }
 
     // line 7
     public function block_quickProfile($context, array $blocks = array())
     {
-        $__internal_01eb6d62d1bf46ae039e0a805f54f87006c3821db8d60287ccc025bd8a7d67bd = $this->env->getExtension("native_profiler");
-        $__internal_01eb6d62d1bf46ae039e0a805f54f87006c3821db8d60287ccc025bd8a7d67bd->enter($__internal_01eb6d62d1bf46ae039e0a805f54f87006c3821db8d60287ccc025bd8a7d67bd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "quickProfile"));
+        $__internal_4395238bdb027577abd8c000933ad8dbd948814e0a3c392ec138b99cfef65102 = $this->env->getExtension("native_profiler");
+        $__internal_4395238bdb027577abd8c000933ad8dbd948814e0a3c392ec138b99cfef65102->enter($__internal_4395238bdb027577abd8c000933ad8dbd948814e0a3c392ec138b99cfef65102_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "quickProfile"));
 
         // line 8
         echo "    ";
@@ -46,15 +46,15 @@ class __TwigTemplate_2aea06569697d9f6dd81d29575868edabd6e0fd4a4d37210105804cce99
         echo " 
 ";
         
-        $__internal_01eb6d62d1bf46ae039e0a805f54f87006c3821db8d60287ccc025bd8a7d67bd->leave($__internal_01eb6d62d1bf46ae039e0a805f54f87006c3821db8d60287ccc025bd8a7d67bd_prof);
+        $__internal_4395238bdb027577abd8c000933ad8dbd948814e0a3c392ec138b99cfef65102->leave($__internal_4395238bdb027577abd8c000933ad8dbd948814e0a3c392ec138b99cfef65102_prof);
 
     }
 
     // line 13
     public function block_nav_menu($context, array $blocks = array())
     {
-        $__internal_0449333d6ae01d637dff3d9072e013e91a546a5363455fa0824e9af56aa90734 = $this->env->getExtension("native_profiler");
-        $__internal_0449333d6ae01d637dff3d9072e013e91a546a5363455fa0824e9af56aa90734->enter($__internal_0449333d6ae01d637dff3d9072e013e91a546a5363455fa0824e9af56aa90734_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "nav_menu"));
+        $__internal_22cf7c36a27c65f9ce268139ac10d6b00a16d98d0e67052d3231b8a28088af86 = $this->env->getExtension("native_profiler");
+        $__internal_22cf7c36a27c65f9ce268139ac10d6b00a16d98d0e67052d3231b8a28088af86->enter($__internal_22cf7c36a27c65f9ce268139ac10d6b00a16d98d0e67052d3231b8a28088af86_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "nav_menu"));
 
         // line 14
         echo "
@@ -65,15 +65,15 @@ class __TwigTemplate_2aea06569697d9f6dd81d29575868edabd6e0fd4a4d37210105804cce99
 
 ";
         
-        $__internal_0449333d6ae01d637dff3d9072e013e91a546a5363455fa0824e9af56aa90734->leave($__internal_0449333d6ae01d637dff3d9072e013e91a546a5363455fa0824e9af56aa90734_prof);
+        $__internal_22cf7c36a27c65f9ce268139ac10d6b00a16d98d0e67052d3231b8a28088af86->leave($__internal_22cf7c36a27c65f9ce268139ac10d6b00a16d98d0e67052d3231b8a28088af86_prof);
 
     }
 
     // line 22
     public function block_Content($context, array $blocks = array())
     {
-        $__internal_07dbf47b4d9dd3433bcbd0ad321cb57d3ff60659a988a491ffcb3e536dc1efe0 = $this->env->getExtension("native_profiler");
-        $__internal_07dbf47b4d9dd3433bcbd0ad321cb57d3ff60659a988a491ffcb3e536dc1efe0->enter($__internal_07dbf47b4d9dd3433bcbd0ad321cb57d3ff60659a988a491ffcb3e536dc1efe0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "Content"));
+        $__internal_8320545d4a2084f55829daa9bd911d2e453430367414dd8e034370a80b108e78 = $this->env->getExtension("native_profiler");
+        $__internal_8320545d4a2084f55829daa9bd911d2e453430367414dd8e034370a80b108e78->enter($__internal_8320545d4a2084f55829daa9bd911d2e453430367414dd8e034370a80b108e78_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "Content"));
 
         // line 23
         echo "
@@ -96,6 +96,7 @@ class __TwigTemplate_2aea06569697d9f6dd81d29575868edabd6e0fd4a4d37210105804cce99
             </li>
             <li role=\"presentation\" class=\"active\"><a href=\"#tab_content22\" role=\"tab\" id=\"profile-tabb\" data-toggle=\"tab\" aria-controls=\"profile\" aria-expanded=\"false\"><i class=\"fa fa-file-text\"></i></a>
             </li>
+            
 
         </ul>
         <div id=\"myTabContent2\" class=\"tab-content\">
@@ -141,8 +142,9 @@ class __TwigTemplate_2aea06569697d9f6dd81d29575868edabd6e0fd4a4d37210105804cce99
                             </a>
                         </li>
                     </ul>
+                    
                     ";
-        // line 88
+        // line 90
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_start', array("attr" => array("class" => "form-horizontal form-label-left")));
         echo "
                     <div id=\"step-1\">
@@ -154,7 +156,7 @@ class __TwigTemplate_2aea06569697d9f6dd81d29575868edabd6e0fd4a4d37210105804cce99
                             <div class=\"col-md-6 col-sm-6 col-xs-12\">
 
                                 ";
-        // line 97
+        // line 99
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "libelleProduit", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
         echo " 
                             </div>
@@ -164,7 +166,7 @@ class __TwigTemplate_2aea06569697d9f6dd81d29575868edabd6e0fd4a4d37210105804cce99
                             </label>
                             <div class=\"col-md-6 col-sm-6 col-xs-12\">
                                 ";
-        // line 104
+        // line 106
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "categorieProduit", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
         echo " 
                             </div>
@@ -173,26 +175,18 @@ class __TwigTemplate_2aea06569697d9f6dd81d29575868edabd6e0fd4a4d37210105804cce99
                             <label for=\"middle-name\" class=\"control-label col-md-3 col-sm-3 col-xs-12\">Product REF<span class=\"required\">*</span></label>
                             <div class=\"col-md-6 col-sm-6 col-xs-12\">
                                 ";
-        // line 110
+        // line 112
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "refProduit", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
         echo " 
                             </div>
                         </div>
-                        <div class=\"form-group\">
-                            <label class=\"control-label col-md-3 col-sm-3 col-xs-12\">Product V.A.T<span class=\"required\">*</span></label>
-                            <div class=\"col-md-6 col-sm-6 col-xs-12\">
-                                ";
-        // line 116
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "tvaProduit", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
-        echo " 
-                            </div>
-                        </div>
+                       
                         <div class=\"form-group\">
                             <label class=\"control-label col-md-3 col-sm-3 col-xs-12\">Product Price <span class=\"required\">*</span>
                             </label>
                             <div class=\"col-md-6 col-sm-6 col-xs-12\">
                                 ";
-        // line 123
+        // line 120
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "prixProduit", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
         echo " 
                             </div>
@@ -204,7 +198,7 @@ class __TwigTemplate_2aea06569697d9f6dd81d29575868edabd6e0fd4a4d37210105804cce99
                         <h2 class=\"StepTitle\">Desciption</h2>
                         <p id=\"txtEditor\">
                             ";
-        // line 132
+        // line 129
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "descriptionProduit", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
         echo " 
                         </p>
@@ -214,15 +208,15 @@ class __TwigTemplate_2aea06569697d9f6dd81d29575868edabd6e0fd4a4d37210105804cce99
                         <h2 class=\"StepTitle\">Step 3 Content</h2>
                         <p>
                             ";
-        // line 139
+        // line 136
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "fileFront", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
         echo " 
                             ";
-        // line 140
+        // line 137
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "fileBack", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
         echo " 
                             ";
-        // line 141
+        // line 138
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "fileReel", array()), 'widget', array("attr" => array("class" => "form-control col-md-7 col-xs-12")));
         echo " 
                         </p>
@@ -238,11 +232,11 @@ class __TwigTemplate_2aea06569697d9f6dd81d29575868edabd6e0fd4a4d37210105804cce99
                 </div>
 
                 ";
-        // line 154
+        // line 151
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "submit", array()), 'widget');
         echo "
                 ";
-        // line 155
+        // line 152
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_end');
         echo "
             </div>
@@ -272,55 +266,55 @@ class __TwigTemplate_2aea06569697d9f6dd81d29575868edabd6e0fd4a4d37210105804cce99
                                 <tbody id=\"records_table\">
 
                                     ";
-        // line 182
+        // line 179
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["allprods"]) ? $context["allprods"] : $this->getContext($context, "allprods")));
         foreach ($context['_seq'] as $context["_key"] => $context["prods"]) {
-            // line 183
+            // line 180
             echo "                                        <tr class=\"even pointer\">
 
                                             <td class=\" \">";
-            // line 185
+            // line 182
             echo twig_escape_filter($this->env, $this->getAttribute($context["prods"], "refProduit", array()), "html", null, true);
             echo "</td>
                                             <td class=\" \"><img width=\"30\" heigth=\"30\" src=\"";
-            // line 186
+            // line 183
             echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("uploads/pictures/"), "html", null, true);
             echo twig_escape_filter($this->env, $this->getAttribute($context["prods"], "imageprodreel", array()), "html", null, true);
             echo "\" </td>
                                             <td class=\"nameProd\"> ";
-            // line 187
+            // line 184
             echo twig_escape_filter($this->env, $this->getAttribute($context["prods"], "libelleProduit", array()), "html", null, true);
             echo "
                                             </td>
                                             <td class=\" \">";
-            // line 189
+            // line 186
             echo twig_escape_filter($this->env, $this->getAttribute($context["prods"], "categorieProduit", array()), "html", null, true);
             echo "</td>
                                             <td class=\" \">";
-            // line 190
+            // line 187
             echo twig_escape_filter($this->env, $this->getAttribute($context["prods"], "prixProduit", array()), "html", null, true);
             echo " D.T  </td>
                                             <td class=\"a-right a-right \">";
-            // line 191
+            // line 188
             echo twig_escape_filter($this->env, $this->getAttribute($context["prods"], "tvaProduit", array()), "html", null, true);
             echo "%</td>
                                             <td class=\"a-right a-right \">
                                                 ";
-            // line 193
+            // line 190
             $context["fprice"] = ((($this->getAttribute($context["prods"], "tvaProduit", array()) * $this->getAttribute($context["prods"], "prixProduit", array())) / 100) + $this->getAttribute($context["prods"], "prixProduit", array()));
             echo " 
 
                                                 ";
-            // line 195
+            // line 192
             echo twig_escape_filter($this->env, (isset($context["fprice"]) ? $context["fprice"] : $this->getContext($context, "fprice")), "html", null, true);
             echo " D.T</td>
                                             <td class=\" last\"><a data-toggle=\"modal\" data-target=\".bs-example";
-            // line 196
+            // line 193
             echo twig_escape_filter($this->env, $this->getAttribute($context["prods"], "idProduit", array()), "html", null, true);
             echo "-modal-lg\" href=\"#\"><i style=\"font-size:22px;\" class=\"fa fa-cog\"></i></a>
                                                 &nbsp;&nbsp;  <a href=\"";
-            // line 197
+            // line 194
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("condors_tn_mall_responsable_produit_delete", array("id" => $this->getAttribute($context["prods"], "idProduit", array()))), "html", null, true);
             echo "\" ><i style=\"font-size:22px;\" class=\"fa fa-trash\"></i></a>
 
@@ -328,7 +322,7 @@ class __TwigTemplate_2aea06569697d9f6dd81d29575868edabd6e0fd4a4d37210105804cce99
                                         </tr>
 
                                     <div class=\"modal fade bs-example";
-            // line 202
+            // line 199
             echo twig_escape_filter($this->env, $this->getAttribute($context["prods"], "idProduit", array()), "html", null, true);
             echo "-modal-lg\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">
                                         <div class=\"modal-dialog modal-lg\">
@@ -338,13 +332,13 @@ class __TwigTemplate_2aea06569697d9f6dd81d29575868edabd6e0fd4a4d37210105804cce99
                                                     <button type=\"button\" class=\"close\" data-dismiss=\"modal\"><span aria-hidden=\"true\">×</span>
                                                     </button>
                                                     <h4 class=\"modal-title\" id=\"myModalLabel\"> <i class=\"fa fa-cog\"></i> &nbsp; Product : ";
-            // line 209
+            // line 206
             echo twig_escape_filter($this->env, $this->getAttribute($context["prods"], "libelleProduit", array()), "html", null, true);
             echo " </h4>
                                                 </div>
                                                 <div class=\"modal-body\">
                                                     <iframe  id=\"form-iframe\" frameborder=\"0\" scrolling=\"auto\"  style=\"height: 750px; width: 100%\" src=\"";
-            // line 212
+            // line 209
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("condors_tn_mall_responsable_produit_midifier", array("id" => $this->getAttribute($context["prods"], "idProduit", array()))), "html", null, true);
             echo "\"></iframe>
                                                 </div>
@@ -361,7 +355,7 @@ class __TwigTemplate_2aea06569697d9f6dd81d29575868edabd6e0fd4a4d37210105804cce99
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['prods'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 223
+        // line 220
         echo "
 
 
@@ -403,33 +397,33 @@ class __TwigTemplate_2aea06569697d9f6dd81d29575868edabd6e0fd4a4d37210105804cce99
 
         ";
         
-        $__internal_07dbf47b4d9dd3433bcbd0ad321cb57d3ff60659a988a491ffcb3e536dc1efe0->leave($__internal_07dbf47b4d9dd3433bcbd0ad321cb57d3ff60659a988a491ffcb3e536dc1efe0_prof);
+        $__internal_8320545d4a2084f55829daa9bd911d2e453430367414dd8e034370a80b108e78->leave($__internal_8320545d4a2084f55829daa9bd911d2e453430367414dd8e034370a80b108e78_prof);
 
     }
 
-    // line 265
+    // line 262
     public function block_footer($context, array $blocks = array())
     {
-        $__internal_875343e4e851a01cd7b6808c471af8182f3fbeac1b8155758e827561bca78b8f = $this->env->getExtension("native_profiler");
-        $__internal_875343e4e851a01cd7b6808c471af8182f3fbeac1b8155758e827561bca78b8f->enter($__internal_875343e4e851a01cd7b6808c471af8182f3fbeac1b8155758e827561bca78b8f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "footer"));
+        $__internal_6dee80938ddcb06c56a949edd3a99fe29ad66fd0cc348eb3b26808e4762938bf = $this->env->getExtension("native_profiler");
+        $__internal_6dee80938ddcb06c56a949edd3a99fe29ad66fd0cc348eb3b26808e4762938bf->enter($__internal_6dee80938ddcb06c56a949edd3a99fe29ad66fd0cc348eb3b26808e4762938bf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 266
+        // line 263
         echo "            ";
         echo twig_include($this->env, $context, "CondorsTnMallBundle::Responsable/footer.html.twig");
         echo " 
         ";
         
-        $__internal_875343e4e851a01cd7b6808c471af8182f3fbeac1b8155758e827561bca78b8f->leave($__internal_875343e4e851a01cd7b6808c471af8182f3fbeac1b8155758e827561bca78b8f_prof);
+        $__internal_6dee80938ddcb06c56a949edd3a99fe29ad66fd0cc348eb3b26808e4762938bf->leave($__internal_6dee80938ddcb06c56a949edd3a99fe29ad66fd0cc348eb3b26808e4762938bf_prof);
 
     }
 
-    // line 277
+    // line 274
     public function block_otherScript($context, array $blocks = array())
     {
-        $__internal_58329179c19062c7c450bcbd9b40f27eb2a6fd7fb84fd6b15adbee012627d446 = $this->env->getExtension("native_profiler");
-        $__internal_58329179c19062c7c450bcbd9b40f27eb2a6fd7fb84fd6b15adbee012627d446->enter($__internal_58329179c19062c7c450bcbd9b40f27eb2a6fd7fb84fd6b15adbee012627d446_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "otherScript"));
+        $__internal_7103936f0fda63dde61b3db87be7c3c2854c78ef265b546badd4a8ef00706f20 = $this->env->getExtension("native_profiler");
+        $__internal_7103936f0fda63dde61b3db87be7c3c2854c78ef265b546badd4a8ef00706f20->enter($__internal_7103936f0fda63dde61b3db87be7c3c2854c78ef265b546badd4a8ef00706f20_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "otherScript"));
 
-        // line 278
+        // line 275
         echo "
             <div id=\"custom_notifications\" class=\"custom-notifications dsp_none\">
                 <ul class=\"list-unstyled notifications clearfix\" data-tabbed_notifications=\"notif-group\">
@@ -442,32 +436,32 @@ class __TwigTemplate_2aea06569697d9f6dd81d29575868edabd6e0fd4a4d37210105804cce99
 
             <!-- bootstrap progress js -->
             <script src=\"";
-        // line 289
+        // line 286
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/progressbar/bootstrap-progressbar.min.js"), "html", null, true);
         echo "\"></script>
             <script src=\"";
-        // line 290
+        // line 287
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/nicescroll/jquery.nicescroll.min.js"), "html", null, true);
         echo "\"></script>
             <!-- icheck -->
             <script src=\"";
-        // line 292
+        // line 289
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/icheck/icheck.min.js"), "html", null, true);
         echo "\"></script>
 
             <script src=\"";
-        // line 294
+        // line 291
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/custom.js"), "html", null, true);
         echo "\"></script>
 
             <!-- form wizard -->
             <script type=\"text/javascript\" src=\"";
-        // line 297
+        // line 294
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/wizard/jquery.smartWizard.js"), "html", null, true);
         echo "\"></script>
             <!-- pace -->
             <script src=\"";
-        // line 299
+        // line 296
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/pace/pace.min.js"), "html", null, true);
         echo "\"></script>
 
@@ -489,7 +483,7 @@ class __TwigTemplate_2aea06569697d9f6dd81d29575868edabd6e0fd4a4d37210105804cce99
                                     var pr = ((item.tvaProduit * item.prixProduit) / 100) + item.prixProduit;
 
                                     trHTML += \"<tr class='even pointer'><td>\" + item.refProduit + \"</td><td><img width='30' heigth='30' src='";
-        // line 318
+        // line 315
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("uploads/pictures/"), "html", null, true);
         echo "\" + item.imageprodreel + \" ' </td><td>\" + item.libelleProduit + \"</td><td>\" + item.categorieProduit + \"</td><td>\" + item.prixProduit + \" D.T </td><td>\" + item.tvaProduit + \"%</td><td>\" + pr + \" D.T</td>\\n\\
                             <td class='last'><a data-toggle='modal' data-target='.bs-example\" + item.idProduit +\"-modal-lg' 'href='#'><i style='font-size:22px;' class='fa fa-cog'></i></a> &nbsp;&nbsp; <a href=\\n\\
@@ -540,7 +534,7 @@ class __TwigTemplate_2aea06569697d9f6dd81d29575868edabd6e0fd4a4d37210105804cce99
 
             <!-- Editor Zone -->
             <script src=\"";
-        // line 366
+        // line 363
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/ckeditor/ckeditor.js"), "html", null, true);
         echo "\"></script>
 
@@ -554,7 +548,7 @@ class __TwigTemplate_2aea06569697d9f6dd81d29575868edabd6e0fd4a4d37210105804cce99
 
             <!-- dropzone -->
             <script src=\"";
-        // line 377
+        // line 374
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("responsable/js/dropzone/dropzone.js"), "html", null, true);
         echo "\"></script> 
 
@@ -612,7 +606,7 @@ class __TwigTemplate_2aea06569697d9f6dd81d29575868edabd6e0fd4a4d37210105804cce99
 
         ";
         
-        $__internal_58329179c19062c7c450bcbd9b40f27eb2a6fd7fb84fd6b15adbee012627d446->leave($__internal_58329179c19062c7c450bcbd9b40f27eb2a6fd7fb84fd6b15adbee012627d446_prof);
+        $__internal_7103936f0fda63dde61b3db87be7c3c2854c78ef265b546badd4a8ef00706f20->leave($__internal_7103936f0fda63dde61b3db87be7c3c2854c78ef265b546badd4a8ef00706f20_prof);
 
     }
 
@@ -628,7 +622,7 @@ class __TwigTemplate_2aea06569697d9f6dd81d29575868edabd6e0fd4a4d37210105804cce99
 
     public function getDebugInfo()
     {
-        return array (  558 => 377,  544 => 366,  493 => 318,  471 => 299,  466 => 297,  460 => 294,  455 => 292,  450 => 290,  446 => 289,  433 => 278,  427 => 277,  417 => 266,  411 => 265,  365 => 223,  348 => 212,  342 => 209,  332 => 202,  324 => 197,  320 => 196,  316 => 195,  311 => 193,  306 => 191,  302 => 190,  298 => 189,  293 => 187,  288 => 186,  284 => 185,  280 => 183,  276 => 182,  246 => 155,  242 => 154,  226 => 141,  222 => 140,  218 => 139,  208 => 132,  196 => 123,  186 => 116,  177 => 110,  168 => 104,  158 => 97,  146 => 88,  79 => 23,  73 => 22,  63 => 15,  60 => 14,  54 => 13,  44 => 8,  38 => 7,  11 => 1,);
+        return array (  552 => 374,  538 => 363,  487 => 315,  465 => 296,  460 => 294,  454 => 291,  449 => 289,  444 => 287,  440 => 286,  427 => 275,  421 => 274,  411 => 263,  405 => 262,  359 => 220,  342 => 209,  336 => 206,  326 => 199,  318 => 194,  314 => 193,  310 => 192,  305 => 190,  300 => 188,  296 => 187,  292 => 186,  287 => 184,  282 => 183,  278 => 182,  274 => 180,  270 => 179,  240 => 152,  236 => 151,  220 => 138,  216 => 137,  212 => 136,  202 => 129,  190 => 120,  179 => 112,  170 => 106,  160 => 99,  148 => 90,  79 => 23,  73 => 22,  63 => 15,  60 => 14,  54 => 13,  44 => 8,  38 => 7,  11 => 1,);
     }
 }
 /* {% extends "CondorsTnMallBundle::ResponsableLayouts/Layout.html.twig" %}*/
@@ -673,6 +667,7 @@ class __TwigTemplate_2aea06569697d9f6dd81d29575868edabd6e0fd4a4d37210105804cce99
 /*             </li>*/
 /*             <li role="presentation" class="active"><a href="#tab_content22" role="tab" id="profile-tabb" data-toggle="tab" aria-controls="profile" aria-expanded="false"><i class="fa fa-file-text"></i></a>*/
 /*             </li>*/
+/*             */
 /* */
 /*         </ul>*/
 /*         <div id="myTabContent2" class="tab-content">*/
@@ -718,6 +713,7 @@ class __TwigTemplate_2aea06569697d9f6dd81d29575868edabd6e0fd4a4d37210105804cce99
 /*                             </a>*/
 /*                         </li>*/
 /*                     </ul>*/
+/*                     */
 /*                     {{ form_start(form, {'attr': {'class': 'form-horizontal form-label-left'}}) }}*/
 /*                     <div id="step-1">*/
 /* */
@@ -743,12 +739,7 @@ class __TwigTemplate_2aea06569697d9f6dd81d29575868edabd6e0fd4a4d37210105804cce99
 /*                                 {{ form_widget(form.refProduit , { 'attr': {'class': 'form-control col-md-7 col-xs-12'} } ) }} */
 /*                             </div>*/
 /*                         </div>*/
-/*                         <div class="form-group">*/
-/*                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Product V.A.T<span class="required">*</span></label>*/
-/*                             <div class="col-md-6 col-sm-6 col-xs-12">*/
-/*                                 {{ form_widget(form.tvaProduit , { 'attr': {'class': 'form-control col-md-7 col-xs-12'} } ) }} */
-/*                             </div>*/
-/*                         </div>*/
+/*                        */
 /*                         <div class="form-group">*/
 /*                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Product Price <span class="required">*</span>*/
 /*                             </label>*/

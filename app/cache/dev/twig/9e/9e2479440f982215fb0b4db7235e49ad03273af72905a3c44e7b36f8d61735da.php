@@ -15,8 +15,8 @@ class __TwigTemplate_55b64656bc2cf811c7508a26576b92efbf43cb864e41649bd49a4d0426f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_be38dea7ce1fb88893e02328b3bc0c0aa3a848cf6d9d16fdd18205b26aa39b6e = $this->env->getExtension("native_profiler");
-        $__internal_be38dea7ce1fb88893e02328b3bc0c0aa3a848cf6d9d16fdd18205b26aa39b6e->enter($__internal_be38dea7ce1fb88893e02328b3bc0c0aa3a848cf6d9d16fdd18205b26aa39b6e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "CondorsTnMallBundle:SimpleVisitor:ShopDetail.html.twig"));
+        $__internal_870d4126fd098f186faacb4156f38b70218a2afe65f338b971b226ccea00fa89 = $this->env->getExtension("native_profiler");
+        $__internal_870d4126fd098f186faacb4156f38b70218a2afe65f338b971b226ccea00fa89->enter($__internal_870d4126fd098f186faacb4156f38b70218a2afe65f338b971b226ccea00fa89_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "CondorsTnMallBundle:SimpleVisitor:ShopDetail.html.twig"));
 
         // line 1
         echo "<!doctype html>
@@ -670,7 +670,7 @@ class __TwigTemplate_55b64656bc2cf811c7508a26576b92efbf43cb864e41649bd49a4d0426f
     <!-- Mirrored from tk-themes.net/html-canifa/shop-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 16:22:31 GMT -->
 </html>";
         
-        $__internal_be38dea7ce1fb88893e02328b3bc0c0aa3a848cf6d9d16fdd18205b26aa39b6e->leave($__internal_be38dea7ce1fb88893e02328b3bc0c0aa3a848cf6d9d16fdd18205b26aa39b6e_prof);
+        $__internal_870d4126fd098f186faacb4156f38b70218a2afe65f338b971b226ccea00fa89->leave($__internal_870d4126fd098f186faacb4156f38b70218a2afe65f338b971b226ccea00fa89_prof);
 
     }
 

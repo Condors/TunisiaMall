@@ -15,8 +15,8 @@ class __TwigTemplate_163d60f3370334609a72762745610f09ede7b0509619ccd1ae0016a2ed7
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_3484837dab376d3d13faa40a30c234a3534a5a6d2f3184c14f92a5cee0351ddf = $this->env->getExtension("native_profiler");
-        $__internal_3484837dab376d3d13faa40a30c234a3534a5a6d2f3184c14f92a5cee0351ddf->enter($__internal_3484837dab376d3d13faa40a30c234a3534a5a6d2f3184c14f92a5cee0351ddf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@CondorsTnMall/SimpleVisitor/parts/header.html.twig"));
+        $__internal_351ee5ad26e26dfb969ee93342d50ae7f7057b7f4f8fa8af2027ea4b3a2ce2fe = $this->env->getExtension("native_profiler");
+        $__internal_351ee5ad26e26dfb969ee93342d50ae7f7057b7f4f8fa8af2027ea4b3a2ce2fe->enter($__internal_351ee5ad26e26dfb969ee93342d50ae7f7057b7f4f8fa8af2027ea4b3a2ce2fe_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@CondorsTnMall/SimpleVisitor/parts/header.html.twig"));
 
         // line 1
         echo "<header class=\"yolo-header header_transparent header-2\">
@@ -107,7 +107,7 @@ class __TwigTemplate_163d60f3370334609a72762745610f09ede7b0509619ccd1ae0016a2ed7
             </div>
             </header>";
         
-        $__internal_3484837dab376d3d13faa40a30c234a3534a5a6d2f3184c14f92a5cee0351ddf->leave($__internal_3484837dab376d3d13faa40a30c234a3534a5a6d2f3184c14f92a5cee0351ddf_prof);
+        $__internal_351ee5ad26e26dfb969ee93342d50ae7f7057b7f4f8fa8af2027ea4b3a2ce2fe->leave($__internal_351ee5ad26e26dfb969ee93342d50ae7f7057b7f4f8fa8af2027ea4b3a2ce2fe_prof);
 
     }
 
