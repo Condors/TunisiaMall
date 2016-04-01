@@ -14,25 +14,29 @@ use Symfony\Component\HttpFoundation\JsonResponse;
  *
  * @author HP
  */
-class ResponsableController extends Controller {
+class ResponsableController extends Controller
+{
 
-    public function indexAction() {
+    public function indexAction()
+    {
 
 
         $user = $this->getUser();
         return $this->render('CondorsTnMallBundle:Responsable:index.html.twig', array(
-                    'user' => $user,
+            'user' => $user,
         ));
     }
 
-    public function productsAction() {
+    public function productsAction()
+    {
 
         $em = $this->getDoctrine()->getManager();
 
-        $allProds = $em->getRepository("CondorsTnMallBundle:Produit")->findAll();
 
         $form = $this->createForm(new ProduitType());
         $user = $this->getUser();
+
+        $allProds = $em->getRepository("CondorsTnMallBundle:Produit")->findProdRespoCatalog($user->getId());
 
         $prod = new Produit();
         $request = $this->getRequest();
@@ -43,8 +47,16 @@ class ResponsableController extends Controller {
                 //retrieve your model hydrated with your form values
                 //has upload file ?
                 $prod = $form->getData();
-                if (($prod instanceof UploadedFile) && ($prod > getError() == '0')) {
-                    $prod->uploadProfilePicture();
+
+                $prod->uploadProfilePicture();
+
+                $prodEnseigne = $prod->getIdCatalogue()->getIdEnseigne();
+
+
+                $prod_cat = $em->getRepository("CondorsTnMallBundle:Enseigne")->findBrandbyRespoId($prod->getIdCatalogue($prodEnseigne));
+                foreach ($prod_cat as $value) {
+                    $catalogValue = $em->getRepository("CondorsTnMallBundle:Catalogue")->findOneByidCatalogue($value);
+                    $prod->setIdCatalogue($catalogValue);
                 }
 
                 $em->persist($prod);
@@ -53,16 +65,15 @@ class ResponsableController extends Controller {
         }
 
 
-
-
         return $this->render('CondorsTnMallBundle:Responsable:GestionProduit.html.twig', array(
-                    'user' => $user,
-                    'form' => $form->createView(),
-                    'allprods' => $allProds,
+            'user' => $user,
+            'form' => $form->createView(),
+            'allprods' => $allProds,
         ));
     }
 
-    public function modifyAction(Produit $prods) {
+    public function modifyAction(Produit $prods)
+    {
 
         if ($this->container->has('profiler')) {
             $this->container->get('profiler')->disable();
@@ -88,23 +99,30 @@ class ResponsableController extends Controller {
                     $prod->uploadProfilePicture();
                 }
 
+                $prodEnseigne = $prod->getIdCatalogue()->getIdEnseigne();
+
+
+                $prod_cat = $em->getRepository("CondorsTnMallBundle:Enseigne")->findBrandbyRespoId($prod->getIdCatalogue($prodEnseigne));
+                foreach ($prod_cat as $value) {
+                    $catalogValue = $em->getRepository("CondorsTnMallBundle:Catalogue")->findOneByidCatalogue($value);
+                    $prod->setIdCatalogue($catalogValue);
+                }
+
                 $em->persist($prod);
                 $em->flush();
             }
         }
 
 
-
-
         return $this->render('CondorsTnMallBundle:Responsable:GestionProduitModifer.html.twig', array(
-                    'user' => $user,
-                    'form' => $form->createView(),
-                    'prods' => $prods,
+            'user' => $user,
+            'form' => $form->createView(),
+            'prods' => $prods,
         ));
     }
 
-    public function deleteAction(Produit $prods) {
-
+    public function deleteAction(Produit $prods)
+    {
 
 
         $em = $this->getDoctrine()->getManager();
@@ -112,11 +130,11 @@ class ResponsableController extends Controller {
         $em->flush();
 
 
-
         return $this->redirect($this->generateUrl("condors_tn_mall_responsable_produit"));
     }
 
-    public function searchProdAction($txtSearch) {
+    public function searchProdAction($txtSearch)
+    {
         $em = $this->getDoctrine()->getManager();
 
         $prods = $em->getRepository("CondorsTnMallBundle:Produit")->findProdSearch($txtSearch);
@@ -127,7 +145,8 @@ class ResponsableController extends Controller {
 
     /* Brands */
 
-    public function brandsAction() {
+    public function brandsAction()
+    {
 
         $em = $this->getDoctrine()->getManager();
 
@@ -135,7 +154,7 @@ class ResponsableController extends Controller {
 
         $form = $this->createForm(new EnseigneType());
         $user = $this->getUser();
-        $allbrands= $em->getRepository("CondorsTnMallBundle:Enseigne")->findBrandbyId($user->getId());
+        $allbrands = $em->getRepository("CondorsTnMallBundle:Enseigne")->findBrandbyId($user->getId());
 
 
         $brand = new Enseigne();
@@ -158,13 +177,10 @@ class ResponsableController extends Controller {
         }
 
 
-
-
-
         return $this->render('CondorsTnMallBundle:Responsable:GestionBrands.html.twig', array(
-                    'user' => $user,
-                    'form' => $form->createView(),
-                    'allbrands' => $allbrands,
+            'user' => $user,
+            'form' => $form->createView(),
+            'allbrands' => $allbrands,
         ));
     }
 

@@ -51,8 +51,15 @@ condors_tn_mall_responsable_produit_delete:
 condors_tn_mall_responsable_produit_searchProd:
     path:     /user-responsable/products/searchProd/{txtSearch}
     defaults: { _controller: CondorsTnMallBundle:Responsable:searchProd}
-    
-    
+
+
+condors_tn_mall_simpleUser_produit_searchProdOrder:
+    path:     /brands/mini-website/{id}/products/searchProdOrder/{txtSearch}
+    defaults: { _controller: CondorsTnMallBundle:SimpleVisitor:searchProdSimpleOrder}
+    requirements:
+        id: \d+
+
+
     
 #Brands
 

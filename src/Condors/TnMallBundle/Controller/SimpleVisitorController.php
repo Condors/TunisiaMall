@@ -3,14 +3,18 @@
 namespace Condors\TnMallBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
-class SimpleVisitorController extends Controller {
+class SimpleVisitorController extends Controller
+{
 
-    public function indexAction() {
+    public function indexAction()
+    {
         return $this->render('CondorsTnMallBundle:SimpleVisitor:index.html.twig');
     }
 
-    public function brandsAction() {
+    public function brandsAction()
+    {
 
         $em = $this->getDoctrine()->getManager();
 
@@ -18,40 +22,56 @@ class SimpleVisitorController extends Controller {
         $brands = $em->getRepository("CondorsTnMallBundle:Enseigne")->findAll();
 
         return $this->render('CondorsTnMallBundle:SimpleVisitor:brands.html.twig', array(
-                    'brands' => $brands,
+            'brands' => $brands,
         ));
     }
 
-    public function brandsSpecAction($id) {
+    public function brandsSpecAction($id)
+    {
         $em = $this->getDoctrine()->getManager();
 
 
         $brand = $em->getRepository("CondorsTnMallBundle:Enseigne")->findBrandbyIdBrand($id);
-        
-        //$catalogProds=$em->getRepository("CondorsTnMallBundle:Enseigne")->findBrandCatalog($id);
+
+        $catalogProds = $em->getRepository("CondorsTnMallBundle:Enseigne")->findBrandCatalog($id);
 
         return $this->render('CondorsTnMallBundle:SimpleVisitor:brandsMiniWebSite.html.twig', array(
-                    'brand' => $brand,
-                   
+            'brand' => $brand,
+            'catalogs' => $catalogProds,
+
+
         ));
     }
 
-    public function showNewProductAction() {
+    public function showNewProductAction()
+    {
         $em = $this->getDoctrine()->getEntityManager();
         $newProduit = $em->getRepository("CondorsTnMallBundle:Produit")->findNewProd();
         return $this->render('CondorsTnMallBundle:SimpleVisitor:index.html.twig', array(
-                    'newProduit' => $newProduit,
+            'newProduit' => $newProduit,
         ));
     }
 
-    public function shopDetailAction($id) {
+    public function shopDetailAction($id)
+    {
         $em = $this->getDoctrine()->getEntityManager();
         $produitDetail = $em->getRepository("CondorsTnMallBundle:Produit")->findProdbyId($id);
         $produitRelated = $em->getRepository("CondorsTnMallBundle:Produit")->findProdRelated($produitDetail->getCategorieProduit());
         return $this->render('CondorsTnMallBundle:SimpleVisitor:ShopDetail.html.twig', array(
-                    'produitDetail' => $produitDetail,
-                    'produitRelated' => $produitRelated,
+            'produitDetail' => $produitDetail,
+            'produitRelated' => $produitRelated,
         ));
+    }
+
+
+    public function searchProdSimpleOrderAction($id,$txtSearch)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $prods = $em->getRepository("CondorsTnMallBundle:Produit")->findProdOrder($id,$txtSearch);
+        $rep = new JsonResponse(($prods));
+
+        return $rep;
     }
 
 }

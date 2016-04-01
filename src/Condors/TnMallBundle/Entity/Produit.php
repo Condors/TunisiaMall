@@ -23,7 +23,7 @@ class Produit {
     private $idProduit;
 
     /**
-     * @var atalogue
+     * @var Catalogue
      *
      * @ORM\ManyToOne(targetEntity="Catalogue")
      * @ORM\JoinColumns({

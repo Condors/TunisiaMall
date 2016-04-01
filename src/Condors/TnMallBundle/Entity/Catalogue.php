@@ -31,5 +31,65 @@ class Catalogue
      */
     private $idResponsableEnseigne;
 
+    /**
+     * @var integer
+     *
+     * @ORM\ManyToOne(targetEntity="Enseigne")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="idEnseigne", referencedColumnName="id_enseigne")
+     * })
+     */
+    private $idEnseigne;
+
+    /**
+     * @return int
+     */
+    public function getIdCatalogue()
+    {
+        return $this->idCatalogue;
+    }
+
+    /**
+     * @param int $idCatalogue
+     */
+    public function setIdCatalogue($idCatalogue)
+    {
+        $this->idCatalogue = $idCatalogue;
+    }
+
+    /**
+     * @return int
+     */
+    public function getIdResponsableEnseigne()
+    {
+        return $this->idResponsableEnseigne;
+    }
+
+    /**
+     * @param int $idResponsableEnseigne
+     */
+    public function setIdResponsableEnseigne($idResponsableEnseigne)
+    {
+        $this->idResponsableEnseigne = $idResponsableEnseigne;
+    }
+
+    /**
+     * @return int
+     */
+    public function getIdEnseigne()
+    {
+        return $this->idEnseigne;
+    }
+
+    /**
+     * @param int $idEnseigne
+     */
+    public function setIdEnseigne($idEnseigne)
+    {
+        $this->idEnseigne = $idEnseigne;
+    }
+
+
+
 
 }
