@@ -8,6 +8,14 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class ProduitType extends AbstractType
 {
+    /**
+     * ProduitType constructor.
+     */
+    public $respoId;
+    public function __construct($respoId)
+    {
+        $this->respoId=$respoId;
+    }
 
     /**
      * @param FormBuilderInterface $builder
@@ -25,6 +33,13 @@ class ProduitType extends AbstractType
             ->add('idCatalogue', 'entity', array(
                 'class' => 'CondorsTnMallBundle:Enseigne',
                 'property' => 'libelleenseigne',
+                'query_builder' => function (\Condors\TnMallBundle\Entity\EnseigneRepository $repository)
+                {
+                    return $repository->createQueryBuilder('s')
+                        ->where('s.idresponsableenseigne =:respoId')
+                        ->setParameter('respoId',$this->respoId );
+                      
+                }
             ))
             ->add('fileFront', 'file', array('required' => false))
             ->add('fileBack', 'file', array('required' => false))
@@ -41,5 +56,7 @@ class ProduitType extends AbstractType
             'data_class' => 'Condors\TnMallBundle\Entity\Produit'
         ));
     }
+
+
 
 }

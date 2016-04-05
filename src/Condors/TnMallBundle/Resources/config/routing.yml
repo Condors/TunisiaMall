@@ -77,5 +77,21 @@ condors_tn_mall_simple_brands_special:
     defaults: { _controller: CondorsTnMallBundle:SimpleVisitor:brandsSpec}
     requirements:
         id: \d+
-        
-        
+
+#Categories
+
+condors_tn_mall_responsable_categories:
+    path:     /user-responsable/categories
+    defaults: { _controller: CondorsTnMallBundle:Responsable:categories}
+
+condors_tn_mall_responsable_categories_update_pos:
+    path:     /user-responsable/categories/update/{id}/{pos}
+    defaults: { _controller: CondorsTnMallBundle:Responsable:updateCatPosition}
+
+
+condors_tn_mall_simple_categories_searchCategories:
+    path:     /categories/search-categories/{txtSearch}
+    defaults: { _controller: CondorsTnMallBundle:Responsable:searchCategorie}
+    requirements:
+        txtSearch: \d+
+

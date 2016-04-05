@@ -2,6 +2,8 @@
 
 namespace Condors\TnMallBundle\Controller;
 
+use Condors\TnMallBundle\Entity\Categories;
+use Condors\TnMallBundle\Form\CategoriesType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Condors\TnMallBundle\Entity\Produit;
 use Condors\TnMallBundle\Entity\Enseigne;
@@ -32,9 +34,9 @@ class ResponsableController extends Controller
 
         $em = $this->getDoctrine()->getManager();
 
-
-        $form = $this->createForm(new ProduitType());
         $user = $this->getUser();
+        $form = $this->createForm(new ProduitType($user->getId()));
+
 
         $allProds = $em->getRepository("CondorsTnMallBundle:Produit")->findProdRespoCatalog($user->getId());
 
@@ -61,6 +63,7 @@ class ResponsableController extends Controller
 
                 $em->persist($prod);
                 $em->flush();
+                return $this->redirect($this->generateUrl("condors_tn_mall_responsable_produit"));
             }
         }
 
@@ -80,11 +83,12 @@ class ResponsableController extends Controller
         }
 
         $em = $this->getDoctrine()->getManager();
-
-
-        $form = $this->createForm(new ProduitType(), $prods);
-
+        
         $user = $this->getUser();
+
+        $form = $this->createForm(new ProduitType($user->getId()), $prods);
+
+
 
 
         $request = $this->getRequest();
@@ -100,9 +104,11 @@ class ResponsableController extends Controller
                 }
 
                 $prodEnseigne = $prod->getIdCatalogue()->getIdEnseigne();
+               /* print_r($prodEnseigne );
+                die();*/
 
 
-                $prod_cat = $em->getRepository("CondorsTnMallBundle:Enseigne")->findBrandbyRespoId($prod->getIdCatalogue($prodEnseigne));
+                $prod_cat = $em->getRepository("CondorsTnMallBundle:Enseigne")->findBrandbyRespoId($prodEnseigne);
                 foreach ($prod_cat as $value) {
                     $catalogValue = $em->getRepository("CondorsTnMallBundle:Catalogue")->findOneByidCatalogue($value);
                     $prod->setIdCatalogue($catalogValue);
@@ -173,6 +179,7 @@ class ResponsableController extends Controller
 
                 $em->persist($brand);
                 $em->flush();
+                return $this->redirect($this->generateUrl("condors_tn_mall_responsable_brands"));
             }
         }
 
@@ -182,6 +189,74 @@ class ResponsableController extends Controller
             'form' => $form->createView(),
             'allbrands' => $allbrands,
         ));
+    }
+
+
+    public function categoriesAction()
+    {
+
+        $em = $this->getDoctrine()->getManager();
+
+        $user = $this->getUser();
+        $form = $this->createForm(new CategoriesType($user->getId()));
+        $Categories = $em->getRepository("CondorsTnMallBundle:Categories")->findCategoriesByBrandRespo($user->getId());
+
+
+        $cat = new Categories();
+        $request = $this->getRequest();
+        if ($request->getMethod() == 'POST') {
+            //Note: bindRequest is now deprecated
+            $form->bind($request);
+            if ($form->isValid()) {
+
+                $cat = $form->getData();
+                $em->persist($cat);
+                $em->flush();
+
+                return $this->redirect($this->generateUrl("condors_tn_mall_responsable_categories"));
+
+            }
+        }
+
+        return $this->render('CondorsTnMallBundle:Responsable:GestionCategories.html.twig', array(
+            'user' => $user,
+            'form' => $form->createView(),
+            'categories' => $Categories,
+
+        ));
+
+    }
+
+
+    public function updateCatPositionAction($id, $pos)
+    {
+
+
+        $em = $this->getDoctrine()->getManager();
+
+
+        $user = $this->getUser();
+        $request = $this->getRequest();
+
+
+        $categorie = $em->getRepository("CondorsTnMallBundle:Categories")->findOneById($id);
+        $categorie->setPosition($pos);
+
+        $em->persist($categorie);
+        $em->flush();
+
+
+        return $this->redirect($this->generateUrl("condors_tn_mall_responsable_categories"));
+    }
+
+    public function searchCategorieAction($txtSearch)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $categories = $em->getRepository("CondorsTnMallBundle:Categories")->findCategoriesByIdEns($txtSearch);
+        $rep = new JsonResponse(($categories));
+
+        return $rep;
     }
 
 }

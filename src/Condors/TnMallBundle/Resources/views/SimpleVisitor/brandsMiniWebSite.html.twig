@@ -22,9 +22,7 @@
     </h1>
 {% endblock pageTitle %}
 
-{% block titleTop %}<h2 class="title-heading">General Catalog {{ brand.libelleenseigne }} <input id="currentBrand"
-                                                                                                 type="hidden"
-                                                                                                 value="{{ brand.idEnseigne }}">
+{% block titleTop %}<h2 class="title-heading">General Catalog {{ brand.libelleenseigne }} <input id="currentBrand" type="hidden" value="{{ brand.idEnseigne }}">
     </h2>{% endblock %}
 
 {% block secMenu %}
@@ -201,13 +199,7 @@
                                     <h4 class="widget-title">Product Categories</h4>
                                     <ul class="product-categories">
 
-                                        <li class="cat-parent">
-                                            <a href="#">Man</a> <span class="count">(11)</span>
-                                            <ul class="children">
-                                                <li><a href="#">Accessories</a> <span class="count">(0)</span></li>
 
-                                            </ul>
-                                        </li>
                                     </ul>
                                 </div>
                                 <div class="widget commerce widget_products">
@@ -375,7 +367,70 @@
         });
     </script>
 
+    <script type="text/javascript">
+        $("document").ready(function () {
+            var trHTML = '';
 
+                $.ajax({
+                    type: 'get',
+                    url: 'http://localhost/TunisiaMall/web/app_dev.php/categories/search-categories/' + $("#currentBrand").val(),
+                    beforeSend: function () {
+                        console.log('searching  to find categorie...');
+                    },
+                    success: function (data) {
+
+
+
+                        $.each(data, function (i, item) {
+
+
+                            trHTML += "<li class='cat-parent'><a href='#'>"+item.name+"</a> <span class='count'>(11)</span></li>"
+
+                        });
+                        $('.product-categories').html(trHTML);
+                        console.log('Ok ...');
+                        trHTML="";
+
+                    }
+                });
+
+            var auto_refresh = setInterval(
+
+                    function ()
+
+                    {
+                        $.ajax({
+                            type: 'get',
+                            url: 'http://localhost/TunisiaMall/web/app_dev.php/categories/search-categories/' + $("#currentBrand").val(),
+                            beforeSend: function () {
+                                console.log('searching  to find categorie...');
+                            },
+                            success: function (data) {
+
+
+
+                                $.each(data, function (i, item) {
+
+
+                                    trHTML += "<li class='cat-parent'><a href='#'>"+item.name+"</a> <span class='count'>(11)</span></li>"
+
+                                });
+
+                                console.log('Ok .. SEC.');
+
+                            }
+                        });
+
+                        $('.product-categories').html(trHTML).fadeIn("slow");
+                        trHTML="";
+
+                    }, 3000); // rafraichis toutes les 10000 millisecondes
+
+
+
+
+        });
+    </script>
 
 
 

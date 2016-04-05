@@ -4,229 +4,231 @@
 
 
 
-{%block quickProfile %}
-    {{ include('CondorsTnMallBundle::Responsable/quickProfile.html.twig') }} 
-{%endblock quickProfile %}
+{% block quickProfile %}
+    {{ include('CondorsTnMallBundle::Responsable/quickProfile.html.twig') }}
+{% endblock quickProfile %}
 
 
 
 {% block nav_menu %}
 
-    {{ include('CondorsTnMallBundle::Responsable/navMenu.html.twig') }} 
+    {{ include('CondorsTnMallBundle::Responsable/navMenu.html.twig') }}
 
-{%endblock nav_menu%}
+{% endblock nav_menu %}
 
 
 
 
 {% block Content %}
 
-    <div class="page-title">
-        <div class="title_left">
-            <h3>Brands Management</h3>
-        </div>
-
-
-        <div class="title_right">
-            <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                <input id="prodsearch" type="text" class="form-control" placeholder="Search for...">
-            </div>
-        </div>
+<div class="page-title">
+    <div class="title_left">
+        <h3>Brands Management</h3>
     </div>
 
-    <div class="" role="tabpanel" data-example-id="togglable-tabs">
-        <ul id="myTab1" class="nav nav-tabs bar_tabs right" role="tablist">
-            <li role="presentation" class=""><a href="#tab_content11" id="home-tabb" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true"><i class="fa fa-plus-square"></i></a>
-            </li>
-            <li role="presentation" class="active"><a href="#tab_content22" role="tab" id="profile-tabb" data-toggle="tab" aria-controls="profile" aria-expanded="false"><i class="fa fa-file-text"></i></a>
-            </li>
 
-        </ul>
-        <div id="myTabContent2" class="tab-content">
-            <div role="tabpanel" class="tab-pane fade" id="tab_content11" aria-labelledby="home-tab">
-                <!-- Smart Wizard -->
+    <div class="title_right">
+        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+            <input id="prodsearch" type="text" class="form-control" placeholder="Search for...">
+        </div>
+    </div>
+</div>
 
-                <div id="wizard" class="form_wizard wizard_horizontal">
-                    <ul class="wizard_steps">
-                        <li>
-                            <a href="#step-1">
-                                <span class="step_no">1</span>
+<div class="" role="tabpanel" data-example-id="togglable-tabs">
+    <ul id="myTab1" class="nav nav-tabs bar_tabs right" role="tablist">
+        <li role="presentation" class=""><a href="#tab_content11" id="home-tabb" role="tab" data-toggle="tab"
+                                            aria-controls="home" aria-expanded="true"><i class="fa fa-plus-square"></i></a>
+        </li>
+        <li role="presentation" class="active"><a href="#tab_content22" role="tab" id="profile-tabb" data-toggle="tab"
+                                                  aria-controls="profile" aria-expanded="false"><i
+                        class="fa fa-file-text"></i></a>
+        </li>
+
+    </ul>
+    <div id="myTabContent2" class="tab-content">
+        <div role="tabpanel" class="tab-pane fade" id="tab_content11" aria-labelledby="home-tab">
+            <!-- Smart Wizard -->
+
+            <div id="wizard" class="form_wizard wizard_horizontal">
+                <ul class="wizard_steps">
+                    <li>
+                        <a href="#step-1">
+                            <span class="step_no">1</span>
                                 <span class="step_descr">
-                                    Step 1<br />
+                                    Step 1<br/>
                                     <small>General Information</small>
                                 </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#step-2">
-                                <span class="step_no">2</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#step-2">
+                            <span class="step_no">2</span>
                                 <span class="step_descr">
-                                    Step 2<br />
+                                    Step 2<br/>
                                     <small>Description</small>
                                 </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#step-3">
-                                <span class="step_no">3</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#step-3">
+                            <span class="step_no">3</span>
                                 <span class="step_descr">
-                                    Step 3<br />
+                                    Step 3<br/>
                                     <small>Upload Pictures</small>
                                 </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#step-4">
-                                <span class="step_no">4</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#step-4">
+                            <span class="step_no">4</span>
                                 <span class="step_descr">
-                                    Step 4<br />
+                                    Step 4<br/>
                                     <small>Step 4 description</small>
                                 </span>
-                            </a>
-                        </li>
-                    </ul>
-                    {{ form_start(form, {'attr': {'class': 'form-horizontal form-label-left'}}) }}
-                    <div id="step-1">
+                        </a>
+                    </li>
+                </ul>
+                {{ form_start(form, {'attr': {'class': 'form-horizontal form-label-left'}}) }}
+                <div id="step-1">
 
 
-                        <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Brand Name <span class="required">*</span>
-                            </label>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Brand Name <span
+                                    class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
 
-                                {{ form_widget(form.libelleenseigne , { 'attr': {'class': 'form-control col-md-7 col-xs-12'} } ) }} 
-                            </div>
+                            {{ form_widget(form.libelleenseigne , { 'attr': {'class': 'form-control col-md-7 col-xs-12'} } ) }}
                         </div>
-
-                    </div>
-                    <div id="step-2">
-                        <h2 class="StepTitle">Desciption</h2>
-                        <p id="txtEditor">
-                            {{ form_widget(form.descriptionenseigne , { 'attr': {'class': 'form-control col-md-7 col-xs-12'} } ) }} 
-                        </p>
-
-                    </div>
-                    <div id="step-3">
-                        <h2 class="StepTitle">Step 3 Content</h2>
-                        <p>
-                            {{ form_widget(form.file , { 'attr': {'class': 'form-control col-md-7 col-xs-12'} } ) }} 
-
-                        </p>
-
-                    </div>
-                    <div id="step-4">
-                        <h2 class="StepTitle">Step 4 Content</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et 
-                        </p>
-
                     </div>
 
                 </div>
+                <div id="step-2">
+                    <h2 class="StepTitle">Desciption</h2>
+                    <p id="txtEditor">
+                        {{ form_widget(form.descriptionenseigne , { 'attr': {'class': 'form-control col-md-7 col-xs-12'} } ) }}
+                    </p>
 
-                {{ form_widget(form.submit) }}
-                {{ form_end(form)}}
+                </div>
+                <div id="step-3">
+                    <h2 class="StepTitle">Step 3 Content</h2>
+                    <p>
+                        {{ form_widget(form.file , { 'attr': {'class': 'form-control col-md-7 col-xs-12'} } ) }}
+
+                    </p>
+
+                </div>
+                <div id="step-4">
+                    <h2 class="StepTitle">Step 4 Content</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                    </p>
+
+                </div>
+
             </div>
-            <div role="tabpanel" class="tab-pane fade active in" id="tab_content22" aria-labelledby="profile-tab">
-                <!-- table View -->
 
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="x_panel">
+            {{ form_widget(form.submit) }}
+            {{ form_end(form) }}
+        </div>
+        <div role="tabpanel" class="tab-pane fade active in" id="tab_content22" aria-labelledby="profile-tab">
+            <!-- table View -->
 
-                        <div class="x_content">
-                            <table id="example" class="table table-striped responsive-utilities jambo_table">
-                                <thead>
-                                    <tr class="headings">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
 
-                                        <th> Name </th>
-                                        <th>Picture </th>
-                                        <th>Description </th>
+                    <div class="x_content">
+                        <table id="example" class="table table-striped responsive-utilities jambo_table">
+                            <thead>
+                            <tr class="headings">
 
-                                        <th class=" no-link last"><span class="nobr">Action</span>
-                                        </th>
-                                    </tr>
-                                </thead>
+                                <th> Name</th>
+                                <th>Picture</th>
+                                <th>Description</th>
 
-                                <tbody id="records_table">
+                                <th class=" no-link last"><span class="nobr">Action</span>
+                                </th>
+                            </tr>
+                            </thead>
 
-                                    {% for brands in allbrands %}
-                                        <tr class="even pointer">
+                            <tbody id="records_table">
 
-                                            <td class=" ">{{ brands.libelleenseigne }}</td>
-                                            <td class=" "><img width="30" heigth="30" src="{{ asset('uploads/pictures/')}}{{ brands.imageenseigne }}"/> </td>
-                                            <td class="nameProd"> {{ brands.descriptionenseigne[:10]  }} ...
-                                            </td>
+                            {% for brands in allbrands %}
+                                <tr class="even pointer">
 
-                                            <td class=" last"><a data-toggle="modal" data-target=".bs-example{{ brands.idEnseigne }}-modal-lg" href="#"><i style="font-size:22px;" class="fa fa-cog"></i></a>
-                                                &nbsp;&nbsp;  <a href="{{ path('condors_tn_mall_responsable_produit_delete', {'id': brands.idEnseigne}) }}" ><i style="font-size:22px;" class="fa fa-trash"></i></a>
+                                    <td class=" ">{{ brands.libelleenseigne }}</td>
+                                    <td class=" "><img width="30" heigth="30"
+                                                       src="{{ asset('uploads/pictures/') }}{{ brands.imageenseigne }}"/>
+                                    </td>
+                                    <td class="nameProd"> {{ brands.descriptionenseigne[:10] }} ...
+                                    </td>
 
-                                            </td>
-                                        </tr>
+                                    <td class=" last"><a data-toggle="modal"
+                                                         data-target=".bs-example{{ brands.idEnseigne }}-modal-lg"
+                                                         href="#"><i style="font-size:22px;" class="fa fa-cog"></i></a>
+                                        &nbsp;&nbsp; <a
+                                                href="{{ path('condors_tn_mall_responsable_produit_delete', {'id': brands.idEnseigne}) }}"><i
+                                                    style="font-size:22px;" class="fa fa-trash"></i></a>
 
-                                    <div class="modal fade bs-example{{ brands.idEnseigne }}-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
-                                        <div class="modal-dialog modal-lg">
-                                            <div class="modal-content">
+                                    </td>
+                                </tr>
 
-                                                <div class="modal-header">
-                                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
-                                                    </button>
-                                                    <h4 class="modal-title" id="myModalLabel"> <i class="fa fa-cog"></i> &nbsp; Product : {{ brands.libelleenseigne }} </h4>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <iframe  id="form-iframe" frameborder="0" scrolling="auto"  style="height: 750px; width: 100%" src="{{ path('condors_tn_mall_responsable_produit_midifier', {'id': brands.idEnseigne}) }}"></iframe>
-                                                </div>
-                                                <div class="modal-footer">
+                                <div class="modal fade bs-example{{ brands.idEnseigne }}-modal-lg" tabindex="-1"
+                                     role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
 
-                                                </div>
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span
+                                                            aria-hidden="true">×</span>
+                                                </button>
+                                                <h4 class="modal-title" id="myModalLabel"><i class="fa fa-cog"></i>
+                                                    &nbsp; Product : {{ brands.libelleenseigne }} </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <iframe id="form-iframe" frameborder="0" scrolling="auto"
+                                                        style="height: 750px; width: 100%"
+                                                        src="{{ path('condors_tn_mall_responsable_produit_midifier', {'id': brands.idEnseigne}) }}"></iframe>
+                                            </div>
+                                            <div class="modal-footer">
 
                                             </div>
+
                                         </div>
                                     </div>
+                                </div>
 
-                                {% endfor %}
-
-
-
+                            {% endfor %}
 
 
+                            </tbody>
 
+                        </table>
 
-                                </tbody>
-
-                            </table>
-
-                        </div>
                     </div>
                 </div>
-
-
-                <!-- End Table View -->
             </div>
 
+
+            <!-- End Table View -->
         </div>
+
     </div>
+</div>
 
 
+<div class="">
+
+    <div class="clearfix"></div>
+
+    <div class="row">
 
 
-    <div class="">
-
-        <div class="clearfix"></div>
-
-        <div class="row">
-
-
-
-
-
-
-
-
-
-        {% endblock Content%}
+        {% endblock Content %}
 
 
         {% block footer %}
-            {{ include('CondorsTnMallBundle::Responsable/footer.html.twig') }} 
+            {{ include('CondorsTnMallBundle::Responsable/footer.html.twig') }}
         {% endblock footer %}
 
 
@@ -237,7 +239,7 @@
 
 
 
-        {% block otherScript  %}
+        {% block otherScript %}
 
             <div id="custom_notifications" class="custom-notifications dsp_none">
                 <ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
@@ -249,17 +251,17 @@
 
 
             <!-- bootstrap progress js -->
-            <script src="{{ asset('responsable/js/progressbar/bootstrap-progressbar.min.js')}}"></script>
-            <script src="{{ asset('responsable/js/nicescroll/jquery.nicescroll.min.js')}}"></script>
+            <script src="{{ asset('responsable/js/progressbar/bootstrap-progressbar.min.js') }}"></script>
+            <script src="{{ asset('responsable/js/nicescroll/jquery.nicescroll.min.js') }}"></script>
             <!-- icheck -->
-            <script src="{{ asset('responsable/js/icheck/icheck.min.js')}}"></script>
+            <script src="{{ asset('responsable/js/icheck/icheck.min.js') }}"></script>
 
-            <script src="{{ asset('responsable/js/custom.js')}}"></script>
+            <script src="{{ asset('responsable/js/custom.js') }}"></script>
 
             <!-- form wizard -->
-            <script type="text/javascript" src="{{ asset('responsable/js/wizard/jquery.smartWizard.js')}}"></script>
+            <script type="text/javascript" src="{{ asset('responsable/js/wizard/jquery.smartWizard.js') }}"></script>
             <!-- pace -->
-            <script src="{{ asset('responsable/js/pace/pace.min.js')}}"></script>
+            <script src="{{ asset('responsable/js/pace/pace.min.js') }}"></script>
 
             <script type="text/javascript">
                 $("document").ready(function () {
@@ -278,13 +280,13 @@
                                 $.each(data, function (i, item) {
                                     var pr = ((item.tvaProduit * item.prixProduit) / 100) + item.prixProduit;
 
-                                    trHTML += "<tr class='even pointer'><td>" + item.refProduit + "</td><td><img width='30' heigth='30' src='{{ asset('uploads/pictures/')}}" + item.imageprodreel + " ' </td><td>" + item.libelleProduit + "</td><td>" + item.categorieProduit + "</td><td>" + item.prixProduit + " D.T </td><td>" + item.tvaProduit + "%</td><td>" + pr + " D.T</td>\n\
+                                    trHTML += "<tr class='even pointer'><td>" + item.refProduit + "</td><td><img width='30' heigth='30' src='{{ asset('uploads/pictures/') }}" + item.imageprodreel + " ' </td><td>" + item.libelleProduit + "</td><td>" + item.categorieProduit + "</td><td>" + item.prixProduit + " D.T </td><td>" + item.tvaProduit + "%</td><td>" + pr + " D.T</td>\n\
                             <td class='last'><a data-toggle='modal' data-target='.bs-example" + item.idProduit + "-modal-lg' 'href='#'><i style='font-size:22px;' class='fa fa-cog'></i></a> &nbsp;&nbsp; <a href=\n\
                                 'http://localhost/TunisiaMall/web/app_dev.php/user-responsable/products/delete/" + item.idProduit + "'><i style='font-size:22px;' class='fa fa-trash'></i></a></tr>";
                                 });
                                 $('#records_table').html(trHTML);
-                                console.log('Ok ...');
 
+                                console.log('Ok ...');
                             }
                         });
 
@@ -292,7 +294,7 @@
                 });
             </script>
 
-            <script type="text/javascript" >
+            <script type="text/javascript">
                 $(document).ready(function () {
 
 
@@ -302,7 +304,6 @@
                     $('#wizard').smartWizard({
                         transitionEffect: 'fade'
                     });
-
 
 
                     $("#sender").click(function () {
@@ -326,7 +327,7 @@
 
 
             <!-- Editor Zone -->
-            <script src="{{ asset('responsable/js/ckeditor/ckeditor.js')}}"></script>
+            <script src="{{ asset('responsable/js/ckeditor/ckeditor.js') }}"></script>
 
             <script type="text/javascript">
 
@@ -337,7 +338,7 @@
             </script>
 
             <!-- dropzone -->
-            <script src="{{ asset('responsable/js/dropzone/dropzone.js')}}"></script> 
+            <script src="{{ asset('responsable/js/dropzone/dropzone.js') }}"></script>
 
 
 
@@ -356,9 +357,9 @@
                             "sSearch": "Search all columns:"
                         },
                         "aoColumnDefs": [{
-                                'bSortable': false,
-                                'aTargets': [0]
-                            } //disables sorting for column one
+                            'bSortable': false,
+                            'aTargets': [0]
+                        } //disables sorting for column one
                         ],
                         'iDisplayLength': 12,
                         "sPaginationType": "full_numbers",
@@ -391,5 +392,5 @@
 
 
 
-        {% endblock otherScript%}
+        {% endblock otherScript %}
 
