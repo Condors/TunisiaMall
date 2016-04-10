@@ -146,6 +146,9 @@
                                             <div class="product-description col-xs-12 col-md-6 col-sm-6">
                                                 <div class="summary entry-summary">
                                                     <h1 class="product_title entry-title">{{ produitDetail.libelleProduit }}</h1>
+
+
+
                                                     <div class="commerce-product-rating">
                                                         <div class="star-rating">
                                                             <span style="width:90%"></span>
@@ -308,6 +311,12 @@
                                                                             <input name="submit" type="submit" id="submit" class="submit" value="Submit" />
                                                                         </div>
                                                                     </form>
+
+                                                                    <!-- CSS -->
+                                                                    {% stylesheets '@FOSCommentBundle/Resources/assets/css/comments.css' %}
+                                                                    <link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
+                                                                    {% endstylesheets %}
+                                                                    {% include 'FOSCommentBundle:Thread:async.html.twig' with {'id': 'foo'} %}
                                                                 </div><!-- #respond -->
                                                             </div>
                                                         </div>
