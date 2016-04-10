@@ -21,13 +21,14 @@ use Condors\TnMallBundle\Form\BrandRegistrationType;
 use Condors\TnMallBundle\Form\UserRegistrationType;
 
 
-
 class RegistrationController extends BaseFOSController
 {
-   
-    
+
+
     public function registerBrandAction(Request $request)
     {
+
+
         /** @var $formFactory \FOS\UserBundle\Form\Factory\FactoryInterface */
         $formFactory = $this->get('form.factory');
         /** @var $userManager \FOS\UserBundle\Model\UserManagerInterface */
@@ -48,7 +49,7 @@ class RegistrationController extends BaseFOSController
             return $event->getResponse();
         }
 
-        $form = $formFactory->create(new BrandRegistrationType($this->container->getParameter("fos_user.model.user.class")) );
+        $form = $formFactory->create(new BrandRegistrationType($this->container->getParameter("fos_user.model.user.class")));
         $form->setData($user);
 
         $form->handleRequest($request);
@@ -73,7 +74,7 @@ class RegistrationController extends BaseFOSController
             'form' => $form->createView(),
         ));
     }
-    
+
     public function registerUserAction(Request $request)
     {
         /** @var $formFactory \FOS\UserBundle\Form\Factory\FactoryInterface */
@@ -86,9 +87,7 @@ class RegistrationController extends BaseFOSController
         $user = $userManager->createUser();
         $user->setEnabled(true);
         $user->addRole("ROLE_USER");
-        
-             
-        
+
 
         $event = new GetResponseUserEvent($user, $request);
         $dispatcher->dispatch(FOSUserEvents::REGISTRATION_INITIALIZE, $event);
@@ -97,7 +96,7 @@ class RegistrationController extends BaseFOSController
             return $event->getResponse();
         }
 
-        $form = $formFactory->create(new UserRegistrationType($this->container->getParameter("fos_user.model.user.class")) );
+        $form = $formFactory->create(new UserRegistrationType($this->container->getParameter("fos_user.model.user.class")));
         $form->setData($user);
 
         $form->handleRequest($request);
@@ -124,5 +123,5 @@ class RegistrationController extends BaseFOSController
         ));
     }
 
-    
+
 }
