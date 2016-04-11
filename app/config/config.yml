@@ -2,6 +2,7 @@ imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
     - { resource: services.yml }
+    - { resource: "@CondorsTnMallBundle/Resources/config/services.yml" }
 
 # Put parameters here that don't need to change on each machine where the app is deployed
 # http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
@@ -66,13 +67,7 @@ swiftmailer:
     spool:     { type: memory }
 
 # app/config/config.yml
-fos_user:
-    db_driver: orm
-    firewall_name: main
-    user_class: Condors\TnMallBundle\Entity\User
-    registration:
-        confirmation:
-            enabled: true
+
 
 
 fos_comment:
@@ -116,3 +111,60 @@ assetic:
     filters:
         cssrewrite: ~
     bundles: [ "FOSCommentBundle","CondorsTnMallBundle" ]
+    
+    
+nomaya_social:
+    buttons:
+        facebook:
+            url:   "https://www.facebook.com/profile.php?id=968136899926841&fref=ts"
+            locale: "fr_FR"
+            send: false 
+            width : 300 
+            showFaces : false
+            layout : "button_count"
+    theme :  'default' 
+    
+    
+fos_user:
+    db_driver: orm
+    firewall_name: main
+    user_class: Condors\TnMallBundle\Entity\User
+    registration:
+        confirmation:
+            enabled: true
+            
+            
+hwi_oauth:
+    # name of the firewall in which this bundle is active, this setting MUST be set
+    firewall_name: main
+    connect:
+        account_connector: app.provider.oauth
+    http_client:
+         verify_peer: false
+    resource_owners:
+        facebook:
+            type:                facebook
+            client_id:           "1129786303744952"
+            client_secret:       "71d13c96af58dd0b492cba90a86fdc86"
+            scope:               "email, public_profile"
+            infos_url:           "https://graph.facebook.com/me?fields=id,name,email,picture.type(large)"
+            paths:
+                email: email
+            options:
+                display: page
+        google:
+            type:                google
+            client_id:           "758254943927-jtu7q4u4u4d4l7et56cntqrlg92kqkjc.apps.googleusercontent.com"
+            client_secret:       "8u2-heMsWbOTl86T-VoKhCvj"
+            scope:              "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile"
+            paths:
+                email: email
+
+        linkedin:
+            type:                linkedin
+            client_id:           "7840e33btt7noc"
+            client_secret:       "2oPbkHqztg1xl1r7"
+            scope:              "email"
+            paths:
+                email: email
+

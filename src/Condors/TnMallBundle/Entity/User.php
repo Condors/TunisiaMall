@@ -117,6 +117,43 @@ class User extends BaseUser
      */
     public $file;
     
+    
+    
+         /**
+     * @var string
+     *
+     * @ORM\Column(name="facebook_id", type="string", nullable=true)
+     */
+    private $facebookID;
+ 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="google_id", type="string", nullable=true)
+     */
+    private $googleID;
+    
+    
+    
+
+    function getFacebookID() {
+        return $this->facebookID;
+    }
+
+    function getGoogleID() {
+        return $this->googleID;
+    }
+
+
+    function setFacebookID($facebookID) {
+        $this->facebookID = $facebookID;
+    }
+
+    function setGoogleID($googleID) {
+        $this->googleID = $googleID;
+    }
+
+    
     public function getWebPath()
     {
         return null === $this->image ? null : $this->getUploadDir().'/'.$this->image;

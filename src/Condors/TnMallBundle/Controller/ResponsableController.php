@@ -258,5 +258,15 @@ class ResponsableController extends Controller
 
         return $rep;
     }
+    
+        public function checkGoogleAction()
+    {
+
+
+        $user = $this->getUser();
+        return $this->render('CondorsTnMallBundle:Responsable:index.html.twig', array(
+            'user' => $user,
+        ));
+    }
 
 }

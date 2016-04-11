@@ -6,7 +6,7 @@
     <ul class="nav navbar-nav navbar-right">
         <li class="">
             <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                <img src="{{ asset('uploads/pictures/')}}{{ user.image}}" alt="">{{ user.prenom | capitalize}} {{ user.nom | capitalize}}
+                <img src="{{ user.image}}" alt="">{{ user.prenom | capitalize}} {{ user.nom | capitalize}}
 
                 <span class=" fa fa-angle-down"></span>
             </a>

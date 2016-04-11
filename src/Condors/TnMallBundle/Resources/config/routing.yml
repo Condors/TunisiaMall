@@ -95,3 +95,6 @@ condors_tn_mall_simple_categories_searchCategories:
     requirements:
         txtSearch: \d+
 
+condors_tn_mall_check-google:
+    path:     /login/check-google
+    defaults: { _controller: CondorsTnMallBundle:Responsable:checkGoogle}
