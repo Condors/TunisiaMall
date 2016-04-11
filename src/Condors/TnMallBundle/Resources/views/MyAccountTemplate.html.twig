@@ -4,6 +4,23 @@
     <!-- Mirrored from tk-themes.net/html-canifa/contact-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 16:23:08 GMT -->
 
     <head>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC-RG__a-P1m7hAtd0KYK91jKz6hGczDZg"></script>
+        <script>
+            function initialize() {
+                var myLatLng = {lat: 36.848022, lng: 10.279505};
+                var map = new google.maps.Map(document.getElementById('googleMap'), {
+                    zoom: 16,
+                    center: myLatLng
+                });
+
+                var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    title: 'Hello World!'
+                });
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
         <link rel="shortcut icon" href="{{ asset('images/favicon.png')}}" />
@@ -33,7 +50,7 @@
     <body>
         <div class="site animsition">
             {% block header %}
-                {{ include('CondorsTnMallBundle::SimpleVisitor/parts/header.html.twig') }} 
+                {{ include('CondorsTnMallBundle::SimpleVisitor/parts/header.html.twig') }}
             {% endblock header %}
             <section class="yolo-page-heading heading-contact header_transparent header-2">
                 <section class="parallax-bg-2 section-parallax">
@@ -140,6 +157,9 @@
 
                                                         {% endblock brands %}
 
+                                                {% block contact %}
+
+                                                {% endblock contact %}
 
                                                     </div>
                                                 </div>
@@ -284,7 +304,8 @@
                 <script type='text/javascript' src="{{ asset('js/owl.carousel.min.js') }}"></script>
                 <script type='text/javascript' src="{{ asset('js/jquery.fitvids.js') }}"></script>
                 <script type='text/javascript ' src="{{ asset('js/jquery.magnific-popup.js') }} "></script>
-        </body>
+    </div>
+    </body>
 
         <!-- Mirrored from tk-themes.net/html-canifa/contact-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 16:23:08 GMT -->
 

@@ -3,6 +3,10 @@
 condors_tn_mall_homepageNewProd:
     path:     /
     defaults: { _controller: CondorsTnMallBundle:SimpleVisitor:showNewProduct }
+
+condors_tn_mall_contact:
+    path:     /contact
+    defaults: { _controller: CondorsTnMallBundle:SimpleVisitor:showContact }
   
 condors_tn_mall_shopDetail:
     path:     /shop-Detail/{id}

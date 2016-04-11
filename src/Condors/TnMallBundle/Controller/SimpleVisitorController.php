@@ -63,6 +63,14 @@ class SimpleVisitorController extends Controller
         ));
     }
 
+    public function showContactAction()
+    {
+        $name='name';
+        return $this->render('CondorsTnMallBundle:SimpleVisitor:Contact.html.twig', array(
+            'name' => $name,
+        ));
+    }
+
 
     public function searchProdSimpleOrderAction($id,$txtSearch)
     {
