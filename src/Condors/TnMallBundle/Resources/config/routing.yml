@@ -102,3 +102,39 @@ condors_tn_mall_simple_categories_searchCategories:
 condors_tn_mall_check-google:
     path:     /login/check-google
     defaults: { _controller: CondorsTnMallBundle:Responsable:checkGoogle}
+    
+  #AMIN SECTION DON'T TOUCH OR I'LL KILL YOU! 
+  
+condors_tn_mall_responsable_categories_update_pos:
+    path:     /user-responsable/categories/update/{id}/{pos}
+    defaults: { _controller: CondorsTnMallBundle:Responsable:updateCatPosition}
+  
+condors_tn_mall_Admin_index:
+    path:     /admin
+    defaults: { _controller: CondorsTnMallBundle:Admin:index }
+    
+condors_tn_mall_Admin_GestionPack:
+    path:     /admin/pack
+    defaults: { _controller: CondorsTnMallBundle:Admin:gestionPack }
+    
+condors_tn_mall_Admin_addPack:
+    path:     /admin/pack/add
+    defaults: { _controller: CondorsTnMallBundle:Admin:addPack }
+
+condors_tn_mall_Admin_modifyPack:
+    path:     /admin/pack/modify/{id}
+    defaults: { _controller: CondorsTnMallBundle:Admin:modifyPack }
+
+condors_tn_mall_Admin_displayPacks:
+    path:     /admin/pack/display
+    defaults: { _controller: CondorsTnMallBundle:Admin:displayPacks }
+
+condors_tn_mall_Admin_removePacks:
+    path:     /admin/pack/remove/{id}
+    defaults: { _controller: CondorsTnMallBundle:Admin:removePack }
+
+condors_tn_mall_Admin_test:
+    path:     /test
+    defaults: { _controller: CondorsTnMallBundle:Admin:test }
+ 
+ #END AMIN YOU CAN TOUCH EVERY THING AFTER HERE !
