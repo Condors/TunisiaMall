@@ -268,5 +268,16 @@ class ResponsableController extends Controller
             'user' => $user,
         ));
     }
+    
+    
+        public function displayPacksAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $packs = $em->getRepository("CondorsTnMallBundle:Pack")->findAll();
+        $rep = new JsonResponse(($packs));
+
+        return $rep;
+    }
 
 }

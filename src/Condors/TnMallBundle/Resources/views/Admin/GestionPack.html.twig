@@ -41,7 +41,7 @@
                 <div id="myTabContent2" class="tab-content">
 
                     <div role="tabpanel" class="tab-pane fade" id="tab_content22" aria-labelledby="profile-tab">
-                        <iframe  id="form-iframe" frameborder="0" scrolling="auto" src="{{ path('condors_tn_mall_Admin_displayPacks') }}" style="height: 385px; width: 100%" ></iframe>
+                        <iframe  id="displayPack" frameborder="0" scrolling="auto" src="{{ path('condors_tn_mall_Admin_displayPacks') }}" style="height: 385px; width: 100%" ></iframe>
                     </div>
 
 
@@ -59,3 +59,13 @@
     </div>
 {% endblock Content %}
 
+   {% block otherScript  %}
+       
+       <script>
+          $("#profile-tabb").click(function(){
+             $("#tab_content22").html("<iframe  id='form-iframe' frameborder='0' scrolling='no'  style='height: 385px; width: 100%' src='{{ path('condors_tn_mall_Admin_displayPacks') }}'></iframe>");
+    
+          });
+             
+       </script>
+   {% endblock otherScript%}

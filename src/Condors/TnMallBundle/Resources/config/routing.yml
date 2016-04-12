@@ -136,5 +136,9 @@ condors_tn_mall_Admin_removePacks:
 condors_tn_mall_Admin_test:
     path:     /test
     defaults: { _controller: CondorsTnMallBundle:Admin:test }
+    
+condors_tn_mall_responsable_packs:
+    path:     /user-responsable/Packs
+    defaults: { _controller: CondorsTnMallBundle:Responsable:displayPacks}
  
  #END AMIN YOU CAN TOUCH EVERY THING AFTER HERE !
