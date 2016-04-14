@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Pack
  *
  * @ORM\Table(name="pack", indexes={@ORM\Index(name="id_pack", columns={"id_pack"}), @ORM\Index(name="id_pack_2", columns={"id_pack"})})
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="Condors\TnMallBundle\Entity\PackRepository")
  */
 class Pack
 {
