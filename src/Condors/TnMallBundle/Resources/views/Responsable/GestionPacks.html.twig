@@ -57,8 +57,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class='pricing_footer'>
-                        <a href="javascript:void(0);" class="btn btn-success btn-block" role="button">Buy<span> now!</span></a>
+                    <div class='pricing_footer' id="pack{{ pack.idPack }}">
+                        <a href="javascript:void(0);" class="btn btn-success btn-block"  role="button">Buy<span> now!</span></a>
                     
                     </div>
                 </div>
@@ -112,7 +112,7 @@
                          
                         $.ajax({
                             type: 'get',
-                            url: 'http://localhost/TunisiaMall1204/web/app_dev.php/user-responsable/displayPacks',
+                            url: 'http://localhost/TunisiaMall1204/web/app_dev.php/user-responsable/displayBoughtPacks',
                             beforeSend: function () {
                                 console.log('searching ...');
                             },
@@ -122,10 +122,15 @@
                                 var trHTML = '';
                                 $.each(data, function (i, item) {
                                    
-
-                                    trHTML +="" item.zoneA;
-                                });
-                                $('#records_table').html(trHTML);
+                                    
+                                    trHTML +="<a href='javascript:void(0);' class='btn btn-success btn-block' role='button'  disabled>Already bought</a>" ;
+                               var ident = '#pack'+item.idPack ;
+                               
+                                 $(ident).html(trHTML);
+    
+    
+    });
+                              
 
                                 console.log('Ok ...');
                             }

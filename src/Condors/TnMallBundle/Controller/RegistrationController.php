@@ -21,6 +21,7 @@ use Condors\TnMallBundle\Form\BrandRegistrationType;
 use Condors\TnMallBundle\Form\UserRegistrationType;
 
 
+
 class RegistrationController extends BaseFOSController
 {
 

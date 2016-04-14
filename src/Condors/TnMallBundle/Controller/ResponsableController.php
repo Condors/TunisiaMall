@@ -3,6 +3,7 @@
 namespace Condors\TnMallBundle\Controller;
 
 use Condors\TnMallBundle\Entity\Categories;
+use Condors\TnMallBundle\Entity\Achatpack;
 use Condors\TnMallBundle\Form\CategoriesType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Condors\TnMallBundle\Entity\Produit;
@@ -270,11 +271,12 @@ class ResponsableController extends Controller
     }
     
     
-        public function displayPacksAction()
+        public function displayBouthPacksAction()
     {
         $em = $this->getDoctrine()->getManager();
-
-        $packs = $em->getRepository("CondorsTnMallBundle:Pack")->findallPacks();
+        $user = $this->getUser()->getId() ;
+                
+        $packs = $em->getRepository("CondorsTnMallBundle:Achatpack")->findboughtPacks($user);
 
       
         $rep = new JsonResponse(($packs));

@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Achatpack
  *
  * @ORM\Table(name="achatpack", indexes={@ORM\Index(name="idResponsable", columns={"idResponsable", "idPack"}), @ORM\Index(name="idPack", columns={"idPack"}), @ORM\Index(name="IDX_324C3F5C120FF27F", columns={"idResponsable"})})
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="Condors\TnMallBundle\Entity\AchatpackRepository")
  */
 class Achatpack
 {

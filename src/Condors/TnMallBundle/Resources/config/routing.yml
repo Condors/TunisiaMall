@@ -137,9 +137,9 @@ condors_tn_mall_Admin_test:
     path:     /test
     defaults: { _controller: CondorsTnMallBundle:Admin:test }
     
-condors_tn_mall_responsable_packs:
-    path:     /user-responsable/displayPacks
-    defaults: { _controller: CondorsTnMallBundle:Responsable:displayPacks}
+condors_tn_mall_responsable_displayBouthPacks:
+    path:     /user-responsable/displayBoughtPacks
+    defaults: { _controller: CondorsTnMallBundle:Responsable:displayBouthPacks}
     
 condors_tn_mall_responsable_GestionPack:
     path:     /user-responsable/managePacks
