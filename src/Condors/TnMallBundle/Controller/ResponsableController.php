@@ -274,7 +274,12 @@ class ResponsableController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $packs = $em->getRepository("CondorsTnMallBundle:Pack")->findAll();
+        $packs = $em->getRepository("CondorsTnMallBundle:Pack")->findallPacks();
+       foreach ($packs as $p) {
+  
+                   print_r($p); 
+             }
+      
         $rep = new JsonResponse(($packs));
 
         return $rep;

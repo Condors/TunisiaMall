@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Pack
  *
  * @ORM\Table(name="pack")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="Condors\TnMallBundle\Entity\PackRepository")
  */
 class Pack
 {
@@ -24,42 +24,42 @@ class Pack
     /**
      * @var boolean
      *
-     * @ORM\Column(name="Zone_A", type="boolean", nullable=false)
+     * @ORM\Column(name="Zone_A", type="boolean", nullable=true)
      */
     private $zoneA;
 
     /**
      * @var boolean
      *
-     * @ORM\Column(name="Zone_B", type="boolean", nullable=false)
+     * @ORM\Column(name="Zone_B", type="boolean", nullable=true)
      */
     private $zoneB;
 
     /**
      * @var boolean
      *
-     * @ORM\Column(name="Zone_C", type="boolean", nullable=false)
+     * @ORM\Column(name="Zone_C", type="boolean", nullable=true)
      */
     private $zoneC;
 
     /**
      * @var boolean
      *
-     * @ORM\Column(name="ALGO_1", type="boolean", nullable=false)
+     * @ORM\Column(name="ALGO_1", type="boolean", nullable=true)
      */
     private $algo1;
 
     /**
      * @var boolean
      *
-     * @ORM\Column(name="ALGO_2", type="boolean", nullable=false)
+     * @ORM\Column(name="ALGO_2", type="boolean", nullable=true)
      */
     private $algo2;
 
     /**
      * @var boolean
      *
-     * @ORM\Column(name="ALGO_3", type="boolean", nullable=false)
+     * @ORM\Column(name="ALGO_3", type="boolean", nullable=true)
      */
     private $algo3;
 
