@@ -1,0 +1,66 @@
+Condors\TnMallBundle\Entity\Cartedefidelite:
+    type: entity
+    table: cartedefidelite
+    indexes:
+        id_carte:
+            columns:
+                - idCarte
+        id_client:
+            columns:
+                - id
+        id_enseigne:
+            columns:
+                - idEnseigne
+    id:
+        idcarte:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: idCarte
+            generator:
+                strategy: IDENTITY
+    fields:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+        idenseigne:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: idEnseigne
+        nbrepoints:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: nbrePoints
+        datecreation:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: dateCreation
+        dateexpiration:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: dateExpiration
+        activity:
+            type: integer
+            nullable: false
+            unsigned: false
+        design:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+        codeqr:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: codeQR
+    lifecycleCallbacks: {  }

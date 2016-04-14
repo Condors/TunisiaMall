@@ -15,7 +15,7 @@ class Notification
     /**
      * @var integer
      *
-     * @ORM\Column(name="id_notification", type="integer", nullable=false)
+     * @ORM\Column(name="id_notification", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */

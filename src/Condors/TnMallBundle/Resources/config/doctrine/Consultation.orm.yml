@@ -1,0 +1,34 @@
+Condors\TnMallBundle\Entity\Consultation:
+    type: entity
+    table: consultation
+    indexes:
+        id_consultation:
+            columns:
+                - id_consultation
+        id_client:
+            columns:
+                - id_client
+        id_enseigne:
+            columns:
+                - id_enseigne
+    id:
+        idConsultation:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: id_consultation
+            generator:
+                strategy: IDENTITY
+    fields:
+        idClient:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: id_client
+        idEnseigne:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: id_enseigne
+    lifecycleCallbacks: {  }

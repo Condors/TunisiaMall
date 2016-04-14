@@ -275,14 +275,22 @@ class ResponsableController extends Controller
         $em = $this->getDoctrine()->getManager();
 
         $packs = $em->getRepository("CondorsTnMallBundle:Pack")->findallPacks();
-       foreach ($packs as $p) {
-  
-                   print_r($p); 
-             }
+
       
         $rep = new JsonResponse(($packs));
 
         return $rep;
     }
+    
+        
+        public function gestionPackAction()
+    {   $em = $this->getDoctrine()->getManager();
+        $packs = $em->getRepository("CondorsTnMallBundle:Pack")->findallPacks();
+        $user = $this->getUser(); 
+        return $this->render("CondorsTnMallBundle:Responsable:GestionPacks.html.twig",array(
+            'user'=>$user , 'packs'=>$packs
+        )); 
+    }
+    
 
 }

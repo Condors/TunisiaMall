@@ -1,0 +1,36 @@
+Condors\TnMallBundle\Entity\Suivre:
+    type: entity
+    table: suivre
+    indexes:
+        id_suivre:
+            columns:
+                - id_suivre
+                - id_client
+                - id_enseigne
+        id_client:
+            columns:
+                - id_client
+        id_enseigne:
+            columns:
+                - id_enseigne
+    id:
+        idSuivre:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: id_suivre
+            generator:
+                strategy: IDENTITY
+    fields:
+        idClient:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: id_client
+        idEnseigne:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: id_enseigne
+    lifecycleCallbacks: {  }

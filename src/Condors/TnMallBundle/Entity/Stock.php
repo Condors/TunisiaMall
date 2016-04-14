@@ -15,7 +15,7 @@ class Stock
     /**
      * @var integer
      *
-     * @ORM\Column(name="id_stock", type="integer", nullable=false)
+     * @ORM\Column(name="id_stock", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */

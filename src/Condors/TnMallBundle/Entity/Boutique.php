@@ -15,7 +15,7 @@ class Boutique
     /**
      * @var integer
      *
-     * @ORM\Column(name="id_boutique", type="integer", nullable=false)
+     * @ORM\Column(name="id_boutique", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */

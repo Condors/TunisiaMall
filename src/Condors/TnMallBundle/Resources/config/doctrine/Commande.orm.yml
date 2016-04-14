@@ -1,0 +1,37 @@
+Condors\TnMallBundle\Entity\Commande:
+    type: entity
+    table: commande
+    indexes:
+        id_commande:
+            columns:
+                - id_commande
+        id_client:
+            columns:
+                - id_client
+        id_livraison:
+            columns:
+                - id_livraison
+        id_livraison_2:
+            columns:
+                - id_livraison
+    id:
+        idCommande:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: id_commande
+            generator:
+                strategy: IDENTITY
+    fields:
+        idClient:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: id_client
+        idLivraison:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: id_livraison
+    lifecycleCallbacks: {  }

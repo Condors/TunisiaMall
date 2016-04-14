@@ -1,0 +1,32 @@
+Condors\TnMallBundle\Entity\Notification:
+    type: entity
+    table: notification
+    indexes:
+        id_notification:
+            columns:
+                - id_notification
+        id_enseigne:
+            columns:
+                - id_enseigne
+        id_notification_2:
+            columns:
+                - id_notification
+        id_enseigne_2:
+            columns:
+                - id_enseigne
+    id:
+        idNotification:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: id_notification
+            generator:
+                strategy: IDENTITY
+    fields:
+        idEnseigne:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: id_enseigne
+    lifecycleCallbacks: {  }

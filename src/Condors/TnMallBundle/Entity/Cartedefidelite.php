@@ -15,7 +15,7 @@ class Cartedefidelite
     /**
      * @var integer
      *
-     * @ORM\Column(name="idCarte", type="integer", nullable=false)
+     * @ORM\Column(name="idCarte", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */

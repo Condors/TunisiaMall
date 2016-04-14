@@ -1,0 +1,46 @@
+Condors\TnMallBundle\Entity\Promotion:
+    type: entity
+    table: promotion
+    indexes:
+        id_promotion:
+            columns:
+                - id_promotion
+    id:
+        idPromotion:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: id_promotion
+            generator:
+                strategy: IDENTITY
+    fields:
+        labelle:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        datedebut:
+            type: date
+            nullable: false
+            column: dateDebut
+        datefin:
+            type: date
+            nullable: false
+            column: dateFin
+        tauxreduction:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: tauxReduction
+        imagepromo:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: imagePromo
+        dateofcreation:
+            type: datetime
+            nullable: true
+            column: DateOfCreation
+    lifecycleCallbacks: {  }

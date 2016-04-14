@@ -15,7 +15,7 @@ class Promotion
     /**
      * @var integer
      *
-     * @ORM\Column(name="id_promotion", type="integer", nullable=false)
+     * @ORM\Column(name="id_promotion", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */

@@ -1,0 +1,13 @@
+Condors\TnMallBundle\Entity\Livraison:
+    type: entity
+    table: livraison
+    id:
+        idLivraison:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: id_livraison
+            generator:
+                strategy: IDENTITY
+    lifecycleCallbacks: {  }

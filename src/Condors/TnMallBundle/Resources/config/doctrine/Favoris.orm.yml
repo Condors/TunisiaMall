@@ -1,0 +1,31 @@
+Condors\TnMallBundle\Entity\Favoris:
+    type: entity
+    table: favoris
+    indexes:
+        id_client:
+            columns:
+                - id_client
+        id_produit:
+            columns:
+                - id_produit
+    id:
+        idFavoris:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: id_favoris
+            generator:
+                strategy: IDENTITY
+    fields:
+        idClient:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: id_client
+        idProduit:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: id_produit
+    lifecycleCallbacks: {  }

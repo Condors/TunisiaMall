@@ -15,7 +15,7 @@ class Panier
     /**
      * @var integer
      *
-     * @ORM\Column(name="id_panier", type="integer", nullable=false)
+     * @ORM\Column(name="id_panier", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */

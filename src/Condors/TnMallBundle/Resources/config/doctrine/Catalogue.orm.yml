@@ -1,0 +1,48 @@
+Condors\TnMallBundle\Entity\Catalogue:
+    type: entity
+    table: catalogue
+    indexes:
+        IDX_59A699F564775DD5:
+            columns:
+                - idEnseigne
+        id_catalogue:
+            columns:
+                - id_catalogue
+        id_responsable_enseigne:
+            columns:
+                - id_responsable_enseigne
+        id_catalogue_2:
+            columns:
+                - id_catalogue
+        id_responsable_enseigne_2:
+            columns:
+                - id_responsable_enseigne
+    id:
+        idCatalogue:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: id_catalogue
+            generator:
+                strategy: IDENTITY
+    manyToOne:
+        idResponsableEnseigne:
+            targetEntity: User
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_responsable_enseigne:
+                    referencedColumnName: id
+            orphanRemoval: false
+        idenseigne:
+            targetEntity: Enseigne
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                idEnseigne:
+                    referencedColumnName: id_enseigne
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

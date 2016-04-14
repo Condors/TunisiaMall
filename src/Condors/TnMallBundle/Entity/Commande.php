@@ -15,7 +15,7 @@ class Commande
     /**
      * @var integer
      *
-     * @ORM\Column(name="id_commande", type="integer", nullable=false)
+     * @ORM\Column(name="id_commande", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */

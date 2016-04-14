@@ -1,0 +1,23 @@
+Condors\TnMallBundle\Entity\Panier:
+    type: entity
+    table: panier
+    indexes:
+        id_client:
+            columns:
+                - id_client
+    id:
+        idPanier:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: id_panier
+            generator:
+                strategy: IDENTITY
+    fields:
+        idClient:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: id_client
+    lifecycleCallbacks: {  }

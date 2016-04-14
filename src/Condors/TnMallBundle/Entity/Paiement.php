@@ -15,7 +15,7 @@ class Paiement
     /**
      * @var integer
      *
-     * @ORM\Column(name="id_paiement", type="integer", nullable=false)
+     * @ORM\Column(name="id_paiement", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */

@@ -15,7 +15,7 @@ class Favoris
     /**
      * @var integer
      *
-     * @ORM\Column(name="id_favoris", type="integer", nullable=false)
+     * @ORM\Column(name="id_favoris", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */

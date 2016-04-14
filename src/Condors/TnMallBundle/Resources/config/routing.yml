@@ -138,7 +138,11 @@ condors_tn_mall_Admin_test:
     defaults: { _controller: CondorsTnMallBundle:Admin:test }
     
 condors_tn_mall_responsable_packs:
-    path:     /user-responsable/Packs
+    path:     /user-responsable/displayPacks
     defaults: { _controller: CondorsTnMallBundle:Responsable:displayPacks}
+    
+condors_tn_mall_responsable_GestionPack:
+    path:     /user-responsable/managePacks
+    defaults: { _controller: CondorsTnMallBundle:Responsable:gestionPack }
  
  #END AMIN YOU CAN TOUCH EVERY THING AFTER HERE !

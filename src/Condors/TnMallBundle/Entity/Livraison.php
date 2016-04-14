@@ -15,11 +15,11 @@ class Livraison
     /**
      * @var integer
      *
-     * @ORM\Column(name="id_livraison", type="integer", nullable=false)
+     * @ORM\Column(name="id_livraison", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $idLivraison;
 
-//
+
 }

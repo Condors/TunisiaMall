@@ -1,0 +1,70 @@
+Condors\TnMallBundle\Entity\Boutique:
+    type: entity
+    table: boutique
+    indexes:
+        id_boutique:
+            columns:
+                - id_boutique
+        id_enseigne:
+            columns:
+                - libelle_boutique
+        id_boutique_2:
+            columns:
+                - id_boutique
+        description_boutique:
+            columns:
+                - description_boutique
+        description_boutique_2:
+            columns:
+                - description_boutique
+        description_boutique_3:
+            columns:
+                - description_boutique
+        description_boutique_4:
+            columns:
+                - description_boutique
+    id:
+        idBoutique:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: id_boutique
+            generator:
+                strategy: IDENTITY
+    fields:
+        libelleBoutique:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: libelle_boutique
+        categorieBoutique:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: categorie_boutique
+        descriptionBoutique:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            column: description_boutique
+        imageboutique:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: imageBoutique
+        tel:
+            type: string
+            nullable: false
+            length: 11
+            fixed: false
+        email:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+    lifecycleCallbacks: {  }
