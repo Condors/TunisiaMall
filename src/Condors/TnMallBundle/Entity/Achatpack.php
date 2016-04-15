@@ -24,7 +24,7 @@ class Achatpack
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="dateAchat", type="date", nullable=false)
+     * @ORM\Column(name="dateAchat", type="date", nullable=true)
      */
     private $dateachat;
 
@@ -49,4 +49,40 @@ class Achatpack
     private $idpack;
 
 
+    function getIdachat() {
+        return $this->idachat;
+    }
+
+    function getDateachat() {
+        return $this->dateachat;
+    }
+
+    function getIdresponsable() {
+        return $this->idresponsable;
+    }
+
+    function getIdpack() {
+        return $this->idpack;
+    }
+
+    function setIdachat($idachat) {
+        $this->idachat = $idachat;
+    }
+
+    function setDateachat($dateachat) {
+        $this->dateachat = $dateachat;
+    }
+
+    function setIdresponsable($idresponsable) {
+        $this->idresponsable = $idresponsable;
+    }
+
+    function setIdpack($idpack) {
+        $this->idpack = $idpack;
+    }
+
+
+    
+    
+    
 }

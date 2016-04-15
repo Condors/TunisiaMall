@@ -144,5 +144,9 @@ condors_tn_mall_responsable_displayBouthPacks:
 condors_tn_mall_responsable_GestionPack:
     path:     /user-responsable/managePacks
     defaults: { _controller: CondorsTnMallBundle:Responsable:gestionPack }
+    
+condors_tn_mall_responsable_buyPack:
+    path:     /user-responsable/buyPacks/{id}
+    defaults: { _controller: CondorsTnMallBundle:Responsable:buyPacks }
  
  #END AMIN YOU CAN TOUCH EVERY THING AFTER HERE !

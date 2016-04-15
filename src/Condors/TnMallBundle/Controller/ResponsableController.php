@@ -11,6 +11,7 @@ use Condors\TnMallBundle\Entity\Enseigne;
 use Condors\TnMallBundle\Form\ProduitType;
 use Condors\TnMallBundle\Form\EnseigneType;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Condors\TnMallBundle\Entity\Pack ; 
 
 /**
  * Description of ResponsableController
@@ -280,6 +281,26 @@ class ResponsableController extends Controller
 
       
         $rep = new JsonResponse(($packs));
+
+        return $rep;
+    }
+    
+        public function buyPacksAction(Pack $pack){
+      
+         $em = $this->getDoctrine()->getManager();
+         $achatpack = new Achatpack();
+         $achatpack->setIdresponsable($this->getUser());
+         $achatpack->setIdpack($pack);
+         $em->persist($achatpack);
+         $em->flush();
+         
+
+       
+     
+        
+         
+                      
+        $rep = new JsonResponse("ok");
 
         return $rep;
     }

@@ -77,5 +77,79 @@ class Pack
      */
     private $description;
 
+    
+    function getIdPack() {
+        return $this->idPack;
+    }
+
+    function getZoneA() {
+        return $this->zoneA;
+    }
+
+    function getZoneB() {
+        return $this->zoneB;
+    }
+
+    function getZoneC() {
+        return $this->zoneC;
+    }
+
+    function getAlgo1() {
+        return $this->algo1;
+    }
+
+    function getAlgo2() {
+        return $this->algo2;
+    }
+
+    function getAlgo3() {
+        return $this->algo3;
+    }
+
+    function getLibelle() {
+        return $this->libelle;
+    }
+
+    function getDescription() {
+        return $this->description;
+    }
+
+    function setIdPack($idPack) {
+        $this->idPack = $idPack;
+    }
+
+    function setZoneA($zoneA) {
+        $this->zoneA = $zoneA;
+    }
+
+    function setZoneB($zoneB) {
+        $this->zoneB = $zoneB;
+    }
+
+    function setZoneC($zoneC) {
+        $this->zoneC = $zoneC;
+    }
+
+    function setAlgo1($algo1) {
+        $this->algo1 = $algo1;
+    }
+
+    function setAlgo2($algo2) {
+        $this->algo2 = $algo2;
+    }
+
+    function setAlgo3($algo3) {
+        $this->algo3 = $algo3;
+    }
+
+    function setLibelle($libelle) {
+        $this->libelle = $libelle;
+    }
+
+    function setDescription($description) {
+        $this->description = $description;
+    }
+
+
 
 }
