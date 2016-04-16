@@ -16,8 +16,8 @@ condors_tn_mall_shopDetail:
 
 
 condors_tn_mall_account:
-    path:     /user/account
-    defaults: { _controller: CondorsTnMallBundle:SimpleVisitor:myAccount}
+    path:     /
+    defaults: { _controller: CondorsTnMallBundle:SimpleVisitor:UserConnect}
     
 
 condors_tn_mall_pro_regsitration:
@@ -98,6 +98,12 @@ condors_tn_mall_simple_categories_searchCategories:
     defaults: { _controller: CondorsTnMallBundle:Responsable:searchCategorie}
     requirements:
         txtSearch: \d+
+
+condors_tn_mall_add_Panier:
+    path:     /AddPanier/{id}
+    defaults: { _controller: CondorsTnMallBundle:SimpleVisitor:AddPanier }
+    requirements:
+        id: \d+
 
 condors_tn_mall_check-google:
     path:     /login/check-google

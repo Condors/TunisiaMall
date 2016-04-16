@@ -67,7 +67,13 @@ swiftmailer:
     spool:     { type: memory }
 
 # app/config/config.yml
-
+fos_user:
+    db_driver: orm
+    firewall_name: main
+    user_class: Condors\TnMallBundle\Entity\User
+    registration:
+        confirmation:
+            enabled: true
 
 
 fos_comment:
@@ -111,6 +117,15 @@ assetic:
     filters:
         cssrewrite: ~
     bundles: [ "FOSCommentBundle","CondorsTnMallBundle" ]
+
+
+dcs_rating:
+    db_driver: orm
+    base_path_to_redirect: / # when the permalink is not configured
+    max_value: 5 # maximum value for the vote (stars displayed)
+    model:
+        rating: Condors\TnMallBundle\Entity\Rating
+        vote: Condors\TnMallBundle\Entity\Voter
     
     
 nomaya_social:
@@ -124,16 +139,7 @@ nomaya_social:
             layout : "button_count"
     theme :  'default' 
     
-    
-fos_user:
-    db_driver: orm
-    firewall_name: main
-    user_class: Condors\TnMallBundle\Entity\User
-    registration:
-        confirmation:
-            enabled: true
-            
-            
+
 hwi_oauth:
     # name of the firewall in which this bundle is active, this setting MUST be set
     firewall_name: main

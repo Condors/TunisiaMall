@@ -39,8 +39,8 @@ class AfterLoginRedirection implements AuthenticationSuccessHandlerInterface
         // Get list of roles for current user
         $roles = $token->getRoles();
         // Tranform this list in array
-        $rolesTab = array_map(function($role){ 
-          return $role->getRole(); 
+        $rolesTab = array_map(function($role){
+            return $role->getRole();
         }, $roles);
         // If is a admin or super admin we redirect to the backoffice area
         if (in_array('ROLE_ADMIN', $rolesTab, true) || in_array('ROLE_SUPER_ADMIN', $rolesTab, true))
@@ -51,7 +51,7 @@ class AfterLoginRedirection implements AuthenticationSuccessHandlerInterface
         // otherwise we redirect user to the member area
         else
             $redirection = new RedirectResponse($this->router->generate('condors_tn_mall_account'));
-        
+
         return $redirection;
     }
 } 

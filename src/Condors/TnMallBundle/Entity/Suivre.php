@@ -15,7 +15,7 @@ class Suivre
     /**
      * @var integer
      *
-     * @ORM\Column(name="id_suivre", type="integer")
+     * @ORM\Column(name="id_suivre", type="integer", nullable=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */

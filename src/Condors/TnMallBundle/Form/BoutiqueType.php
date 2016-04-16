@@ -23,7 +23,7 @@ class BoutiqueType extends AbstractType
             ->add('email')
         ;
     }
-    
+
     /**
      * @param OptionsResolver $resolver
      */

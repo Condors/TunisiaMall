@@ -15,7 +15,7 @@ class Lignepaniercommande
     /**
      * @var integer
      *
-     * @ORM\Column(name="id_ligne", type="integer")
+     * @ORM\Column(name="id_ligne", type="integer", nullable=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */

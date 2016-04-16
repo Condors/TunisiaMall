@@ -15,6 +15,15 @@ fos_comment_api:
     resource: "@FOSCommentBundle/Resources/config/routing.yml"
     prefix: /api
     defaults: { _format: html }
+
+dcs_rating:
+    resource: "@DCSRatingBundle/Resources/config/routing.xml"
+    prefix:   /
+
+_demo:
+    resource: "@SaadTaziGChartBundle/Resources/config/routing.yml"
+    type:     yaml
+    prefix:   /gchart
     
 hwi_oauth_redirect:
     resource: "@HWIOAuthBundle/Resources/config/routing/redirect.xml"

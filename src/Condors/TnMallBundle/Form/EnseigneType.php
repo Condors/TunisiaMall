@@ -14,10 +14,10 @@ class EnseigneType extends AbstractType {
      */
     public function buildForm(FormBuilderInterface $builder, array $options) {
         $builder
-                ->add('libelleenseigne')
-                ->add('descriptionenseigne','textarea')
-                ->add('file', 'file')
-                ->add('submit','submit')
+            ->add('libelleenseigne')
+            ->add('descriptionenseigne','textarea')
+            ->add('file', 'file')
+            ->add('submit','submit')
         ;
     }
 

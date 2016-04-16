@@ -15,7 +15,7 @@ class Recevoir
     /**
      * @var integer
      *
-     * @ORM\Column(name="id_recevoir", type="integer")
+     * @ORM\Column(name="id_recevoir", type="integer", nullable=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */

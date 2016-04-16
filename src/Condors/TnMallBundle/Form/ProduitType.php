@@ -38,7 +38,7 @@ class ProduitType extends AbstractType
                     return $repository->createQueryBuilder('s')
                         ->where('s.idresponsableenseigne =:respoId')
                         ->setParameter('respoId',$this->respoId );
-                      
+
                 }
             ))
             ->add('fileFront', 'file', array('required' => false))
