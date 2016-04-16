@@ -7,6 +7,14 @@ condors_tn_mall_homepageNewProd:
 condors_tn_mall_contact:
     path:     /contact
     defaults: { _controller: CondorsTnMallBundle:SimpleVisitor:showContact }
+
+condors_tn_mall_about:
+    path:     /about
+    defaults: { _controller: CondorsTnMallBundle:SimpleVisitor:showAbout }
+
+condors_tn_mall_faq:
+    path:     /faq
+    defaults: { _controller: CondorsTnMallBundle:SimpleVisitor:showFaq }
   
 condors_tn_mall_shopDetail:
     path:     /shop-Detail/{id}

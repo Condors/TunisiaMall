@@ -83,10 +83,28 @@ class SimpleVisitorController extends Controller
         ));
     }
 
+    public function showAboutAction()
+    {
+        $name='name';
+        return $this->render('CondorsTnMallBundle:SimpleVisitor:About.html.twig', array(
+            'name' => $name,
+        ));
+    }
+
     public function showContactAction()
     {
         $name='name';
         return $this->render('CondorsTnMallBundle:SimpleVisitor:Contact.html.twig', array(
+            'name' => $name,
+        ));
+
+    }
+
+    public function showFaqAction()
+    {
+
+        $name='name';
+        return $this->render('CondorsTnMallBundle:SimpleVisitor:Faq.html.twig', array(
             'name' => $name,
         ));
     }

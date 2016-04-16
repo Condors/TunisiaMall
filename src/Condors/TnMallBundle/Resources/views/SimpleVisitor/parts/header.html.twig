@@ -8,9 +8,9 @@
                             <!--                                    Free Shipping on All Orders Over <span>$49</span>-->
 
                             <ul class="yolo-top-menu hidden-phone">
-                                <li class="menu-item"><a href="#">About <span>Us</span></a></li>
+                                <li class="menu-item"><a href="{{ path('condors_tn_mall_about') }}">About <span>Us</span></a></li>
                                 <li class="menu-item"><a href="{{ path('condors_tn_mall_contact') }}">Contact <span>Us</span></a></li>
-                                <li class="menu-item"><a href="#"><i class="fa fa-comments-o"></i>&nbsp;FAQ</a></li>
+                                <li class="menu-item"><a href="{{ path('condors_tn_mall_faq') }}"><i class="fa fa-comments-o"></i>&nbsp;FAQ</a></li>
 
                             </ul>
 
@@ -60,7 +60,7 @@
                         <button data-target=".nav-collapse" class="btn-navbar yolo_icon_menu" type="button">
                             <i class="fa fa-bars"></i>
                         </button>
-                        <a href="index.html" class="navbar-brand">
+                        <a href="{{ path('condors_tn_mall_homepageNewProd') }}" class="navbar-brand">
                             <img class="yolo-logo-img yolo-logo-normal" width="150" height="150" src="{{ asset('images/logoo.png')}}" alt="Logo">
                         </a>
                     </div>
@@ -69,7 +69,7 @@
             <div class="yolo-wrap-menu fixed_top">
                 <div class="container">
                     <div class="navbar-header pull-left">
-                        <a href="index.html" class="navbar-brand">
+                        <a href="{{ path('condors_tn_mall_contact') }}" class="navbar-brand">
                             <img class="yolo-logo-img yolo-logo-fixed" width="60" height="60" src="{{ asset('images/logo-fixed.png')}}" alt="">
                         </a>
                     </div>
