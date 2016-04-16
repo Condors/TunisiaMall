@@ -29,7 +29,16 @@ class OAuthUserProvider extends BaseClass
         $socialID = $response->getUsername();
         $user = $this->userManager->findUserBy(array($this->getProperty($response)=>$socialID));
         $email = $response->getEmail();
+        $nickName = $response->getNickname(); 
         $profilePic = $response->getProfilePicture();
+        $userName = $response->getFirstName(). " ".$response->getLastName() ;
+        $userNom = $response->getFirstName() ;
+        $userPrenom = $response->getLastName();
+          
+        
+        
+ 
+  
        
 
         //check if the user already has the corresponding social account
@@ -45,10 +54,10 @@ class OAuthUserProvider extends BaseClass
                 $user->setPlainPassword(md5(uniqid()));
                 $user->setEnabled(true);
                 $user->addRole("ROLE_RESPONSABLE");
-                $user->setUsername($response->getFirstName(). " ".$response->getLastName() );
+                $user->setUsername($userName);
                 $user->setImage($profilePic);
-                $user->setNom($response->getFirstName()); 
-                $user->setPrenom($response->getLastName()) ;
+                $user->setNom($userNom); 
+                $user->setPrenom($userPrenom) ;
             }
             //then set its corresponding social id
             $service = $response->getResourceOwner()->getName();
@@ -57,9 +66,15 @@ class OAuthUserProvider extends BaseClass
                     $user->setGoogleID($socialID);
                     break;
                 case 'facebook':
-                    $user->setFacebookID($socialID); 
+                    $user->setUsername($nickName);
+                    $user->setFacebookID($socialID);
+                    $nomPrenom = explode(" ", $nickName);
+                    $user->setImage("https://graph.facebook.com/$socialID/picture?width=400&height=400");
+                    $user->setNom($nomPrenom[1]); 
+                    $user->setPrenom($nomPrenom[0]) ;
                     break;
             }
+         
             $this->userManager->updateUser($user);
         } else {
             //and then login the user
