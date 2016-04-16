@@ -30,6 +30,7 @@ class OAuthUserProvider extends BaseClass
         $user = $this->userManager->findUserBy(array($this->getProperty($response)=>$socialID));
         $email = $response->getEmail();
         $profilePic = $response->getProfilePicture();
+       
 
         //check if the user already has the corresponding social account
         if (null === $user) {
@@ -39,6 +40,7 @@ class OAuthUserProvider extends BaseClass
             if (null === $user || !$user instanceof UserInterface) {
                 //if the user does not have a normal account, set it up:
                 $user = $this->userManager->createUser();
+             
                 $user->setEmail($email);
                 $user->setPlainPassword(md5(uniqid()));
                 $user->setEnabled(true);
@@ -55,7 +57,7 @@ class OAuthUserProvider extends BaseClass
                     $user->setGoogleID($socialID);
                     break;
                 case 'facebook':
-                    $user->setFacebookID($socialID);
+                    $user->setFacebookID($socialID); 
                     break;
             }
             $this->userManager->updateUser($user);

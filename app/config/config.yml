@@ -150,8 +150,8 @@ hwi_oauth:
     resource_owners:
         facebook:
             type:                facebook
-            client_id:           "1129786303744952"
-            client_secret:       "71d13c96af58dd0b492cba90a86fdc86"
+            client_id:           "1063807953689472"
+            client_secret:       "9ab1a49ec601ca54ebdee65767aea8e6"
             scope:               "email, public_profile"
             infos_url:           "https://graph.facebook.com/me?fields=id,name,email,picture.type(large)"
             paths:
