@@ -272,6 +272,20 @@ class ResponsableController extends Controller
     }
     
     
+
+    
+    
+            public function checkFacebookAction()
+    {
+
+
+        $user = $this->getUser();
+        return $this->render('CondorsTnMallBundle:Responsable:index.html.twig', array(
+            'user' => $user,
+        ));
+    }
+    
+    
         public function displayBouthPacksAction()
     {
         $em = $this->getDoctrine()->getManager();

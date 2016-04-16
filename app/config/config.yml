@@ -166,11 +166,5 @@ hwi_oauth:
             paths:
                 email: email
 
-        linkedin:
-            type:                linkedin
-            client_id:           "7840e33btt7noc"
-            client_secret:       "2oPbkHqztg1xl1r7"
-            scope:              "email"
-            paths:
-                email: email
+
 

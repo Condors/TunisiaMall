@@ -116,6 +116,22 @@ class User extends BaseUser
      * @Assert\File(maxSize="500k")
      */
     public $file;
+    
+    
+         /**
+     * @var string
+     *
+     * @ORM\Column(name="facebook_id", type="string", nullable=true)
+     */
+    private $facebookID;
+ 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="google_id", type="string", nullable=true)
+     */
+    private $googleID;
+    
 
     public function getWebPath()
     {
@@ -268,6 +284,24 @@ class User extends BaseUser
     function setSupprimer($supprimer) {
         $this->supprimer = $supprimer;
     }
+
+    
+    function getFacebookID() {
+        return $this->facebookID;
+    }
+
+    function getGoogleID() {
+        return $this->googleID;
+    }
+
+    function setFacebookID($facebookID) {
+        $this->facebookID = $facebookID;
+    }
+
+    function setGoogleID($googleID) {
+        $this->googleID = $googleID;
+    }
+
 
 
 

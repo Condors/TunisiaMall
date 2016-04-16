@@ -30,7 +30,6 @@ security:
                 resource_owners:
                     facebook: "/login/check-facebook"
                     google: "/login/check-google"
-                    linkedIn: "login/check-linkedin"
                 oauth_user_provider:
                     service: app.provider.oauth
                 success_handler: redirect.after.login

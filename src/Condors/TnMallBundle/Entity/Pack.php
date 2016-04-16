@@ -22,9 +22,9 @@ class Pack
     private $idPack;
 
     /**
-     * @var integer
+     * @var boolean
      *
-     * @ORM\Column(name="Zone_A", type="integer", nullable=false)
+     * @ORM\Column(name="Zone_A", type="boolean", nullable=false)
      */
     private $zoneA;
 

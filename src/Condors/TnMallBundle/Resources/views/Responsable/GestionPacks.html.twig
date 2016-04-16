@@ -121,9 +121,9 @@
 
                                 var trHTML = '';
                                 $.each(data, function (i, item) {
-                                   
+                                    trHTML = '';
                                     
-                                    trHTML +="<a href='javascript:void(0);' class='btn btn-success btn-block' role='button'  disabled>Already bought</a>" ;
+                                    trHTML +="<a class='btn btn-success btn-block' role='button'  disabled>Already bought</a>" ;
                                var ident = '#pack'+item.idPack ;
                                
                                  $(ident).html(trHTML);

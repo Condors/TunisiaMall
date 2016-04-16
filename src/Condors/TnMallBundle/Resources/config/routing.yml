@@ -109,6 +109,10 @@ condors_tn_mall_check-google:
     path:     /login/check-google
     defaults: { _controller: CondorsTnMallBundle:Responsable:checkGoogle}
     
+condors_tn_mall_check-facebook:
+    path:     /login/check-facebook
+    defaults: { _controller: CondorsTnMallBundle:Responsable:checkFacebook}
+    
   #AMIN SECTION DON'T TOUCH OR I'LL KILL YOU! 
   
 condors_tn_mall_responsable_categories_update_pos:
