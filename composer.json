@@ -20,7 +20,8 @@
         "friendsofsymfony/user-bundle": "~2.0@dev",
         "nomaya/social-bundle": "dev-master",
         "hwi/oauth-bundle":"0.4.*@dev",
-        "saad-tazi/g-chart-bundle": "^1.2"
+        "saad-tazi/g-chart-bundle": "^1.2",
+        "gregwar/captcha-bundle" : "2.*"
         
     },
     "require-dev": {

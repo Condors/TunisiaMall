@@ -2,8 +2,10 @@
 
 namespace Condors\TnMallBundle\Form;
 
+
 use FOS\UserBundle\Form\Type\RegistrationFormType;
 use Symfony\Component\Form\FormBuilderInterface;
+use Gregwar\CaptchaBundle\Type\CaptchaType;
 
 class UserRegistrationType extends RegistrationFormType {
     //put your code here
@@ -20,6 +22,7 @@ class UserRegistrationType extends RegistrationFormType {
             ->add('adresse')
             ->add('telephone')
             ->add('file','file',['label'=>'Image de Profile'])
+            ->add('captcha', CaptchaType::class);
 
         ;
     }

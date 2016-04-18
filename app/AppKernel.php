@@ -28,6 +28,7 @@ class AppKernel extends Kernel
             new SaadTazi\GChartBundle\SaadTaziGChartBundle(),
             new Nomaya\SocialBundle\NomayaSocialBundle(),
             new HWI\Bundle\OAuthBundle\HWIOAuthBundle(),
+            new Gregwar\CaptchaBundle\GregwarCaptchaBundle(),
 
         );
 
