@@ -42,5 +42,92 @@ class Lignepaniercommande
      */
     private $idProduit;
 
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="quantite", type="integer", nullable=true)
+     */
+   private $quantite;
+
+    /**
+     * @return int
+     */
+    public function getIdLigne()
+    {
+        return $this->idLigne;
+    }
+
+    /**
+     * @param int $idLigne
+     */
+    public function setIdLigne($idLigne)
+    {
+        $this->idLigne = $idLigne;
+    }
+
+    /**
+     * @return int
+     */
+    public function getIdPanier()
+    {
+        return $this->idPanier;
+    }
+
+    /**
+     * @param int $idPanier
+     */
+    public function setIdPanier($idPanier)
+    {
+        $this->idPanier = $idPanier;
+    }
+
+    /**
+     * @return string
+     */
+    public function getIdCommande()
+    {
+        return $this->idCommande;
+    }
+
+    /**
+     * @param string $idCommande
+     */
+    public function setIdCommande($idCommande)
+    {
+        $this->idCommande = $idCommande;
+    }
+
+    /**
+     * @return int
+     */
+    public function getQuantite()
+    {
+        return $this->quantite;
+    }
+
+    /**
+     * @param int $quantite
+     */
+    public function setQuantite($quantite)
+    {
+        $this->quantite = $quantite;
+    }
+
+    /**
+     * @return int
+     */
+    public function getIdProduit()
+    {
+        return $this->idProduit;
+    }
+
+    /**
+     * @param int $idProduit
+     */
+    public function setIdProduit($idProduit)
+    {
+        $this->idProduit = $idProduit;
+    }
+
 
 }

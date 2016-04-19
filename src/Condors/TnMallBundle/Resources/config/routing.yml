@@ -1,5 +1,3 @@
-
-
 condors_tn_mall_homepageNewProd:
     path:     /
     defaults: { _controller: CondorsTnMallBundle:SimpleVisitor:showNewProduct }
@@ -112,6 +110,23 @@ condors_tn_mall_add_Panier:
     defaults: { _controller: CondorsTnMallBundle:SimpleVisitor:AddPanier }
     requirements:
         id: \d+
+
+condors_tn_mall_show_Panier:
+    path:     /Panier
+    defaults: { _controller: CondorsTnMallBundle:SimpleVisitor:ShowPanier }
+
+condors_tn_mall_payment:
+    path:     /user/payments/
+    defaults: { _controller: CondorsTnMallBundle:SimpleVisitor:payment }
+
+canceledPayment:
+    path:     /canceledPayment
+    defaults: { _controller: CondorsTnMallBundle:SimpleVisitor:canceledPayment }
+
+completedPayment:
+    path:     /completedPayment
+    defaults: { _controller: CondorsTnMallBundle:SimpleVisitor:completedPayment }
+
 
 condors_tn_mall_check-google:
     path:     /login/check-google

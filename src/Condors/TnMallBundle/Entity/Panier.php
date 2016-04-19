@@ -28,5 +28,37 @@ class Panier
      */
     private $idClient;
 
+    /**
+     * @return int
+     */
+    public function getIdPanier()
+    {
+        return $this->idPanier;
+    }
+
+    /**
+     * @param int $idPanier
+     */
+    public function setIdPanier($idPanier)
+    {
+        $this->idPanier = $idPanier;
+    }
+
+    /**
+     * @return int
+     */
+    public function getIdClient()
+    {
+        return $this->idClient;
+    }
+
+    /**
+     * @param int $idClient
+     */
+    public function setIdClient($idClient)
+    {
+        $this->idClient = $idClient;
+    }
+
 
 }

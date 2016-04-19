@@ -1,0 +1,171 @@
+{% extends "CondorsTnMallBundle::MyAccountTemplate.html.twig" %}
+
+{% block pageTitle %}
+    <h1 class="page-title">My Bag</h1>
+{% endblock pageTitle %}
+
+{% block header %}
+    {{ include('CondorsTnMallBundle::SimpleVisitor/parts/header.html.twig') }}
+{% endblock header %}
+
+{% block titleTop %}<h2 class="title-heading">Shopping Cart</h2>{% endblock %}
+
+
+
+
+
+{% block cart %}
+
+
+    <div class="commerce-cart">
+
+
+        <div class="commerce pt-5 pb-5">
+            <table class="shop_table cart">
+                <thead>
+                <tr>
+                    <th class="product-thumbnail">&nbsp;</th>
+                    <th class="product-name">Product</th>
+                    <th class="product-price">Price</th>
+                    <th class="product-quantity">Quantity</th>
+                    <th class="product-subtotal">Total</th>
+                    <th class="product-remove">&nbsp;</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% set fpricePanierTotal = 0 %}
+                {% if app.request.cookies.get('numProd') > 0 %}
+                    {% for i in 1..app.request.cookies.get('numProd') %}
+                        <tr class="cart_item">
+                            <td class="product-thumbnail">
+                                <a href="{{ path("condors_tn_mall_shopDetail" , { id:  app.request.cookies.get('idProduit_'~ i) } ) }}#focus">
+                                    <img width="100" height="140"
+                                         src="{{ asset('uploads/pictures/') }}{{ app.request.cookies.get('imageprodreel_'~ i) }}"
+                                         alt="">
+                                </a>
+                            </td>
+                            <td class="product-name">
+                                <a href="{{ path("condors_tn_mall_shopDetail" , { id:  app.request.cookies.get('idProduit_'~ i) } ) }}#focus">{{ app.request.cookies.get('libelleProduit_'~ i) }} </a>
+                            </td>
+                            <td class="product-price">
+                                {% set fpricePanier =((app.request.cookies.get('tvaProduit_'~ i) * app.request.cookies.get('prixProduit_'~ i) )/100)+app.request.cookies.get('prixProduit_'~ i) %}
+
+                                <span class="amount">{{ fpricePanier }} DT</span>
+                            </td>
+                            <td class="product-quantity">
+                                <div class="quantity">
+                                    <input type="number" step="1" min="0" max="10" name="qty"
+                                           value="1"
+                                           class="input-text qty text"/>
+                                </div>
+                            </td>
+                            <td class="product-subtotal">
+                                <span class="amount">{{ fpricePanier }} DT</span>
+                            </td>
+                            <td class="product-remove">
+                                <a href="#" class="remove">×</a>
+                            </td>
+                        </tr>
+
+                    {% endfor %}
+                {% endif %}
+
+                <tr>
+                    <td colspan="6" class="actions">
+
+                        <a class="button" href="{{ path('condors_tn_mall_payment') }}">Checkout</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+    {% if payed is defined  %}
+        <style>
+
+            .moving-zone {
+                position: fixed;
+                top: 30%;
+                left: 40%;
+                width: 300px;
+                height: 300px;
+                margin: -60px 0 0 -150px;
+                perspective: 800px;
+                z-index: 50000;
+            }
+
+            .popup {
+                position: fixed;
+                width: 200%;
+                padding: 30px;
+                box-sizing: border-box;
+                border-radius: 20px 0 20px 0;
+                cursor: pointer;
+                transform-style: preserve-3d;
+                background: -webkit-linear-gradient(top left, white 50%, coral 50%);
+                background: -moz-linear-gradient(top left, white 50%, coral 50%);
+                background: -ms-linear-gradient(top left, white 50%, coral 50%);
+                background: -o-linear-gradient(top left, white 50%, coral 50%);
+                background: linear-gradient(top left, white 50%, coral 50%);
+            }
+
+            .popup:before {
+                content: '';
+                position: absolute;
+                left: 5%;
+                top: 5%;
+                width: 90%;
+                height: 90%;
+                border-radius: inherit;
+                background: rgba(0, 0, 0, .1);
+                box-shadow: 0 0 40px 20px rgba(0, 0, 0, .1);
+                transform: translateZ(-100px);
+            }
+
+            .popup-content {
+                background: #444;
+                padding: 20px;
+                box-sizing: border-box;
+                border-radius: 10px 0 10px 0;
+            }
+
+            .popup-text {
+                color: white;
+                font-family: 'Roboto', sans-serif;
+                font-size: 20px;
+                line-height: 30px;
+                font-weight: 100;
+                text-align: center;
+                transform: translateZ(15px);
+            }
+
+            .popup-text b {
+                color: coral;
+                font-weight: 300;
+            }
+        </style>
+
+
+        <div class="moving-zone">
+            <div class="popup">
+                <div class="popup-content">
+                    <div class="popup-text">
+                        Thanks For Your <b>Order.</b><br>
+                        Your payment of {{ totalPayment }} <b>$</b> is Complete with <b>PayPal</b> <br><br><br><br>
+
+                       <b> <a href="{{ path('condors_tn_mall_homepageNewProd') }}">Go To The Shop</a></b>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    {% endif %}
+
+
+
+{% endblock cart %}

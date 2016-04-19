@@ -166,7 +166,13 @@ hwi_oauth:
             paths:
                 email: email
 
-
+beelab_paypal:
+    return_route: completedPayment
+    cancel_route: canceledPayment
+    test_mode:    "%kernel.debug%"
+    username:  "TunisiaMall_api1.tunisiamall.com"
+    password:  "ZUCHAY988YSQKYV9"
+    signature: "AFcWxV21C7fd0v3bYYYRCpSSRl31ApxapTSdZmXXYQseVZRhenhkChFO"
 gregwar_captcha: ~
 
 

@@ -87,10 +87,10 @@
                             Cart Subtotal <span class="amount">&#36; {{ fpricePanierTotal }} </span>
                         </div>
                         <div class="minicart-actions clearfix">
-                            <a class="viewcart-button button" href="cart.html">
+                            <a class="viewcart-button button" href="{{ path('condors_tn_mall_show_Panier') }}">
                                 <span class="text">View Cart</span>
                             </a>
-                            <a class="checkout-button button" href="#">
+                            <a class="checkout-button button" href="{{ path('condors_tn_mall_payment') }}">
                                 <span class="text">Checkout</span>
                             </a>
                         </div>

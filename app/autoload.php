@@ -16,4 +16,6 @@ return $loader;
 $loader->registerNamespaces(array(
     'SaadTazi' => __DIR__.'/../vendor/bundles',
     'Gregwar' => __DIR__.'/../vendor/bundles',
+
+    // your other namespaces
 ));
