@@ -94,6 +94,11 @@ condors_tn_mall_responsable_categories:
     path:     /user-responsable/categories
     defaults: { _controller: CondorsTnMallBundle:Responsable:categories}
 
+condors_tn_mall_responsable_store:
+    path:     /store-map
+    defaults: { _controller: CondorsTnMallBundle:SimpleVisitor:store}
+
+
 condors_tn_mall_responsable_categories_update_pos:
     path:     /user-responsable/categories/update/{id}/{pos}
     defaults: { _controller: CondorsTnMallBundle:Responsable:updateCatPosition}
