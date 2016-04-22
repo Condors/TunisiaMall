@@ -171,6 +171,12 @@ class SimpleVisitorController extends Controller
 
     }
 
+
+
+    public function storeAction()
+    {
+        return $this->render('CondorsTnMallBundle:SimpleVisitor:store.html.twig');
+    }
     public function ShowPanierAction()
     {
         return $this->render('CondorsTnMallBundle:SimpleVisitor:Panier.html.twig');

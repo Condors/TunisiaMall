@@ -4,6 +4,7 @@
 <!-- Mirrored from tk-themes.net/html-canifa/contact-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 16:23:08 GMT -->
 
 <head>
+    <script type="text/javascript" src="http://www.smartmedicalservices.tn/jquery-1.8.2.js"></script>
     <script type="text/javascript"
             src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC-RG__a-P1m7hAtd0KYK91jKz6hGczDZg"></script>
     <script>
@@ -43,6 +44,12 @@
     <link rel='stylesheet' href="{{ asset('css/animsition.css') }}" type='text/css' media='all'/>
     <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}" type='text/css' media='all'/>
     <link rel='stylesheet' href="{{ asset('css/custom.css') }}" type='text/css' media='all'/>
+
+    <link rel="stylesheet" href="http://www.smartmedicalservices.tn/jquery-jvectormap-2.0.3.css" type="text/css" media="all"/>
+
+    <script type="text/javascript" src="http://www.smartmedicalservices.tn/jquery-jvectormap-2.0.3.min.js"></script>
+    <script type="text/javascript" src="http://www.smartmedicalservices.tn/mall-map1.js"></script>
+    <script type="text/javascript" src="http://www.smartmedicalservices.tn/jq.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -175,6 +182,12 @@
                                             {% block about %}
 
                                             {% endblock about %}
+
+
+                                            {% block store %}
+
+                                            {% endblock store %}
+
 
 
                                             {% block faq %}
@@ -348,6 +361,11 @@
                     .css('top', moveY + 'px')
                     .css('transform', 'rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg)');
         });</script>
+
+
+
+
+
 </div>
 </body>
 
