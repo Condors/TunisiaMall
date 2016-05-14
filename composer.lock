@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ee81f89de11e1005b14f2d05d828dafd",
-    "content-hash": "3b1e3c8115bfc048dc76d70b538b246f",
+    "hash": "1565f59d8ff71c5a6513df76367ac164",
+    "content-hash": "087ed15902adcabc691b1780aea8a4c8",
     "packages": [
         {
             "name": "beelab/paypal-bundle",
@@ -5268,9 +5268,9 @@
         "friendsofsymfony/user-bundle": 20,
         "nomaya/social-bundle": 20,
         "hwi/oauth-bundle": 20,
-        "knplabs/knp-snappy-bundle": 20,
         "h4cc/wkhtmltopdf-amd64": 5,
-        "mremi/contact-bundle": 20
+        "mremi/contact-bundle": 20,
+        "knplabs/knp-snappy-bundle": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

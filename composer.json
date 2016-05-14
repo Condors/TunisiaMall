@@ -28,7 +28,7 @@
       
         "endroid/qrcode": "^1.6",
         "endroid/qrcode-bundle": "^1.6",
-        "knplabs/knp-snappy-bundle": "dev-master",
+      
         "ibrows/newsletter-bundle": "*",
         "h4cc/wkhtmltopdf-amd64": "0.11.0-RC1",
         
@@ -38,7 +38,9 @@
          "symfony/assetic-bundle" : "*",
          "damianociarla/rating-bundle" : "*", 
          "beelab/paypal-bundle" : "*",
-         "mremi/contact-bundle": "dev-master"
+         
+         "mremi/contact-bundle": "dev-master",
+         "knplabs/knp-snappy-bundle": "dev-master"
 
 
     },

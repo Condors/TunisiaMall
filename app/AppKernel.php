@@ -23,7 +23,7 @@ class AppKernel extends Kernel
             new SaadTazi\GChartBundle\SaadTaziGChartBundle(),           
             new Nomaya\SocialBundle\NomayaSocialBundle(),
             new HWI\Bundle\OAuthBundle\HWIOAuthBundle(),
-            new Knp\Bundle\SnappyBundle\KnpSnappyBundle(),
+           
             new Stfalcon\Bundle\TinymceBundle\StfalconTinymceBundle(),
             new Endroid\Bundle\QrCodeBundle\EndroidQrCodeBundle(),
             new Gregwar\CaptchaBundle\GregwarCaptchaBundle(),
@@ -36,7 +36,10 @@ class AppKernel extends Kernel
             new DCS\RatingBundle\DCSRatingBundle(),
             
             new Beelab\PaypalBundle\BeelabPaypalBundle(),
+            
             new Mremi\ContactBundle\MremiContactBundle(),
+            
+             new Knp\Bundle\SnappyBundle\KnpSnappyBundle(),
             
            
           
