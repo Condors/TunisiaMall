@@ -25,12 +25,20 @@
         "payum/offline": "^1.3",
         "payum/paypal-express-checkout-nvp": "^1.3",
         "gregwar/captcha-bundle" : "2.*",
-        "mremi/contact-bundle": "dev-master",
+      
         "endroid/qrcode": "^1.6",
         "endroid/qrcode-bundle": "^1.6",
         "knplabs/knp-snappy-bundle": "dev-master",
         "ibrows/newsletter-bundle": "*",
-        "h4cc/wkhtmltopdf-amd64": "0.11.0-RC1"
+        "h4cc/wkhtmltopdf-amd64": "0.11.0-RC1",
+        
+        "friendsofsymfony/rest-bundle" : "*",
+        "friendsofsymfony/comment-bundle" : "*",
+        "jms/serializer-bundle" : "*",
+         "symfony/assetic-bundle" : "*",
+         "damianociarla/rating-bundle" : "*", 
+         "beelab/paypal-bundle" : "*",
+           "mremi/contact-bundle": "dev-master"
 
 
     },

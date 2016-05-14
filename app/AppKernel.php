@@ -20,20 +20,27 @@ class AppKernel extends Kernel
             new Condors\TnMallBundle\CondorsTnMallBundle(),
             
             new FOS\UserBundle\FOSUserBundle(),
-            new FOS\RestBundle\FOSRestBundle(),
-            new FOS\CommentBundle\FOSCommentBundle(),
-            new JMS\SerializerBundle\JMSSerializerBundle($this),
-            new Symfony\Bundle\AsseticBundle\AsseticBundle(),
-            new DCS\RatingBundle\DCSRatingBundle(),
-            new SaadTazi\GChartBundle\SaadTaziGChartBundle(),
+            new SaadTazi\GChartBundle\SaadTaziGChartBundle(),           
             new Nomaya\SocialBundle\NomayaSocialBundle(),
             new HWI\Bundle\OAuthBundle\HWIOAuthBundle(),
-            new Beelab\PaypalBundle\BeelabPaypalBundle(),
-            new Gregwar\CaptchaBundle\GregwarCaptchaBundle(),
-            new Mremi\ContactBundle\MremiContactBundle(),
             new Knp\Bundle\SnappyBundle\KnpSnappyBundle(),
             new Stfalcon\Bundle\TinymceBundle\StfalconTinymceBundle(),
             new Endroid\Bundle\QrCodeBundle\EndroidQrCodeBundle(),
+            new Gregwar\CaptchaBundle\GregwarCaptchaBundle(),
+            
+            new FOS\RestBundle\FOSRestBundle(),
+            new FOS\CommentBundle\FOSCommentBundle(),
+            new JMS\SerializerBundle\JMSSerializerBundle($this),
+            
+            new Symfony\Bundle\AsseticBundle\AsseticBundle(),
+            new DCS\RatingBundle\DCSRatingBundle(),
+            
+            new Beelab\PaypalBundle\BeelabPaypalBundle(),
+            new Mremi\ContactBundle\MremiContactBundle(),
+            
+           
+          
+           
 
 
 

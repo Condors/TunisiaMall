@@ -9,10 +9,10 @@ class ComposerStaticInitc0ef5d38a92db3b4a434fb594e59eefe
     public static $files = array (
         '92c8763cd6170fce6fcfe7e26b4e8c10' => __DIR__ . '/..' . '/symfony/phpunit-bridge/bootstrap.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
-        'e40631d46120a9c38ea139981f8dab26' => __DIR__ . '/..' . '/ircmaxell/password-compat/lib/password.php',
-        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
-        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
+        'e40631d46120a9c38ea139981f8dab26' => __DIR__ . '/..' . '/ircmaxell/password-compat/lib/password.php',
+        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
+        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         '023d27dca8066ef29e6739335ea73bad' => __DIR__ . '/..' . '/symfony/polyfill-php70/bootstrap.php',
         'bd9634f2d41831496de0d3dfe4c94881' => __DIR__ . '/..' . '/symfony/polyfill-php56/bootstrap.php',
         'edc6464955a37aa4d5fbf39d40fb6ee7' => __DIR__ . '/..' . '/symfony/polyfill-php55/bootstrap.php',
@@ -21,14 +21,13 @@ class ComposerStaticInitc0ef5d38a92db3b4a434fb594e59eefe
         '6a47392539ca2329373e0d33e1dba053' => __DIR__ . '/..' . '/symfony/polyfill-intl-icu/bootstrap.php',
         '32dcc8afd4335739640db7d200c1971d' => __DIR__ . '/..' . '/symfony/polyfill-apcu/bootstrap.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        '50b81ffc01da30f98e463592787d7917' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/pdp-parse-url.php',
+        'ddc0a4d7e61c0286f0f8593b1903e894' => __DIR__ . '/..' . '/clue/stream-filter/src/functions.php',
+        '8cff32064859f4559445b89279f3199c' => __DIR__ . '/..' . '/php-http/message/src/filters.php',
         'ce89ac35a6c330c55f4710717db9ff78' => __DIR__ . '/..' . '/kriswallsmith/assetic/src/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
-        'T' => 
-        array (
-            'TrueBV\\' => 7,
-        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Util\\' => 22,
@@ -73,7 +72,7 @@ class ComposerStaticInitc0ef5d38a92db3b4a434fb594e59eefe
         ),
         'L' => 
         array (
-            'League\\Url\\' => 11,
+            'League\\Uri\\' => 11,
         ),
         'K' => 
         array (
@@ -87,6 +86,7 @@ class ComposerStaticInitc0ef5d38a92db3b4a434fb594e59eefe
         'H' => 
         array (
             'Http\\Promise\\' => 13,
+            'Http\\Message\\' => 13,
             'Http\\Client\\' => 12,
             'Http\\Adapter\\Guzzle6\\' => 21,
             'HWI\\Bundle\\OAuthBundle\\' => 23,
@@ -110,9 +110,15 @@ class ComposerStaticInitc0ef5d38a92db3b4a434fb594e59eefe
         ),
         'D' => 
         array (
+            'Doctrine\\Instantiator\\' => 22,
             'Doctrine\\Common\\Cache\\' => 22,
+            'Doctrine\\Common\\' => 16,
             'Doctrine\\Bundle\\DoctrineCacheBundle\\' => 36,
             'Doctrine\\Bundle\\DoctrineBundle\\' => 31,
+        ),
+        'C' => 
+        array (
+            'Clue\\StreamFilter\\' => 18,
         ),
         'B' => 
         array (
@@ -121,10 +127,6 @@ class ComposerStaticInitc0ef5d38a92db3b4a434fb594e59eefe
     );
 
     public static $prefixDirsPsr4 = array (
-        'TrueBV\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/true/punycode/src',
-        ),
         'Symfony\\Polyfill\\Util\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-util',
@@ -233,9 +235,9 @@ class ComposerStaticInitc0ef5d38a92db3b4a434fb594e59eefe
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
-        'League\\Url\\' => 
+        'League\\Uri\\' => 
         array (
-            0 => __DIR__ . '/..' . '/league/url/src',
+            0 => __DIR__ . '/..' . '/league/uri/src',
         ),
         'Knp\\Bundle\\SnappyBundle\\' => 
         array (
@@ -252,6 +254,11 @@ class ComposerStaticInitc0ef5d38a92db3b4a434fb594e59eefe
         'Http\\Promise\\' => 
         array (
             0 => __DIR__ . '/..' . '/php-http/promise/src',
+        ),
+        'Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-http/message-factory/src',
+            1 => __DIR__ . '/..' . '/php-http/message/src',
         ),
         'Http\\Client\\' => 
         array (
@@ -297,9 +304,17 @@ class ComposerStaticInitc0ef5d38a92db3b4a434fb594e59eefe
         array (
             0 => __DIR__ . '/..' . '/endroid/qrcode-bundle/src',
         ),
+        'Doctrine\\Instantiator\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
+        ),
         'Doctrine\\Common\\Cache\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache',
+        ),
+        'Doctrine\\Common\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
         ),
         'Doctrine\\Bundle\\DoctrineCacheBundle\\' => 
         array (
@@ -308,6 +323,10 @@ class ComposerStaticInitc0ef5d38a92db3b4a434fb594e59eefe
         'Doctrine\\Bundle\\DoctrineBundle\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/doctrine-bundle',
+        ),
+        'Clue\\StreamFilter\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/clue/stream-filter/src',
         ),
         'Beelab\\PaypalBundle\\' => 
         array (
@@ -355,6 +374,10 @@ class ComposerStaticInitc0ef5d38a92db3b4a434fb594e59eefe
             'PhpCollection' => 
             array (
                 0 => __DIR__ . '/..' . '/phpcollection/phpcollection/src',
+            ),
+            'Pdp\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src',
             ),
             'Payum\\Paypal\\ExpressCheckout\\Nvp' => 
             array (
@@ -415,10 +438,6 @@ class ComposerStaticInitc0ef5d38a92db3b4a434fb594e59eefe
             array (
                 0 => __DIR__ . '/..' . '/jms/serializer/src',
             ),
-            'JMS\\Payment\\CoreBundle' => 
-            array (
-                0 => __DIR__ . '/..' . '/jms/payment-core-bundle',
-            ),
             'JMS\\' => 
             array (
                 0 => __DIR__ . '/..' . '/jms/parser-lib/src',
@@ -471,10 +490,6 @@ class ComposerStaticInitc0ef5d38a92db3b4a434fb594e59eefe
             'Doctrine\\Common\\Annotations\\' => 
             array (
                 0 => __DIR__ . '/..' . '/doctrine/annotations/lib',
-            ),
-            'Doctrine\\Common\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/doctrine/common/lib',
             ),
             'DCS\\RatingBundle' => 
             array (

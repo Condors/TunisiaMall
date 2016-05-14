@@ -26,13 +26,12 @@ class FacebookResourceOwner extends GenericOAuth2ResourceOwner
      * {@inheritDoc}
      */
     protected $paths = array(
-        'identifier'     => 'id',
-        'nickname'       => 'name',
-        'firstname'      => 'first_name',
-        'lastname'       => 'last_name',
-        'realname'       => 'name',
-        'email'          => 'email',
-       
+        'identifier' => 'id',
+        'nickname'   => 'name',
+        'firstname'   => 'first_name',
+        'lastname'   => 'last_name',
+        'realname'   => 'name',
+        'email'      => 'email',
     );
 
     /**
@@ -107,10 +106,10 @@ class FacebookResourceOwner extends GenericOAuth2ResourceOwner
             'authorization_url'   => 'https://www.facebook.com/v2.0/dialog/oauth',
             'access_token_url'    => 'https://graph.facebook.com/v2.0/oauth/access_token',
             'revoke_token_url'    => 'https://graph.facebook.com/v2.0/me/permissions',
-            'infos_url'           => 'https://graph.facebook.com/me',
+            'infos_url'           => 'https://graph.facebook.com/v2.0/me',
 
             'use_commas_in_scope' => true,
-           
+
             'display'             => null,
             'auth_type'           => null,
             'appsecret_proof'     => false,

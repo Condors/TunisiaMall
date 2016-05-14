@@ -30,6 +30,7 @@ use Payum\Offline\OfflineGatewayFactory;
 use Payum\OmnipayBridge\OmnipayGatewayFactory;
 use Payum\Payex\PayexGatewayFactory;
 use Payum\Paypal\ExpressCheckout\Nvp\PaypalExpressCheckoutGatewayFactory;
+use Payum\Paypal\Masspay\Nvp\PaypalMasspayGatewayFactory;
 use Payum\Paypal\ProCheckout\Nvp\PaypalProCheckoutGatewayFactory;
 use Payum\Paypal\Rest\PaypalRestGatewayFactory;
 use Payum\Sofort\SofortGatewayFactory;
@@ -109,14 +110,11 @@ class PayumBuilder
     protected $mainRegistry;
 
     /**
+     * @deprecated will be removed in 2.0
+     *
      * @var HttpClientInterface
      */
     protected $httpClient;
-
-    /**
-     * @var string
-     */
-    protected $modelIdProperty;
 
     /**
      * @return static
@@ -363,6 +361,8 @@ class PayumBuilder
     /**
      * @param HttpClientInterface $httpClient
      *
+     * @deprecated this method will be removed in 2.0 Use self::addCoreGatewayFactoryConfig to overwrite http client.
+     *
      * @return static
      */
     public function setHttpClient(HttpClientInterface $httpClient = null)
@@ -393,14 +393,9 @@ class PayumBuilder
 
         $httpRequestVerifier = $this->buildHttpRequestVerifier($this->tokenStorage);
 
-        if (false == $httpClient = $this->httpClient) {
-            $httpClient = HttpClientFactory::create();
-        }
-
         $coreGatewayFactory = $this->buildCoreGatewayFactory(array_replace_recursive([
             'payum.extension.token_factory' => new GenericTokenFactoryExtension($genericTokenFactory),
             'payum.security.token_storage' => $tokenStorage,
-            'payum.http_client' => $httpClient,
         ], $this->coreGatewayFactoryConfig));
 
         $gatewayFactories = array_replace(
@@ -554,6 +549,7 @@ class PayumBuilder
         $map = [
             'paypal_express_checkout' => PaypalExpressCheckoutGatewayFactory::class,
             'paypal_pro_checkout' => PaypalProCheckoutGatewayFactory::class,
+            'paypal_masspay' => PaypalMasspayGatewayFactory::class,
             'paypal_rest' => PaypalRestGatewayFactory::class,
             'authorize_net_aim' => AuthorizeNetAimGatewayFactory::class,
             'be2bill_direct' => Be2BillDirectGatewayFactory::class,

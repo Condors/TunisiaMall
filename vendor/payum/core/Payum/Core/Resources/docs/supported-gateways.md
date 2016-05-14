@@ -4,6 +4,7 @@
 
 * [Paypal Express Checkout](https://github.com/Payum/PaypalExpressCheckoutNvp/blob/master/Resources/docs/index.md)
 * [Paypal Pro Checkout](https://github.com/Payum/PaypalProCheckoutNvp/blob/master/Resources/docs/index.md)
+* [Paypal Masspay](https://github.com/Payum/PaypalMasspayNvp/blob/master/Resources/docs/index.md)
 * [Paypal Rest](https://github.com/Payum/PaypalRest/blob/master/Resources/docs/index.md)
 * [Stripe.js](https://github.com/Payum/Stripe/blob/master/Resources/docs/get-it-started.md)
 * [Stripe Checkout](https://github.com/Payum/Stripe/blob/master/Resources/docs/checkout.md)
@@ -47,6 +48,7 @@
 * [BoShurik/payum-yandex-money](https://github.com/BoShurik/payum-yandex-money)
 * [sergeym/payum-pay-receipt](https://github.com/sergeym/payum-pay-receipt)
 * [remyma/payum-paybox](https://github.com/remyma/payum-paybox)
+* [artkonekt/payum-otp-hungary](https://github.com/artkonekt/payum-otp-hungary)
 
 ## Omnipay gateways.
 

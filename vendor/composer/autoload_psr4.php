@@ -6,7 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'TrueBV\\' => array($vendorDir . '/true/punycode/src'),
     'Symfony\\Polyfill\\Util\\' => array($vendorDir . '/symfony/polyfill-util'),
     'Symfony\\Polyfill\\Php70\\' => array($vendorDir . '/symfony/polyfill-php70'),
     'Symfony\\Polyfill\\Php56\\' => array($vendorDir . '/symfony/polyfill-php56'),
@@ -34,11 +33,12 @@ return array(
     'Omnipay\\PayPal\\' => array($vendorDir . '/omnipay/paypal/src'),
     'Negotiation\\' => array($vendorDir . '/willdurand/negotiation/src/Negotiation'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
-    'League\\Url\\' => array($vendorDir . '/league/url/src'),
+    'League\\Uri\\' => array($vendorDir . '/league/uri/src'),
     'Knp\\Bundle\\SnappyBundle\\' => array($vendorDir . '/knplabs/knp-snappy-bundle'),
     'Incenteev\\ParameterHandler\\' => array($vendorDir . '/incenteev/composer-parameter-handler'),
     'Ibrows\\Bundle\\NewsletterBundle\\' => array($vendorDir . '/ibrows/newsletter-bundle'),
     'Http\\Promise\\' => array($vendorDir . '/php-http/promise/src'),
+    'Http\\Message\\' => array($vendorDir . '/php-http/message-factory/src', $vendorDir . '/php-http/message/src'),
     'Http\\Client\\' => array($vendorDir . '/php-http/httplug/src'),
     'Http\\Adapter\\Guzzle6\\' => array($vendorDir . '/php-http/guzzle6-adapter/src'),
     'HWI\\Bundle\\OAuthBundle\\' => array($vendorDir . '/hwi/oauth-bundle'),
@@ -50,9 +50,12 @@ return array(
     'FOS\\UserBundle\\' => array($vendorDir . '/friendsofsymfony/user-bundle'),
     'Endroid\\QrCode\\' => array($vendorDir . '/endroid/qrcode/src'),
     'Endroid\\Bundle\\QrCodeBundle\\' => array($vendorDir . '/endroid/qrcode-bundle/src'),
+    'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
     'Doctrine\\Common\\Cache\\' => array($vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache'),
+    'Doctrine\\Common\\' => array($vendorDir . '/doctrine/common/lib/Doctrine/Common'),
     'Doctrine\\Bundle\\DoctrineCacheBundle\\' => array($vendorDir . '/doctrine/doctrine-cache-bundle'),
     'Doctrine\\Bundle\\DoctrineBundle\\' => array($vendorDir . '/doctrine/doctrine-bundle'),
+    'Clue\\StreamFilter\\' => array($vendorDir . '/clue/stream-filter/src'),
     'Beelab\\PaypalBundle\\' => array($vendorDir . '/beelab/paypal-bundle'),
     '' => array($baseDir . '/src'),
 );
