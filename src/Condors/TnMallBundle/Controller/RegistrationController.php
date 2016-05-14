@@ -24,7 +24,7 @@ use Condors\TnMallBundle\Form\UserRegistrationType;
 
 class RegistrationController extends BaseFOSController
 {
-
+/**/
 
     public function registerBrandAction(Request $request)
     {
