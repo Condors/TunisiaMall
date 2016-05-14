@@ -23,7 +23,10 @@ use Condors\TnMallBundle\Form\PackType;
 use Condors\TnMallBundle\Entity\Pack;
 
 class AdminController extends Controller {
-
+/**/
+    /**/
+    /**/
+    /**/
     public function indexAction() {
 
  
