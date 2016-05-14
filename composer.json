@@ -38,7 +38,7 @@
          "symfony/assetic-bundle" : "*",
          "damianociarla/rating-bundle" : "*", 
          "beelab/paypal-bundle" : "*",
-           "mremi/contact-bundle": "dev-master"
+         "mremi/contact-bundle": "dev-master"
 
 
     },
