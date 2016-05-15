@@ -48,7 +48,7 @@ class Achatpack
      */
     private $idpack;
 
-
+    //
     function getIdachat() {
         return $this->idachat;
     }
