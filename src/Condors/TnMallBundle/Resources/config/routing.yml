@@ -96,7 +96,7 @@ condors_tn_mall_responsable_store_searchStore:
     path:     /user-responsable/stores/searchProd/{txtSearch}
     defaults: { _controller: CondorsTnMallBundle:Responsable:searchStore}
 
-#Brands
+#Brands_Souheib
 
 condors_tn_mall_responsable_brands:
     path:     /user-responsable/brands

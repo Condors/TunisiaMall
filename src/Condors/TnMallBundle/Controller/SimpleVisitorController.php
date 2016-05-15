@@ -113,21 +113,8 @@ class SimpleVisitorController extends Controller
 
     public function showFaqAction()
     {
-
-        $name = 'name';
-         $this->render('CondorsTnMallBundle:SimpleVisitor:Faq.html.twig', array(
-            'name' => $name,
-        ));
-        return new Response(
-            $this->get('knp_snappy.pdf')->getOutputFromHtml($name),
-            200,
-            array(
-                'Content-Type'          => 'application/pdf',
-                'Content-Disposition'   => 'attachment; filename="file.pdf"'
-            )
-        );
+         return $this->render('CondorsTnMallBundle:SimpleVisitor:Faq.html.twig');
     }
-
 
     public function searchProdSimpleOrderAction($id, $txtSearch)
     {
