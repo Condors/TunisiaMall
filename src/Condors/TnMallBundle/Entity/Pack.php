@@ -42,27 +42,7 @@ class Pack
      */
     private $zoneC;
 
-    /**
-     * @var boolean
-     *
-     * @ORM\Column(name="ALGO_1", type="boolean", nullable=false)
-     */
-    private $algo1;
-
-    /**
-     * @var boolean
-     *
-     * @ORM\Column(name="ALGO_2", type="boolean", nullable=false)
-     */
-    private $algo2;
-
-    /**
-     * @var boolean
-     *
-     * @ORM\Column(name="ALGO_3", type="boolean", nullable=false)
-     */
-    private $algo3;
-
+   
     /**
      * @var string
      *
@@ -94,17 +74,7 @@ class Pack
         return $this->zoneC;
     }
 
-    function getAlgo1() {
-        return $this->algo1;
-    }
-
-    function getAlgo2() {
-        return $this->algo2;
-    }
-
-    function getAlgo3() {
-        return $this->algo3;
-    }
+   
 
     function getLibelle() {
         return $this->libelle;
