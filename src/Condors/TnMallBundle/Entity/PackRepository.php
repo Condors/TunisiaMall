@@ -13,12 +13,14 @@ namespace Condors\TnMallBundle\Entity;
 use Doctrine\ORM\EntityRepository;
 class PackRepository extends EntityRepository
 {
-    //put your code here
+
     public function findallPacks()
     {
         $query = $this->getEntityManager()
             ->createQuery("select pack from CondorsTnMallBundle:Pack pack");
         return $query->getArrayResult();
     }
+    
+
    
 }

@@ -120,9 +120,7 @@ class ProduitRepository extends EntityRepository
 
 
             $query = $this->getEntityManager()
-                ->createQuery("Select e from CondorsTnMallBundle:Produit "
-                    . "e join e.idCatalogue "
-                    . "c join c.idEnseigne v "
+                ->createQuery("Select e from CondorsTnMallBundle:Produit e join e.idCatalogue c join c.idEnseigne v "
                     . "WHERE
                     v.idEnseigne=:EnsRespoid AND e.prixProduit >:minPrice AND e.prixProduit<:maxPrice   ORDER By e.prixProduit DESC  ")
                 ->setParameter('EnsRespoid', $id)
@@ -133,6 +131,45 @@ class ProduitRepository extends EntityRepository
 
 
         }
+    }
+    
+    
+    public function findProduitZoneA() {
+        $query = $this->getEntityManager()
+                ->createQuery("Select produits from CondorsTnMallBundle:Produit"
+                        . "prduits join prduits.idStock stock join sotck.id_boutique boutique"
+                        . " join boutique.id_enseigne enseigne join"
+                        . " enseigne.id_user  user join user.idachat"
+                        . " achatpack join achatpack.idpack pack where"
+                        . "pack.ZoneA = true ");
+        
+        return $query->getArrayResult() ; 
+    }
+     public function findProduitZoneB() {
+         
+                $query = $this->getEntityManager()
+                ->createQuery("Select produits from CondorsTnMallBundle:Produit"
+                        . "prduits join prduits.idStock stock join sotck.id_boutique boutique"
+                        . " join boutique.id_enseigne enseigne join"
+                        . " enseigne.id_user  user join user.idachat"
+                        . " achatpack join achatpack.idpack pack where"
+                        . "pack.ZoneB = true ");
+        
+        return $query->getArrayResult() ; 
+        
+    }
+    
+     public function findProduitZoneC() {
+              
+         $query = $this->getEntityManager()
+                ->createQuery("Select produits from CondorsTnMallBundle:Produit"
+                        . "prduits join prduits.idStock stock join sotck.id_boutique boutique"
+                        . " join boutique.id_enseigne enseigne join"
+                        . " enseigne.id_user  user join user.idachat"
+                        . " achatpack join achatpack.idpack pack where"
+                        . "pack.ZoneC = true ");
+        
+        return $query->getArrayResult() ; 
     }
 
 }

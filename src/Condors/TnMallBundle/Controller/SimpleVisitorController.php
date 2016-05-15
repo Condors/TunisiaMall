@@ -341,6 +341,13 @@ class SimpleVisitorController extends Controller
     {
 
     }
+    
+    
+    public function pubGenerationAction(){
+        
+        
+        return ;
+    }
 
 
 }
