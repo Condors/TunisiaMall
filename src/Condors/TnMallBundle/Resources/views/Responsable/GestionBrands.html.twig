@@ -212,7 +212,6 @@
 
 
         {% block otherScript %}
-
             <div id="custom_notifications" class="custom-notifications dsp_none">
                 <ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
                 </ul>
@@ -223,17 +222,17 @@
 
 
             <!-- bootstrap progress js -->
-            <script src="{{ asset('responsable/js/progressbar/bootstrap-progressbar.min.js') }}"></script>
-            <script src="{{ asset('responsable/js/nicescroll/jquery.nicescroll.min.js') }}"></script>
+            <script src="{{ asset('responsable/js/progressbar/bootstrap-progressbar.min.js')}}"></script>
+            <script src="{{ asset('responsable/js/nicescroll/jquery.nicescroll.min.js')}}"></script>
             <!-- icheck -->
-            <script src="{{ asset('responsable/js/icheck/icheck.min.js') }}"></script>
+            <script src="{{ asset('responsable/js/icheck/icheck.min.js')}}"></script>
 
-            <script src="{{ asset('responsable/js/custom.js') }}"></script>
+            <script src="{{ asset('responsable/js/custom.js')}}"></script>
 
             <!-- form wizard -->
-            <script type="text/javascript" src="{{ asset('responsable/js/wizard/jquery.smartWizard.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('responsable/js/wizard/jquery.smartWizard.js')}}"></script>
             <!-- pace -->
-            <script src="{{ asset('responsable/js/pace/pace.min.js') }}"></script>
+            <script src="{{ asset('responsable/js/pace/pace.min.js')}}"></script>
 
             <script type="text/javascript">
                 $("document").ready(function () {
@@ -252,13 +251,13 @@
                                 $.each(data, function (i, item) {
                                     var pr = ((item.tvaProduit * item.prixProduit) / 100) + item.prixProduit;
 
-                                    trHTML += "<tr class='even pointer'><td>" + item.refProduit + "</td><td><img width='30' heigth='30' src='{{ asset('uploads/pictures/') }}" + item.imageprodreel + " ' </td><td>" + item.libelleProduit + "</td><td>" + item.categorieProduit + "</td><td>" + item.prixProduit + " D.T </td><td>" + item.tvaProduit + "%</td><td>" + pr + " D.T</td>\n\
-                            <td class='last'><a data-toggle='modal' data-target='.bs-example" + item.idProduit + "-modal-lg' 'href='#'><i style='font-size:22px;' class='fa fa-cog'></i></a> &nbsp;&nbsp; <a href=\n\
+                                    trHTML += "<tr class='even pointer'><td>" + item.refProduit + "</td><td><img width='30' heigth='30' src='{{ asset('uploads/pictures/')}}" + item.imageprodreel + " ' </td><td>" + item.libelleProduit + "</td><td>" + item.categorieProduit + "</td><td>" + item.prixProduit + " D.T </td><td>" + item.tvaProduit + "%</td><td>" + pr + " D.T</td>\n\
+                            <td class='last'><a data-toggle='modal' data-target='.bs-example" + item.idProduit +"-modal-lg' 'href='#'><i style='font-size:22px;' class='fa fa-cog'></i></a> &nbsp;&nbsp; <a href=\n\
                                 'http://localhost/TunisiaMall/web/app_dev.php/user-responsable/products/delete/" + item.idProduit + "'><i style='font-size:22px;' class='fa fa-trash'></i></a></tr>";
                                 });
                                 $('#records_table').html(trHTML);
-
                                 console.log('Ok ...');
+
                             }
                         });
 
@@ -266,7 +265,7 @@
                 });
             </script>
 
-            <script type="text/javascript">
+            <script type="text/javascript" >
                 $(document).ready(function () {
 
 
@@ -276,6 +275,7 @@
                     $('#wizard').smartWizard({
                         transitionEffect: 'fade'
                     });
+
 
 
                     $("#sender").click(function () {
@@ -299,18 +299,18 @@
 
 
             <!-- Editor Zone -->
-            <script src="{{ asset('responsable/js/ckeditor/ckeditor.js') }}"></script>
+            <script src="{{ asset('responsable/js/ckeditor/ckeditor.js')}}"></script>
 
             <script type="text/javascript">
 
                 // Replace the <textarea id="editor1"> with a CKEditor
                 // instance, using default configuration.
-                CKEDITOR.replace('enseigne_descriptionenseigne');
+                CKEDITOR.replace('produit_descriptionProduit');
 
             </script>
 
             <!-- dropzone -->
-            <script src="{{ asset('responsable/js/dropzone/dropzone.js') }}"></script>
+            <script src="{{ asset('responsable/js/dropzone/dropzone.js')}}"></script>
 
 
 

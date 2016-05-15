@@ -223,13 +223,15 @@
         {% endblock footer %}
 
         {% block otherScript  %}
-
             <div id="custom_notifications" class="custom-notifications dsp_none">
                 <ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
                 </ul>
                 <div class="clearfix"></div>
                 <div id="notif-group" class="tabbed_notifications"></div>
             </div>
+
+
+
             <!-- bootstrap progress js -->
             <script src="{{ asset('responsable/js/progressbar/bootstrap-progressbar.min.js')}}"></script>
             <script src="{{ asset('responsable/js/nicescroll/jquery.nicescroll.min.js')}}"></script>
@@ -245,11 +247,11 @@
 
             <script type="text/javascript">
                 $("document").ready(function () {
-                    $("#storesearch").keydown(function () {
+                    $("#prodsearch").keydown(function () {
 
                         $.ajax({
                             type: 'get',
-                            url: 'http://localhost/TunisiaMall/web/app_dev.php/user-responsable/stores/searchStore/' + $("#storesearch").val(),
+                            url: 'http://localhost/TunisiaMall/web/app_dev.php/user-responsable/products/searchProd/' + $("#prodsearch").val(),
                             beforeSend: function () {
                                 console.log('searching ...');
                             },
@@ -278,7 +280,7 @@
                 $(document).ready(function () {
 
 
-                    $("#produit_submit").hide();
+                    $("#boutique_submit").hide();
 
                     // Smart Wizard
                     $('#wizard').smartWizard({
@@ -288,7 +290,7 @@
 
 
                     $("#sender").click(function () {
-                        $("#produit_submit").click();
+                        $("#boutique_submit").click();
 
                         $("textarea").val($("#placeHolder").Editor("getText"));
                         return false;
@@ -305,6 +307,8 @@
                 });
 
             </script>
+
+
             <!-- Editor Zone -->
             <script src="{{ asset('responsable/js/ckeditor/ckeditor.js')}}"></script>
 
@@ -313,9 +317,14 @@
                 // Replace the <textarea id="editor1"> with a CKEditor
                 // instance, using default configuration.
                 CKEDITOR.replace('produit_descriptionProduit');
+
             </script>
+
             <!-- dropzone -->
             <script src="{{ asset('responsable/js/dropzone/dropzone.js')}}"></script>
+
+
+
             <script>
                 $(document).ready(function () {
                     $('input.tableflat').iCheck({
@@ -363,4 +372,5 @@
                     });
                 });
             </script>
+
         {% endblock otherScript%}
