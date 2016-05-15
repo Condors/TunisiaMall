@@ -2,7 +2,13 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <excludeFolder url="file://$MODULE_DIR$/src" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Condors/TnMallBundle/Resources" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Condors/TnMallBundle/Entity" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Condors/TnMallBundle/Controller" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Condors" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/app" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
