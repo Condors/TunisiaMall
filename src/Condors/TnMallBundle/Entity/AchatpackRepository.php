@@ -15,7 +15,8 @@ class AchatpackRepository extends EntityRepository
 {
     //put your code here
     public function findboughtPacks($idUser)
-    {
+   
+     {
         $query = $this->getEntityManager()
             ->createQuery("select pack from CondorsTnMallBundle:Achatpack achatpack, CondorsTnMallBundle:Pack pack where achatpack.idresponsable = :idUser and achatpack.idpack = pack.idPack");
          $query->setParameter("idUser", $idUser);

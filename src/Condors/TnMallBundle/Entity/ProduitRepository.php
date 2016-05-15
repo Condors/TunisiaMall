@@ -162,14 +162,14 @@ class ProduitRepository extends EntityRepository
      public function findProduitZoneC() {
               
          $query = $this->getEntityManager()
-                ->createQuery("Select produits from CondorsTnMallBundle:Produit"
-                        . "prduits join prduits.idStock stock join sotck.id_boutique boutique"
-                        . " join boutique.id_enseigne enseigne join"
-                        . " enseigne.id_user  user join user.idachat"
-                        . " achatpack join achatpack.idpack pack where"
-                        . "pack.ZoneC = true ");
+                ->createQuery("Select pts from CondorsTnMallBundle:Produit"
+                        . " pts join pts.idCatalogue catalogue"
+                        . " join catalogue.idResponsableEnseigne user "
+                        . "join CondorsTnMallBundle:Achatpack achatpack with achatpack.idresponsable =  user.id"
+                        . " join CondorsTnMallBundle:Pack pack with pack.idPack = achatpack.idpack"
+                        . " where pack.zoneA = true ");
         
-        return $query->getArrayResult() ; 
+        return $query->getArrayResult(); 
     }
 
 }
