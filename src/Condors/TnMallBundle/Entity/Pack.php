@@ -100,17 +100,7 @@ class Pack
         $this->zoneC = $zoneC;
     }
 
-    function setAlgo1($algo1) {
-        $this->algo1 = $algo1;
-    }
-
-    function setAlgo2($algo2) {
-        $this->algo2 = $algo2;
-    }
-
-    function setAlgo3($algo3) {
-        $this->algo3 = $algo3;
-    }
+   
 
     function setLibelle($libelle) {
         $this->libelle = $libelle;
