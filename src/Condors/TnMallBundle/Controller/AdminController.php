@@ -129,7 +129,7 @@ class AdminController extends Controller {
         return $this->redirect($this->generateUrl("condors_tn_mall_Admin_displayPacks"));
         
         
-    }
+    }//
     
     
     public function testAction(){
