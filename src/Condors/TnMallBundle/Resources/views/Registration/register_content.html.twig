@@ -7,19 +7,112 @@
 {% block titleTop %}<h2 class="title-heading">Register</h2>{% endblock %}
 
 {% block registerUser %}
-{% trans_default_domain 'FOSUserBundle' %}
+
+    {% trans_default_domain 'FOSUserBundle' %}
+
+    <style>
+        .select_join {
+
+            width: 100%;
+            height: 50px;
+            overflow: hidden;
+            background: url('http://s24.postimg.org/lyhytocf5/dropdown.png') no-repeat right #FEFEFE;
+            background-size: 40px 40px;
+            background-position: top right;
+            border: #FEFEFE 1px solid;
+            -webkit-border-radius: 3px;
+            border-radius: 3px;
+            -webkit-box-shadow: inset 0px 0px 10px 1px #FEFEFE;
+            box-shadow: inset 0px 0px 10px 1px #FEFEFE;
+
+        }
+
+        .select_join select {
+
+            background: transparent;
+            width: 170px;
+            font-size: 12pt;
+            color: grey;
+            border: 0;
+            border-radius: 0;
+            height: 28px;
+            -webkit-appearance: none;
+
+            width: 500px;
+
+        }
+
+        .select_join select:focus {
+            outline: none;
+
+        }
+
+    </style>
+
+    {{ form_start(form, {'method': 'post', 'attr': {'class': 'fos_user_registration_register'}}) }}
+    {#{{ form_widget(form) }}#}
+    <label for="">First Name</label>
+    {{ form_widget( form.prenom ) }}
+
+    <label for="">Last Name</label>
+    {{ form_widget( form.nom ) }}
+
+    <label for="">Email</label>
+    {{ form_widget( form.email ) }}
+
+    <label for="">Cin</label>
+    {{ form_widget( form.cin ) }}
 
 
 
-{{ form_start(form, {'method': 'post', 'attr': {'class': 'fos_user_registration_register'}}) }}
-    {{ form_widget(form) }}
-    <div>
-        <input type="submit" class="button" value="{{ 'registration.submit'|trans }}" />
+    <label for="">Birthday</label>
+    <div class="select_join" style="margin-left:0px">
+        <table>
+            <tr>
+                <td>
+                    {{ form_widget(form.Anniversaire.year , { 'attr': {'class': 'txtAnif'} } ) }}
+                </td>
+                <td>
+                    {{ form_widget(form.Anniversaire.month , { 'attr': {'class': 'txtAnif'} } ) }}
+                </td>
+                <td>
+                    {{ form_widget(form.Anniversaire.day , { 'attr': {'class': 'txtAnif'} } ) }}
+                </td>
+
+            </tr>
+        </table>
     </div>
-        
-{{ form_end(form) }}
-    
-      <br><br><br><br>  <br><br><br><br>
-      
-  {% endblock %}
+    <br>
+    <label for="">Phone</label>
+    {{ form_widget( form.telephone ) }}
+
+
+    <label for="">Sexe</label>
+    {{ form_widget( form.Sexe ) }}
+
+    <label for="">Address</label>
+    {{ form_widget( form.adresse ) }}
+
+
+    <label for="">Username </label>
+    {{ form_widget( form.username ) }}
+
+
+    {{ form_widget( form.plainPassword ) }}
+    <label for="">Profile Picture </label>
+    {{ form_widget( form.file ) }}
+    <br>
+    <label for="">Anti Bots </label>
+    <br>
+    {#{{ form_widget( form.captcha ) }}#}
+
+    <div>
+        <input type="submit" class="button" value="{{ 'registration.submit'|trans }}"/>
+    </div>
+
+    {{ form_end(form) }}
+
+    <br><br><br><br>  <br><br><br><br>
+
+{% endblock %}
 

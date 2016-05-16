@@ -15,7 +15,7 @@ use Condors\TnMallBundle\Form\ProduitType;
 use Condors\TnMallBundle\Form\EnseigneType;
 use Symfony\Component\DependencyInjection\Tests\B;
 use Symfony\Component\HttpFoundation\JsonResponse;
-use Condors\TnMallBundle\Entity\Pack ;
+use Condors\TnMallBundle\Entity\Pack;
 use Symfony\Component\HttpKernel\HttpCache\Store;
 
 /**
@@ -90,12 +90,10 @@ class ResponsableController extends Controller
         }
 
         $em = $this->getDoctrine()->getManager();
-        
+
         $user = $this->getUser();
 
         $form = $this->createForm(new ProduitType($user->getId()), $prods);
-
-
 
 
         $request = $this->getRequest();
@@ -111,8 +109,8 @@ class ResponsableController extends Controller
                 }
 
                 $prodEnseigne = $prod->getIdCatalogue()->getIdEnseigne();
-               /* print_r($prodEnseigne );
-                die();*/
+                /* print_r($prodEnseigne );
+                 die();*/
 
 
                 $prod_cat = $em->getRepository("CondorsTnMallBundle:Enseigne")->findBrandbyRespoId($prodEnseigne);
@@ -166,8 +164,8 @@ class ResponsableController extends Controller
 
         $user = $this->getUser();
         $form = $this->createForm(new BoutiqueType($user->getId()));
-       //$allStores = $em->getRepository("CondorsTnMallBundle:Boutique")->findStorebyId($user->getId());
-      $allStores = $em->getRepository("CondorsTnMallBundle:Boutique")->findStoreByBrandRespo($user->getId());
+        //$allStores = $em->getRepository("CondorsTnMallBundle:Boutique")->findStorebyId($user->getId());
+        $allStores = $em->getRepository("CondorsTnMallBundle:Boutique")->findStoreByBrandRespo($user->getId());
 
 
         $store = new Boutique();
@@ -182,7 +180,7 @@ class ResponsableController extends Controller
                 $store = $form->getData();
 
                 $store->uploadProfilePicture();
-                
+
                 $em->persist($store);
                 $em->flush();
 
@@ -196,7 +194,7 @@ class ResponsableController extends Controller
             'allstores' => $allStores,
         ));
     }
-    
+
 
     public function modifystoreAction(Boutique $stores)
     {
@@ -224,8 +222,8 @@ class ResponsableController extends Controller
                 }
                 $em->persist($store);
                 $em->flush();
-                }
             }
+        }
 
         return $this->render('CondorsTnMallBundle:Responsable:GestionStoresModifer.html.twig', array(
             'user' => $user,
@@ -323,7 +321,7 @@ class ResponsableController extends Controller
         ));
 
     }
-    
+
     public function deleteBrandsAction(Enseigne $brands)
     {
 
@@ -333,7 +331,7 @@ class ResponsableController extends Controller
 
         return $this->redirect($this->generateUrl("condors_tn_mall_responsable_brands"));
     }
-    
+
     public function categoriesAction()
     {
 
@@ -368,7 +366,7 @@ class ResponsableController extends Controller
         ));
 
     }
-    
+
     public function updateCatPositionAction($id, $pos)
     {
 
@@ -399,7 +397,7 @@ class ResponsableController extends Controller
 
         return $rep;
     }
-    
+
     public function checkGoogleAction()
     {
 
@@ -409,7 +407,7 @@ class ResponsableController extends Controller
             'user' => $user,
         ));
     }
-    
+
     public function checkFacebookAction()
     {
 
@@ -419,50 +417,46 @@ class ResponsableController extends Controller
             'user' => $user,
         ));
     }
-  
+
     public function displayBouthPacksAction()
     {
         $em = $this->getDoctrine()->getManager();
-        $user = $this->getUser()->getId() ;
-                
+        $user = $this->getUser()->getId();
+
         $packs = $em->getRepository("CondorsTnMallBundle:Achatpack")->findboughtPacks($user);
 
-      
+
         $rep = new JsonResponse(($packs));
 
         return $rep;
     }
-    
-    public function buyPacksAction(Pack $pack){
-      
-         $em = $this->getDoctrine()->getManager();
-         $achatpack = new Achatpack();
-         $achatpack->setIdresponsable($this->getUser());
-         $achatpack->setIdpack($pack);
-         $em->persist($achatpack);
-         $em->flush();
-         
 
-       
-     
-        
-         
-                      
+    public function buyPacksAction(Pack $pack)
+    {
+
+        $em = $this->getDoctrine()->getManager();
+        $achatpack = new Achatpack();
+        $achatpack->setIdresponsable($this->getUser());
+        $achatpack->setIdpack($pack);
+        $em->persist($achatpack);
+        $em->flush();
+
+
         $rep = new JsonResponse("ok");
+
 
         return $rep;
     }
 
-        public function gestionPackAction()
-    {   $em = $this->getDoctrine()->getManager();
+    public function gestionPackAction()
+    {
+        $em = $this->getDoctrine()->getManager();
         $packs = $em->getRepository("CondorsTnMallBundle:Pack")->findallPacks();
-        $user = $this->getUser(); 
-        return $this->render("CondorsTnMallBundle:Responsable:GestionPacks.html.twig",array(
-            'user'=>$user , 'packs'=>$packs
-        )); 
+        $user = $this->getUser();
+        return $this->render("CondorsTnMallBundle:Responsable:GestionPacks.html.twig", array(
+            'user' => $user, 'packs' => $packs
+        ));
     }
-    
-    
-  
+
 
 }
