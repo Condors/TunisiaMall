@@ -330,11 +330,26 @@ class SimpleVisitorController extends Controller
     }
     
     
-    public function pubGenerationAction(){
-        
-        
-        return ;
-    }
+      public function  pubPackAAction() {
+       $em = $this->getDoctrine()->getManager();
+       $produits = $em->getRepository("CondorsTnMallBundle:Produit")->findProduitZoneA();
+       $rep = new JsonResponse(($produits));     
+        return $rep;
+      }
+      
+      public function  pubPackBAction() {
+       $em = $this->getDoctrine()->getManager();
+       $produits = $em->getRepository("CondorsTnMallBundle:Produit")->findProduitZoneB();
+       $rep = new JsonResponse(($produits));     
+        return $rep;
+      }
+      
+      public function  pubPackCAction() {
+       $em = $this->getDoctrine()->getManager();
+       $produits = $em->getRepository("CondorsTnMallBundle:Produit")->findProduitZoneC();
+       $rep = new JsonResponse(($produits));     
+        return $rep;
+      }
 
 
 }

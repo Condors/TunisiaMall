@@ -461,5 +461,8 @@ class ResponsableController extends Controller
             'user'=>$user , 'packs'=>$packs
         )); 
     }
+    
+    
+  
 
 }
