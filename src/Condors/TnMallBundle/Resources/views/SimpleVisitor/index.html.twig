@@ -1820,10 +1820,13 @@
         success: function (produits) { 
             i = 0 ; 
            chagePub = function (){
-                $("#pubImage1").attr( "src", "Beijing Brush Seller" );
-                $("#pubName1").attr( "href", "Beijing Brush Seller" );
-                $("#pubImage1").attr( "alt", "Beijing Brush Seller" );
-                $("#").attr( "alt", "Beijing Brush Seller" );
+                $("#pubImage1").attr( "src","" );
+                var path ="{{ path("condors_tn_mall_shopDetail",{ id : 1 })}}" ; 
+                realPath = path.substring(0, path.length - 1 ) + produits[i].idProduit +"#focus";
+                $("#pubName1").attr( "href", realPath+"" );
+                $("#pubName1").text(produits[i].libelleProduit+"");
+                $("#pubPrice1").text(produits[i].prixProduit+"");
+               
                 i++;
                 if (i > produits.length -1 ) { i= 0 ;} 
            };
@@ -1833,7 +1836,7 @@
             
     
   
-     //
+   
 
     });
 </script>
