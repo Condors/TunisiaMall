@@ -24,7 +24,7 @@ class UserRegistrationType extends RegistrationFormType {
             ->add('file','file',['label'=>'Image de Profile'])
             ->add('captcha', CaptchaType::class);
 
-        ;
+        
     }
 
 
