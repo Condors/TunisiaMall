@@ -164,7 +164,7 @@ class User extends BaseUser
         $this->file->move($this->getUploadRootDir(), md5($this->file->getClientOriginalName().''.$randTime).'.jpg');
 
         // On sauvegarde le nom de fichier
-        $this->image =  md5($this->file->getClientOriginalName().''.$randTime).'.jpg';
+        $this->image =  'http://127.0.0.1/TunisiaMall/web/uploads/pictures/'.md5($this->file->getClientOriginalName().''.$randTime).'.jpg';
 
 
         // La propriété file ne servira plus
