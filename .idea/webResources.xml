@@ -7,6 +7,7 @@
           <resourceRoots>
             <path value="file://$PROJECT_DIR$/app/config" />
             <path value="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views" />
+            <path value="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/config" />
           </resourceRoots>
         </entryData>
       </entry>
