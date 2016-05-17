@@ -1839,12 +1839,13 @@
     
     $.ajax({ 
         type: 'GET', 
-        url: '{{ path("condors_tn_mall_packBProduits") }}', 
+        url: '{{ path("condors_tn_mall_packCProduits") }}', 
      
         success: function (produits) { 
             var i = 0 ; 
 
            chagePub = function (){
+              
                 $("#pub2Image1Product1").attr( "src",produits[i].imageprodfront+"" );
                  $("#pub2Image2Product1").attr( "src",produits[i].imageprodback+"" );
                 var path ="{{ path("condors_tn_mall_shopDetail",{ id : 1 })}}" ; 
@@ -1853,18 +1854,20 @@
                 $("#pub2LinkProduct1").text(produits[i].libelleProduit+"");
                 $("#pub2PriceProduct1").text(produits[i].prixProduit+"");
               
-                i++;
-                if (i > produits.length - 1 ) { i= 0 ;} 
-                 $("#pub2Image1Product2").attr( "src",produits[i].imageprodfront+"" );
-                 $("#pub2Image1Product2").attr( "src",produits[i].imageprodback+"" );
+                 i++ ; 
+                 if (i  > produits.length - 1) {
+                  i = 0 ; 
+                      }
+                 
+                $("#pub2Image1Product2").attr( "src",produits[i].imageprodfront+"" );
+                $("#pub2Image2Product2").attr( "src",produits[i].imageprodback+"" );
                 var path ="{{ path("condors_tn_mall_shopDetail",{ id : 1 })}}" ; 
                 realPath = path.substring(0, path.length - 1 ) + produits[i].idProduit +"#focus";
                 $("#pub2LinkProduct2").attr( "href", realPath+"" );
                 $("#pub2LinkProduct2").text(produits[i].libelleProduit+"");
                 $("#pub2PriceProduct2").text(produits[i].prixProduit+"");
                
-                i++; 
-                if (i > produits.length - 1 ) { i= 0 ;} 
+              
             
            };
             setInterval(chagePub, 5000);
