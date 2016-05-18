@@ -1,0 +1,33 @@
+{# empty Twig template #}
+{% extends "CondorsTnMallBundle::MyAccountTemplate.html.twig" %}
+
+{% block pageTitle %}
+    <h1 class="page-title"></h1>
+{% endblock pageTitle %}
+
+{% block header %}
+    {{ include('CondorsTnMallBundle::SimpleVisitor/parts/header.html.twig') }} 
+{% endblock header %}
+
+{% block titleTop %}<h2 class="title-heading">Tunisia Mall Outstanding Events</h2>{% endblock %}
+
+{% block events %}
+
+    {%for event in events %}
+        <span border="1"> 
+            <style>
+                .events-img
+                {
+                    margin: 50px 50px 50px 50px;
+
+                }
+            </style>
+            <a href="{{ path('condors_tn_mall_simple_event_special')}}">
+                <img class="events-img" width="200" heigth="200" src="{{ asset('uploads/pictures/')}}{{ event.imageevent }}"/> &nbsp; &nbsp;&nbsp;
+            </a>
+        </span>
+    {% endfor %}
+
+{% endblock events %}
+
+

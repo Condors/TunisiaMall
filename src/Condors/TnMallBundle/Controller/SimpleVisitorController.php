@@ -351,5 +351,28 @@ class SimpleVisitorController extends Controller
         return $rep;
       }
 
+       public function eventsAction()
+    {
 
+        $em = $this->getDoctrine()->getManager();
+
+
+        $events = $em->getRepository("CondorsTnMallBundle:Event")->findAll();
+
+        return $this->render('CondorsTnMallBundle:SimpleVisitor:events.html.twig', array(
+            'events' => $events,
+        ));
+    }
+
+    public function specEventAction($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+
+        $event = $em->getRepository("CondorsTnMallBundle:Event")->findEventbyIdEvent($id);
+
+        return $this->render('CondorsTnMallBundle:SimpleVisitor:specificEvent.html.twig', array(
+            'event' => $event,
+        ));
+    }
 }

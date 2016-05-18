@@ -137,7 +137,118 @@ class AdminController extends Controller {
         return $this->render('CondorsTnMallBundle:Admin:test.html.twig', array()) ;
     }
 
+    public function gestionEventsAction() {
 
+        $em = $this->getDoctrine()->getManager();
+
+        $events = $em->getRepository("CondorsTnMallBundle:Event")->findAll();
+
+        $form = $this->createForm(new EventType());
+        $user = $this->getUser();
+        $allevents = $em->getRepository("CondorsTnMallBundle:Event")->findEventbyIdAdmin($user->getId());
+
+
+        $event = new Event();
+        $request = $this->getRequest();
+        if ($request->getMethod() == 'POST') {
+            //Note: bindRequest is now deprecated
+            $form->bind($request);
+            if ($form->isValid()) {
+                //retrieve your model hydrated with your form values
+                //has upload file ?
+                $event = $form->getData();
+                $event->setIdAdmin($user);
+
+                $event->uploadProfilePicture();
+
+
+                $em->persist($event);
+                $em->flush();
+                return $this->redirect($this->generateUrl("condors_tn_mall_Admin_GestionEvents"));
+            }
+        }
+
+        return $this->render('CondorsTnMallBundle:Admin:GestionEvents.html.twig', array(
+            'user' => $user,
+            'form' => $form->createView(),
+            'allevents' => $allevents,
+        ));
+    }
+    
+    public function modifyEventsAction(Event $events)
+    {
+        if ($this->container->has('profiler')) {
+            $this->container->get('profiler')->disable();
+        }
+        $em = $this->getDoctrine()->getManager();
+
+        $form = $this->createForm(new EventType(), $events);
+
+        $user = $this->getUser();
+
+        $request = $this->getRequest();
+        if ($request->getMethod() == 'POST') {
+            //Note: bindRequest is now deprecated
+            $form->bind($request);
+            if ($form->isValid()) {
+                //retrieve your model hydrated with your form values
+                //has upload file ?
+                $event = $form->getData();
+                $event->setIdAdmin($user);
+
+                if (($events instanceof UploadedFile) && ($event > getError() == '0')) {
+                    $events->uploadProfilePicture();
+                }
+
+                $em->persist($event);
+                $em->flush();
+                //return $this->redirect($this->generateUrl("condors_tn_mall_responsable_brands"));
+            }
+        }
+        return $this->render('CondorsTnMallBundle:Admin:GestionEventsModifier.html.twig', array(
+            'user' => $user,
+            'form' => $form->createView(),
+            'events' => $events,
+        ));
+    }
+    
+    
+    public function addEventAction() {
+
+       
+        $user = $this->getUser();
+        $form = $this->createForm(new EventType());
+        
+         $request = $this->getRequest();
+         $em = $this->getDoctrine()->getManager();
+      
+         if ($request->getMethod() == 'POST') {
+            //Note: bindRequest is now deprecated
+            $form->bind($request);
+            if ($form->isValid()) {
+                $event = $form->getData();
+
+                $em->persist($event);
+                $em->flush();
+            }
+        }
+
+
+        return $this->render('CondorsTnMallBundle:Admin:addEvent.html.twig', array(
+                    'user' => $user,'form'=>$form->createView()
+        ));
+    }
+    
+    
+    public function removeEventAction(Event $event) {
+        
+        $em = $this->getDoctrine()->getManager();
+        $em->remove($event);
+        $em->flush();
+        return $this->redirect($this->generateUrl("condors_tn_mall_Admin_GestionEvents"));
+        
+        
+    }
     
     
     
