@@ -21,6 +21,8 @@ namespace Condors\TnMallBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Condors\TnMallBundle\Form\PackType;
 use Condors\TnMallBundle\Entity\Pack;
+use Condors\TnMallBundle\Entity\Event;
+use Condors\TnMallBundle\Form\EventType;
 
 class AdminController extends Controller {
 /**/
