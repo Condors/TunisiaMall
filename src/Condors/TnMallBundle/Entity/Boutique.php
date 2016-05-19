@@ -94,6 +94,13 @@ class Boutique
      * @ORM\Column(name="dateCreation", type="datetime", nullable=true)
      */
     private $datecreation;
+    
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="imageB", type="string", length=255, nullable=true)
+     */
+    private $imageB;
 
     /**
      * @Assert\File(maxSize="500k")
@@ -283,6 +290,24 @@ class Boutique
     {
         $this->datecreation = $datecreation;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getImageB()
+    {
+        return $this->imageB;
+    }
+
+    /**
+     * @param mixed $imageB
+     */
+    public function setImageB($imageB)
+    {
+        $this->imageB = $imageB;
+    }
+    
+    
     
     /**
      * @return mixed
