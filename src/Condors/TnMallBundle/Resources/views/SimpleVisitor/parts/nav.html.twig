@@ -60,7 +60,7 @@
                                     <a class="cart-product-img"
                                        href="{{ path("condors_tn_mall_shopDetail" , { id:  app.request.cookies.get('idProduit_'~ i) } ) }}#focus">
                                         <img width="100" height="140"
-                                             src="{{ asset('uploads/pictures/') }}{{ app.request.cookies.get('imageprodreel_'~ i) }}"
+                                             src="{{ asset('uploads/prods/') }}{{ app.request.cookies.get('imageprodreel_'~ i) }}"
                                              alt=""/>
                                     </a>
                                 </div>
@@ -88,7 +88,7 @@
 
                     {% if app.request.cookies.get('numProd') > 0 %}
                         <div class="minicart-total">
-                            Cart Subtotal <span class="amount">&#36; {{ fpricePanierTotal }} </span>
+                            Cart Subtotal <span class="amount"> {{ fpricePanierTotal }} D.T </span>
                         </div>
                         <div class="minicart-actions clearfix">
                             <a class="viewcart-button button" href="{{ path('condors_tn_mall_show_Panier') }}">
