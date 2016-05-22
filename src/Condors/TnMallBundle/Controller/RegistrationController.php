@@ -50,7 +50,7 @@ class RegistrationController extends BaseFOSController
             return $event->getResponse();
         }
 
-        $form = $formFactory->create(new BrandRegistrationType($this->container->getParameter("fos_user.model.user.class")));
+        $form = $formFactory->create(new UserRegistrationType($this->container->getParameter("fos_user.model.user.class")));
         $form->setData($user);
 
         $form->handleRequest($request);

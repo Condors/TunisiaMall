@@ -19,7 +19,8 @@
                 <div class="image-title ">
                     <div class="title-content">
                         <h2 class="title-heading">Brand Register</h2>
-                        <a class="btn_link" href="{{ path('condors_tn_mall_pro_regsitration') }}#Register">Brand Register Here</a>
+                        <a class="btn_link" href="{{ path('condors_tn_mall_pro_regsitration') }}#Register">Brand
+                            Register Here</a>
                     </div>
                 </div>
             </div>
@@ -71,8 +72,8 @@
             outline: none;
 
         }
-        .button
-        {
+
+        .button {
             width: 100%;
         }
 
@@ -80,7 +81,7 @@
 
 
 
-    {% if is_granted("IS_AUTHENTICATED_REMEMBERED")  %}
+    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
         <style>
 
             .moving-zone {
@@ -143,11 +144,11 @@
                 color: coral;
                 font-weight: 300;
             }
+
             .popup-text a {
-                color:inherit;
+                color: inherit;
                 text-decoration: none;
             }
-
 
 
         </style>
@@ -157,7 +158,7 @@
             <div class="popup">
                 <div class="popup-content">
                     <div class="popup-text">
-                        You are Loged as  <b>{{app.user.username }}</b><br>
+                        You are Loged as <b>{{ app.user.username }}</b><br>
                         Please Logout <b>To Use This Page</b> <br><br><br><br>
 
                         <b> <a href="{{ path('fos_user_security_logout') }}">Log Out Here</a></b>
@@ -187,7 +188,6 @@
             {{ form_widget( form.cin , { 'attr':{'disabled':'disabled'}} ) }}
 
 
-
             <label for="">Birthday</label>
             <div class="select_join" style="margin-left:0px">
                 <table>
@@ -211,7 +211,9 @@
 
 
             <label for="">Sexe</label>
-            {{ form_widget( form.Sexe , { 'attr':{'disabled':'disabled'}} ) }}
+            <div class="select_join" style="margin-left:0px">
+                {{ form_widget( form.Sexe , { 'attr':{'disabled':'disabled'}} ) }}
+            </div>
 
             <label for="">Address</label>
             {{ form_widget( form.adresse , { 'attr':{'disabled':'disabled'}} ) }}
@@ -260,7 +262,6 @@
             {{ form_widget( form.cin ) }}
 
 
-
             <label for="">Birthday</label>
             <div class="select_join" style="margin-left:0px">
                 <table>
@@ -284,7 +285,9 @@
 
 
             <label for="">Sexe</label>
-            {{ form_widget( form.Sexe ) }}
+            <div class="select_join" style="margin-left:0px">
+                {{ form_widget( form.Sexe ) }}
+            </div>
 
             <label for="">Address</label>
             {{ form_widget( form.adresse ) }}

@@ -6,6 +6,7 @@ namespace Condors\TnMallBundle\Form;
 use FOS\UserBundle\Form\Type\RegistrationFormType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Gregwar\CaptchaBundle\Type\CaptchaType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 
 class UserRegistrationType extends RegistrationFormType {
     //put your code here
@@ -15,8 +16,16 @@ class UserRegistrationType extends RegistrationFormType {
         $builder
             ->add('nom')
             ->add('prenom')
-            ->add('Sexe')
-            ->add('Anniversaire','date')
+            ->add('Sexe', ChoiceType::class, array(
+            'choices' => array(
+                'Male' => 'Male',
+                'Female' => 'Female'
+            ),
+            'required'    => false,
+            'placeholder' => 'Choose your gender',
+            'empty_data'  => null
+        ))
+            ->add('Anniversaire','date',array('years'=>range(1900,2015)))
             ->add('telephone')
             ->add('cin')
             ->add('adresse')
@@ -24,7 +33,7 @@ class UserRegistrationType extends RegistrationFormType {
             ->add('file','file',['label'=>'Image de Profile'])
             ->add('captcha', CaptchaType::class);
 
-        
+
     }
 
 
