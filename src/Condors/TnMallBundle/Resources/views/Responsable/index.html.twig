@@ -1,0 +1,44 @@
+{% extends "CondorsTnMallBundle::ResponsableLayouts/Layout.html.twig" %}
+
+
+{% block quickProfile %}
+    {{ include('CondorsTnMallBundle::Responsable/quickProfile.html.twig') }}
+{% endblock quickProfile %}
+
+
+
+{% block nav_menu %}
+
+    {{ include('CondorsTnMallBundle::Responsable/navMenu.html.twig') }}
+
+{% endblock nav_menu %}
+
+  {% block Content %}
+
+      <table>
+          <tr>
+              <td>
+                  <iframe width="auto" height="500" src="http://localhost/TunisiaMall/web/app_dev.php/user-responsable/chartPie"
+                          frameborder="0"></iframe>
+              </td>
+              <td>
+                  <iframe width="500" height="500" src="http://localhost/TunisiaMall/web/app_dev.php/user-responsable/chart"
+                          frameborder="0"></iframe>
+              </td>
+          </tr>
+
+          <tr>
+              <td>
+                  <iframe width="500" height="500" src="http://localhost/TunisiaMall/web/app_dev.php/user-responsable/chart"
+                          frameborder="0"></iframe>
+              </td>
+          </tr>
+
+
+      </table>
+  {% endblock Content %}
+
+
+ {% block footer %}
+     {{ include('CondorsTnMallBundle::Responsable/footer.html.twig') }}
+ {% endblock footer %}

@@ -1,0 +1,21 @@
+{% extends "CondorsTnMallBundle::AdminLayouts/Layout.html.twig" %}
+
+
+{%block quickProfile %}
+    {{ include('CondorsTnMallBundle::Admin/quickProfile.html.twig') }} 
+{%endblock quickProfile %}
+
+
+{% block menu_section %}
+{{ include('CondorsTnMallBundle::Admin/menuSection.html.twig') }} 
+{%endblock menu_section%}
+
+{% block nav_menu %}
+
+{{ include('CondorsTnMallBundle::Admin/navMenu.html.twig') }} 
+{%endblock nav_menu%}
+
+
+ {% block footer %}
+  {{ include('CondorsTnMallBundle::Admin/footer.html.twig') }} 
+{% endblock footer %}

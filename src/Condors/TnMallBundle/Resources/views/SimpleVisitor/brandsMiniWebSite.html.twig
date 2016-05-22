@@ -1,0 +1,398 @@
+{% extends "CondorsTnMallBundle::MyAccountTemplate.html.twig" %}
+
+{% block pageTitle %}
+    <style>
+        .brands-img {
+            -webkit-filter: invert(1);
+            filter: invert(1);
+        }
+    </style>
+    <h1 class="page-title">
+        <a href="{{ path('condors_tn_mall_simple_brands_special' , {'id': brand.idEnseigne}) }}">
+            <img class="brands-img" width="200" heigth="200"
+                 src="{{ asset('uploads/pictures/') }}{{ brand.imageenseigne }}"/>
+        </a>
+    </h1>
+{% endblock pageTitle %}
+
+{% block titleTop %}<h2 class="title-heading">General Catalog {{ brand.libelleenseigne }} <input id="currentBrand" type="hidden" value="{{ brand.idEnseigne }}">
+    </h2>{% endblock %}
+
+{% block secMenu %}
+
+
+
+
+{% endblock secMenu %}
+
+{% block brands %}
+
+    <div class="content-area">
+        <div class="commerce">
+            <div class="shop-container pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="yolo-main col-md-9 col-sm-12 col-xs-12 pull-right">
+                            <div class="yolo-woo-meta clearfix">
+                                <div class="list_products_toolbar clearfix">
+                                    <div class="products-toolbar">
+                                        <span>View style: </span>
+                                        <a class="selected" href="shop-grid.html"><i class="fa fa-th-large"></i></a>
+                                        <a href="shop-list.html"><i class="fa fa-list"></i></a>
+                                    </div>
+                                    <form class="commerce-ordering">
+                                        <select id="orderby" class="orderby">
+                                            <option value="" selected='selected'>Default sorting</option>
+
+                                            <option value="2">Sort by the most expensive Price</option>
+                                            <option value="1">Sort by the Cheapest Price</option>
+                                        </select>
+                                    </form>
+
+                                    <p class="commerce-result-count">
+                                        Showing <span class="from-to">1&ndash;12</span> of {{ catalogs|length }} results
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="prodrow" class="products row">
+                                {% for catalog in catalogs %}
+
+                                    <div class="col-md-4 col-sm-6 col-xs-12 yolo-product-item mb-4">
+                                        <div class="yolo-product-inner">
+                                            <div class="product-thumbnail">
+                                                <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
+                                                    <img width="500" height="700"
+                                                         src="{{ asset('uploads/pictures/') }}{{ catalog.imageprodfront }}"
+                                                         alt=""/>
+                                                </div>
+                                                <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
+                                                    <img width="500" height="700"
+                                                         src="{{ asset('uploads/pictures/') }}{{ catalog.imageprodback }}"
+                                                         alt=""/>
+                                                </div>
+                                                <div class="yolo-product-meta">
+                                                    <div class="entry-cart-meta">
+                                                        <a href="#"
+                                                           class="button add_to_cart_button product_type_simple">Add to
+                                                            cart</a>
+                                                        <a class="shop-loop-quickview"
+                                                           href="{{ path("condors_tn_mall_shopDetail" , { id: catalog.idProduit } ) }}#focus">Quick
+                                                            shop</a>
+                                                        <div class="yith-wcwl-add-to-wishlist">
+                                                            <div class="yith-wcwl-add-button">
+                                                                <a href="#" class="add_to_wishlist">
+                                                                    Add to Wishlist
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="clear"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="yolo-product-footer clearfix">
+                                                <h3>
+                                                    <a href="{{ path("condors_tn_mall_shopDetail" , { id: catalog.idProduit } ) }}#focus">
+                                                        {{ catalog.libelleProduit }}
+                                                    </a></h3>
+                                                <div class="star-rating">
+                                                    <span style="width:10%"></span>
+                                                </div>
+                                            <span class="price">
+                                                 {% set fprice =(( catalog.tvaProduit* catalog.prixProduit )/100)+catalog.prixProduit %}
+                                                <span class="amount">&#36;{{ fprice }}</span>
+                                            </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                {% endfor %}
+                            </div>
+                            <div class="pagination list-center">
+                                <span class="page-numbers current">1</span>
+                                <a class="page-numbers" href="#">2</a>
+                                <a class="page-numbers" href="#">3</a>
+                                <a class="next page-numbers" href="#"><i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="yolo-sidebar col-md-3 yolo-sidebar-left pull-left">
+                            <div class="yolo-sidebar-wrap">
+                                <div class="widget commerce widget_product_search">
+                                    <h4 class="widget-title">Search</h4>
+                                    <form class="commerce-product-search">
+                                        <label class="screen-reader-text">Search for:</label>
+                                        <input type="search" class="search-field" placeholder="Search Products&hellip;"
+                                               value="" name="s" title="Search for:"/>
+                                        <input type="submit" value="Search"/>
+                                    </form>
+                                </div>
+                                <div class="widget commerce widget_shopping_cart">
+                                    <h4 class="widget-title">Cart</h4>
+
+                                </div>
+                                <div class="widget commerce widget_price_filter">
+                                    <h4 class="widget-title">Filter by price</h4>
+
+                                        <div class="price_slider_wrapper">
+                                            <div class="price_slider" style="display:none;"></div>
+                                            <div class="price_slider_amount">
+                                                <input type="text" id="min_price" name="min_price" value=""
+                                                       data-min="10" placeholder="Min price"/>
+                                                <input type="text" id="max_price" name="max_price" value=""
+                                                       data-max="190" placeholder="Max price"/>
+                                                <button id="sendPrice" type="submit" class="button">Filter</button>
+                                                <div class="price_label" style="display:none;">
+                                                    Price: <span class="from"></span> &mdash; <span class="to"></span>
+                                                </div>
+                                                <div class="clear"></div>
+                                            </div>
+
+
+                                        </div>
+
+                                </div>
+                                <div class="widget commerce widget_product_categories">
+                                    <h4 class="widget-title">Product Categories</h4>
+                                    <ul class="product-categories">
+
+
+                                    </ul>
+                                </div>
+                                <div class="widget commerce widget_products">
+                                    <h4 class="widget-title">Products</h4>
+                                    <ul class="product_list_widget">
+                                        <li>
+                                            <a href="shop-detail.html">
+                                                <img width="100" height="140" src="images/product/thumb/product-7.jpg"
+                                                     alt=""/>
+                                                <span class="product-title">Floral Mock Neck Top</span>
+                                            </a>
+                                            <div class="star-rating">
+                                                <span style="width:100%"></span>
+                                            </div>
+                                            <span class="amount">&#36;99</span>
+                                        </li>
+                                        <li>
+                                            <a href="shop-detail.html">
+                                                <img width="100" height="140" src="images/product/thumb/product-4.jpg"
+                                                     alt=""/>
+                                                <span class="product-title">Eyelash Lace Kimono</span>
+                                            </a>
+                                            <div class="star-rating">
+                                                <span style="width:20%"></span>
+                                            </div>
+                                            <del><span class="amount">&#36;169</span></del>
+                                            <ins><span class="amount">&#36;155</span></ins>
+                                        </li>
+                                        <li>
+                                            <a href="shop-detail.html">
+                                                <img width="100" height="140" src="images/product/thumb/product-5.jpg"
+                                                     alt=""/>
+                                                <span class="product-title">BrandMarled Sweater</span>
+                                            </a>
+                                            <div class="star-rating">
+                                                <span style="width:60%"></span>
+                                            </div>
+                                            <del><span class="amount">&#36;169</span></del>
+                                            <ins><span class="amount">&#36;155</span></ins>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="widget commerce widget_top_rated_products">
+                                    <h4 class="widget-title">Top Rated Products</h4>
+                                    <ul class="product_list_widget">
+                                        <li>
+                                            <a href="shop-detail.html">
+                                                <img width="100" height="140" src="images/product/thumb/product-1.jpg"
+                                                     alt=""/>
+                                                <span class="product-title">D Black Jacket - Young</span>
+                                            </a>
+                                            <div class="star-rating">
+                                                <span style="width:100%"></span>
+                                            </div>
+                                            <span class="amount">&#36;45</span>
+                                        </li>
+                                        <li>
+                                            <a href="shop-detail.html">
+                                                <img width="100" height="140" src="images/product/thumb/product-3.jpg"
+                                                     alt=""/>
+                                                <span class="product-title">Pink Hat</span>
+                                            </a>
+                                            <div class="star-rating">
+                                                <span style="width:80%"></span>
+                                            </div>
+                                            <del><span class="amount">&#36;15</span></del>
+                                            <ins><span class="amount">&#36;10</span></ins>
+                                        </li>
+                                        <li>
+                                            <a href="shop-detail.html">
+                                                <img width="100" height="140" src="images/product/thumb/product-6.jpg"
+                                                     alt=""/>
+                                                <span class="product-title">Gray Jacket</span>
+                                            </a>
+                                            <div class="star-rating">
+                                                <span style="width:100%"></span>
+                                            </div>
+                                            <span class="amount">&#36;85</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="widget commerce widget_product_tag_cloud">
+                                    <h4 class="widget-title">Product Tags</h4>
+                                    <div class="tagcloud">
+                                        <a href="#">accessories</a>
+                                        <a href="#">converse</a>
+                                        <a href="#">dresses</a>
+                                        <a href="#">fashion</a>
+                                        <a href="#">jacket</a>
+                                        <a href="#">men</a>
+                                        <a href="#">sales</a>
+                                        <a href="#">shoes</a>
+                                        <a href="#">shorts</a>
+                                        <a href="#">t-shirt</a>
+                                        <a href="#">watch</a>
+                                        <a href="#">women</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.main -->
+    <script src="{{ asset('responsable/js/jquery.min.js') }}"></script>
+    <script type="text/javascript">
+        $("document").ready(function () {
+            $("#orderby").change(function () {
+
+
+                $.ajax({
+                    type: 'get',
+                    url: 'http://localhost/TunisiaMall/web/app_dev.php/brands/mini-website/' + $("#currentBrand").val() + '/products/searchProdOrder/' + $("#orderby").val(),
+                    beforeSend: function () {
+                        console.log('searching ...');
+                    },
+                    success: function (data) {
+
+
+                        var trHTML = '';
+                        $.each(data, function (i, item) {
+                            var pr = ((item.tvaProduit * item.prixProduit) / 100) + item.prixProduit;
+                            trHTML += "<div class='col-md-4 col-sm-6 col-xs-12 yolo-product-item mb-4'>\n                                        <div class='yolo-product-inner'>\n                                            <div class='product-thumbnail'>\n                                                <div class='yolo-product-thumbnail yolo-product-front-thumbnail'>\n                                                    <img width='500' height='700'\n                                                         src='{{ asset('uploads/pictures/') }}" + item.imageprodfront + " '\n                                                         alt=''/>\n                                                </div>\n                                                <div class='yolo-product-thumbnail yolo-product-back-thumbnail'>\n                                                    <img width='500' height='700'\n                                                         src='{{ asset('uploads/pictures/') }}" + item.imageprodback + "'\n                                                         alt=''/>\n                                                </div>\n                                                <div class='yolo-product-meta'>\n                                                    <div class='entry-cart-meta'>\n                                                        <a href='#'\n                                                           class='button add_to_cart_button product_type_simple'>Add to\n                                                            cart</a>\n                                                        <a class='shop-loop-quickview'\n href='{{ path('condors_tn_mall_shopDetail' , { id: 0 } ) }}#focus'>Quick\n                                                            shop</a>\n                                                        <div class='yith-wcwl-add-to-wishlist'>\n                                                            <div class='yith-wcwl-add-button'>\n                                                                <a href='#' class='add_to_wishlist'>\n                                                                    Add to Wishlist\n                                                                </a>\n                                                            </div>\n                                                        </div>\n                                                        <div class='clear'></div>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                            <div class='yolo-product-footer clearfix'>\n                                                <h3>\n                                                    <a href='{{ path('condors_tn_mall_shopDetail' , { id: 0} ) }}#focus'>\n                                                      \n" + item.libelleProduit + "\n\n                                                    </a></h3>\n                                                <div class='star-rating'>\n                                                    <span style='width:10%'></span>\n                                                </div>\n                                            <span class='price'>\n                                              \n                                                <span class='amount'>&#36; " + pr + " </span>\n                                            </span>\n                                            </div>\n                                        </div>\n                                    </div>";
+
+                        });
+                        $('#prodrow').html(trHTML);
+                        console.log('Ok ...');
+
+                    }
+                });
+
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $("document").ready(function () {
+            $("#min_price").keyup(function () {
+
+
+                $.ajax({
+                    type: 'get',
+                    url: 'http://localhost/TunisiaMall/web/app_dev.php/brands/mini-website/' + $("#currentBrand").val() + '/products/searchProdOrder/' + $("#orderby").val()+'[Dmin]'+$("#min_price").val()+'[Fmin]'+'[Dmax]'+$("#max_price").val()+'[Fmax]',
+                    beforeSend: function () {
+                        console.log('searching ...');
+                    },
+                    success: function (data) {
+
+
+                        var trHTML = '';
+                        $.each(data, function (i, item) {
+                            var pr = ((item.tvaProduit * item.prixProduit) / 100) + item.prixProduit;
+                            trHTML += "<div class='col-md-4 col-sm-6 col-xs-12 yolo-product-item mb-4'>\n                                        <div class='yolo-product-inner'>\n                                            <div class='product-thumbnail'>\n                                                <div class='yolo-product-thumbnail yolo-product-front-thumbnail'>\n                                                    <img width='500' height='700'\n                                                         src='{{ asset('uploads/pictures/') }}" + item.imageprodfront + " '\n                                                         alt=''/>\n                                                </div>\n                                                <div class='yolo-product-thumbnail yolo-product-back-thumbnail'>\n                                                    <img width='500' height='700'\n                                                         src='{{ asset('uploads/pictures/') }}" + item.imageprodback + "'\n                                                         alt=''/>\n                                                </div>\n                                                <div class='yolo-product-meta'>\n                                                    <div class='entry-cart-meta'>\n                                                        <a href='#'\n                                                           class='button add_to_cart_button product_type_simple'>Add to\n                                                            cart</a>\n                                                        <a class='shop-loop-quickview'\n href='{{ path('condors_tn_mall_shopDetail' , { id: 0 } ) }}#focus'>Quick\n                                                            shop</a>\n                                                        <div class='yith-wcwl-add-to-wishlist'>\n                                                            <div class='yith-wcwl-add-button'>\n                                                                <a href='#' class='add_to_wishlist'>\n                                                                    Add to Wishlist\n                                                                </a>\n                                                            </div>\n                                                        </div>\n                                                        <div class='clear'></div>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                            <div class='yolo-product-footer clearfix'>\n                                                <h3>\n                                                    <a href='{{ path('condors_tn_mall_shopDetail' , { id: 0} ) }}#focus'>\n                                                      \n" + item.libelleProduit + "\n\n                                                    </a></h3>\n                                                <div class='star-rating'>\n                                                    <span style='width:10%'></span>\n                                                </div>\n                                            <span class='price'>\n                                              \n                                                <span class='amount'>&#36; " + pr + " </span>\n                                            </span>\n                                            </div>\n                                        </div>\n                                    </div>";
+
+                        });
+                        $('#prodrow').html(trHTML);
+                        console.log('Ok ...');
+
+                    }
+                });
+
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $("document").ready(function () {
+            var trHTML = '';
+
+                $.ajax({
+                    type: 'get',
+                    url: 'http://localhost/TunisiaMall/web/app_dev.php/categories/search-categories/' + $("#currentBrand").val(),
+                    beforeSend: function () {
+                        console.log('searching  to find categorie...');
+                    },
+                    success: function (data) {
+
+
+
+                        $.each(data, function (i, item) {
+
+
+                            trHTML += "<li class='cat-parent'><a href='#'>"+item.name+"</a> <span class='count'>(11)</span></li>"
+
+                        });
+                        $('.product-categories').html(trHTML);
+                        console.log('Ok ...');
+                        trHTML="";
+
+                    }
+                });
+
+            var auto_refresh = setInterval(
+
+                    function ()
+
+                    {
+                        $.ajax({
+                            type: 'get',
+                            url: 'http://localhost/TunisiaMall/web/app_dev.php/categories/search-categories/' + $("#currentBrand").val(),
+                            beforeSend: function () {
+                                console.log('searching  to find categorie...');
+                            },
+                            success: function (data) {
+
+
+
+                                $.each(data, function (i, item) {
+
+
+                                    trHTML += "<li class='cat-parent'><a href='#'>"+item.name+"</a> <span class='count'>(11)</span></li>"
+
+                                });
+
+                                console.log('Ok .. SEC.');
+
+                            }
+                        });
+
+                        $('.product-categories').html(trHTML).fadeIn("slow");
+                        trHTML="";
+
+                    }, 3000); // rafraichis toutes les 10000 millisecondes
+
+
+
+
+        });
+    </script>
+
+
+
+
+
+
+{% endblock brands %}
+
+
