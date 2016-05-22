@@ -1,0 +1,77 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   .idea/workspace.xml
+#	modified:   app/AppKernel.php
+#	deleted:    app/config/ibrows_newsletter.yml
+#	modified:   app/config/parameters.yml
+#	modified:   composer.json
+#	modified:   composer.lock
+#	modified:   src/Condors/TnMallBundle/Controller/ResponsableController.php
+#	modified:   src/Condors/TnMallBundle/Resources/config/routing.yml
+#	new file:   src/Condors/TnMallBundle/Resources/views/Comment/Comment.html.twig
+#	new file:   src/Condors/TnMallBundle/Resources/views/Graphe/chart.html.twig
+#	new file:   src/Condors/TnMallBundle/Resources/views/Graphe/chartPie.html.twig
+#	new file:   src/Condors/TnMallBundle/Resources/views/Resetting/checkEmail.html.twig
+#	new file:   src/Condors/TnMallBundle/Resources/views/Resetting/email.html.twig
+#	new file:   src/Condors/TnMallBundle/Resources/views/Resetting/passwordAlreadyRequested.html.twig
+#	new file:   src/Condors/TnMallBundle/Resources/views/Resetting/request.html.twig
+#	new file:   src/Condors/TnMallBundle/Resources/views/Resetting/request_content.html.twig
+#	new file:   src/Condors/TnMallBundle/Resources/views/Resetting/reset.html.twig
+#	new file:   src/Condors/TnMallBundle/Resources/views/Resetting/reset_content.html.twig
+#	modified:   src/Condors/TnMallBundle/Resources/views/Responsable/index.html.twig
+#	modified:   vendor/composer/autoload_files.php
+#	modified:   vendor/composer/autoload_psr4.php
+#	modified:   vendor/composer/autoload_static.php
+#	modified:   vendor/composer/installed.json
+#	new file:   vendor/ob/highcharts-bundle
+#	new file:   vendor/zendframework/zend-json/CHANGELOG.md
+#	new file:   vendor/zendframework/zend-json/CONDUCT.md
+#	new file:   vendor/zendframework/zend-json/CONTRIBUTING.md
+#	new file:   vendor/zendframework/zend-json/LICENSE.md
+#	new file:   vendor/zendframework/zend-json/README.md
+#	new file:   vendor/zendframework/zend-json/composer.json
+#	new file:   vendor/zendframework/zend-json/doc/book/advanced.md
+#	new file:   vendor/zendframework/zend-json/doc/book/basics.md
+#	new file:   vendor/zendframework/zend-json/doc/book/index.html
+#	new file:   vendor/zendframework/zend-json/doc/book/index.md
+#	new file:   vendor/zendframework/zend-json/doc/book/intro.md
+#	new file:   vendor/zendframework/zend-json/doc/book/migration/v2-to-v3.md
+#	new file:   vendor/zendframework/zend-json/mkdocs.yml
+#	new file:   vendor/zendframework/zend-json/src/Decoder.php
+#	new file:   vendor/zendframework/zend-json/src/Encoder.php
+#	new file:   vendor/zendframework/zend-json/src/Exception/BadMethodCallException.php
+#	new file:   vendor/zendframework/zend-json/src/Exception/ExceptionInterface.php
+#	new file:   vendor/zendframework/zend-json/src/Exception/InvalidArgumentException.php
+#	new file:   vendor/zendframework/zend-json/src/Exception/RecursionException.php
+#	new file:   vendor/zendframework/zend-json/src/Exception/RuntimeException.php
+#	new file:   vendor/zendframework/zend-json/src/Expr.php
+#	new file:   vendor/zendframework/zend-json/src/Json.php
+#
+# Changes not staged for commit:
+#	modified:   .idea/workspace.xml
+#	modified:   web/bundles/dcsrating
+#	modified:   web/bundles/framework
+#	modified:   web/bundles/nomayasocial
+#	modified:   web/bundles/stfalcontinymce
+#
+# Untracked files:
+#	web/images/category/JuryMercredi18.pdf
+#	web/images/category/cate-27a.jpg
+#	web/uploads/pictures/1aff8f79ccc709fc5463f42e162a2164.jpg
+#	web/uploads/pictures/2779cf3a6062dc82143343143eb7ce74.jpg
+#	web/uploads/pictures/2a4f87a7816628af68a6e0022961b1db.jpg
+#	web/uploads/pictures/50911c22345378fba56a94955db8306d.jpg
+#	web/uploads/pictures/5236504a41a737d012288e934840ecd6.jpg
+#	web/uploads/pictures/9854723f7875533a43b7e1112e892f0e.jpg
+#	web/uploads/pictures/cb2543cf03d309b23c60eb2a8c17d838.jpg
+#	web/uploads/pictures/d1eb6bd9c0075beca5350a8ef60839e3.jpg
+#	web/uploads/pictures/e8150f0669989999db8281fafa0a10b8.jpg
+#	web/uploads/pictures/e9e3dd2a774124105b68a08f698d8ae6.jpg
+#	web/uploads/pictures/f0d8d94a340e084e45a70936fcea2171.jpg
+#
+

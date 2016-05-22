@@ -1,0 +1,12 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: tnmall
+    database_user: root
+    database_password: root
+    mailer_transport: gmail
+    mailer_host: smtp.gmail.com
+    mailer_user: condors.group@gmail.com
+    mailer_password: pwdpwd@123
+    secret: ThisTokenIsNotSoSecretChangeIt
