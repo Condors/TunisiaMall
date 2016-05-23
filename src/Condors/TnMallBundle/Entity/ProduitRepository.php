@@ -31,6 +31,16 @@ class ProduitRepository extends EntityRepository
 
     }
 
+    public function findBestProd()
+    {
+        $query = $this->getEntityManager()
+            ->createQuery("select m from CondorsTnMallBundle:Produit m ORDER BY m.datecreation DESC ")
+            ->setMaxResults(7);
+
+        return $query->getResult();
+
+    }
+
     public function findPopProd()
     {
         $query = $this->getEntityManager()

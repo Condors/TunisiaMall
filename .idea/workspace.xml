@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91a33f12-0da2-4c7c-a713-9aae34418a4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/HP.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Responsable/GestionCategoriesModify.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Condors/TnMallBundle/Controller/ResponsableController.php" afterPath="$PROJECT_DIR$/src/Condors/TnMallBundle/Controller/ResponsableController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Condors/TnMallBundle/Entity/CategoriesRepository.php" afterPath="$PROJECT_DIR$/src/Condors/TnMallBundle/Entity/CategoriesRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Condors/TnMallBundle/Controller/SimpleVisitorController.php" afterPath="$PROJECT_DIR$/src/Condors/TnMallBundle/Controller/SimpleVisitorController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Condors/TnMallBundle/Entity/ProduitRepository.php" afterPath="$PROJECT_DIR$/src/Condors/TnMallBundle/Entity/ProduitRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Responsable/GestionCategories.html.twig" afterPath="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Responsable/GestionCategories.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Responsable/index.html.twig" afterPath="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Responsable/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/SimpleVisitor/index.html.twig" afterPath="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/SimpleVisitor/index.html.twig" />
     </list>
     <ignored path="C:\wamp\www\TunisiaMall\.idea\shelf/" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -31,103 +26,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/config/routing.yml">
+      <file leaf-file-name="SimpleVisitorController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Controller/SimpleVisitorController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="141" column="31" selection-start-line="141" selection-start-column="31" selection-end-line="141" selection-end-column="55" />
+            <state relative-caret-position="444">
+              <caret line="78" column="24" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GestionCategories.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Responsable/GestionCategories.html.twig">
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/SimpleVisitor/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-              <folding>
-                <element signature="n#style#0;n#i#0;n#a#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#a#1;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GestionStores.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Responsable/GestionStores.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="177" column="43" selection-start-line="177" selection-start-column="43" selection-end-line="177" selection-end-column="129" />
-              <folding>
-                <element signature="n#style#0;n#i#0;n#a#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Categories.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Entity/Categories.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="24" />
+            <state relative-caret-position="227">
+              <caret line="1126" column="43" selection-start-line="1126" selection-start-column="43" selection-end-line="1126" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GestionProduitModifer.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Responsable/GestionProduitModifer.html.twig">
+      <file leaf-file-name="MyAccountTemplate.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/MyAccountTemplate.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="91" column="44" selection-start-line="91" selection-start-column="44" selection-end-line="91" selection-end-column="44" />
+            <state relative-caret-position="-5927">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GestionCardsModifer.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Responsable/GestionCardsModifer.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="96" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GestionCards.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Responsable/GestionCards.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="142" column="35" selection-start-line="142" selection-start-column="35" selection-end-line="159" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResponsableController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Controller/ResponsableController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="459" column="20" selection-start-line="459" selection-start-column="20" selection-end-line="459" selection-end-column="33" />
-              <folding>
-                <element signature="e#51#93#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CategoriesRepository.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Entity/CategoriesRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="42" column="37" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="37" />
-              <folding>
-                <marker date="1464029745499" expanded="true" signature="347:505" placeholder="select m fro... CondorsTnMallBundle" />
-                <marker date="1464029745499" expanded="true" signature="725:833" placeholder="select m fro... CondorsTnMallBundle" />
-                <marker date="1464029745499" expanded="true" signature="1054:1131" placeholder="select m fro... CondorsTnMallBundle" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -135,23 +59,24 @@
       <file leaf-file-name="ProduitRepository.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Entity/ProduitRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="77" selection-end-column="5" />
+            <state relative-caret-position="363">
+              <caret line="33" column="32" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="32" />
               <folding>
-                <marker date="1464025629484" expanded="true" signature="520:592" placeholder="select m fro... CondorsTnMallBundle" />
-                <marker date="1464025629484" expanded="true" signature="783:855" placeholder="select m fro... CondorsTnMallBundle" />
-                <marker date="1464025629484" expanded="true" signature="1050:1119" placeholder="select m fro... CondorsTnMallBundle" />
-                <marker date="1464025629484" expanded="true" signature="1390:1471" placeholder="select m fro... CondorsTnMallBundle" />
-                <marker date="1464025629484" expanded="true" signature="1737:1821" placeholder="select m fro... CondorsTnMallBundle" />
-                <marker date="1464025629484" expanded="true" signature="2048:2140" placeholder="select m fro... CondorsTnMallBundle" />
-                <marker date="1464025629484" expanded="true" signature="2048:2158" placeholder="select m fro... CondorsTnMallBundle" />
-                <marker date="1464025629484" expanded="true" signature="2330:2539" placeholder="Select e fro... CondorsTnMallBundle" />
-                <marker date="1464025629484" expanded="true" signature="2801:3038" placeholder="Select e fro... CondorsTnMallBundle" />
-                <marker date="1464025629484" expanded="true" signature="3255:3493" placeholder="Select e fro... CondorsTnMallBundle" />
-                <marker date="1464025629484" expanded="true" signature="4312:4559" placeholder="Select e fro... CondorsTnMallBundle" />
-                <marker date="1464025629484" expanded="true" signature="4912:5357" placeholder="Select pts f... CondorsTnMallBundle" />
-                <marker date="1464025629484" expanded="true" signature="5554:5999" placeholder="Select pts f... CondorsTnMallBundle" />
-                <marker date="1464025629484" expanded="true" signature="6208:6653" placeholder="Select pts f... CondorsTnMallBundle" />
+                <marker date="1464036600125" expanded="true" signature="520:592" placeholder="select m fro... CondorsTnMallBundle" />
+                <marker date="1464036600125" expanded="true" signature="784:856" placeholder="select m fro... CondorsTnMallBundle" />
+                <marker date="1464036600125" expanded="true" signature="1047:1119" placeholder="select m fro... CondorsTnMallBundle" />
+                <marker date="1464036600125" expanded="true" signature="1314:1383" placeholder="select m fro... CondorsTnMallBundle" />
+                <marker date="1464036600125" expanded="true" signature="1654:1735" placeholder="select m fro... CondorsTnMallBundle" />
+                <marker date="1464036600125" expanded="true" signature="2001:2085" placeholder="select m fro... CondorsTnMallBundle" />
+                <marker date="1464036600125" expanded="true" signature="2312:2404" placeholder="select m fro... CondorsTnMallBundle" />
+                <marker date="1464036600125" expanded="true" signature="2312:2422" placeholder="select m fro... CondorsTnMallBundle" />
+                <marker date="1464036600125" expanded="true" signature="2594:2803" placeholder="Select e fro... CondorsTnMallBundle" />
+                <marker date="1464036600125" expanded="true" signature="3065:3302" placeholder="Select e fro... CondorsTnMallBundle" />
+                <marker date="1464036600125" expanded="true" signature="3519:3757" placeholder="Select e fro... CondorsTnMallBundle" />
+                <marker date="1464036600125" expanded="true" signature="4576:4823" placeholder="Select e fro... CondorsTnMallBundle" />
+                <marker date="1464036600125" expanded="true" signature="5176:5621" placeholder="Select pts f... CondorsTnMallBundle" />
+                <marker date="1464036600125" expanded="true" signature="5818:6263" placeholder="Select pts f... CondorsTnMallBundle" />
+                <marker date="1464036600125" expanded="true" signature="6472:6917" placeholder="Select pts f... CondorsTnMallBundle" />
               </folding>
             </state>
           </provider>
@@ -195,14 +120,15 @@
         <option value="$PROJECT_DIR$/src/Condors/TnMallBundle/Form/CartedefideliteType.php" />
         <option value="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Responsable/GestionCardsModifer.html.twig" />
         <option value="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Responsable/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/Condors/TnMallBundle/Controller/SimpleVisitorController.php" />
-        <option value="$PROJECT_DIR$/src/Condors/TnMallBundle/Entity/ProduitRepository.php" />
         <option value="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Responsable/GestionCards.html.twig" />
         <option value="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Responsable/GestionCategoriesModify.html.twig" />
         <option value="$PROJECT_DIR$/src/Condors/TnMallBundle/Controller/ResponsableController.php" />
         <option value="$PROJECT_DIR$/src/Condors/TnMallBundle/Entity/CategoriesRepository.php" />
         <option value="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Responsable/GestionCategories.html.twig" />
+        <option value="$PROJECT_DIR$/src/Condors/TnMallBundle/Entity/ProduitRepository.php" />
+        <option value="$PROJECT_DIR$/src/Condors/TnMallBundle/Controller/SimpleVisitorController.php" />
+        <option value="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/SimpleVisitor/index.html.twig" />
       </list>
     </option>
   </component>
@@ -363,7 +289,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Responsable" />
+              <option name="myItemId" value="SimpleVisitor" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -428,32 +354,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TunisiaMall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TunisiaMall" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Condors" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TnMallBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entity" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -546,7 +446,7 @@
       <workItem from="1463916846982" duration="148000" />
       <workItem from="1463929299749" duration="6343000" />
       <workItem from="1463955321534" duration="1336000" />
-      <workItem from="1463995593079" duration="31461000" />
+      <workItem from="1463995593079" duration="35260000" />
     </task>
     <task id="LOCAL-00001" summary="correction">
       <created>1463929555283</created>
@@ -583,11 +483,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464019227471</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="plusieurs modification">
+      <created>1464030301333</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1464030301333</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39288000" />
+    <option name="totallyTimeSpent" value="43087000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -658,30 +565,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Registration/checkEmail.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Profile/edit_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Profile/show_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/RegistrationController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -966,14 +849,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Controller/SimpleVisitorController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="232" column="16" selection-start-line="232" selection-start-column="16" selection-end-line="232" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Graphe/chartPie.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1027,30 +902,7 @@
         <state relative-caret-position="167">
           <caret line="177" column="43" selection-start-line="177" selection-start-column="43" selection-end-line="177" selection-end-column="129" />
           <folding>
-            <element signature="n#style#0;n#i#0;n#a#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Entity/ProduitRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="77" selection-end-column="5" />
-          <folding>
-            <marker date="1464025629484" expanded="true" signature="520:592" placeholder="select m fro... CondorsTnMallBundle" />
-            <marker date="1464025629484" expanded="true" signature="783:855" placeholder="select m fro... CondorsTnMallBundle" />
-            <marker date="1464025629484" expanded="true" signature="1050:1119" placeholder="select m fro... CondorsTnMallBundle" />
-            <marker date="1464025629484" expanded="true" signature="1390:1471" placeholder="select m fro... CondorsTnMallBundle" />
-            <marker date="1464025629484" expanded="true" signature="1737:1821" placeholder="select m fro... CondorsTnMallBundle" />
-            <marker date="1464025629484" expanded="true" signature="2048:2140" placeholder="select m fro... CondorsTnMallBundle" />
-            <marker date="1464025629484" expanded="true" signature="2048:2158" placeholder="select m fro... CondorsTnMallBundle" />
-            <marker date="1464025629484" expanded="true" signature="2330:2539" placeholder="Select e fro... CondorsTnMallBundle" />
-            <marker date="1464025629484" expanded="true" signature="2801:3038" placeholder="Select e fro... CondorsTnMallBundle" />
-            <marker date="1464025629484" expanded="true" signature="3255:3493" placeholder="Select e fro... CondorsTnMallBundle" />
-            <marker date="1464025629484" expanded="true" signature="4312:4559" placeholder="Select e fro... CondorsTnMallBundle" />
-            <marker date="1464025629484" expanded="true" signature="4912:5357" placeholder="Select pts f... CondorsTnMallBundle" />
-            <marker date="1464025629484" expanded="true" signature="5554:5999" placeholder="Select pts f... CondorsTnMallBundle" />
-            <marker date="1464025629484" expanded="true" signature="6208:6653" placeholder="Select pts f... CondorsTnMallBundle" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1067,6 +919,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="141" column="31" selection-start-line="141" selection-start-column="31" selection-end-line="141" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Responsable/GestionCategories.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#a#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#1;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Entity/Catalogue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Entity/Categories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="35" column="24" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Controller/ResponsableController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
@@ -1077,30 +964,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/config/routing.yml">
+    <entry file="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Entity/ProduitRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="141" column="31" selection-start-line="141" selection-start-column="31" selection-end-line="141" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Entity/Categories.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Responsable/GestionCategories.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+        <state relative-caret-position="363">
+          <caret line="33" column="32" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="32" />
           <folding>
-            <element signature="n#style#0;n#i#0;n#a#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#1;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <marker date="1464036600125" expanded="true" signature="520:592" placeholder="select m fro... CondorsTnMallBundle" />
+            <marker date="1464036600125" expanded="true" signature="784:856" placeholder="select m fro... CondorsTnMallBundle" />
+            <marker date="1464036600125" expanded="true" signature="1047:1119" placeholder="select m fro... CondorsTnMallBundle" />
+            <marker date="1464036600125" expanded="true" signature="1314:1383" placeholder="select m fro... CondorsTnMallBundle" />
+            <marker date="1464036600125" expanded="true" signature="1654:1735" placeholder="select m fro... CondorsTnMallBundle" />
+            <marker date="1464036600125" expanded="true" signature="2001:2085" placeholder="select m fro... CondorsTnMallBundle" />
+            <marker date="1464036600125" expanded="true" signature="2312:2404" placeholder="select m fro... CondorsTnMallBundle" />
+            <marker date="1464036600125" expanded="true" signature="2312:2422" placeholder="select m fro... CondorsTnMallBundle" />
+            <marker date="1464036600125" expanded="true" signature="2594:2803" placeholder="Select e fro... CondorsTnMallBundle" />
+            <marker date="1464036600125" expanded="true" signature="3065:3302" placeholder="Select e fro... CondorsTnMallBundle" />
+            <marker date="1464036600125" expanded="true" signature="3519:3757" placeholder="Select e fro... CondorsTnMallBundle" />
+            <marker date="1464036600125" expanded="true" signature="4576:4823" placeholder="Select e fro... CondorsTnMallBundle" />
+            <marker date="1464036600125" expanded="true" signature="5176:5621" placeholder="Select pts f... CondorsTnMallBundle" />
+            <marker date="1464036600125" expanded="true" signature="5818:6263" placeholder="Select pts f... CondorsTnMallBundle" />
+            <marker date="1464036600125" expanded="true" signature="6472:6917" placeholder="Select pts f... CondorsTnMallBundle" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Controller/SimpleVisitorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="78" column="24" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/MyAccountTemplate.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5927">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/SimpleVisitor/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="1126" column="43" selection-start-line="1126" selection-start-column="43" selection-end-line="1126" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>

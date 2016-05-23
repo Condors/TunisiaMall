@@ -294,184 +294,46 @@
                             <div id="tab-2" class="tab-pane fade">
                                 <div class="row-slider commerce carousel-3-items">
                                     <ul class="yolo-woo-slider carousel-items products">
-                                        <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
-                                            <div class="yolo-product-inner">
-                                                <div class="product-thumbnail">
-                                                    <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
-                                                        <img width="500" height="700" src="{{ asset('images/product/product-5.jpg')}}" alt="" />
-                                                    </div>
-                                                    <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
-                                                        <img width="500" height="700" src="{{ asset('images/product/product-5-alt.jpg')}}" alt="" />
-                                                    </div>
-                                                    <div class="yolo-product-meta">
-                                                        <div class="entry-cart-meta">
-                                                            <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>
-                                                            <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>
-                                                            <div class="yith-wcwl-add-to-wishlist">
-                                                                <div class="yith-wcwl-add-button">
-                                                                    <a href="#" class="add_to_wishlist">
-                                                                        Add to Wishlist
-                                                                    </a>
+
+                                        {% for prodbest in bestProduit %}
+
+                                            <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
+                                                <div class="yolo-product-inner">
+                                                    <div class="product-thumbnail">
+                                                        <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
+
+                                                            <img width="500" height="700" src="{{ asset('uploads/prods/')}}{{ prodbest.imageprodfront}}" alt="" />
+                                                        </div>
+                                                        <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
+                                                            <img width="500" height="700" src="{{ asset('uploads/prods/')}}{{ prodbest.imageprodback}}" alt="" />
+                                                        </div>
+                                                        <div class="yolo-product-meta">
+                                                            <div class="entry-cart-meta">
+                                                                <a href="{{ path('condors_tn_mall_add_Panier',{'id':prodbest.idProduit}) }}" class="button add_to_cart_button product_type_simple">Add to cart</a>
+                                                                <a class="shop-loop-quickview" href="{{ path("condors_tn_mall_shopDetail" , { id: prodbest.idProduit } )  }}#focus">Quick shop</a>
+                                                                <div class="yith-wcwl-add-to-wishlist">
+                                                                    <div class="yith-wcwl-add-button">
+                                                                        <a href="#" class="add_to_wishlist">
+                                                                            Add to Wishlist
+                                                                        </a>
+                                                                    </div>
                                                                 </div>
+                                                                <div class="clear"></div>
                                                             </div>
-                                                            <div class="clear"></div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="yolo-product-footer clearfix">
-                                                    <h3><a href="shop-detail.html">D Black Jacket &#8211; Young</a></h3>
+                                                    <div class="yolo-product-footer clearfix">
+                                                        <h3><a href="{{ path("condors_tn_mall_shopDetail" , { id: prodbest.idProduit } )  }}#focus">{{ prodbest.libelleProduit}}</a></h3>
                                                         <span class="price">
-																	<span class="amount">&#36;45</span>
+                                                             {% set fprice =(( prodbest.tvaProduit* prodbest.prixProduit )/100)+prodbest.prixProduit %}
+                                                            <span class="amount">&#36;{{ fprice}}</span>
                                                         </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
-                                            <div class="yolo-product-inner">
-                                                <div class="product-thumbnail">
-                                                    <span class="onsale">Sale!</span>
-                                                    <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
-                                                        <img width="500" height="700" src="{{ asset('images/product/product-6.jpg')}}" alt="" />
-                                                    </div>
-                                                    <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
-                                                        <img width="500" height="700" src="{{ asset('images/product/product-6-alt.jpg')}}" alt="" />
-                                                    </div>
-                                                    <div class="yolo-product-meta">
-                                                        <div class="entry-cart-meta">
-                                                            <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>
-                                                            <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>
-                                                            <div class="yith-wcwl-add-to-wishlist">
-                                                                <div class="yith-wcwl-add-button">
-                                                                    <a href="#" class="add_to_wishlist">
-                                                                        Add to Wishlist
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="clear"></div>
-                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="yolo-product-footer clearfix">
-                                                    <h3><a href="shop-detail.html">Metal Bow Waist Belt</a></h3>
-                                                        <span class="price">
-																	<del>
-                                                                        <span class="amount">&#36;32</span>
-                                                                    </del>
-                                                        <ins>
-                                                            <span class="amount">&#36;29</span>
-                                                        </ins>
-                                                        </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
-                                            <div class="yolo-product-inner">
-                                                <div class="product-thumbnail">
-                                                    <span class="onsale">Sale!</span>
-                                                    <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
-                                                        <img width="500" height="700" src="{{ asset('images/product/product-7.jpg')}}" alt="" />
-                                                    </div>
-                                                    <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
-                                                        <img width="500" height="700" src="{{ asset('images/product/product-7-alt.jpg')}}" alt="" />
-                                                    </div>
-                                                    <div class="yolo-product-meta">
-                                                        <div class="entry-cart-meta">
-                                                            <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>
-                                                            <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>
-                                                            <div class="yith-wcwl-add-to-wishlist">
-                                                                <div class="yith-wcwl-add-button">
-                                                                    <a href="#" class="add_to_wishlist">
-                                                                        Add to Wishlist
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="yolo-product-footer clearfix">
-                                                    <h3><a href="shop-detail.html">Retro Floral Shorts</a></h3>
-                                                        <span class="price">
-																	<del>
-                                                                        <span class="amount">&#36;40</span>
-                                                                    </del>
-                                                        <ins>
-                                                            <span class="amount">&#36;30</span>
-                                                        </ins>
-                                                        </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
-                                            <div class="yolo-product-inner">
-                                                <div class="product-thumbnail">
-                                                    <span class="onsale">Sale!</span>
-                                                    <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
-                                                        <img width="500" height="700" src="{{ asset('images/product/product-8.jpg')}}" alt="" />
-                                                    </div>
-                                                    <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
-                                                        <img width="500" height="700" src="{{ asset('images/product/product-8-alt.jpg')}}" alt="" />
-                                                    </div>
-                                                    <div class="yolo-product-meta">
-                                                        <div class="entry-cart-meta">
-                                                            <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>
-                                                            <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>
-                                                            <div class="yith-wcwl-add-to-wishlist">
-                                                                <div class="yith-wcwl-add-button">
-                                                                    <a href="#" class="add_to_wishlist">
-                                                                        Add to Wishlist
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="yolo-product-footer clearfix">
-                                                    <h3><a href="shop-detail.html">Red giambattista dress</a></h3>
-                                                        <span class="price">
-																	<del>
-                                                                        <span class="amount">&#36;190</span>
-                                                                    </del>
-                                                        <ins>
-                                                            <span class="amount">&#36;180</span>
-                                                        </ins>
-                                                        </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
-                                            <div class="yolo-product-inner">
-                                                <div class="product-thumbnail">
-                                                    <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
-                                                        <img width="500" height="700" src="{{ asset('images/product/product-9.jpg')}}" alt="" />
-                                                    </div>
-                                                    <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
-                                                        <img width="500" height="700" src="{{ asset('images/product/product-9-alt.jpg')}}" alt="" />
-                                                    </div>
-                                                    <div class="yolo-product-meta">
-                                                        <div class="entry-cart-meta">
-                                                            <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>
-                                                            <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>
-                                                            <div class="yith-wcwl-add-to-wishlist">
-                                                                <div class="yith-wcwl-add-button">
-                                                                    <a href="#" class="add_to_wishlist">
-                                                                        Add to Wishlist
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="yolo-product-footer clearfix">
-                                                    <h3><a href="shop-detail.html">Sweet stripes fit dress</a></h3>
-                                                        <span class="price">
-																	<span class="amount">&#36;49</span>
-                                                        </span>
-                                                </div>
-                                            </div>
-                                        </li>
+                                            </li>
+
+                                        {% endfor %}
+
                                     </ul>
                                     <div class="nav_prev"><i class="fa fa-chevron-left"></i></div>
                                     <div class="nav_next"><i class="fa fa-chevron-right"></i></div>
@@ -480,134 +342,44 @@
                             <div id="tab-3" class="tab-pane fade">
                                 <div class="row-slider commerce carousel-3-items">
                                     <ul class="yolo-woo-slider carousel-items products">
-                                        <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
-                                            <div class="yolo-product-inner">
-                                                <div class="product-thumbnail">
-                                                    <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
-                                                        <img width="500" height="700" src="{{ asset('images/product/product-1.jpg')}}" alt="" />
-                                                    </div>
-                                                    <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
-                                                        <img width="500" height="700" src="{{ asset('images/product/product-1-alt.jpg')}}" alt="" />
-                                                    </div>
-                                                    <div class="yolo-product-meta">
-                                                        <div class="entry-cart-meta">
-                                                            <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>
-                                                            <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>
-                                                            <div class="yith-wcwl-add-to-wishlist">
-                                                                <div class="yith-wcwl-add-button">
-                                                                    <a href="#" class="add_to_wishlist">
-                                                                        Add to Wishlist
-                                                                    </a>
+                                        {% for prodbest in bestProduit %}
+
+                                            <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
+                                                <div class="yolo-product-inner">
+                                                    <div class="product-thumbnail">
+                                                        <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
+
+                                                            <img width="500" height="700" src="{{ asset('uploads/prods/')}}{{ prodbest.imageprodfront}}" alt="" />
+                                                        </div>
+                                                        <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
+                                                            <img width="500" height="700" src="{{ asset('uploads/prods/')}}{{ prodbest.imageprodback}}" alt="" />
+                                                        </div>
+                                                        <div class="yolo-product-meta">
+                                                            <div class="entry-cart-meta">
+                                                                <a href="{{ path('condors_tn_mall_add_Panier',{'id':prodbest.idProduit}) }}" class="button add_to_cart_button product_type_simple">Add to cart</a>
+                                                                <a class="shop-loop-quickview" href="{{ path("condors_tn_mall_shopDetail" , { id: prodbest.idProduit } )  }}#focus">Quick shop</a>
+                                                                <div class="yith-wcwl-add-to-wishlist">
+                                                                    <div class="yith-wcwl-add-button">
+                                                                        <a href="#" class="add_to_wishlist">
+                                                                            Add to Wishlist
+                                                                        </a>
+                                                                    </div>
                                                                 </div>
+                                                                <div class="clear"></div>
                                                             </div>
-                                                            <div class="clear"></div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="yolo-product-footer clearfix">
-                                                    <h3><a href="shop-detail.html">Converse Short</a></h3>
+                                                    <div class="yolo-product-footer clearfix">
+                                                        <h3><a href="{{ path("condors_tn_mall_shopDetail" , { id: prodbest.idProduit } )  }}#focus">{{ prodbest.libelleProduit}}</a></h3>
                                                         <span class="price">
-																	<span class="amount">&#36;150</span>
+                                                             {% set fprice =(( prodbest.tvaProduit* prodbest.prixProduit )/100)+prodbest.prixProduit %}
+                                                            <span class="amount">&#36;{{ fprice}}</span>
                                                         </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
-                                            <div class="yolo-product-inner">
-                                                <div class="product-thumbnail">
-                                                    <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
-                                                        <img width="500" height="700" src="{{ asset('images/product/product-2.jpg')}}" alt="" />
-                                                    </div>
-                                                    <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
-                                                        <img width="500" height="700" src="{{ asset('images/product/product-2-alt.jpg')}}" alt="" />
-                                                    </div>
-                                                    <div class="yolo-product-meta">
-                                                        <div class="entry-cart-meta">
-                                                            <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>
-                                                            <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>
-                                                            <div class="yith-wcwl-add-to-wishlist">
-                                                                <div class="yith-wcwl-add-button">
-                                                                    <a href="#" class="add_to_wishlist">
-                                                                        Add to Wishlist
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="clear"></div>
-                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="yolo-product-footer clearfix">
-                                                    <h3><a href="shop-detail.html">Wool-Blend Peacoat</a></h3>
-                                                        <span class="price">
-	    															<span class="amount">&#36;100</span>
-                                                        </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
-                                            <div class="yolo-product-inner">
-                                                <div class="product-thumbnail">
-                                                    <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
-                                                        <img width="500" height="700" src="{{ asset('images/product/product-3.jpg')}}" alt="" />
-                                                    </div>
-                                                    <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
-                                                        <img width="500" height="700" src="{{ asset('images/product/product-3-alt.jpg')}}" alt="" />
-                                                    </div>
-                                                    <div class="yolo-product-meta">
-                                                        <div class="entry-cart-meta">
-                                                            <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>
-                                                            <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>
-                                                            <div class="yith-wcwl-add-to-wishlist">
-                                                                <div class="yith-wcwl-add-button">
-                                                                    <a href="#" class="add_to_wishlist">
-                                                                        Add to Wishlist
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="yolo-product-footer clearfix">
-                                                    <h3><a href="shop-detail.html">Superdry Rookie Pet</a></h3>
-                                                        <span class="price">
-	    															<span class="amount">&#36;130</span>
-                                                        </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
-                                            <div class="yolo-product-inner">
-                                                <div class="product-thumbnail">
-                                                    <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
-                                                        <img width="500" height="700" src="{{ asset('images/product/product-4.jpg')}}" alt="" />
-                                                    </div>
-                                                    <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
-                                                        <img width="500" height="700" src="{{ asset('images/product/product-4-alt.jpg')}}" alt="" />
-                                                    </div>
-                                                    <div class="yolo-product-meta">
-                                                        <div class="entry-cart-meta">
-                                                            <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>
-                                                            <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>
-                                                            <div class="yith-wcwl-add-to-wishlist">
-                                                                <div class="yith-wcwl-add-button">
-                                                                    <a href="#" class="add_to_wishlist">
-                                                                        Add to Wishlist
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="yolo-product-footer clearfix">
-                                                    <h3><a href="shop-detail.html">Lightweight Overcoat</a></h3>
-                                                        <span class="price">
-	    															<span class="amount">&#36;190</span>
-                                                        </span>
-                                                </div>
-                                            </div>
-                                        </li>
+                                            </li>
+
+                                        {% endfor %}
                                     </ul>
                                     <div class="nav_prev"><i class="fa fa-chevron-left"></i></div>
                                     <div class="nav_next"><i class="fa fa-chevron-right"></i></div>
@@ -616,146 +388,44 @@
                             <div id="tab-4" class="tab-pane fade">
                                 <div class="row-slider commerce carousel-3-items">
                                     <ul class="yolo-woo-slider carousel-items products">
-                                        <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
-                                            <div class="yolo-product-inner">
-                                                <div class="product-thumbnail">
-                                                    <span class="onsale">Sale!</span>
-                                                    <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
-                                                        <img width="500" height="700" src="{{ asset('images/product/product-11.jpg')}}" alt="" />
-                                                    </div>
-                                                    <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
-                                                        <img width="500" height="700" src="{{ asset('images/product/product-11-alt.jpg')}}" alt="" />
-                                                    </div>
-                                                    <div class="yolo-product-meta">
-                                                        <div class="entry-cart-meta">
-                                                            <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>
-                                                            <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>
-                                                            <div class="yith-wcwl-add-to-wishlist">
-                                                                <div class="yith-wcwl-add-button">
-                                                                    <a href="#" class="add_to_wishlist">
-                                                                        Add to Wishlist
-                                                                    </a>
+                                        {% for prodbest in bestProduit %}
+
+                                            <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
+                                                <div class="yolo-product-inner">
+                                                    <div class="product-thumbnail">
+                                                        <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
+
+                                                            <img width="500" height="700" src="{{ asset('uploads/prods/')}}{{ prodbest.imageprodfront}}" alt="" />
+                                                        </div>
+                                                        <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
+                                                            <img width="500" height="700" src="{{ asset('uploads/prods/')}}{{ prodbest.imageprodback}}" alt="" />
+                                                        </div>
+                                                        <div class="yolo-product-meta">
+                                                            <div class="entry-cart-meta">
+                                                                <a href="{{ path('condors_tn_mall_add_Panier',{'id':prodbest.idProduit}) }}" class="button add_to_cart_button product_type_simple">Add to cart</a>
+                                                                <a class="shop-loop-quickview" href="{{ path("condors_tn_mall_shopDetail" , { id: prodbest.idProduit } )  }}#focus">Quick shop</a>
+                                                                <div class="yith-wcwl-add-to-wishlist">
+                                                                    <div class="yith-wcwl-add-button">
+                                                                        <a href="#" class="add_to_wishlist">
+                                                                            Add to Wishlist
+                                                                        </a>
+                                                                    </div>
                                                                 </div>
+                                                                <div class="clear"></div>
                                                             </div>
-                                                            <div class="clear"></div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="yolo-product-footer clearfix">
-                                                    <h3><a href="shop-detail.html">Eyelash Lace Kimono</a></h3>
+                                                    <div class="yolo-product-footer clearfix">
+                                                        <h3><a href="{{ path("condors_tn_mall_shopDetail" , { id: prodbest.idProduit } )  }}#focus">{{ prodbest.libelleProduit}}</a></h3>
                                                         <span class="price">
-																	<del><span class="amount">&#36;169</span></del>
-                                                        <ins><span class="amount">&#36;155</span></ins>
+                                                             {% set fprice =(( prodbest.tvaProduit* prodbest.prixProduit )/100)+prodbest.prixProduit %}
+                                                            <span class="amount">&#36;{{ fprice}}</span>
                                                         </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
-                                            <div class="yolo-product-inner">
-                                                <div class="product-thumbnail">
-                                                    <span class="onsale">Sale!</span>
-                                                    <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
-                                                        <img width="500" height="700" src="{{ asset('images/product/product-12.jpg')}}" alt="" />
-                                                    </div>
-                                                    <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
-                                                        <img width="500" height="700" src="{{ asset('images/product/product-12-alt.jpg')}}" alt="" />
-                                                    </div>
-                                                    <div class="yolo-product-meta">
-                                                        <div class="entry-cart-meta">
-                                                            <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>
-                                                            <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>
-                                                            <div class="yith-wcwl-add-to-wishlist">
-                                                                <div class="yith-wcwl-add-button">
-                                                                    <a href="#" class="add_to_wishlist">
-                                                                        Add to Wishlist
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="clear"></div>
-                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="yolo-product-footer clearfix">
-                                                    <h3><a href="shop-detail.html">White mini skirt</a></h3>
-                                                        <span class="price">
-																	<del><span class="amount">&#36;150</span></del>
-                                                        <ins><span class="amount">&#36;125</span></ins>
-                                                        </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
-                                            <div class="yolo-product-inner">
-                                                <div class="product-thumbnail">
-                                                    <span class="onsale">Sale!</span>
-                                                    <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
-                                                        <img width="500" height="700" src="{{ asset('images/product/product-13.jpg')}}" alt="" />
-                                                    </div>
-                                                    <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
-                                                        <img width="500" height="700" src="{{ asset('images/product/product-13-alt.jpg')}}" alt="" />
-                                                    </div>
-                                                    <div class="yolo-product-meta">
-                                                        <div class="entry-cart-meta">
-                                                            <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>
-                                                            <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>
-                                                            <div class="yith-wcwl-add-to-wishlist">
-                                                                <div class="yith-wcwl-add-button">
-                                                                    <a href="#" class="add_to_wishlist">
-                                                                        Add to Wishlist
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="yolo-product-footer clearfix">
-                                                    <h3><a href="shop-detail.html">Modern Fit Blue</a></h3>
-                                                        <span class="price">
-																	<del><span class="amount">&#36;169</span></del>
-                                                        <ins><span class="amount">&#36;155</span></ins>
-                                                        </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
-                                            <div class="yolo-product-inner">
-                                                <div class="product-thumbnail">
-                                                    <span class="onsale">Sale!</span>
-                                                    <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
-                                                        <img width="500" height="700" src="{{ asset('images/product/product-8.jpg')}}" alt="" />
-                                                    </div>
-                                                    <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
-                                                        <img width="500" height="700" src="{{ asset('images/product/product-8-alt.jpg')}}" alt="" />
-                                                    </div>
-                                                    <div class="yolo-product-meta">
-                                                        <div class="entry-cart-meta">
-                                                            <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>
-                                                            <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>
-                                                            <div class="yith-wcwl-add-to-wishlist">
-                                                                <div class="yith-wcwl-add-button">
-                                                                    <a href="#" class="add_to_wishlist">
-                                                                        Add to Wishlist
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="yolo-product-footer clearfix">
-                                                    <h3><a href="shop-detail.html">Red giambattista dress</a></h3>
-                                                        <span class="price">
-																	<del>
-                                                                        <span class="amount">&#36;190</span>
-                                                                    </del>
-                                                        <ins>
-                                                            <span class="amount">&#36;180</span>
-                                                        </ins>
-                                                        </span>
-                                                </div>
-                                            </div>
-                                        </li>
+                                            </li>
+
+                                        {% endfor %}
                                     </ul>
                                     <div class="nav_prev"><i class="fa fa-chevron-left"></i></div>
                                     <div class="nav_next"><i class="fa fa-chevron-right"></i></div>
@@ -803,172 +473,7 @@
                     </div>
                     <div class="row-slider commerce carousel-4-items mt-5 mb-5">
                         <ul class="yolo-woo-slider carousel-items products">
-                            <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
-                                <div class="yolo-product-inner">
-                                    <div class="product-thumbnail">
-                                        <span class="onsale">Sale!</span>
-                                        <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
-                                            <img width="500" height="700" src="{{ asset('images/product/product-15.jpg')}}" alt="" />
-                                        </div>
-                                        <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
-                                            <img width="500" height="700" src="{{ asset('images/product/product-15-alt.jpg')}}" alt="" />
-                                        </div>
-                                        <div class="yolo-product-meta">
-                                            <div class="entry-cart-meta">
-                                                <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>
-                                                <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>
-                                                <div class="yith-wcwl-add-to-wishlist">
-                                                    <div class="yith-wcwl-add-button">
-                                                        <a href="#" class="add_to_wishlist">
-                                                            Add to Wishlist
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="yolo-product-footer clearfix">
-                                        <h3><a href="shop-detail.html">Adidas shirt</a></h3>
-                                            <span class="price">
-														<del><span class="amount">$56</span></del>
-                                            <ins><span class="amount">$50</span></ins>
-                                            </span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
-                                <div class="yolo-product-inner">
-                                    <div class="product-thumbnail">
-                                        <span class="onsale">Sale!</span>
-                                        <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
-                                            <img width="500" height="700" src="{{ asset('images/product/product-12.jpg')}}" alt="" />
-                                        </div>
-                                        <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
-                                            <img width="500" height="700" src="{{ asset('images/product/product-12-alt.jpg')}}" alt="" />
-                                        </div>
-                                        <div class="yolo-product-meta">
-                                            <div class="entry-cart-meta">
-                                                <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>
-                                                <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>
-                                                <div class="yith-wcwl-add-to-wishlist">
-                                                    <div class="yith-wcwl-add-button">
-                                                        <a href="#" class="add_to_wishlist">
-                                                            Add to Wishlist
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="yolo-product-footer clearfix">
-                                        <h3><a href="shop-detail.html">White mini skirt</a></h3>
-                                            <span class="price">
-														<del><span class="amount">&#36;150</span></del>
-                                            <ins><span class="amount">&#36;125</span></ins>
-                                            </span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
-                                <div class="yolo-product-inner">
-                                    <div class="product-thumbnail">
-                                        <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
-                                            <img width="500" height="700" src="{{ asset('images/product/product-16.jpg')}}" alt="" />
-                                        </div>
-                                        <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
-                                            <img width="500" height="700" src="{{ asset('images/product/product-16-alt.jpg')}}" alt="" />
-                                        </div>
-                                        <div class="yolo-product-meta">
-                                            <div class="entry-cart-meta">
-                                                <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>
-                                                <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>
-                                                <div class="yith-wcwl-add-to-wishlist">
-                                                    <div class="yith-wcwl-add-button">
-                                                        <a href="#" class="add_to_wishlist">
-                                                            Add to Wishlist
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="yolo-product-footer clearfix">
-                                        <h3><a href="shop-detail.html">Lightweight Jacket</a></h3>
-                                            <span class="price">
-														<span class="amount">&#36;125</span>
-                                            </span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
-                                <div class="yolo-product-inner">
-                                    <div class="product-thumbnail">
-                                        <span class="onsale">Sale!</span>
-                                        <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
-                                            <img width="500" height="700" src="{{ asset('images/product/product-11.jpg')}}" alt="" />
-                                        </div>
-                                        <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
-                                            <img width="500" height="700" src="{{ asset('images/product/product-11-alt.jpg')}}" alt="" />
-                                        </div>
-                                        <div class="yolo-product-meta">
-                                            <div class="entry-cart-meta">
-                                                <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>
-                                                <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>
-                                                <div class="yith-wcwl-add-to-wishlist">
-                                                    <div class="yith-wcwl-add-button">
-                                                        <a href="#" class="add_to_wishlist">
-                                                            Add to Wishlist
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="yolo-product-footer clearfix">
-                                        <h3><a href="shop-detail.html">Eyelash Lace Kimono</a></h3>
-                                            <span class="price">
-														<del><span class="amount">&#36;169</span></del>
-                                            <ins><span class="amount">&#36;155</span></ins>
-                                            </span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
-                                <div class="yolo-product-inner">
-                                    <div class="product-thumbnail">
-                                        <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
-                                            <img width="500" height="700" src="{{ asset('images/product/product-1.jpg')}}" alt="" />
-                                        </div>
-                                        <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
-                                            <img width="500" height="700" src="{{ asset('images/product/product-1-alt.jpg')}}" alt="" />
-                                        </div>
-                                        <div class="yolo-product-meta">
-                                            <div class="entry-cart-meta">
-                                                <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>
-                                                <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>
-                                                <div class="yith-wcwl-add-to-wishlist">
-                                                    <div class="yith-wcwl-add-button">
-                                                        <a href="#" class="add_to_wishlist">
-                                                            Add to Wishlist
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="yolo-product-footer clearfix">
-                                        <h3><a href="shop-detail.html">Converse Short</a></h3>
-                                            <span class="price">
-														<span class="amount">&#36;150</span>
-                                            </span>
-                                    </div>
-                                </div>
-                            </li>
+                           Fea
                         </ul>
                         <div class="nav_prev"><i class="fa fa-chevron-left"></i></div>
                         <div class="nav_next"><i class="fa fa-chevron-right"></i></div>
@@ -1034,172 +539,44 @@
                     </div>
                     <div class="row-slider commerce carousel-4-items mt-5 mb-5">
                         <ul class="yolo-woo-slider carousel-items products">
-                            <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
-                                <div class="yolo-product-inner">
-                                    <div class="product-thumbnail">
-                                        <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
-                                            <img width="500" height="700" src="{{ asset('images/product/product-17.jpg')}}" alt="" />
-                                        </div>
-                                        <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
-                                            <img width="500" height="700" src="{{ asset('images/product/product-17-alt.jpg')}}" alt="" />
-                                        </div>
-                                        <div class="yolo-product-meta">
-                                            <div class="entry-cart-meta">
-                                                <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>
-                                                <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>
-                                                <div class="yith-wcwl-add-to-wishlist">
-                                                    <div class="yith-wcwl-add-button">
-                                                        <a href="#" class="add_to_wishlist">
-                                                            Add to Wishlist
-                                                        </a>
+                            {% for prodbest in bestProduit %}
+
+                                <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
+                                    <div class="yolo-product-inner">
+                                        <div class="product-thumbnail">
+                                            <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
+
+                                                <img width="500" height="700" src="{{ asset('uploads/prods/')}}{{ prodbest.imageprodfront}}" alt="" />
+                                            </div>
+                                            <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
+                                                <img width="500" height="700" src="{{ asset('uploads/prods/')}}{{ prodbest.imageprodback}}" alt="" />
+                                            </div>
+                                            <div class="yolo-product-meta">
+                                                <div class="entry-cart-meta">
+                                                    <a href="{{ path('condors_tn_mall_add_Panier',{'id':prodbest.idProduit}) }}" class="button add_to_cart_button product_type_simple">Add to cart</a>
+                                                    <a class="shop-loop-quickview" href="{{ path("condors_tn_mall_shopDetail" , { id: prodbest.idProduit } )  }}#focus">Quick shop</a>
+                                                    <div class="yith-wcwl-add-to-wishlist">
+                                                        <div class="yith-wcwl-add-button">
+                                                            <a href="#" class="add_to_wishlist">
+                                                                Add to Wishlist
+                                                            </a>
+                                                        </div>
                                                     </div>
+                                                    <div class="clear"></div>
                                                 </div>
-                                                <div class="clear"></div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="yolo-product-footer clearfix">
-                                        <h3><a href="shop-detail.html">A Blue Shirt Top</a></h3>
-                                            <span class="price">
-														<span class="amount">$99</span>
-                                            </span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
-                                <div class="yolo-product-inner">
-                                    <div class="product-thumbnail">
-                                        <span class="onsale">Sale!</span>
-                                        <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
-                                            <img width="500" height="700" src="{{ asset('images/product/product-15.jpg')}}" alt="" />
-                                        </div>
-                                        <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
-                                            <img width="500" height="700" src="{{ asset('images/product/product-15-alt.jpg')}}" alt="" />
-                                        </div>
-                                        <div class="yolo-product-meta">
-                                            <div class="entry-cart-meta">
-                                                <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>
-                                                <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>
-                                                <div class="yith-wcwl-add-to-wishlist">
-                                                    <div class="yith-wcwl-add-button">
-                                                        <a href="#" class="add_to_wishlist">
-                                                            Add to Wishlist
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
+                                        <div class="yolo-product-footer clearfix">
+                                            <h3><a href="{{ path("condors_tn_mall_shopDetail" , { id: prodbest.idProduit } )  }}#focus">{{ prodbest.libelleProduit}}</a></h3>
+                                                        <span class="price">
+                                                             {% set fprice =(( prodbest.tvaProduit* prodbest.prixProduit )/100)+prodbest.prixProduit %}
+                                                            <span class="amount">&#36;{{ fprice}}</span>
+                                                        </span>
                                         </div>
                                     </div>
-                                    <div class="yolo-product-footer clearfix">
-                                        <h3><a href="shop-detail.html">Adidas shirt</a></h3>
-                                            <span class="price">
-														<del><span class="amount">$56</span></del>
-                                            <ins><span class="amount">$50</span></ins>
-                                            </span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
-                                <div class="yolo-product-inner">
-                                    <div class="product-thumbnail">
-                                        <span class="onsale">Sale!</span>
-                                        <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
-                                            <img width="500" height="700" src="{{ asset('images/product/product-18.jpg')}}" alt="" />
-                                        </div>
-                                        <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
-                                            <img width="500" height="700" src="{{ asset('images/product/product-18-alt.jpg')}}" alt="" />
-                                        </div>
-                                        <div class="yolo-product-meta">
-                                            <div class="entry-cart-meta">
-                                                <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>
-                                                <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>
-                                                <div class="yith-wcwl-add-to-wishlist">
-                                                    <div class="yith-wcwl-add-button">
-                                                        <a href="#" class="add_to_wishlist">
-                                                            Add to Wishlist
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="yolo-product-footer clearfix">
-                                        <h3><a href="shop-detail.html">Black Jacket Women</a></h3>
-                                            <span class="price">
-														<del><span class="amount">$150</span></del>
-                                            <ins><span class="amount">$139</span></ins>
-                                            </span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
-                                <div class="yolo-product-inner">
-                                    <div class="product-thumbnail">
-                                        <span class="onsale">Sale!</span>
-                                        <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
-                                            <img width="500" height="700" src="{{ asset('images/product/product-11.jpg')}}" alt="" />
-                                        </div>
-                                        <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
-                                            <img width="500" height="700" src="{{ asset('images/product/product-11-alt.jpg')}}" alt="" />
-                                        </div>
-                                        <div class="yolo-product-meta">
-                                            <div class="entry-cart-meta">
-                                                <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>
-                                                <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>
-                                                <div class="yith-wcwl-add-to-wishlist">
-                                                    <div class="yith-wcwl-add-button">
-                                                        <a href="#" class="add_to_wishlist">
-                                                            Add to Wishlist
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="yolo-product-footer clearfix">
-                                        <h3><a href="shop-detail.html">Eyelash Lace Kimono</a></h3>
-                                            <span class="price">
-														<del><span class="amount">&#36;169</span></del>
-                                            <ins><span class="amount">&#36;155</span></ins>
-                                            </span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-md-4 col-sm-6 col-xs-12 yolo-product-item">
-                                <div class="yolo-product-inner">
-                                    <div class="product-thumbnail">
-                                        <div class="yolo-product-thumbnail yolo-product-front-thumbnail">
-                                            <img id="pubPlace2ProductImage1" width="500" height="700" src="{{ asset('images/product/product-1.jpg')}}" alt="" />
-                                        </div>
-                                        <div class="yolo-product-thumbnail yolo-product-back-thumbnail">
-                                            <img id ="pubPlace2ProductImage2" width="500" height="700" src="{{ asset('images/product/product-1-alt.jpg')}}" alt="" />
-                                        </div>
-                                        <div class="yolo-product-meta">
-                                            <div class="entry-cart-meta">
-                                                <a href="#" class="button add_to_cart_button product_type_simple">Add to cart</a>
-                                                <a class="shop-loop-quickview" href="shop-detail.html">Quick shop</a>
-                                                <div class="yith-wcwl-add-to-wishlist">
-                                                    <div class="yith-wcwl-add-button">
-                                                        <a href="#" class="add_to_wishlist">
-                                                            Add to Wishlist
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="yolo-product-footer clearfix">
-                                        <h3><a href="shop-detail.html">Converse Short</a></h3>
-                                            <span class="price">
-														<span class="amount">&#36;150</span>
-                                            </span>
-                                    </div>
-                                </div>
-                            </li>
+                                </li>
+
+                            {% endfor %}
                         </ul>
                         <div class="nav_prev"><i class="fa fa-chevron-left"></i></div>
                         <div class="nav_next"><i class="fa fa-chevron-right"></i></div>
@@ -1747,7 +1124,7 @@
                 <div class="row">
                     <div class="col-md-7 col-sm-6 col-xs-12">
                         <div class="yolo-bottom-bar content-left">
-                            © 2016 Condors. Created by TK-Themes
+                            © 2016 Condors.
                         </div>
                     </div>
                     <div class="col-md-5 col-sm-6 col-xs-12">

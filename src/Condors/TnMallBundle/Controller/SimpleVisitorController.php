@@ -60,6 +60,7 @@ class SimpleVisitorController extends Controller
         $user = $this->getUser();
         $em = $this->getDoctrine()->getEntityManager();
         $newProduit = $em->getRepository("CondorsTnMallBundle:Produit")->findNewProd();
+        $bestProduit = $em->getRepository("CondorsTnMallBundle:Produit")->findNewProd();
         $counter = 0;
 
         if (!empty($user)) {
@@ -75,6 +76,7 @@ class SimpleVisitorController extends Controller
         }
         return $this->render('CondorsTnMallBundle:SimpleVisitor:index.html.twig', array(
             'newProduit' => $newProduit,
+            'bestProduit'=>$bestProduit,
         ));
     }
 
