@@ -577,5 +577,50 @@ class ResponsableController extends Controller
         ));
     }
 
+    public function cardsDeleteAction(Cartedefidelite $card)
+    {
+
+
+        $em = $this->getDoctrine()->getManager();
+        $em->remove($card);
+        $em->flush();
+
+
+        return $this->redirect($this->generateUrl("condors_tn_mall_responsable_card"));
+    }
+
+    public function cardsModifyAction(Cartedefidelite $card)
+    {
+
+        $em = $this->getDoctrine()->getManager();
+
+        $user = $this->getUser();
+
+        $form = $this->createForm(new CartedefideliteType($user->getId()), $card);
+
+        $request = $this->getRequest();
+
+        if ($request->getMethod() == 'POST') {
+            //Note: bindRequest is now deprecated
+            $form->bind($request);
+            if ($form->isValid()) {
+                //retrieve your model hydrated with your form values
+                //has upload file ?
+                $card = $form->getData();
+
+                $em->persist($card);
+                $em->flush();
+            }
+        }
+
+        return $this->render('CondorsTnMallBundle:Responsable:GestionCardsModifer.html.twig', array(
+            'user' => $user,
+            'form' => $form->createView(),
+            'cards' => $card,
+        ));
+
+
+    }
+
 
 }

@@ -260,3 +260,11 @@ condors_tn_mall_profile:
 condors_tn_mall_responsable_card:
     path:     /user-responsable/cards
     defaults: { _controller: CondorsTnMallBundle:Responsable:cards }
+
+condors_tn_mall_responsable_cards_delete:
+    path:     /user-responsable/cards/delete/{id}
+    defaults: { _controller: CondorsTnMallBundle:Responsable:cardsDelete }
+
+condors_tn_mall_responsable_cards_modify:
+    path:     /user-responsable/cards/modify/{id}
+    defaults: { _controller: CondorsTnMallBundle:Responsable:cardsModify }
