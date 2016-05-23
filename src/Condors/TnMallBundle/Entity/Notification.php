@@ -22,11 +22,49 @@ class Notification
     private $idNotification;
 
     /**
-     * @var integer
+     * @var \Enseigne
      *
-     * @ORM\Column(name="id_enseigne", type="integer", nullable=false)
+     * @ORM\ManyToOne(targetEntity="Enseigne")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="id_enseigne", referencedColumnName="id_enseigne")
+     * })
      */
     private $idEnseigne;
 
+    /**
+     * @return int
+     */
+    public function getIdNotification()
+    {
+        return $this->idNotification;
+    }
+
+    /**
+     * @param int $idNotification
+     */
+    public function setIdNotification($idNotification)
+    {
+        $this->idNotification = $idNotification;
+    }
+
+    /**
+     * @return \Enseigne
+     */
+    public function getIdEnseigne()
+    {
+        return $this->idEnseigne;
+    }
+
+    /**
+     * @param \Enseigne $idEnseigne
+     */
+    public function setIdEnseigne($idEnseigne)
+    {
+        $this->idEnseigne = $idEnseigne;
+    }
+
+
+    
 
 }
+

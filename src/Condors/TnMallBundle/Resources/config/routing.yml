@@ -247,3 +247,16 @@ condors_tn_mall_chartPie:
 condors_tn_mall_Admin_mall_chat:
     path:     /admin/mall-chat
     defaults: { _controller: CondorsTnMallBundle:Admin:chat }
+
+condors_tn_mall_profile_edit:
+    path:     /user-responsable/Profile/edit
+    defaults: { _controller: CondorsTnMallBundle:Profile:edit }
+
+condors_tn_mall_profile:
+    path:     /user-responsable/Profile
+    defaults: { _controller: CondorsTnMallBundle:Profile:show }
+
+
+condors_tn_mall_responsable_card:
+    path:     /user-responsable/cards
+    defaults: { _controller: CondorsTnMallBundle:Responsable:cards }

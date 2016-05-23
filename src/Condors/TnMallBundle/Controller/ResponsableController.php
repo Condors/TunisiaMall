@@ -4,6 +4,7 @@ namespace Condors\TnMallBundle\Controller;
 
 use Condors\TnMallBundle\Entity\Achatpack;
 use Condors\TnMallBundle\Entity\Boutique;
+use Condors\TnMallBundle\Entity\Cartedefidelite;
 use Condors\TnMallBundle\Entity\Catalogue;
 use Condors\TnMallBundle\Entity\Categories;
 use Condors\TnMallBundle\Entity\Enseigne;
@@ -13,8 +14,10 @@ use Condors\TnMallBundle\Form\BoutiqueType;
 use Condors\TnMallBundle\Form\CategoriesType;
 use Condors\TnMallBundle\Form\EnseigneType;
 use Condors\TnMallBundle\Form\ProduitType;
+use Condors\TnMallBundle\Form\CartedefideliteType;
 use Ob\HighchartsBundle\Highcharts\Highchart;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Finder\Exception\AccessDeniedException;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 /**
@@ -525,6 +528,52 @@ class ResponsableController extends Controller
 
         return $this->render('CondorsTnMallBundle:Graphe:chartPie.html.twig', array(
             'chart' => $ob
+        ));
+    }
+
+
+    public function cardsAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $cards = $em->getRepository("CondorsTnMallBundle:Cartedefidelite")->findAll();
+
+        $user = $this->getUser();
+        $form = $this->createForm(new CartedefideliteType($user->getId()));
+
+        //$allStores = $em->getRepository("CondorsTnMallBundle:Boutique")->findStoreByBrandRespo($user->getId());
+
+
+        $card = new Cartedefidelite();
+        $request = $this->getRequest();
+        if ($request->getMethod() == 'POST') {
+            //Note: bindRequest is now deprecated
+            $form->bind($request);
+            if ($form->isValid()) {
+                //retrieve your model hydrated with your form values
+                //has upload file ?
+
+                $card = $form->getData();
+                $dateNow = new \DateTime();
+                $dateNext = new \DateTime('2019-05-05');
+                $Stringdate=$dateNow->format('Y-m-d H:i:s');
+                $StringdateNext=$dateNext->format('Y-m-d H:i:s');
+                $card->setDatecreation($Stringdate);
+                $card->setDateexpiration($StringdateNext);
+
+
+
+                $em->persist($card);
+                $em->flush();
+
+                return $this->redirect($this->generateUrl("condors_tn_mall_responsable_card"));
+            }
+        }
+
+        return $this->render('CondorsTnMallBundle:Responsable:GestionCards.html.twig', array(
+            'user' => $user,
+            'form' => $form->createView(),
+            'cards' => $cards,
         ));
     }
 
