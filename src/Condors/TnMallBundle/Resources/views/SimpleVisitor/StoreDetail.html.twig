@@ -87,92 +87,76 @@
             </div>
         </div>
     </section>
-    <div id="focus" class="content-area">
-        <div class="single-product commerce">
-            <div class="shop-container">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="product">
-                                <div class="yolo-product-content row">
-                                    <nav class="clearfix product-navigation">
-                                        <div class="col-md-6">
-                                            <div class="prev-product">
-                                                <a href="shop-detail-1.html">
-                                                    <span>Previous</span>
-                                                    <div class="prev-product-info">
-                                                        <img width="100" height="140"
-                                                             src="images/product/thumb/product-3.jpg" alt=""/>
-                                                        <div class="prev-desc">
-                                                            <p>Lightweight Jacket</p>
-                                                            <span class="amount">&#36;125</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="next-product">
-                                                <a href="shop-detail-1.html">
-                                                    <span>Next</span>
-                                                    <div class="next-product-info">
-                                                        <img width="100" height="140"
-                                                             src="images/product/thumb/product-1.jpg" alt=""/>
-                                                        <div class="next-desc">
-                                                            <p>T-Shirt With Pocket</p>
-                                                            <del><span class="amount">&#36;70</span></del>
-                                                            <ins><span class="amount">&#36;68</span></ins>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </nav>
-                                    <div class="product-images col-xs-12 col-md-6 col-sm-6">
-                                        <div class="images">
-                                            <a href="{{ asset('uploads/pictures/') }}{{ storeDetail.image1 }}"
-                                               class="commerce-main-image zoom" data-rel="prettyPhoto[product-gallery]">
-                                                <img width="500" height="700"
-                                                     src="{{ asset('uploads/pictures/') }}{{ storeDetail.image1 }}"
-                                                     alt=""/>
-                                            </a>
-                                            <div class="thumbnails columns-12">
-                                                <a href="{{ asset('uploads/pictures/') }}{{ storeDetail.image2 }}"
-                                                   class="zoom first" data-rel="prettyPhoto[product-gallery]">
-                                                    <img width="100" height="140"
-                                                         src="{{ asset('uploads/pictures/') }}{{ storeDetail.image2 }}"
-                                                         alt=""/>
-                                                </a>
-                                                <a href="{{ asset('uploads/pictures/') }}{{ storeDetail.image3 }}"
-                                                   class="zoom" data-rel="prettyPhoto[product-gallery]">
-                                                    <img width="100" height="140"
-                                                         src="{{ asset('uploads/pictures/') }}{{ storeDetail.image3 }}"
-                                                         alt=""/>
-                                                </a>
+    <div class="single-product commerce">
+        <div class="shop-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="product">
+                            <div class="yolo-product-content row">
+                                <nav class="clearfix product-navigation">
+                                    <div class="col-md-6">
+                                        <div class="prev-product">
+                                            <a href="shop-detail-1.html">
+                                                <div class="prev-product-info">
 
-                                            </div>
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="product-description col-xs-12 col-md-6 col-sm-6">
-                                        <div class="summary entry-summary">
-                                            <h1 class="product_title entry-title">{{ storeDetail.libelleBoutique }}</h1>
+                                    <div class="col-md-6">
+                                        <div class="next-product">
+                                            <a href="shop-detail-1.html">
 
-                                            <a href="{{ asset('uploads/pictures/') }}{{ storeDetail.idEnseigne.imageenseigne }}"
+                                            </a>
+                                        </div>
+                                    </div>
+                                </nav>
+                                <div class="product-images col-xs-12 col-md-6 col-sm-6">
+                                    <div class="images">
+                                        <a href="{{ asset('uploads/pictures/') }}{{ storeDetail.image1 }}"
+                                           class="commerce-main-image zoom" data-rel="prettyPhoto[product-gallery]">
+                                            <img width="500" height="700"
+                                                 src="{{ asset('uploads/pictures/') }}{{ storeDetail.image1 }}"
+                                                 alt=""/>
+                                        </a>
+                                        <div class="thumbnails columns-12">
+                                            <a href="{{ asset('uploads/pictures/') }}{{ storeDetail.image2 }}"
+                                               class="zoom first" data-rel="prettyPhoto[product-gallery]">
+                                                <img width="100" height="140"
+                                                     src="{{ asset('uploads/pictures/') }}{{ storeDetail.image2 }}"
+                                                     alt=""/>
+                                            </a>
+                                            <a href="{{ asset('uploads/pictures/') }}{{ storeDetail.image3 }}"
                                                class="zoom" data-rel="prettyPhoto[product-gallery]">
                                                 <img width="100" height="140"
-                                                     src="{{ asset('uploads/pictures/') }}{{ storeDetail.idEnseigne.imageenseigne }}"
+                                                     src="{{ asset('uploads/pictures/') }}{{ storeDetail.image3 }}"
                                                      alt=""/>
                                             </a>
 
-                                            <div class="short-description">
-                                                <p>
-                                                    {{ storeDetail.descriptionBoutique |raw }}
-                                                </p>
-                                            </div>
-                                            <br/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-description col-xs-12 col-md-6 col-sm-6">
+                                    <div class="summary entry-summary">
+                                        <h1 class="product_title entry-title">{{ storeDetail.libelleBoutique }}</h1>
 
-                                            <div class="clear"></div>
-                                            <div class="product_meta">
+                                        <a href="{{ asset('uploads/pictures/') }}{{ storeDetail.idEnseigne.imageenseigne }}"
+                                           class="zoom" data-rel="prettyPhoto[product-gallery]">
+                                            <img width="100" height="140"
+                                                 src="{{ asset('uploads/pictures/') }}{{ storeDetail.idEnseigne.imageenseigne }}"
+                                                 alt=""/>
+                                        </a>
+
+                                        <div class="short-description">
+                                            <p>
+                                                {{ storeDetail.descriptionBoutique |raw }}
+                                            </p>
+                                        </div>
+                                        <br/>
+
+                                        <div class="clear"></div>
+                                        <div class="product_meta">
                                                         <span class="sku_wrapper">
                                                             <strong>tel:</strong> <span
                                                                     class="sku">{{ storeDetail.tel | upper }}</span>
@@ -181,176 +165,175 @@
                                                             <strong>Categories:</strong>
                                                             <a href="#">{{ storeDetail.categorieBoutique }}</a>
                                                         </span>
-                                            </div>
-                                            <div class="content-share">
-                                                <p class="social-title">Share Title</p>
-                                                <div class="yolo-social social-share">
-                                                    <a href="#share" class="yolo-share" title="Share on Facebook">
-                                                        <i class="fa fa-facebook"></i>
-                                                    </a>
-                                                    <a href="#share" class="yolo-share" title="Share on Twitter">
-                                                        <i class="fa fa-twitter"></i>
-                                                    </a>
-                                                    <a href="#share" class="yolo-share" title="Share on Google+">
-                                                        <i class="fa fa-google-plus"></i>
-                                                    </a>
-
-                                                </div>
-                                            </div>
-
                                         </div>
+                                        <div class="content-share">
+                                            <p class="social-title">Share Title</p>
+                                            <div class="yolo-social social-share">
+                                                <a href="#share" class="yolo-share" title="Share on Facebook">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                                <a href="#share" class="yolo-share" title="Share on Twitter">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                                <a href="#share" class="yolo-share" title="Share on Google+">
+                                                    <i class="fa fa-google-plus"></i>
+                                                </a>
+
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
-                                <div class="commerce-tabs yolo-tabs">
-                                    <ul class="nav nav-tabs tabs wc-tabs">
-                                        <li class="active">
-                                            <a data-toggle="tab" href="#tab-1">Description</a>
-                                        </li>
-                                        <li>
-                                            <a data-toggle="tab" href="#tab-2">Reviews</a>
-                                        </li>
-                                    </ul>
-                                    <div class="tab-content">
-                                        <div class="tab-pane fade in active" id="tab-1">
-                                            {{ storeDetail.descriptionBoutique |raw }}
-                                        </div>
-                                        <div class="tab-pane fade" id="tab-2">
-                                            <div id="reviews">
-                                                <div id="comments">
-                                                    <h2>reviews</h2>
-                                                    <ol class="commentlist">
-                                                        <li class="comment">
-                                                            <div class="comment_container">
-                                                                <div class="comment-avatar">
-                                                                    <img alt='' src='http://placehold.it/100x100'
-                                                                         height='80' width='80' class="avatar"/>
-                                                                </div>
-                                                                <div class="comment-text">
+                            </div>
+                            <div class="commerce-tabs yolo-tabs">
+                                <ul class="nav nav-tabs tabs wc-tabs">
+                                    <li class="active">
+                                        <a data-toggle="tab" href="#tab-1">Description</a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#tab-2">Reviews</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane fade in active" id="tab-1">
+                                        {{ storeDetail.descriptionBoutique |raw }}
+                                    </div>
+                                    <div class="tab-pane fade" id="tab-2">
+                                        <div id="reviews">
+                                            <div id="comments">
+                                                <h2>reviews</h2>
+                                                <ol class="commentlist">
+                                                    <li class="comment">
+                                                        <div class="comment_container">
+                                                            <div class="comment-avatar">
+                                                                <img alt='' src='http://placehold.it/100x100'
+                                                                     height='80' width='80' class="avatar"/>
+                                                            </div>
+                                                            <div class="comment-text">
                                                                             <span class="comment-reply">
                                                                                 <a class='comment-reply-link'
                                                                                    href='#'><i class="fa fa-reply"></i>
                                                                                     Reply</a>
                                                                             </span>
-                                                                    <p class="meta">
-                                                                        <strong>admin</strong> <span>Oct 19, 2015</span>
+                                                                <p class="meta">
+                                                                    <strong>admin</strong> <span>Oct 19, 2015</span>
+                                                                </p>
+                                                                <div class="description">
+                                                                    <p>
+                                                                        There are many variations of passages of
+                                                                        Lorem Ipsum available, but the majority have
+                                                                        suffered alteration in some form, by
+                                                                        injected humour, or randomised words which
+                                                                        don&#8217;t look even slightly believable
                                                                     </p>
-                                                                    <div class="description">
-                                                                        <p>
-                                                                            There are many variations of passages of
-                                                                            Lorem Ipsum available, but the majority have
-                                                                            suffered alteration in some form, by
-                                                                            injected humour, or randomised words which
-                                                                            don&#8217;t look even slightly believable
-                                                                        </p>
-                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                            <ol class="children">
-                                                                <li class="comment">
-                                                                    <div class="comment_container">
-                                                                        <div class="comment-avatar">
-                                                                            <img alt=''
-                                                                                 src='http://placehold.it/100x100'
-                                                                                 height='80' width='80' class="avatar"/>
-                                                                        </div>
-                                                                        <div class="comment-text">
+                                                        </div>
+                                                        <ol class="children">
+                                                            <li class="comment">
+                                                                <div class="comment_container">
+                                                                    <div class="comment-avatar">
+                                                                        <img alt=''
+                                                                             src='http://placehold.it/100x100'
+                                                                             height='80' width='80' class="avatar"/>
+                                                                    </div>
+                                                                    <div class="comment-text">
                                                                                     <span class="comment-reply">
                                                                                         <a class='comment-reply-link'
                                                                                            href='#'><i
                                                                                                     class="fa fa-reply"></i>
                                                                                             Reply</a>
                                                                                     </span>
-                                                                            <p class="meta">
-                                                                                <strong>admin</strong> <span>Oct 19, 2015</span>
+                                                                        <p class="meta">
+                                                                            <strong>admin</strong> <span>Oct 19, 2015</span>
+                                                                        </p>
+                                                                        <div class="description">
+                                                                            <p>
+                                                                                There are many variations of
+                                                                                passages of Lorem Ipsum available,
+                                                                                but the majority have suffered
+                                                                                alteration in some form, by injected
+                                                                                humour, or randomised words which
+                                                                                don&#8217;t look even slightly
+                                                                                believable
                                                                             </p>
-                                                                            <div class="description">
-                                                                                <p>
-                                                                                    There are many variations of
-                                                                                    passages of Lorem Ipsum available,
-                                                                                    but the majority have suffered
-                                                                                    alteration in some form, by injected
-                                                                                    humour, or randomised words which
-                                                                                    don&#8217;t look even slightly
-                                                                                    believable
-                                                                                </p>
-                                                                            </div>
                                                                         </div>
                                                                     </div>
-                                                                </li><!-- #comment-## -->
-                                                            </ol><!-- .children -->
-                                                        </li>
-                                                        <li class="comment">
-                                                            <div class="comment_container">
-                                                                <div class="comment-avatar">
-                                                                    <img alt='' src='http://placehold.it/100x100'
-                                                                         height='80' width='80' class="avatar"/>
                                                                 </div>
-                                                                <div class="comment-text">
+                                                            </li><!-- #comment-## -->
+                                                        </ol><!-- .children -->
+                                                    </li>
+                                                    <li class="comment">
+                                                        <div class="comment_container">
+                                                            <div class="comment-avatar">
+                                                                <img alt='' src='http://placehold.it/100x100'
+                                                                     height='80' width='80' class="avatar"/>
+                                                            </div>
+                                                            <div class="comment-text">
                                                                             <span class="comment-reply">
                                                                                 <a class='comment-reply-link'
                                                                                    href='#'><i class="fa fa-reply"></i>
                                                                                     Reply</a>
                                                                             </span>
-                                                                    <p class="meta">
-                                                                        <strong>admin</strong> <span>Oct 19, 2015</span>
+                                                                <p class="meta">
+                                                                    <strong>admin</strong> <span>Oct 19, 2015</span>
+                                                                </p>
+                                                                <div class="description">
+                                                                    <p>
+                                                                        There are many variations of passages of
+                                                                        Lorem Ipsum available, but the majority have
+                                                                        suffered alteration in some form, by
+                                                                        injected humour, or randomised words which
+                                                                        don&#8217;t look even slightly believable
                                                                     </p>
-                                                                    <div class="description">
-                                                                        <p>
-                                                                            There are many variations of passages of
-                                                                            Lorem Ipsum available, but the majority have
-                                                                            suffered alteration in some form, by
-                                                                            injected humour, or randomised words which
-                                                                            don&#8217;t look even slightly believable
-                                                                        </p>
-                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                        </li>
-                                                    </ol>
-                                                </div>
-                                                <div id="review_form_wrapper">
-                                                    <div id="review_form">
-                                                        <div id="respond" class="comment-respond">
-                                                            <h3 id="reply-title" class="comment-reply-title">Add a
-                                                                review</h3>
-                                                            <form id="commentform" class="comment-form">
-                                                                <div class="row">
-                                                                    <div class="comment-form-author col-sm-6">
-                                                                        <input id="author" name="author" type="text"
-                                                                               placeholder="Enter Your Name*"
-                                                                               class="form-control" value="" size="30"/>
-                                                                    </div>
-                                                                    <div class="comment-form-email col-sm-6">
-                                                                        <input id="email" name="email" type="text"
-                                                                               placeholder="Enter Your Email*"
-                                                                               class="form-control" value="" size="30"/>
-                                                                    </div>
-                                                                    <div class="col-sm-12">
-                                                                        <div class="comment-form-comment">
+                                                        </div>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                            <div id="review_form_wrapper">
+                                                <div id="review_form">
+                                                    <div id="respond" class="comment-respond">
+                                                        <h3 id="reply-title" class="comment-reply-title">Add a
+                                                            review</h3>
+                                                        <form id="commentform" class="comment-form">
+                                                            <div class="row">
+                                                                <div class="comment-form-author col-sm-6">
+                                                                    <input id="author" name="author" type="text"
+                                                                           placeholder="Enter Your Name*"
+                                                                           class="form-control" value="" size="30"/>
+                                                                </div>
+                                                                <div class="comment-form-email col-sm-6">
+                                                                    <input id="email" name="email" type="text"
+                                                                           placeholder="Enter Your Email*"
+                                                                           class="form-control" value="" size="30"/>
+                                                                </div>
+                                                                <div class="col-sm-12">
+                                                                    <div class="comment-form-comment">
                                                                             <textarea class="form-control"
                                                                                       placeholder="Enter Your Comment"
                                                                                       id="comment" name="comment"
                                                                                       cols="40" rows="6"></textarea>
-                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="form-submit">
-                                                                    <input name="submit" type="submit" id="submit"
-                                                                           class="submit" value="Submit"/>
-                                                                </div>
-                                                            </form>
+                                                            </div>
+                                                            <div class="form-submit">
+                                                                <input name="submit" type="submit" id="submit"
+                                                                       class="submit" value="Submit"/>
+                                                            </div>
+                                                        </form>
 
-                                                            <!-- CSS -->
-                                                            {% stylesheets '@FOSCommentBundle/Resources/assets/css/comments.css' %}
-                                                            <link rel="stylesheet" href="{{ asset_url }}"
-                                                                  type="text/css"/>
-                                                            {% endstylesheets %}
-                                                            {% include 'FOSCommentBundle:Thread:async.html.twig' with {'id': 'foo'} %}
-                                                        </div><!-- #respond -->
-                                                    </div>
+                                                        <!-- CSS -->
+                                                        {% stylesheets '@FOSCommentBundle/Resources/assets/css/comments.css' %}
+                                                        <link rel="stylesheet" href="{{ asset_url }}"
+                                                              type="text/css"/>
+                                                        {% endstylesheets %}
+                                                        {% include 'FOSCommentBundle:Thread:async.html.twig' with {'id': 'foo'} %}
+                                                    </div><!-- #respond -->
                                                 </div>
-                                                <div class="clear"></div>
                                             </div>
+                                            <div class="clear"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -361,6 +344,7 @@
             </div>
         </div>
     </div>
+
     <!-- /.main -->
     <footer class="wrap-footer">
         <!--Start footer widget-->

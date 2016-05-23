@@ -6,25 +6,21 @@
 {% block header %}
     {{ include('CondorsTnMallBundle::SimpleVisitor/parts/header.html.twig') }}
 
-
 {% endblock header %}
 
 {% block titleTop %}<h2 class="title-heading">Store locator</h2>
 {% endblock %}
 {% block storelocator %}
-    <div align="center" ><button id="level0">Ground</button>
-        <button id="level1">First</button>
-        <button id="level2">Second</button>
+
+    <div align="center" ><button id="level0" class="btn-loadmore btn-primary">Ground</button>
+        <button class="btn-loadmore btn-primary" id="level1">First</button>
+        <button class="btn-loadmore btn-primary" id="level2">Second</button>
         <div id="mall-map1"  style="width: 720px; height: 300px"></div>
         <div  id="mall-map2"  style="width: 720px; height: 500px"></div>
         <div  id="mall-map3"  style="width: 720px; height: 500px"></div>
     </div>
-
 {% endblock storelocator %}
  {% block oScript %}
-
-
-
      <script type="text/javascript" src="{{ asset('storelocator/js/jquery-1.8.2.js') }}"></script>
 
      <link rel="stylesheet" href="{{ asset('storelocator/css/jquery-jvectormap-2.0.3.css') }}" type="text/css" media="all"/>
