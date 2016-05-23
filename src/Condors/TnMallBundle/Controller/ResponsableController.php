@@ -11,10 +11,10 @@ use Condors\TnMallBundle\Entity\Enseigne;
 use Condors\TnMallBundle\Entity\Pack;
 use Condors\TnMallBundle\Entity\Produit;
 use Condors\TnMallBundle\Form\BoutiqueType;
+use Condors\TnMallBundle\Form\CartedefideliteType;
 use Condors\TnMallBundle\Form\CategoriesType;
 use Condors\TnMallBundle\Form\EnseigneType;
 use Condors\TnMallBundle\Form\ProduitType;
-use Condors\TnMallBundle\Form\CartedefideliteType;
 use Ob\HighchartsBundle\Highcharts\Highchart;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Finder\Exception\AccessDeniedException;
@@ -345,6 +345,52 @@ class ResponsableController extends Controller
         return $this->redirect($this->generateUrl("condors_tn_mall_responsable_brands"));
     }
 
+    public function categoriesDeleteAction(Categories $categorie)
+    {
+
+
+        $em = $this->getDoctrine()->getManager();
+        $em->remove($categorie);
+        $em->flush();
+
+
+        return $this->redirect($this->generateUrl("condors_tn_mall_responsable_categories"));
+    }
+
+    public function categorieModifyAction(Categories $categories)
+    {
+
+        $em = $this->getDoctrine()->getManager();
+
+        $user = $this->getUser();
+
+        $form = $this->createForm(new CategoriesType($user->getId()), $categories);
+
+        $request = $this->getRequest();
+
+        if ($request->getMethod() == 'POST') {
+            //Note: bindRequest is now deprecated
+            $form->bind($request);
+            if ($form->isValid()) {
+                //retrieve your model hydrated with your form values
+                //has upload file ?
+                $categories = $form->getData();
+
+                $em->persist($categories);
+                $em->flush();
+            }
+        }
+
+        return $this->render('CondorsTnMallBundle:Responsable:GestionCategoriesModify.html.twig', array(
+            'user' => $user,
+            'form' => $form->createView(),
+
+        ));
+
+
+    }
+
+
     public function categoriesAction()
     {
 
@@ -407,6 +453,16 @@ class ResponsableController extends Controller
 
         $categories = $em->getRepository("CondorsTnMallBundle:Categories")->findCategoriesByIdEns($txtSearch);
         $rep = new JsonResponse(($categories));
+
+        return $rep;
+    }
+
+    public function searchCatNameAction($txtSearch)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $categorie = $em->getRepository("CondorsTnMallBundle:Categories")->findCatNameSearch($txtSearch);
+        $rep = new JsonResponse(($categorie));
 
         return $rep;
     }
@@ -506,7 +562,7 @@ class ResponsableController extends Controller
 
         $ob->chart->renderTo('piechart');
 
-        $ob->title->text('Browser market shares at a specific website in 2010');
+        $ob->title->text('Statistique Product by Categories');
 
         $ob->plotOptions->pie(array(
             'allowPointSelect' => true,
@@ -514,17 +570,40 @@ class ResponsableController extends Controller
             'dataLabels' => array('enabled' => false),
             'showInLegend' => true
         ));
+        $em = $this->getDoctrine()->getManager();
+        $data = $em->getRepository("CondorsTnMallBundle:Produit")->findProdCateg();
 
-        $data = array(
-            array('Firefox', 45.0),
-            array('IE', 26.8),
-            array('Chrome', 12.8),
-            array('Safari', 8.5),
-            array('Opera', 6.2),
-            array('Others', 0.7),
-        );
+        $codeMetier = array_column($data, 'nb', 'categorieProduit');;
+        $i = 0;
+        $fullArray = array();
+        $total = 0;
+        foreach ($codeMetier as $keyy => $vall) {
 
-        $ob->series(array(array('type' => 'pie', 'name' => 'Browser share', 'data' => $data)));
+            $total += $vall;
+
+
+        }
+
+
+        foreach ($codeMetier as $key => $val) {
+
+            $val = ($val * 100) / $total;
+            $myArray = array(
+                $key, $val,
+
+
+            );
+
+            $fullArray[$i] = $myArray;
+            $i++;
+
+        }
+
+
+//
+
+
+        $ob->series(array(array('type' => 'pie', 'name' => 'Browser share', 'data' => $fullArray)));
 
         return $this->render('CondorsTnMallBundle:Graphe:chartPie.html.twig', array(
             'chart' => $ob
@@ -556,11 +635,10 @@ class ResponsableController extends Controller
                 $card = $form->getData();
                 $dateNow = new \DateTime();
                 $dateNext = new \DateTime('2019-05-05');
-                $Stringdate=$dateNow->format('Y-m-d H:i:s');
-                $StringdateNext=$dateNext->format('Y-m-d H:i:s');
+                $Stringdate = $dateNow->format('Y-m-d H:i:s');
+                $StringdateNext = $dateNext->format('Y-m-d H:i:s');
                 $card->setDatecreation($Stringdate);
                 $card->setDateexpiration($StringdateNext);
-
 
 
                 $em->persist($card);
@@ -575,51 +653,6 @@ class ResponsableController extends Controller
             'form' => $form->createView(),
             'cards' => $cards,
         ));
-    }
-
-    public function cardsDeleteAction(Cartedefidelite $card)
-    {
-
-
-        $em = $this->getDoctrine()->getManager();
-        $em->remove($card);
-        $em->flush();
-
-
-        return $this->redirect($this->generateUrl("condors_tn_mall_responsable_card"));
-    }
-
-    public function cardsModifyAction(Cartedefidelite $card)
-    {
-
-        $em = $this->getDoctrine()->getManager();
-
-        $user = $this->getUser();
-
-        $form = $this->createForm(new CartedefideliteType($user->getId()), $card);
-
-        $request = $this->getRequest();
-
-        if ($request->getMethod() == 'POST') {
-            //Note: bindRequest is now deprecated
-            $form->bind($request);
-            if ($form->isValid()) {
-                //retrieve your model hydrated with your form values
-                //has upload file ?
-                $card = $form->getData();
-
-                $em->persist($card);
-                $em->flush();
-            }
-        }
-
-        return $this->render('CondorsTnMallBundle:Responsable:GestionCardsModifer.html.twig', array(
-            'user' => $user,
-            'form' => $form->createView(),
-            'cards' => $card,
-        ));
-
-
     }
 
 

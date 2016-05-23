@@ -77,6 +77,16 @@ class ProduitRepository extends EntityRepository
 
     }
 
+    public function findProdCateg()
+    {
+
+    $query = $this->getEntityManager()
+        ->createQuery("select  count(m) as nb  , m.categorieProduit  from CondorsTnMallBundle:Produit m  group by  m.categorieProduit ");
+        return $query->getResult();
+    }
+
+
+
     public function findProdRespoCatalog($id)
     {
         $query = $this->getEntityManager()

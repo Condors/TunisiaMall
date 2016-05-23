@@ -40,5 +40,18 @@ class CategoriesRepository extends EntityRepository
         return $query->getArrayResult();
     }
 
+    public function findCatNameSearch($txtSearch)
+    {
+        $query = $this->getEntityManager()
+            ->createQuery("select m from CondorsTnMallBundle:Categories m where m.name LIKE :txtSearched ")
+            ->setParameter('txtSearched', '%' . $txtSearch . '%');
+
+
+        return $query->getArrayResult();
+
+    }
+
+
+
 
 }

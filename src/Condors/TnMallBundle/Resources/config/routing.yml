@@ -130,7 +130,17 @@ condors_tn_mall_responsable_categories:
     path:     /user-responsable/categories
     defaults: { _controller: CondorsTnMallBundle:Responsable:categories}
 
+condors_tn_mall_responsable_categories_delete:
+    path:     /user-responsable/categories/delete/{id}
+    defaults: { _controller: CondorsTnMallBundle:Responsable:categoriesDelete}
 
+condors_tn_mall_responsable_categories_Modify:
+    path:     /user-responsable/categories/Modify/{id}
+    defaults: { _controller: CondorsTnMallBundle:Responsable:categorieModify}
+
+condors_tn_mall_responsable_categories_kimo:
+    path:     /user-responsable/categories/searchCatego/{txtSearch}
+    defaults: { _controller: CondorsTnMallBundle:Responsable:searchCatName}
 
 
 condors_tn_mall_responsable_categories_update_pos:

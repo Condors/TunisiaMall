@@ -27,11 +27,7 @@
     </div>
 
 
-    <div class="title_right">
-        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-            <input id="prodsearch" type="text" class="form-control" placeholder="Search for...">
-        </div>
-    </div>
+
 </div>
 
 <div class="" role="tabpanel" data-example-id="togglable-tabs">
@@ -177,9 +173,9 @@
                                     <td class="nameProd">
                                         {{ categorie.description[:2] }}...
                                     </td>
-                                        <td> <span><i class="fa fa-arrows"></i> </span></td>
+                                    <td><span><i class="fa fa-arrows"></i> </span></td>
                                     <td>
-                                         <p class="rowCatfinal">{{ categorie.position }}
+                                        <p class="rowCatfinal">{{ categorie.position }}
 
                                         </p>
                                         <p><input class="hiddenCatId" type="hidden" value="{{ categorie.id }}"></p>
@@ -187,12 +183,31 @@
                                     </td>
 
 
-                                    <td class=" last"><i style="font-size:22px;" class="fa fa-cog"></i></a>
-                                        &nbsp;&nbsp; <i style="font-size:22px;" class="fa fa-trash"></i></a>
+                                    <td class=" last">
+                                        <a data-toggle="modal" data-target=".bs-example{{ categorie.id }}-modal-lg" href="#"> <i style="font-size:22px;" class="fa fa-cog"></i>
+                                        </a>
+                                        &nbsp;&nbsp; <a href="{{ path('condors_tn_mall_responsable_categories_delete', {'id': categorie.id}) }}" ><i style="font-size:22px;" class="fa fa-trash"></i></a>
 
                                     </td>
                                 </tr>
+                                <div class="modal fade bs-example{{ categorie.id }}-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
 
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
+                                                </button>
+                                                <h4 class="modal-title" id="myModalLabel"> <i class="fa fa-cog"></i> &nbsp; Category {{ categorie.name }} </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <iframe  id="form-iframe" frameborder="0" scrolling="auto"  style="height: 750px; width: 100%" src="{{ path('condors_tn_mall_responsable_categories_Modify', {'id': categorie.id}) }}"></iframe>
+                                            </div>
+                                            <div class="modal-footer">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
 
                             {% endfor %}
                             </tbody>
@@ -259,36 +274,7 @@
             <!-- pace -->
             <script src="{{ asset('responsable/js/pace/pace.min.js') }}"></script>
 
-            <script type="text/javascript">
-                $("document").ready(function () {
-                    $("#prodsearch").keydown(function () {
 
-                        $.ajax({
-                            type: 'get',
-                            url: 'http://localhost/TunisiaMall/web/app_dev.php/user-responsable/products/searchProd/' + $("#prodsearch").val(),
-                            beforeSend: function () {
-                                console.log('searching ...');
-                            },
-                            success: function (data) {
-
-
-                                var trHTML = '';
-                                $.each(data, function (i, item) {
-                                    var pr = ((item.tvaProduit * item.prixProduit) / 100) + item.prixProduit;
-
-                                    trHTML += "<tr class='even pointer'><td>" + item.refProduit + "</td><td><img width='30' heigth='30' src='{{ asset('uploads/pictures/') }}" + item.imageprodreel + " ' </td><td>" + item.libelleProduit + "</td><td>" + item.categorieProduit + "</td><td>" + item.prixProduit + " D.T </td><td>" + item.tvaProduit + "%</td><td>" + pr + " D.T</td>\n\
-                            <td class='last'><a data-toggle='modal' data-target='.bs-example" + item.idProduit + "-modal-lg' 'href='#'><i style='font-size:22px;' class='fa fa-cog'></i></a> &nbsp;&nbsp; <a href=\n\
-                                'http://localhost/TunisiaMall/web/app_dev.php/user-responsable/products/delete/" + item.idProduit + "'><i style='font-size:22px;' class='fa fa-trash'></i></a></tr>";
-                                });
-                                $('#records_table').html(trHTML);
-                                console.log('Ok ...');
-
-                            }
-                        });
-
-                    });
-                });
-            </script>
 
             <script type="text/javascript">
                 $(document).ready(function () {
@@ -363,16 +349,14 @@
                         for (var i = 0; i < $("#maxCount").val(); i++) {
 
                             $(".rowCatfinal").eq(i).html(i);
-                            var id =$(".hiddenCatId").eq(i).val();
+                            var id = $(".hiddenCatId").eq(i).val();
                             $.ajax({
                                 type: 'get',
-                                url: 'http://localhost/TunisiaMall/web/app_dev.php/user-responsable/categories/update/' + id +'/'+i,
+                                url: 'http://localhost/TunisiaMall/web/app_dev.php/user-responsable/categories/update/' + id + '/' + i,
                                 beforeSend: function () {
                                     console.log('sending new pos ...');
                                 },
                                 success: function (data) {
-
-
 
 
                                 }

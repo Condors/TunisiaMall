@@ -1,0 +1,290 @@
+{% extends "CondorsTnMallBundle::ResponsableLayouts/Layout.html.twig" %}
+
+
+
+
+
+
+
+
+
+
+{% block Content %}
+
+<div class="page-title">
+    <div class="title_left">
+        <h3>Categories Management</h3>
+    </div>
+
+    <div class="title_right">
+        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+
+        </div>
+    </div>
+</div>
+
+<div class="" role="tabpanel" data-example-id="togglable-tabs">
+    <ul id="myTab1" class="nav nav-tabs bar_tabs right" role="tablist">
+        <li role="presentation" class="active"><a href="#tab_content11" id="home-tabb" role="tab" data-toggle="tab"
+                                                  aria-controls="home" aria-expanded="true"><i class="fa fa-pencil"></i></a>
+        </li>
+
+
+    </ul>
+    <div id="myTabContent2" class="tab-content">
+        <div role="tabpanel" class="tab-pane fade active in" id="tab_content11" aria-labelledby="home-tab">
+            <!-- Smart Wizard -->
+
+            <div id="wizard" class="form_wizard wizard_horizontal">
+                <ul class="wizard_steps">
+                    <li>
+                        <a href="#step-1">
+                            <span class="step_no">1</span>
+                                <span class="step_descr">
+                                    Step 1<br/>
+                                    <small>General Information</small>
+                                </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#step-2">
+                            <span class="step_no">2</span>
+                                <span class="step_descr">
+                                    Step 2<br/>
+                                    <small>Description</small>
+                                </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#step-3">
+                            <span class="step_no">3</span>
+                                <span class="step_descr">
+                                    Step 3<br/>
+                                    <small>Upload Pictures</small>
+                                </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#step-4">
+                            <span class="step_no">4</span>
+                                <span class="step_descr">
+                                    Step 4<br/>
+                                    <small>Step 4 description</small>
+                                </span>
+                        </a>
+                    </li>
+                </ul>
+                {{ form_start(form, {'attr': {'class': 'form-horizontal form-label-left'}}) }}
+                <div id="step-1">
+
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Category Name <span
+                                    class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+
+                            {{ form_widget(form.name , { 'attr': {'class': 'form-control col-md-7 col-xs-12'} } ) }}
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Category Brand <span
+                                    class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+
+                            {{ form_widget(form.idEnseigne , { 'attr': {'class': 'form-control col-md-7 col-xs-12'} } ) }}
+                        </div>
+                    </div>
+
+
+                </div>
+                <div id="step-2">
+                    <h2 class="StepTitle">Desciption</h2>
+                    <p id="txtEditor">
+                        {{ form_widget(form.description , { 'attr': {'class': 'form-control col-md-7 col-xs-12'} } ) }}
+                    </p>
+
+                </div>
+                <div id="step-3">
+                    <h2 class="StepTitle">Category Position</h2>
+
+
+                </div>
+                <div id="step-4">
+                    <h2 class="StepTitle">Step 4 Content</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                    </p>
+
+                </div>
+
+            </div>
+
+            {{ form_widget(form.submit) }}
+            {{ form_end(form) }}
+        </div>
+
+
+
+    </div>
+
+
+</div>
+</div>
+
+
+<div class="">
+
+    <div class="clearfix"></div>
+
+    <div class="row">
+
+
+        <br> <br>
+        {% endblock Content %}
+
+
+
+
+
+
+
+
+        {% block otherScript %}
+
+            <div id="custom_notifications" class="custom-notifications dsp_none">
+                <ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
+                </ul>
+                <div class="clearfix"></div>
+                <div id="notif-group" class="tabbed_notifications"></div>
+            </div>
+
+
+
+            <!-- bootstrap progress js -->
+            <script src="{{ asset('responsable/js/progressbar/bootstrap-progressbar.min.js') }}"></script>
+            <script src="{{ asset('responsable/js/nicescroll/jquery.nicescroll.min.js') }}"></script>
+            <!-- icheck -->
+            <script src="{{ asset('responsable/js/icheck/icheck.min.js') }}"></script>
+
+            <script src="{{ asset('responsable/js/custom.js') }}"></script>
+
+            <!-- form wizard -->
+            <script type="text/javascript" src="{{ asset('responsable/js/wizard/jquery.smartWizard.js') }}"></script>
+            <!-- pace -->
+            <script src="{{ asset('responsable/js/pace/pace.min.js') }}"></script>
+            <script type="text/javascript">
+                $(document).ready(function () {
+
+
+                    $("#produit_submit").hide();
+
+                    // Smart Wizard
+                    $('#wizard').smartWizard({
+                        transitionEffect: 'fade'
+                    });
+
+
+                    $("#sender").click(function () {
+                        $("#produit_submit").click();
+                        $("#produit_submit").click(new PNotify({
+                            title: 'Sticky Success',
+                            text: 'You Update this Product Successfully.',
+                            type: 'success',
+                            hide: false
+                        }));
+
+                        $("textarea").val($("#placeHolder").Editor("getText"));
+
+
+                        return false;
+                    });
+
+
+                });
+
+                $(document).ready(function () {
+                    // Smart Wizard
+                    $('#wizard_verticle').smartWizard({
+                        transitionEffect: 'slideleft'
+                    });
+                });
+
+            </script>
+
+
+            <!-- Editor Zone -->
+            <script src="{{ asset('responsable/js/ckeditor/ckeditor.js') }}"></script>
+
+            <script type="text/javascript">
+
+                // Replace the <textarea id="editor1"> with a CKEditor
+                // instance, using default configuration.
+                CKEDITOR.replace('produit_descriptionProduit');
+
+            </script>
+
+            <!-- dropzone -->
+            <script src="{{ asset('responsable/js/dropzone/dropzone.js') }}"></script>
+
+
+
+            <script>
+                $(document).ready(function () {
+                    $('input.tableflat').iCheck({
+                        checkboxClass: 'icheckbox_flat-green',
+                        radioClass: 'iradio_flat-green'
+                    });
+                });
+
+                var asInitVals = new Array();
+                $(document).ready(function () {
+                    var oTable = $('#example').dataTable({
+                        "oLanguage": {
+                            "sSearch": "Search all columns:"
+                        },
+                        "aoColumnDefs": [{
+                            'bSortable': false,
+                            'aTargets': [0]
+                        } //disables sorting for column one
+                        ],
+                        'iDisplayLength': 12,
+                        "sPaginationType": "full_numbers",
+                        "dom": 'T<"clear">lfrtip',
+                        "tableTools": {
+                            "sSwfPath": "js/datatables/tools/swf/copy_csv_xls_pdf.swf"
+                        }
+                    });
+                    $("tfoot input").keyup(function () {
+                        /* Filter on the column based on the index of this element's parent <th> */
+                        oTable.fnFilter(this.value, $("tfoot th").index($(this).parent()));
+                    });
+                    $("tfoot input").each(function (i) {
+                        asInitVals[i] = this.value;
+                    });
+                    $("tfoot input").focus(function () {
+                        if (this.className == "search_init") {
+                            this.className = "";
+                            this.value = "";
+                        }
+                    });
+                    $("tfoot input").blur(function (i) {
+                        if (this.value == "") {
+                            this.className = "search_init";
+                            this.value = asInitVals[$("tfoot input").index(this)];
+                        }
+                    });
+                });
+            </script>
+
+
+            <!---->
+            <!-- PNotify -->
+            <script type="text/javascript" src="{{ asset('responsable/js/notify/pnotify.core.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('responsable/js/notify/pnotify.buttons.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('responsable/js/notify/pnotify.nonblock.js') }}"></script>
+
+
+        {% endblock otherScript %}
+
