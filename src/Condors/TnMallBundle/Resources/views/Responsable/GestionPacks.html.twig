@@ -50,13 +50,12 @@
                             <ul class='list-unstyled text-left'>
                                 <li>{% if pack.zoneA %}<i class='fa fa-check text-danger'></i> {% else %} <i class='fa fa-times text-danger'></i>  {% endif %}affichage dans la zone A</li>
                                 <li>{% if pack.zoneB %}<i class='fa fa-check text-danger'></i> {% else %} <i class='fa fa-times text-danger'></i>  {% endif %}affichage dans la zone B</li>
-                                <li>{% if pack.zoneC %}<i class='fa fa-check text-danger'></i> {% else %} <i class='fa fa-times text-danger'></i>  {% endif %}affichage dans la zone C</li>
-                                  
+                                
                             </ul>
                         </div>
                     </div>
                     <div class='pricing_footer' id="pack{{ pack.idPack }}">
-                        <a href="javascript:void(0);" class="btn btn-success btn-block"  role="button" onclick="buy({{ pack.idPack }})" >Buy<span> now!</span></a>
+                        <a href="javascript:void(0);" class="btn btn-success btn-block"  role="button" onclick="buy({{ pack.idPack }})" >Activate<span> now!</span></a>
                     
                     </div>
                 </div>

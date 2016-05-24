@@ -240,9 +240,7 @@ condors_tn_mall_packBProduits:
     path:     /packAProduitsB
     defaults: { _controller: CondorsTnMallBundle:SimpleVisitor:pubPackB }
 
-condors_tn_mall_packCProduits:
-    path:     /packAProduitsC
-    defaults: { _controller: CondorsTnMallBundle:SimpleVisitor:pubPackC }
+
  #END AMIN YOU CAN TOUCH EVERY THING AFTER HERE !
 
 
