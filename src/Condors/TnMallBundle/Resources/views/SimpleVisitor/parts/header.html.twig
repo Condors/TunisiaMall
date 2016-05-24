@@ -35,8 +35,14 @@
                                     <li class="menu-item">
 
                                             <i class="fa fa-key"></i>
-                                            &nbsp; {{app.user.username }}
 
+                                        {% if is_granted('ROLE_CLIENT') %}
+                                        <a href="#">  &nbsp; {{app.user.username }} </a>
+                                        {% elseif is_granted('ROLE_RESPONSABLE')  %}
+                                        <a href="{{ path('condors_tn_mall_responsable_index') }}">  &nbsp; {{app.user.username }} </a>
+                                        {% else %}
+                                            <a href="{{ path('condors_tn_mall_Admin_index') }}">  &nbsp; {{app.user.username }} </a>
+                                        {% endif %}
                                     </li>
                                     <li class="menu-item">
 

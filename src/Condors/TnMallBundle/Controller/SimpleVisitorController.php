@@ -240,7 +240,7 @@ class SimpleVisitorController extends Controller
 
         // get an amount, e.g. from your cart*
         // $amount=110.0;
-        $amount = $amount;
+        $amount = $amount/2;
         $transaction = new Transaction($amount);
         $transaction->setMyArray($FullArray);
         //$transaction->getItems();

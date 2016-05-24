@@ -60,19 +60,11 @@
                             <span class="step_no">3</span>
                                 <span class="step_descr">
                                     Step 3<br/>
-                                    <small>Upload Pictures</small>
+                                    <small>Confirmation</small>
                                 </span>
                         </a>
                     </li>
-                    <li>
-                        <a href="#step-4">
-                            <span class="step_no">4</span>
-                                <span class="step_descr">
-                                    Step 4<br/>
-                                    <small>Step 4 description</small>
-                                </span>
-                        </a>
-                    </li>
+
                 </ul>
                 {{ form_start(form, {'attr': {'class': 'form-horizontal form-label-left'}}) }}
                 <div id="step-1">
@@ -106,22 +98,16 @@
                     </p>
 
                 </div>
+
                 <div id="step-3">
-                    <h2 class="StepTitle">Category Position</h2>
-
-
-                </div>
-                <div id="step-4">
-                    <h2 class="StepTitle">Step 4 Content</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et
-                    </p>
+                    <h2 class="StepTitle">Step 3 Confirmation</h2>
+                    <center><h2>You will confirm this action by clicking on "Finish" ?</h2></center>
 
                 </div>
 
             </div>
 
-            {{ form_widget(form.submit) }}
+            {{ form_widget(form.submit, { 'attr': {'class': 'hidit'} } ) }}
             {{ form_end(form) }}
         </div>
 
@@ -178,7 +164,7 @@
                 $(document).ready(function () {
 
 
-                    $("#produit_submit").hide();
+                    $(".hidit").hide();
 
                     // Smart Wizard
                     $('#wizard').smartWizard({
@@ -187,8 +173,8 @@
 
 
                     $("#sender").click(function () {
-                        $("#produit_submit").click();
-                        $("#produit_submit").click(new PNotify({
+                        $(".hidit").click();
+                        $(".hidit").click(new PNotify({
                             title: 'Sticky Success',
                             text: 'You Update this Product Successfully.',
                             type: 'success',

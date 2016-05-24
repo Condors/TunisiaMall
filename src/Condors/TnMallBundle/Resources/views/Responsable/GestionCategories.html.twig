@@ -27,7 +27,6 @@
     </div>
 
 
-
 </div>
 
 <div class="" role="tabpanel" data-example-id="togglable-tabs">
@@ -66,21 +65,13 @@
                                 </span>
                         </a>
                     </li>
+
                     <li>
                         <a href="#step-3">
                             <span class="step_no">3</span>
                                 <span class="step_descr">
                                     Step 3<br/>
-                                    <small>Set Position</small>
-                                </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#step-4">
-                            <span class="step_no">4</span>
-                                <span class="step_descr">
-                                    Step 4<br/>
-                                    <small>Step 4 description</small>
+                                    <small>Step 3 Confirmation</small>
                                 </span>
                         </a>
                     </li>
@@ -118,15 +109,10 @@
                     </p>
 
                 </div>
+
                 <div id="step-3">
-                    <h2 class="StepTitle">Category Position</h2>
-
-
-                </div>
-                <div id="step-4">
-                    <h2 class="StepTitle">Step 4 Content</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et
+                    <h2 class="StepTitle">Step 3 Confirmation</h2>
+                    <p><center><h2>You will confirm this action by clicking on "Finish" ?</h2></center>
                     </p>
 
                 </div>
@@ -184,23 +170,31 @@
 
 
                                     <td class=" last">
-                                        <a data-toggle="modal" data-target=".bs-example{{ categorie.id }}-modal-lg" href="#"> <i style="font-size:22px;" class="fa fa-cog"></i>
+                                        <a data-toggle="modal" data-target=".bs-example{{ categorie.id }}-modal-lg"
+                                           href="#"> <i style="font-size:22px;" class="fa fa-cog"></i>
                                         </a>
-                                        &nbsp;&nbsp; <a href="{{ path('condors_tn_mall_responsable_categories_delete', {'id': categorie.id}) }}" ><i style="font-size:22px;" class="fa fa-trash"></i></a>
+                                        &nbsp;&nbsp; <a
+                                                href="{{ path('condors_tn_mall_responsable_categories_delete', {'id': categorie.id}) }}"><i
+                                                    style="font-size:22px;" class="fa fa-trash"></i></a>
 
                                     </td>
                                 </tr>
-                                <div class="modal fade bs-example{{ categorie.id }}-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal fade bs-example{{ categorie.id }}-modal-lg" tabindex="-1"
+                                     role="dialog" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
 
                                             <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
+                                                <button type="button" class="close" data-dismiss="modal"><span
+                                                            aria-hidden="true">×</span>
                                                 </button>
-                                                <h4 class="modal-title" id="myModalLabel"> <i class="fa fa-cog"></i> &nbsp; Category {{ categorie.name }} </h4>
+                                                <h4 class="modal-title" id="myModalLabel"><i class="fa fa-cog"></i>
+                                                    &nbsp; Category {{ categorie.name }} </h4>
                                             </div>
                                             <div class="modal-body">
-                                                <iframe  id="form-iframe" frameborder="0" scrolling="auto"  style="height: 750px; width: 100%" src="{{ path('condors_tn_mall_responsable_categories_Modify', {'id': categorie.id}) }}"></iframe>
+                                                <iframe id="form-iframe" frameborder="0" scrolling="auto"
+                                                        style="height: 750px; width: 100%"
+                                                        src="{{ path('condors_tn_mall_responsable_categories_Modify', {'id': categorie.id}) }}"></iframe>
                                             </div>
                                             <div class="modal-footer">
                                             </div>

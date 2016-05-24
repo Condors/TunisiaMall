@@ -88,7 +88,7 @@ class RegistrationController extends BaseFOSController
 
         $user = $userManager->createUser();
         $user->setEnabled(true);
-        $user->addRole("ROLE_USER");
+        $user->addRole("ROLE_CLIENT");
 
 
         $event = new GetResponseUserEvent($user, $request);
