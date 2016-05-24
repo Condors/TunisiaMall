@@ -251,7 +251,7 @@ condors_tn_mall_chart:
     defaults: { _controller: CondorsTnMallBundle:Responsable:chart }
 
 condors_tn_mall_chartPie:
-    path:     /user-responsable/chartPie
+    path:     /chartPie
     defaults: { _controller: CondorsTnMallBundle:Responsable:chartPie }
 
 condors_tn_mall_Admin_mall_chat:

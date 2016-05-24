@@ -53,7 +53,7 @@ class OAuthUserProvider extends BaseClass
                 $user->setEmail($email);
                 $user->setPlainPassword(md5(uniqid()));
                 $user->setEnabled(true);
-                $user->addRole("ROLE_RESPONSABLE");
+                $user->addRole("ROLE_CLIENT");
                 $user->setUsername($userName);
                 $user->setImage($profilePic);
                 $user->setNom($userNom); 
