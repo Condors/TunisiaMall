@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91a33f12-0da2-4c7c-a713-9aae34418a4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/webResources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Condors/TnMallBundle/Controller/RegistrationController.php" afterPath="$PROJECT_DIR$/src/Condors/TnMallBundle/Controller/RegistrationController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Condors/TnMallBundle/Controller/SimpleVisitorController.php" afterPath="$PROJECT_DIR$/src/Condors/TnMallBundle/Controller/SimpleVisitorController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Admin/navMenu.html.twig" afterPath="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Admin/navMenu.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Registration/checkEmail.html.twig" afterPath="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Registration/checkEmail.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Registration/confirmed.html.twig" afterPath="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Registration/confirmed.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Registration/register_content.html.twig" afterPath="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Registration/register_content.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Responsable/GestionCategories.html.twig" afterPath="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Responsable/GestionCategories.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Responsable/GestionCategoriesModify.html.twig" afterPath="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Responsable/GestionCategoriesModify.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Responsable/GestionStoresModifer.html.twig" afterPath="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Responsable/GestionStoresModifer.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Responsable/navMenu.html.twig" afterPath="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/Responsable/navMenu.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/SimpleVisitor/parts/header.html.twig" afterPath="$PROJECT_DIR$/src/Condors/TnMallBundle/Resources/views/SimpleVisitor/parts/header.html.twig" />
     </list>
     <ignored path="C:\wamp\www\TunisiaMall\.idea\shelf/" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -470,7 +457,7 @@
       <workItem from="1463929299749" duration="6343000" />
       <workItem from="1463955321534" duration="1336000" />
       <workItem from="1463995593079" duration="36364000" />
-      <workItem from="1464046971855" duration="4986000" />
+      <workItem from="1464046971855" duration="5138000" />
     </task>
     <task id="LOCAL-00001" summary="correction">
       <created>1463929555283</created>
@@ -521,11 +508,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464040557793</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="plusieurs modification">
+      <created>1464052635987</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1464052635987</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49177000" />
+    <option name="totallyTimeSpent" value="49329000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
