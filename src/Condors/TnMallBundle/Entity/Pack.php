@@ -35,12 +35,7 @@ class Pack
      */
     private $zoneB;
 
-    /**
-     * @var boolean
-     *
-     * @ORM\Column(name="Zone_C", type="boolean", nullable=false)
-     */
-    private $zoneC;
+
 
    
     /**
@@ -70,9 +65,7 @@ class Pack
         return $this->zoneB;
     }
 
-    function getZoneC() {
-        return $this->zoneC;
-    }
+
 
    
 
@@ -96,9 +89,6 @@ class Pack
         $this->zoneB = $zoneB;
     }
 
-    function setZoneC($zoneC) {
-        $this->zoneC = $zoneC;
-    }
 
    
 

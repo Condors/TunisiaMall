@@ -17,13 +17,8 @@ class PackType extends AbstractType
         $builder
             ->add('zoneA')
             ->add('zoneB')
-            ->add('zoneC')
-            ->add('algo1')
-            ->add('algo2')
-            ->add('algo3')
             ->add('libelle')
-            ->add('description')
-        ;
+            ->add('description');
     }
     
     /**

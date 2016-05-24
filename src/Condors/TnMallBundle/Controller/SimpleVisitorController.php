@@ -335,6 +335,7 @@ class SimpleVisitorController extends Controller
       public function  pubPackAAction() {
        $em = $this->getDoctrine()->getManager();
        $produits = $em->getRepository("CondorsTnMallBundle:Produit")->findProduitZoneA();
+       print_r($produits);
        $rep = new JsonResponse(($produits));     
         return $rep;
       }
